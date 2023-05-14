@@ -1,5 +1,5 @@
 <template lang="">
-  <div></div>
+  <Technology />
 </template>
 <script>
 export default {}
