@@ -1,8 +1,19 @@
 <template>
-  <div>12323</div>
+  <Main />
+  <Things />
+  <Scalability />
+  <Token />
+  <Community />
+  <News />
 </template>
 
 <script setup>
+import Main from '@/components/Index/Main'
+import Things from '@/components/Index/Things'
+import Scalability from '@/components/Index/Scalability'
+import Token from '@/components/Index/Token'
+import Community from '@/components/Index/Community'
+import News from '@/components/Index/News'
 useSeoMeta({
   title: 'Integritee | HomePage',
   ogTitle: 'My Amazing Site',
