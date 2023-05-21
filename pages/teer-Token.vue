@@ -1,5 +1,5 @@
 <template lang="">
-  <div></div>
+    <Teer />
 </template>
 <script>
 export default {}
