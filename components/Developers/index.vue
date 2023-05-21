@@ -1,6 +1,20 @@
 <template>
   <div class="developers">
-    <Desc />
+    <Desc>
+      <template #title>
+        Get ready to build
+        in <span>Web3</span> like you were <span>always</span> meant to
+      </template>
+      <template #text>
+        Integritee combines the security and trust of Polkadot, the scalability of second-layer solutions, and the confidentiality of trusted execution environments (TEEs) to help you build applications with unrivaled speed, verifiable privacy, and interoperability at scale
+      </template>
+      <template #button>
+        Github
+      </template>
+      <template #docs>
+        <button>Documentation</button>
+      </template>
+    </Desc>
     <QuickStart />
     <Resources />
   </div>
