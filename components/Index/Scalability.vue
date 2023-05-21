@@ -59,6 +59,7 @@ import Speed from '@/assets/img/index/scalability/speed.svg'
 </script>
 <style lang="scss">
 .scalability {
+  margin-bottom: 200px;
   &__item-icon {
     width: 64px;
     height: 64px;

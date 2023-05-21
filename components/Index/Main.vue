@@ -14,6 +14,11 @@
           </p>
           <a href="#" class="btn btn_gradient main__button">Start building</a>
         </div>
+        <img
+          src="/img/index/main/scheme.svg"
+          class="main__scheme"
+          alt="Scheme"
+        />
       </div>
     </div>
   </section>
@@ -21,9 +26,12 @@
 <script setup>
 import Scheme from '@/assets/img/index/main/scheme.svg'
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .main {
   padding-top: 90px;
+  .container {
+    position: relative;
+  }
   &__title {
     font-size: $tLg;
     line-height: 110%;
@@ -40,6 +48,12 @@ import Scheme from '@/assets/img/index/main/scheme.svg'
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+  }
+  &__scheme {
+    position: absolute;
+    right: -460px;
+    top: -261px;
+    width: 1131px;
   }
 }
 </style>

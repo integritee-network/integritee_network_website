@@ -18,6 +18,11 @@
           </p>
           <a href="#" class="btn btn_gradient things__button">Learn more</a>
         </div>
+        <img
+          src="/img/index/things/polygons.svg"
+          class="things__image"
+          alt="Polygons"
+        />
       </div>
     </div>
   </section>
@@ -25,5 +30,14 @@
 <script setup></script>
 <style lang="scss">
 .things {
+  .container {
+    position: relative;
+  }
+  &__image {
+    position: absolute;
+    right: -240px;
+    top: -204px;
+    width: 1054px;
+  }
 }
 </style>

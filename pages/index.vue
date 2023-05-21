@@ -5,6 +5,7 @@
   <Token />
   <Community />
   <News />
+  <Socials />
 </template>
 
 <script setup>
@@ -14,6 +15,7 @@ import Scalability from '@/components/Index/Scalability'
 import Token from '@/components/Index/Token'
 import Community from '@/components/Index/Community'
 import News from '@/components/Index/News'
+import Socials from '@/components/Socials/Section.vue'
 useSeoMeta({
   title: 'Integritee | HomePage',
   ogTitle: 'My Amazing Site',

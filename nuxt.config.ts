@@ -21,6 +21,7 @@ export default defineNuxtConfig({
   modules: ['nuxt-svgo'],
   svgo: {
     defaultImport: 'component',
+    global: false,
   },
   vite: {
     css: {

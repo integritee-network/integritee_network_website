@@ -87,6 +87,10 @@ a {
 
 .row {
     display: flex;
+
+    &.jcsb {
+        justify-content: space-between;
+    }
 }
 
 .column {
