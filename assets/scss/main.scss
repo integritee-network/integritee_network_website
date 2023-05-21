@@ -14,6 +14,16 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 
 a {
     color: #fff;
@@ -34,4 +44,87 @@ a {
 .container {
     max-width: 1240px;
     margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    font-size: $pDef;
+    padding: 14px 22px;
+    font-weight: 500;
+    border-radius: 12px;
+    line-height: 150%;
+
+    &_gradient {
+        backdrop-filter: blur(30px);
+        background: linear-gradient(84.58deg, #559CFF 0%, #9E20FE 100%);
+    }
+}
+
+.title {
+    font-family: 'WhyteInktrap';
+    margin: 0;
+
+    &_h2 {
+        line-height: 110%;
+        font-size: $tMd;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+}
+
+.paragraph {
+    line-height: 150%;
+
+    &_medium {
+        font-size: $pDef;
+    }
+
+    &_large {
+        font-weight: 500;
+        font-size: $tSm;
+    }
+}
+
+.row {
+    display: flex;
+
+    &.jcsb {
+        justify-content: space-between;
+    }
+}
+
+.column {
+    &_large {
+        width: 800px;
+        flex-shrink: 0;
+    }
+
+    &_medium {
+        width: 600px;
+        flex-shrink: 0;
+    }
+}
+
+.color {
+    &_blue {
+        color: $ltBlue;
+    }
+}
+
+.block {
+    margin-bottom: 180px;
+}
+
+.margin {
+    &_large {
+        margin-bottom: 48px;
+    }
+
+    &_medium {
+        margin-bottom: 24px;
+    }
+
+    &_small {
+        margin-bottom: 12px;
+    }
 }

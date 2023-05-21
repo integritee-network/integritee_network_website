@@ -3,6 +3,7 @@ $pDef: 1.125em;
 $pSm: 0.875em;
 
 $tSm: 1.5em;
+$tSmd: 2em;
 $tDef: 3em;
 $tMd: 4em;
 $tLg: 4.5em;
@@ -10,3 +11,17 @@ $tLg: 4.5em;
 $ltBlue: #5B92FF;
 $gray: #88888C;
 $alphaGray: rgba(255, 255, 255, 0.2);
+
+// Breakpoints
+$xl: 1366px;
+$lg: 1200px;
+$slg: 1024px;
+$md: 1024px;
+$sm: 1024px;
+$xsm: 1024px;
+
+@mixin sm {
+    @media screen and (max-width: $sm) {
+        @content;
+    }
+}
