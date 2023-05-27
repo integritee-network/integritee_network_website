@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     background: #111119;
     color: #fff;
-    font-size: 1em;
     font-family: 'Inter', sans-serif;
     padding: 0;
     margin: 0;
@@ -44,6 +47,24 @@ a {
 .container {
     max-width: 1240px;
     margin: 0 auto;
+
+    @include lg {
+        max-width: 1120px;
+    }
+
+    @include slg {
+        max-width: 980px;
+    }
+
+    @include md {
+        max-width: 800px;
+    }
+
+    @include sm {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 20px;
+    }
 }
 
 .btn {
@@ -69,7 +90,37 @@ a {
         font-size: $tMd;
         font-weight: 500;
         margin-bottom: 24px;
+
+        @include slg {
+            font-size: $md_tMd;
+        }
+
+        @include sm {
+            font-size: $sm_tMd;
+        }
     }
+
+    &_sub {
+        font-size: $tSmd;
+        font-weight: 500;
+
+        @include sm {
+            font-size: $sm_tSmd;
+        }
+    }
+
+    &_hero {
+        font-size: $tLg;
+
+        @include slg {
+            font-size: $md_tLg;
+        }
+
+        @include sm {
+            font-size: $sm_tLg;
+        }
+    }
+
 }
 
 .paragraph {
@@ -77,11 +128,31 @@ a {
 
     &_medium {
         font-size: $pDef;
+
+        @include slg {
+            font-size: $md_pDef;
+        }
+
+        @include sm {
+            font-size: $sm_pDef;
+        }
     }
 
     &_large {
         font-weight: 500;
-        font-size: $tSm;
+        font-size: $pLg;
+
+        @include sm {
+            font-size: $sm_pLg;
+        }
+    }
+
+    &_small {
+        font-size: $pSm;
+
+        @include sm {
+            font-size: $sm_pSm;
+        }
     }
 }
 
@@ -122,6 +193,10 @@ a {
 
     &_medium {
         margin-bottom: 24px;
+    }
+
+    &_xmedium {
+        margin-bottom: 18px;
     }
 
     &_small {

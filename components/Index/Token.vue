@@ -24,7 +24,7 @@
               alt="Polygon"
             />
             <div class="token__right-content">
-              <div class="token__right-title">
+              <div class="token__right-title title_sub">
                 Teer Token<br />
                 is available on:
               </div>
@@ -33,13 +33,17 @@
                   <span class="token__right-item-icon-wrp">
                     <Kraken />
                   </span>
-                  <span class="token__right-item-name">Kraken</span>
+                  <span class="token__right-item-name paragraph_large">
+                    Kraken
+                  </span>
                 </a>
                 <a href="#" class="token__right-item">
                   <span class="token__right-item-icon-wrp">
                     <Gateio />
                   </span>
-                  <span class="token__right-item-name">Gate.io</span>
+                  <span class="token__right-item-name paragraph_large">
+                    Gate.io
+                  </span>
                 </a>
               </div>
             </div>
@@ -77,10 +81,8 @@ import Gateio from '@/assets/img/index/token/gateio.svg'
     width: 938px;
   }
   &__right-title {
-    font-size: $tSmd;
     text-align: center;
     margin-bottom: 45px;
-    font-weight: 500;
   }
   &__right-item {
     display: flex;
@@ -103,9 +105,6 @@ import Gateio from '@/assets/img/index/token/gateio.svg'
   }
   &__right-item-icon-wrp {
     width: 36px;
-  }
-  &__right-item-name {
-    font-size: $tSm;
   }
 }
 </style>

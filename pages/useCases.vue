@@ -1,7 +1,8 @@
-<template lang="">
-  <div></div>
+<template>
+  <List />
+  <Socials />
 </template>
-<script>
-export default {}
+<script setup>
+import List from '@/components/UseCases/List.vue'
+import Socials from '@/components/Socials/Section.vue'
 </script>
-<style lang=""></style>

@@ -1,9 +1,11 @@
 <template>
-  <footer class="footer">
+  <footer class="footer paragraph_medium">
     <div class="container">
       <div class="footer__row">
         <div class="footer__column footer__column_about">
-          <NuxtLink to="/" class="footer__logo"><Logo /></NuxtLink>
+          <NuxtLink to="/" class="footer__logo">
+            <Logo />
+          </NuxtLink>
           <p class="footer__description">
             The fastest, most scalable and secure Web3 network bringing the
             vision of a trustless, decentralized future for all
@@ -116,48 +118,57 @@ import Socials from '@/components/Socials'
 
 <style lang="scss" scoped>
 .footer {
-  font-size: $pDef;
   &__logo {
     display: block;
     width: 191px;
     margin-bottom: 24px;
+
     svg {
       width: 100%;
     }
   }
+
   &__row {
     display: flex;
     gap: 48px;
   }
+
   &__column {
     &_about {
       flex-shrink: 0;
       max-width: 255px;
     }
+
     &:last-child {
       width: auto;
     }
   }
+
   &__column-link {
     display: block;
     line-height: 150%;
     margin-bottom: 14px;
+
     &:last-child {
       margin-bottom: 0;
     }
   }
+
   &__columns-row {
     display: flex;
     gap: 82px;
   }
+
   &__description {
     line-height: 150%;
     margin-bottom: 24px;
   }
+
   &__column-title {
     color: $gray;
     margin-bottom: 32px;
   }
+
   &__bottom {
     display: flex;
     justify-content: space-between;

@@ -7,11 +7,8 @@
         </h2>
         <div class="row news__list">
           <a href="#" class="news__item">
-            <img
-              src="http://c5com.com/wp/wp-content/uploads/2011/05/400x400.png"
-              alt="New image"
-              class="news__item-image"
-            />
+            <img src="http://c5com.com/wp/wp-content/uploads/2011/05/400x400.png" alt="New image"
+              class="news__item-image" />
             <div class="row news__item-info">
               <span class="news__item-tag">News</span>
               <span class="news__item-date">June 3, 2023</span>
@@ -22,11 +19,8 @@
             </p>
           </a>
           <a href="#" class="news__item">
-            <img
-              src="http://c5com.com/wp/wp-content/uploads/2011/05/400x400.png"
-              alt="New image"
-              class="news__item-image"
-            />
+            <img src="http://c5com.com/wp/wp-content/uploads/2011/05/400x400.png" alt="New image"
+              class="news__item-image" />
             <div class="row news__item-info">
               <span class="news__item-tag">News</span>
               <span class="news__item-date">June 3, 2023</span>
@@ -37,13 +31,10 @@
             </p>
           </a>
           <a href="#" class="news__item">
-            <img
-              src="http://c5com.com/wp/wp-content/uploads/2011/05/400x400.png"
-              alt="New image"
-              class="news__item-image"
-            />
+            <img src="http://c5com.com/wp/wp-content/uploads/2011/05/400x400.png" alt="New image"
+              class="news__item-image" />
             <div class="row news__item-info">
-              <span class="news__item-tag">Technical documentation</span>
+              <span class="news__item-tag paragraph_small">Technical documentation</span>
               <span class="news__item-date">June 3, 2023</span>
             </div>
             <p class="paragraph paragraph_large">
@@ -64,12 +55,15 @@
       display: inline-block;
     }
   }
+
   &__list {
     gap: 20px;
   }
+
   &__item {
     width: 33.33333333%;
   }
+
   &__item-image {
     object-fit: cover;
     height: 209px;
@@ -77,14 +71,15 @@
     border-radius: 24px;
     margin-bottom: 32px;
   }
+
   &__item-tag {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid #34343a;
     backdrop-filter: blur(30px);
     border-radius: 8px;
-    font-size: $pSm;
     padding: 9px 12px;
   }
+
   &__item-info {
     align-items: center;
     gap: 12px;

@@ -1,18 +1,22 @@
 <template>
   <header class="header">
     <div class="container">
-      <NuxtLink to="/" class="header__logo"><Logo /></NuxtLink>
+      <NuxtLink to="/" class="header__logo">
+        <Logo />
+      </NuxtLink>
       <div class="header__nav">
-        <NuxtLink to="/about" class="text-link">Products</NuxtLink>
-        <NuxtLink to="/about" class="text-link">Use Cases</NuxtLink>
-        <NuxtLink to="/about" class="text-link">Technology</NuxtLink>
-        <NuxtLink to="/about" class="text-link">Developers</NuxtLink>
-        <NuxtLink to="/teer-token" class="text-link">TEER Token</NuxtLink>
-        <NuxtLink to="/blog" class="text-link">Blog</NuxtLink>
-        <NuxtLink to="/about" class="text-link">About</NuxtLink>
+        <NuxtLink to="/about" class="text-link paragraph_smll">Products</NuxtLink>
+        <NuxtLink to="/about" class="text-link paragraph_smll">
+          Use Cases
+        </NuxtLink>
+        <NuxtLink to="/about" class="text-link paragraph_smll">Technology</NuxtLink>
+        <NuxtLink to="/about" class="text-link paragraph_smll">Developers</NuxtLink>
+        <NuxtLink to="/teer-token" class="text-link paragraph_smll">TEER Token</NuxtLink>
+        <NuxtLink to="/blog" class="text-link paragraph_smll">Blog</NuxtLink>
+        <NuxtLink to="/about" class="text-link paragraph_smll">About</NuxtLink>
       </div>
       <Socials />
-      <a href="/" target="_blank" class="button">Start Building</a>
+      <a href="/" target="_blank" class="button paragraph_small">Start Building</a>
     </div>
   </header>
 </template>
@@ -40,6 +44,7 @@ import Socials from '@/components/Socials'
   &__logo {
     display: block;
     width: 144px;
+
     svg {
       width: 100%;
     }
@@ -47,8 +52,8 @@ import Socials from '@/components/Socials'
 
   &__nav {
     a {
-      font-size: $pSm;
       margin-left: 35px;
+
       &:first-child {
         margin-left: 0;
       }
@@ -57,7 +62,6 @@ import Socials from '@/components/Socials'
 }
 
 .button {
-  font-size: $pSm;
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 9px;
   padding: 10px 16px;
