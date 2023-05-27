@@ -23,7 +23,7 @@
               <div class="scalability__item-icon margin_small">
                 <Guard />
               </div>
-              <h3 class="scalability__item-title margin_medium">
+              <h3 class="scalability__item-title title_sub margin_medium">
                 Privacy & security
               </h3>
               <p
@@ -63,10 +63,6 @@ import Speed from '@/assets/img/index/scalability/speed.svg'
   &__item-icon {
     width: 64px;
     height: 64px;
-  }
-  &__item-title {
-    font-size: $tSmd;
-    font-weight: 500;
   }
   &__row {
     gap: 135px;

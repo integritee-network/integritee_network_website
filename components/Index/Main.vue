@@ -3,7 +3,7 @@
     <div class="block main">
       <div class="container">
         <div class="column column_large">
-          <h1 class="title main__title">
+          <h1 class="title title_hero main__title">
             <span class="gradient gradient_one">It’s time.</span> Let’s<br />
             power the Web3<br />
             of the <span class="gradient gradient_two">future</span> together
@@ -23,9 +23,6 @@
     </div>
   </section>
 </template>
-<script setup>
-import Scheme from '@/assets/img/index/main/scheme.svg'
-</script>
 <style lang="scss" scoped>
 .main {
   padding-top: 90px;
@@ -33,7 +30,6 @@ import Scheme from '@/assets/img/index/main/scheme.svg'
     position: relative;
   }
   &__title {
-    font-size: $tLg;
     line-height: 110%;
   }
   .gradient {

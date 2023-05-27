@@ -24,7 +24,7 @@
             </a>
             <a href="#" class="socials__list-item">
               <Twitter class="socials__list-item-icon margin_medium" />
-              <span class="socials__list-item-name">Twitter</span>
+              <span class="socials__list-item-name paragraph_medium">Twitter</span>
             </a>
           </div>
         </div>
@@ -42,21 +42,22 @@ import Telegram from '@/assets/img/socials/telegram.svg'
   &__description {
     line-height: 230%;
   }
+
   &__row {
     gap: 60px;
   }
+
   &__list {
     display: flex;
     gap: 20px;
   }
+
   &__list-item-icon {
     width: 48px;
     height: 48px;
     display: block;
   }
-  &__list-item-name {
-    font-size: $pDef;
-  }
+
   &__list-item {
     width: 33.33333%;
     background: rgba(81, 81, 81, 0.24);
@@ -67,9 +68,9 @@ import Telegram from '@/assets/img/socials/telegram.svg'
     flex-direction: column;
     border-radius: 24px;
     transition: 0.3s ease;
+
     &:hover {
       background: rgba(120, 120, 120, 0.24);
     }
   }
-}
-</style>
+}</style>
