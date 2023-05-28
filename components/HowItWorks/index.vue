@@ -47,7 +47,7 @@ export default {
     }
     @include sm {
       width: 100%;
-      margin-bottom: 80px;
+      margin-top: 500px;
     }
     &:last-child {
       margin-bottom: 0;
