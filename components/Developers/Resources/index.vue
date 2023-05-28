@@ -25,7 +25,7 @@
               <a href='#' class='btn resources__button'>Demo</a>
             </div>
           </div>
-          <div class='resources__item-img' />
+          <img class='resources__item-img' :src='item.img' />
         </div>
       </div>
     </div>
@@ -38,6 +38,7 @@ export default {
     const items = [
       {
         title: 'Sidechain SDK',
+        img: '/img/resources/sdk-img.png',
         gray: 'Web3 development tool',
         text: 'Integritee\'s Sidechain SDK is ideal for building any decentralized application that requires low latency, scalability, and confidentiality',
         list: [
@@ -58,6 +59,7 @@ export default {
       },
       {
         title: 'Off-Chain Worker',
+        img: '/img/resources/off-chain-img.png',
         gray: 'Secure off-chain computational tool',
         text: 'Extend blockchain utility with secure off-chain computation  and increase the available computing power for your applications',
         list: [
@@ -74,6 +76,7 @@ export default {
       },
       {
         title: 'Teeracle',
+        img: '/img/resources/teeracle-img.png',
         gray: 'Trusted oracle framework',
         text: 'Build trusted oracles that run inside TEEs to securely and efficiently bridge the gap between Web2 data sources and Web3 systems',
         list: [
@@ -90,6 +93,7 @@ export default {
       },
       {
         title: 'Attesteer',
+        img: '/img/resources/attersteer.png',
         gray: 'Public auditability service',
         text: 'Add public auditability to your confidential processes with our decentralized remote attestation service - a transparent on-chain proof of integrity',
         list: [
@@ -143,10 +147,9 @@ export default {
     }
   }
   &__item-img {
+    display: block;
     width: 504px;
     height: 504px;
-    background: url("@/assets/img/developers/resources/sdk-img.png");
-    background-size: cover;
     @include slg {
       width: 448px;
       height: 448px;
@@ -157,6 +160,7 @@ export default {
     }
     @include sm {
       order: -1;
+      margin:  0 auto;
       margin-bottom: 18px;
     }
     @include xsm {
@@ -187,10 +191,6 @@ export default {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-      .resources__item-img {
-        background: url("@/assets/img/developers/resources/off-chain-img.png");
-        background-size: cover;
-      }
     }
     &:nth-child(3) {
       .resources__item-title {
@@ -198,20 +198,12 @@ export default {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-      .resources__item-img {
-        background: url("@/assets/img/developers/resources/teeracle-img.png");
-        background-size: cover;
-      }
     }
     &:nth-child(4) {
       .resources__item-title {
         background: linear-gradient(270deg, #24AD7C 9.13%, #1845B9 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-      }
-      .resources__item-img {
-        background: url("@/assets/img/developers/resources/attersteer.png");
-        background-size: cover;
       }
     }
     &:last-child {
