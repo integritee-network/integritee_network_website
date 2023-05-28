@@ -1,28 +1,28 @@
 <template>
-  <div class="resources">
+  <div class="resources block">
     <div class='container'>
-      <div class='resources__title'>Resource center</div>
+      <h2 class='title title_h2 margin_large'>Resource center</h2>
       <div>
         <div v-for='item in items' class='resources__item'>
-          <div class='resources__item-info'>
+          <div class='resources__column'>
             <div class='resources__item-title'>
               {{ item.title }}
             </div>
-            <div class='resources__item-gray'>
+            <div class='paragraph paragraph_small resources__item-gray'>
               {{ item.gray }}
             </div>
-            <div class='resources__item-text'>
+            <div class='paragraph paragraph_medium resources__item-text'>
               {{ item.text }}
             </div>
             <div>
-              <div v-for='el in item.list' class='resources__item-li'>
+              <div v-for='el in item.list' class='paragraph paragraph_medium resources__item-li'>
                 {{ el.li }}
               </div>
             </div>
             <div class='resources__row'>
-              <div class='resources__button'>Github</div>
-              <div class='resources__button'>Docs</div>
-              <div class='resources__button'>Demo</div>
+              <a href='#' class='btn resources__button'>Github</a>
+              <a href='#' class='btn resources__button'>Docs</a>
+              <a href='#' class='btn resources__button'>Demo</a>
             </div>
           </div>
           <div class='resources__item-img' />
@@ -113,30 +113,57 @@ export default {
 <style lang="scss" scoped>
 .resources {
   position: relative;
-  padding-top: 180px;
-  &__title {
-    font-family: 'WhyteInktrap';
-    font-weight: 500;
-    font-size: $tMd;
-    line-height: 110%;
-    color: #FFFFFF;
-    margin-bottom: 48px;
+  &__column {
+    width: 600px;
+    flex-shrink: 0;
+    @include slg {
+      width: 500px;
+    }
+    @include md {
+      width: 431px;
+    }
+    @include sm {
+      width: 100%;
+    }
   }
   &__item-title {
     font-family: 'WhyteInktrap';
     font-weight: 500;
-    font-size: 48px;
+    font-size: $md_tMd;
     line-height: 120%;
     background: linear-gradient(90deg, #B000FD 0.01%, #B000FD 0.02%, #30DAFF 97.96%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 8px;
+    @include slg {
+      font-size: $sm_tMd;
+    }
+    @include sm {
+      font-size: 1.688em;
+    }
   }
   &__item-img {
     width: 504px;
     height: 504px;
     background: url("@/assets/img/developers/resources/sdk-img.png");
     background-size: cover;
+    @include slg {
+      width: 448px;
+      height: 448px;
+    }
+    @include md {
+      width: 340px;
+      height: 340px;
+    }
+    @include sm {
+      order: -1;
+      margin-bottom: 18px;
+    }
+    @include xsm {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 29px;
+    }
   }
   &__item {
     position: relative;
@@ -145,6 +172,15 @@ export default {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 95px;
+    @include slg {
+      margin-bottom: 116px;
+    }
+    @include md {
+      margin-bottom: 60px;
+    }
+    @include sm {
+      flex-wrap: wrap;
+    }
     &:nth-child(2) {
       .resources__item-title {
         background: linear-gradient(270deg, #D5A222 0%, #F242E1 100%);
@@ -182,44 +218,42 @@ export default {
       margin-bottom: 0;
     }
   }
-  &__item-info {
-    position: relative;
-    width: 600px;
-  }
   &__item-gray {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: $pSm;
-    line-height: 150%;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 32px;
+    @include slg {
+      margin-bottom: 24px;
+    }
+    @include sm {
+      margin-bottom: 16px;
+    }
   }
   &__item-text {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: $pDef;
-    line-height: 150%;
-    color: #FFFFFF;
     margin-bottom: 32px;
+    @include slg {
+      margin-bottom: 24px;
+    }
+    @include sm {
+      margin-bottom: 16px;
+    }
   }
   &__item-li {
     position: relative;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: $pDef;
-    line-height: 150%;
-    color: #FFFFFF;
-    margin-bottom: 15px;
     padding-left: 20px;
     &:last-child {
       margin-bottom: 48px;
+      @include slg {
+        margin-bottom: 32px;
+      }
+      @include sm {
+        margin-bottom: 24px;
+      }
     }
     &:before {
       content: '';
       position: absolute;
       left: 9px;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 12px;
       width: 2px;
       height: 2px;
       border-radius: 50%;
@@ -231,17 +265,14 @@ export default {
     gap: 10px;
   }
   &__button {
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: $pSm;
-    line-height: 150%;
-    color: #FFFFFF;
-    padding: 14px 24px;
     border: 2px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(30px);
     border-radius: 12px;
     cursor: pointer;
     transition: 0.4s;
+    @include sm {
+      border-radius: 9px;
+    }
     &:hover {
       border: 2px solid rgba(255, 255, 255, 0.5);
     }

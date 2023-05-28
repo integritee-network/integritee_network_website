@@ -2,7 +2,7 @@
   <div class="developers">
     <Desc>
       <template #title>
-        Get ready to build
+        Get ready to build<br>
         in <span>Web3</span> like you were <span>always</span> meant to
       </template>
       <template #text>
@@ -12,7 +12,7 @@
         Github
       </template>
       <template #docs>
-        <button>Documentation</button>
+        <a href="#" class="btn docs__button">Documentation</a>
       </template>
     </Desc>
     <QuickStart />
@@ -20,15 +20,10 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import Desc from "@/components/Desc";
 import QuickStart from "@/components/Developers/QuickStart";
 import Resources from "@/components/Developers/Resources";
-export default {
-  components: {
-    Desc, QuickStart, Resources
-  }
-}
 </script>
 <style lang="scss" scoped>
 .developers {

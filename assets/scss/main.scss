@@ -75,10 +75,17 @@ a {
     border-radius: 12px;
     line-height: 150%;
 
+    @include sm {
+        font-size: $sm_pDef;
+        padding: 12px 18px;
+        border-radius: 10px;
+    }
+
     &_gradient {
         backdrop-filter: blur(30px);
         background: linear-gradient(84.58deg, #559CFF 0%, #9E20FE 100%);
     }
+
 }
 
 .title {
@@ -93,6 +100,7 @@ a {
 
         @include slg {
             font-size: $md_tMd;
+            margin-bottom: 16px;
         }
 
         @include sm {
@@ -168,6 +176,12 @@ a {
     &_large {
         width: 800px;
         flex-shrink: 0;
+        @include md {
+            width: 600px;
+        }
+        @include sm {
+            width: 100%;
+        }
     }
 
     &_medium {
@@ -184,15 +198,33 @@ a {
 
 .block {
     margin-bottom: 180px;
+    @include slg {
+        margin-bottom: 140px;
+    }
+    @include sm {
+        margin-bottom: 100px;
+    }
 }
 
 .margin {
     &_large {
         margin-bottom: 48px;
+        @include slg {
+            margin-bottom: 32px;
+        }
+        @include sm {
+            margin-bottom: 24px;
+        }
     }
 
     &_medium {
         margin-bottom: 24px;
+        @include slg {
+            margin-bottom: 16px;
+        }
+        @include sm {
+            margin-bottom: 8px;
+        }
     }
 
     &_xmedium {

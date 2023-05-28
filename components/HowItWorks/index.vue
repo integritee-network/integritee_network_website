@@ -1,17 +1,17 @@
 <template>
-  <div class="how-it-works">
+  <div class="how-it-works block">
     <div class='container'>
-      <div class='how-it-works__title'>
+      <h2 class='title title_h2 margin_large'>
         How it works
-      </div>
+      </h2>
       <div>
-        <div v-for='item in items' class='how-it-works__item'>
-          <div class='how-it-works__item-title'>
+        <div v-for='item in items' class='block how-it-works__item'>
+          <p class='how-it-works__item-title margin_medium'>
             {{ item.title }}
-          </div>
-          <div class='how-it-works__item-text'>
+          </p>
+          <p class='paragraph paragraph_medium'>
             {{ item.text }}
-          </div>
+          </p>
           <component :is='item.img' />
         </div>
       </div>
@@ -33,19 +33,22 @@ export default {
 <style lang="scss" scoped>
 .how-it-works {
   position: relative;
-  padding-top: 180px;
-  &__title {
-    font-family: 'WhyteInktrap';
-    font-weight: 500;
-    font-size: $tMd;
-    line-height: 110%;
-    color: #FFFFFF;
-    margin-bottom: 48px;
-  }
   &__item {
     position: relative;
     width: 600px;
-    margin-bottom: 180px;
+    @include lg {
+      width: 560px;
+    }
+    @include slg {
+      width: 480px;
+    }
+    @include md {
+      width: 350px;
+    }
+    @include sm {
+      width: 100%;
+      margin-bottom: 80px;
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -59,15 +62,12 @@ export default {
     font-size: $tDef;
     line-height: 110%;
     color: #FFFFFF;
-    margin-bottom: 24px;
-    white-space:pre;
-  }
-  &__item-text {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: $pDef;
-    line-height: 150%;
-    color: #FFFFFF;
+    @include slg {
+      font-size: $sm_tMd;
+    }
+    @include sm {
+      font-size: 1.688em;
+    }
   }
 }
 </style>

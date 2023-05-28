@@ -1,13 +1,13 @@
 <template>
-  <div class="building">
+  <div class="building block">
     <div class='container'>
-      <div class='building__title'>Quickstart tutorial</div>
-      <div class='building__text'>Learn how to build an Integritee DApp in minutes!</div>
-      <div class='building__row'>
+      <h2 class='title title_h2'>Quickstart tutorial</h2>
+      <p class='paragraph paragraph_medium margin_large'>Learn how to build an Integritee DApp in minutes!</p>
+      <div class='row jcsb building__row'>
         <div v-for='item in items' class='building__item'>
           <component :is='item.img' />
-          <div class='building__item-title'>{{ item.title }}</div>
-          <div class='building__item-text'>{{ item.text }}</div>
+          <p class='title title_sub building__item-title'>{{ item.title }}</p>
+          <p class='paragraph paragraph_medium'>{{ item.text }}</p>
         </div>
       </div>
     </div>
@@ -51,59 +51,78 @@ export default {
 <style lang="scss" scoped>
 .building {
   position: relative;
-  padding-top: 180px;
-  &__title {
-    font-family: 'WhyteInktrap';
-    font-weight: 500;
-    font-size: $tMd;
-    line-height: 110%;
-    color: #FFFFFF;
-    margin-bottom: 24px;
-  }
-  &__text {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: $pDef;
-    line-height: 150%;
-    color: #FFFFFF;
-    margin-bottom: 56px;
-  }
   &__row {
-    display: flex;
-    justify-content: space-between;
+    @include md {
+      flex-wrap: wrap;
+    }
   }
   &__item {
     width: 258px;
+    @include md {
+      width: 325px;
+      margin-bottom: 40px;
+    }
+    @include sm {
+      width: 235px;
+    }
+    @include xsm {
+      width: 140px;
+    }
     &:nth-child(2) {
       width: 298px;
+      @include md {
+        width: 405px;
+      }
+      @include sm {
+        width: 235px;
+      }
+      @include xsm {
+        width: 191px;
+      }
     }
     &:nth-child(3) {
       width: 103px;
+      @include md {
+        width: 325px;
+        margin-bottom: 0;
+      }
+      @include sm {
+        width: 235px;
+      }
+      @include xsm {
+        width: 140px;
+      }
     }
     &:nth-child(4) {
       width: 133px;
+      @include md {
+        width: 405px;
+        margin-bottom: 0;
+      }
+      @include sm {
+        width: 235px;
+      }
+      @include xsm {
+        width: 191px;
+      }
     }
     svg {
       display: block;
       width: 64px;
       height: 64px;
       margin-bottom: 24px;
+      @include slg {
+        width: 48px;
+        height: 48px;
+      }
+      @include sm {
+        width: 32px;
+        height: 32px
+      }
     }
   }
   &__item-title {
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 2em;
-    line-height: 120%;
-    color: #FFFFFF;
     margin-bottom: 8px;
-  }
-  &__item-text {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: $pDef;
-    line-height: 150%;
-    color: #FFFFFF;
   }
 }
 </style>
