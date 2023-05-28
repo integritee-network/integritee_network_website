@@ -1,5 +1,6 @@
 <template lang="">
-  <div></div>
+  <Developers />
+
 </template>
 <script>
 export default {}
