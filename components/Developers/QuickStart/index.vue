@@ -4,7 +4,7 @@
       <h2 class='title title_h2'>Quickstart tutorial</h2>
       <p class='paragraph paragraph_medium margin_large'>Learn how to build an Integritee DApp in minutes!</p>
       <div class='row jcsb building__row'>
-        <div v-for='item in items' class='building__item'>
+        <div v-for='(item, index) in items' :key='index' class='building__item'>
           <component :is='item.img' />
           <p class='title title_sub building__item-title'>{{ item.title }}</p>
           <p class='paragraph paragraph_medium'>{{ item.text }}</p>

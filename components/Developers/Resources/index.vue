@@ -3,7 +3,7 @@
     <div class='container'>
       <h2 class='title title_h2 margin_large'>Resource center</h2>
       <div>
-        <div v-for='item in items' class='resources__item'>
+        <div v-for='(item, index) in items' :key='index' class='resources__item'>
           <div class='resources__column'>
             <div class='resources__item-title'>
               {{ item.title }}

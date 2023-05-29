@@ -5,7 +5,7 @@
         How it works
       </h2>
       <div>
-        <div v-for='item in items' class='block how-it-works__item'>
+        <div v-for='(item, index) in items' :key='index' class='block how-it-works__item'>
           <p class='how-it-works__item-title margin_medium'>
             {{ item.title }}
           </p>
