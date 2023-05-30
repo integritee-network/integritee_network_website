@@ -17,6 +17,7 @@
     </Desc>
     <QuickStart />
     <Resources />
+    <Socials />
   </div>
 </template>
 
@@ -24,6 +25,7 @@
 import Desc from "@/components/Desc";
 import QuickStart from "@/components/Developers/QuickStart";
 import Resources from "@/components/Developers/Resources";
+import Socials from "@/components/Socials/Section";
 </script>
 <style lang="scss" scoped>
 .developers {
