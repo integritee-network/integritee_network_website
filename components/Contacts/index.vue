@@ -13,19 +13,16 @@
         </div>
       </div>
     </div>
+    <Socials />
   </div>
 </template>
 
-<script>
+<script setup>
 import Desc from "@/components/Desc";
 import Info from "@/components/Contacts/Info.vue";
 import Form from "@/components/Contacts/Form.vue";
+import Socials from "@/components/Socials/Section.vue";
 
-export default {
-  components: {
-    Desc, Info, Form
-  },
-}
 </script>
 <style lang="scss" scoped>
 .contacts {

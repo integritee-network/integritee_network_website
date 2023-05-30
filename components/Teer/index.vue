@@ -13,20 +13,22 @@
     </Desc>
     <HowItWorks :items='items' />
     <Questions />
+    <Socials />
   </div>
 </template>
 
 <script>
 import Desc from "@/components/Desc";
 import HowItWorks from "@/components/HowItWorks";
-import Questions from "@/components/Teer/Questions";
+import Questions from "@/components/Teer/Questions.vue";
+import Socials from "@/components/Socials/Section";
 import FirstImg from './images/first-image.vue'
 import SecondImg from './images/second-image.vue'
 import ThirdImg from './images/third-image.vue'
 
 export default {
   components: {
-    Desc, HowItWorks, Questions
+    Desc, HowItWorks, Questions, Socials
   },
   setup() {
     const items = [

@@ -16,15 +16,10 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import Icon from "@/assets/img/teer/icon.svg";
 import Kraken from "@/assets/img/teer/kraken.svg";
 import Gate from "@/assets/img/teer/gate.svg";
-export default {
-  components: {
-    Icon, Gate, Kraken
-  }
-}
 </script>
 <style lang="scss" scoped>
 .questions {
