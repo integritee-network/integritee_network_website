@@ -9,9 +9,7 @@
           <slot name='text' />
         </p>
         <div class='desc__row'>
-          <a href="#" class="btn btn_gradient desc__button">
             <slot name='button' />
-          </a>
             <slot name='docs' />
         </div>
       </div>

@@ -8,7 +8,7 @@
         Our token empowers utility, governance and value at the same time, making it a valuable asset
       </template>
       <template #button>
-        Learn more
+        <a href="#" class="btn btn_gradient desc__button"> Learn more</a>
       </template>
     </Desc>
     <HowItWorks :items='items' />
