@@ -202,32 +202,31 @@ export default {
 svg {
   position: absolute;
   display: block;
-  right: -640px;
+  left: 446px;
   top: -249px;
-  width: 794px;
+  height: 897px;
   @include lg {
-    right: -607px;
+    left: 413px;
   }
   @include slg {
     top: -194px;
-    width: 591px;
-    right: -500px;
+    height: 667px;
+    left: 389px;
   }
   @include md {
     top: -111px;
-    width: 501px;
-    right: -380px;
+    height: 565px;
+    left: 299px;
   }
   @include sm {
     top: -620px;
-    width: 727px;
-    right: unset;
+    height: 819px;
     left: 50%;
-    transform: translateX(-53%);
+    transform: translateX(-50%);
   }
   @include xsm {
     top: -490px;
-    width: 567px;
+    height: 639px;
   }
 }
 </style>
