@@ -49,6 +49,11 @@ export default {
       width: 100%;
       margin-top: 500px;
     }
+    @include xsm {
+      &:first-child {
+        margin-top: 400px;
+      }
+    }
     &:last-child {
       margin-bottom: 0;
     }
