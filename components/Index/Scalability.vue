@@ -3,9 +3,9 @@
     <div class="block scalability">
       <div class="container">
         <div class="row scalability__row">
-          <div class="column column_medium">
+          <div class="column column_medium scalability__column scalability__column_left">
             <h2 class="title title_h2 scalability__title">
-              Scaleability and performance without sacrificing trust
+              Scalability <br /> and performance without sacrificing trust
             </h2>
             <p class="paragraph paragraph_large margin_medium">
               Integritee utilizes the blockchain to create security and trust
@@ -26,9 +26,7 @@
               <h3 class="scalability__item-title title_sub margin_medium">
                 Privacy & security
               </h3>
-              <p
-                class="paragrapg paragraph_medium scalability__item-description"
-              >
+              <p class="paragraph paragraph_medium scalability__item-description">
                 The security and trust of the blockchain with the speed and
                 power of enterprise grade confidential computing hardware
               </p>
@@ -37,12 +35,10 @@
               <div class="scalability__item-icon margin_small">
                 <Speed />
               </div>
-              <h3 class="scalability__item-title margin_medium">
+              <h3 class="scalability__item-title title_sub margin_medium">
                 Speed & scalabillity
               </h3>
-              <p
-                class="paragrapg paragraph_medium scalability__item-description"
-              >
+              <p class="paragraph paragraph_medium scalability__item-description">
                 The scalability of second-layer technology based on substrate
                 for building state of the art data-driven dApps and services
               </p>
@@ -60,12 +56,86 @@ import Speed from '@/assets/img/index/scalability/speed.svg'
 <style lang="scss">
 .scalability {
   margin-bottom: 200px;
+
+  @include lg {
+    margin-bottom: 170px;
+  }
+
+  @include slg {
+    margin-bottom: 140px;
+  }
+
+  @include md {
+    margin-bottom: 100px;
+  }
+
+  &__item {
+    @include md {
+      margin-bottom: 48px;
+    }
+
+    @include sm {
+      margin-bottom: 32px;
+    }
+
+    @include xsm {
+      margin-bottom: 24px;
+    }
+  }
+
   &__item-icon {
     width: 64px;
     height: 64px;
+
+    @include md {
+      width: 48px;
+      height: 48px;
+    }
   }
+
+  &__item-title {
+    @include md {
+      font-size: $pLg;
+    }
+  }
+
   &__row {
     gap: 135px;
+
+    @include lg {
+      gap: 55px;
+    }
+
+    @include slg {
+      gap: 100px;
+    }
+
+    @include md {
+      gap: 52px;
+    }
+
+    @include sm {
+      display: block;
+    }
+  }
+
+  &__column_left {
+    @include lg {
+      width: 560px;
+    }
+
+    @include slg {
+      width: 480px;
+    }
+
+    @include md {
+      width: 420px;
+    }
+
+    @include sm {
+      width: 100%;
+      margin-bottom: 42px;
+    }
   }
 }
 </style>

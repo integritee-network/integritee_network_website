@@ -65,6 +65,10 @@ a {
         width: 100%;
         padding: 0 20px;
     }
+
+    @include xsm {
+        padding: 0 12px;
+    }
 }
 
 .btn {
@@ -176,9 +180,11 @@ a {
     &_large {
         width: 800px;
         flex-shrink: 0;
+
         @include md {
             width: 600px;
         }
+
         @include sm {
             width: 100%;
         }
@@ -198,9 +204,11 @@ a {
 
 .block {
     margin-bottom: 180px;
+
     @include slg {
         margin-bottom: 140px;
     }
+
     @include sm {
         margin-bottom: 100px;
     }
@@ -209,9 +217,11 @@ a {
 .margin {
     &_large {
         margin-bottom: 48px;
+
         @include slg {
             margin-bottom: 32px;
         }
+
         @include sm {
             margin-bottom: 24px;
         }
@@ -219,9 +229,11 @@ a {
 
     &_medium {
         margin-bottom: 24px;
+
         @include slg {
             margin-bottom: 16px;
         }
+
         @include sm {
             margin-bottom: 8px;
         }
