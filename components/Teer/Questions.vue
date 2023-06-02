@@ -6,8 +6,14 @@
       <p class='paragraph paragraph_medium margin_medium questions__desc'>Read our Tokenomics paper to fully understand how TEER integrates with Integritee network and what its benefits and utility are</p>
       <div class='questions__row margin_large'>
         <p class='paragraph paragraph_large questions__row-text'>Teer Token is available on:</p>
-        <div class='questions__row-icon'><Kraken /></div>
-        <div class='questions__row-icon'><Gate /></div>
+        <a href="#" class="questions__right-item">
+            <Kraken />
+          <span class="paragraph_large">Kraken</span>
+        </a>
+        <a href="#" class="questions__right-item">
+            <Gateio />
+          <span class="paragraph_large">Gate.io</span>
+        </a>
       </div>
       <a href="#" class="btn btn_gradient">
         Create wallet
@@ -16,15 +22,10 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import Icon from "@/assets/img/teer/icon.svg";
-import Kraken from "@/assets/img/teer/kraken.svg";
-import Gate from "@/assets/img/teer/gate.svg";
-export default {
-  components: {
-    Icon, Gate, Kraken
-  }
-}
+import Kraken from '@/assets/img/index/token/kraken.svg'
+import Gateio from '@/assets/img/index/token/gateio.svg'
 </script>
 <style lang="scss" scoped>
 .questions {
@@ -83,14 +84,27 @@ export default {
       margin-bottom: 16px;
     }
   }
-  &__row-icon {
-    width: 132px;
-    margin-left: 18px;
-    @include sm {
-      width: 88px;
-    }
+  &__right-item {
     svg {
-      width: 100%;
+      width: auto;
+      height: 32px;
+      @include sm {
+        height: 18px;
+      }
+    }
+  }
+  &__right-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-left: 24px;
+    @include sm {
+      gap: 8px;
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-left: 18px;
     }
   }
 }
