@@ -8,7 +8,7 @@
         The combination of confidential computing and a Substrate-based public chain is the foundation for our superior tech.
       </template>
       <template #button>
-        Start Building
+        <a href="#" class="btn btn_gradient desc__button">Start Building</a>
       </template>
     </Desc>
     <HowItWorks :items='items' />
