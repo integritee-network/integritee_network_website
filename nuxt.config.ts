@@ -19,6 +19,7 @@ export default defineNuxtConfig({
   },
   css: ['@/assets/scss/main.scss'],
   modules: ['nuxt-svgo'],
+  plugins: [{ src: '~/plugins/lockScroll', mode: 'client' }],
   svgo: {
     defaultImport: 'component',
     global: false,

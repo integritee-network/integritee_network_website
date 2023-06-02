@@ -1,10 +1,10 @@
 <template>
-  <header class="header">
+  <header class="header" :class="{ active: y > 80, 'header_no-bg': active }">
     <div class="container">
       <NuxtLink to="/" class="header__logo">
         <Logo />
       </NuxtLink>
-      <div class="header__nav">
+      <div v-if="width > breakpoints.slg" class="header__nav">
         <NuxtLink to="/about" class="text-link paragraph_smll">Products</NuxtLink>
         <NuxtLink to="/about" class="text-link paragraph_smll">
           Use Cases
@@ -15,16 +15,49 @@
         <NuxtLink to="/blog" class="text-link paragraph_smll">Blog</NuxtLink>
         <NuxtLink to="/about" class="text-link paragraph_smll">About</NuxtLink>
       </div>
-      <Socials />
-      <a href="/" target="_blank" class="button paragraph_small">Start Building</a>
+      <div class="header__nav-right">
+        <Socials />
+        <a v-if="width > breakpoints.slg" href="/" target="_blank" class="header__button paragraph_small">Start
+          Building</a>
+        <button v-if="width <= breakpoints.slg" class="header__burger" type="button" @click="toggleMenu()">
+          <div class="header__burger-line" />
+          <div class="header__burger-line" />
+          <div class="header__burger-line" />
+        </button>
+      </div>
     </div>
   </header>
+  <Menu v-if="width <= breakpoints.slg" :active="active" />
 </template>
 
 <script setup>
 import Logo from '@/assets/img/logo.svg'
 import Socials from '@/components/Socials'
+import Menu from '@/components/Header/Menu.vue'
+import { useWindowSize, useWindowScroll } from '@vueuse/core'
+import { breakpoints } from '@/configs/app.config'
+
+const active = ref(false)
+
+const { width } = useWindowSize()
+const { y } = useWindowScroll()
+
+const { $lockScroll } = useNuxtApp()
+
+const toggleMenu = () => {
+  active.value = !active.value
+  $lockScroll(active.value)
+}
 </script>
+
+<style lang="scss">
+.header__button {
+  display: block;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
+  padding: 10px 16px;
+}
+</style>
 
 <style lang="scss" scoped>
 .header {
@@ -34,6 +67,11 @@ import Socials from '@/components/Socials'
   width: 100%;
   padding: 25px 0;
   z-index: 10;
+  transition: .3s ease;
+
+  @include slg {
+    padding: 21px 0;
+  }
 
   .container {
     display: flex;
@@ -45,25 +83,68 @@ import Socials from '@/components/Socials'
     display: block;
     width: 144px;
 
+    @include xsm {
+      width: 118px;
+    }
+
     svg {
       width: 100%;
     }
   }
 
   &__nav {
+    @include slg {
+      display: none;
+    }
+
     a {
-      margin-left: 35px;
+      margin-left: 24px;
+
+      @include lg {
+        margin-left: 18px;
+      }
 
       &:first-child {
         margin-left: 0;
       }
     }
   }
-}
 
-.button {
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 9px;
-  padding: 10px 16px;
+  &__nav-right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__burger {
+    width: 17px;
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    padding: 0;
+    flex-shrink: 0;
+  }
+
+  &__burger-line {
+    width: 100%;
+    height: 2px;
+    margin-bottom: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &_no-bg {
+    background: rgba(81, 81, 81, 0) !important;
+  }
+
+  &.active {
+    position: fixed;
+    background: rgba(81, 81, 81, 0.146);
+    backdrop-filter: blur(38.335px);
+  }
 }
 </style>

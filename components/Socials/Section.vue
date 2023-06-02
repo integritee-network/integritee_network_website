@@ -15,15 +15,15 @@
           </div>
           <div class="column_medium socials__list">
             <a href="#" class="socials__list-item">
-              <Telegram class="socials__list-item-icon margin_medium" />
+              <Telegram class="socials__list-item-icon" />
               <span class="socials__list-item-name">Telegram</span>
             </a>
             <a href="#" class="socials__list-item">
-              <Discord class="socials__list-item-icon margin_medium" />
+              <Discord class="socials__list-item-icon" />
               <span class="socials__list-item-name">Discord</span>
             </a>
             <a href="#" class="socials__list-item">
-              <Twitter class="socials__list-item-icon margin_medium" />
+              <Twitter class="socials__list-item-icon" />
               <span class="socials__list-item-name paragraph_medium">Twitter</span>
             </a>
           </div>
@@ -41,21 +41,75 @@ import Telegram from '@/assets/img/socials/telegram.svg'
 .socials {
   &__description {
     line-height: 230%;
+
+    @include lg {
+      line-height: 150%;
+    }
+
+    @include slg {
+      br {
+        display: none;
+      }
+    }
   }
 
   &__row {
     gap: 60px;
+
+    @include lg {
+      gap: 30px;
+    }
+
+    @include sm {
+      display: block;
+    }
+  }
+
+  &__text {
+    @include lg {
+      width: 560px;
+      flex-shrink: 0;
+    }
+
+    @include slg {
+      width: 450px;
+    }
+
+    @include md {
+      width: 340px;
+    }
+
+    @include sm {
+      width: 100%;
+      margin-bottom: 28px;
+    }
   }
 
   &__list {
     display: flex;
     gap: 20px;
+
+    @include lg {
+      flex: 1;
+      width: 100%;
+    }
+
+    @include md {
+      gap: 10px;
+    }
   }
 
   &__list-item-icon {
     width: 48px;
     height: 48px;
     display: block;
+    margin-bottom: 24px;
+
+    @include sm {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 8px;
+    }
   }
 
   &__list-item {
@@ -69,8 +123,18 @@ import Telegram from '@/assets/img/socials/telegram.svg'
     border-radius: 24px;
     transition: 0.3s ease;
 
+    @include lg {
+      height: 179px;
+    }
+
+    @include sm {
+      height: 150px;
+      font-size: $sm_pDef;
+    }
+
     &:hover {
       background: rgba(120, 120, 120, 0.24);
     }
   }
-}</style>
+}
+</style>

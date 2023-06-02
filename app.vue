@@ -1,6 +1,8 @@
 <script setup>
-import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+
+const Header = defineAsyncComponent(() => import('@/components/Header'));
+
 </script>
 
 <template>
@@ -25,20 +27,51 @@ import Footer from '@/components/Footer'
   padding-top: 91px;
   overflow: hidden;
 }
+
 .wrapper {
   position: relative;
   overflow: hidden;
 }
+
 .container {
   position: relative;
 }
+
 .top-lines {
   position: absolute;
   right: -430px;
   top: -300px;
   width: 1468px;
   transform: rotate(-159.84deg);
+
+  @include lg {
+    width: 1417px;
+  }
+
+  @include slg {
+    width: 873px;
+    right: -250px;
+    top: -270px;
+  }
+
+  @include md {
+    width: 838px;
+    right: -208px;
+    top: -180px;
+  }
+
+  @include sm {
+    width: 530px;
+    right: -141px;
+    top: -70px;
+  }
+
+  @include xsm {
+    right: -171px;
+    top: -7px;
+  }
 }
+
 .bottom-lines {
   position: absolute;
   left: -280px;
@@ -46,5 +79,23 @@ import Footer from '@/components/Footer'
   width: 1060px;
   transform: rotate(159.84deg) scale(-1, 1);
   z-index: -1;
+
+  @include lg {
+    width: 1023px;
+    left: -245px;
+    top: -992px;
+  }
+
+  @include slg {
+    width: 740px;
+    left: -185px;
+    top: -620px;
+  }
+
+  @include sm {
+    width: 634px;
+    left: -115px;
+    top: -216px;
+  }
 }
 </style>

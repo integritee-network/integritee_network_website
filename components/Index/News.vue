@@ -13,7 +13,7 @@
               <span class="news__item-tag">News</span>
               <span class="news__item-date">June 3, 2023</span>
             </div>
-            <p class="paragraph paragraph_large">
+            <p class="paragraph paragraph_large news__item-p">
               Monthly Wrap-Up March 2023: Product Releases, a Privacy Sidechain
               & More
             </p>
@@ -25,7 +25,7 @@
               <span class="news__item-tag">News</span>
               <span class="news__item-date">June 3, 2023</span>
             </div>
-            <p class="paragraph paragraph_large">
+            <p class="paragraph paragraph_large news__item-p">
               Securitee Launches Confidential Computing Platform to Protect Data
               in Use
             </p>
@@ -37,7 +37,7 @@
               <span class="news__item-tag paragraph_small">Technical documentation</span>
               <span class="news__item-date">June 3, 2023</span>
             </div>
-            <p class="paragraph paragraph_large">
+            <p class="paragraph paragraph_large news__item-p">
               Introducing Integritee's Teeracle: A Framework to Build TEE-Based
               Oracles
             </p>
@@ -58,10 +58,28 @@
 
   &__list {
     gap: 20px;
+
+    @include md {
+      gap: 10px;
+    }
+
+    @include sm {
+      display: block;
+    }
   }
 
   &__item {
+    display: block;
     width: 33.33333333%;
+
+    @include sm {
+      margin-bottom: 18px;
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__item-image {
@@ -70,6 +88,16 @@
     width: 100%;
     border-radius: 24px;
     margin-bottom: 32px;
+
+    @include md {
+      height: 200px;
+      border-radius: 18px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__item-p {
+    line-height: 120%;
   }
 
   &__item-tag {
@@ -80,10 +108,19 @@
     padding: 9px 12px;
   }
 
+  &__item-date {
+    color: #E5E5E5;
+    opacity: 0.5;
+  }
+
   &__item-info {
     align-items: center;
     gap: 12px;
     margin-bottom: 18px;
+
+    @include md {
+      margin-bottom: 8px;
+    }
   }
 }
 </style>
