@@ -86,14 +86,14 @@ svg {
     right: -380px;
   }
   @include sm {
-    top: -572px;
+    top: -545px;
     width: 607px;
     right: unset;
     left: 50%;
     transform: translateX(-50%);
   }
   @include xsm {
-    top: -492px;
+    top: -473px;
     width: 518px;
   }
 }

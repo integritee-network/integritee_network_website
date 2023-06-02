@@ -47,15 +47,32 @@ export default {
     }
     @include sm {
       width: 100%;
-      margin-top: 500px;
+      &:first-child {
+        margin-top: 422px;
+      }
+      &:nth-child(2) {
+        margin-top: 537px;
+      }
+      &:nth-child(3) {
+        margin-top: 448px;
+      }
+      &:nth-child(4) {
+        margin-top: 534px;
+      }
     }
     @include xsm {
       &:first-child {
-        margin-top: 400px;
+        margin-top: 316px;
       }
-    }
-    &:last-child {
-      margin-bottom: 0;
+      &:nth-child(2) {
+        margin-top: 470px;
+      }
+      &:nth-child(3) {
+        margin-top: 380px;
+      }
+      &:nth-child(4) {
+        margin-top: 459px;
+      }
     }
     svg {
       overflow: unset;

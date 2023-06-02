@@ -88,14 +88,14 @@ svg {
     right: -380px;
   }
   @include sm {
-    top: -575px;
+    top: -545px;
     width: 607px;
     right: unset;
     left: 50%;
     transform: translateX(-50%);
   }
   @include xsm {
-    top: -501px;
+    top: -473px;
     width: 518px;
   }
 }

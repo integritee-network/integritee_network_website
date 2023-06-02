@@ -223,7 +223,7 @@ svg {
     width: 727px;
     right: unset;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-53%);
   }
   @include xsm {
     top: -490px;
