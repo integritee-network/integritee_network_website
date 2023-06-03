@@ -6,12 +6,12 @@
               <div class='vision__card'>
                 <div class='vision__icon'><VisionIcon /></div>
                 <h2 class='title_sub'>Our vision</h2>
-                <p class='paragraph_medium'>We see a Web 3 that rises above the ‘winner takes all’ privatization of Web 2. One where individuals have governance, global jurisdiction and the ability to actively contribute to the online community</p>
+                <p class='paragraph_medium vision__text'>We see a Web 3 that rises above the ‘winner takes all’ privatization of Web 2. One where individuals have governance, global jurisdiction and the ability to actively contribute to the online community</p>
               </div>
               <div class='vision__card'>
                 <div class='vision__icon'><MissionIcon /></div>
                 <h2 class='title_sub'>Our misson</h2>
-                <p class='paragraph_medium'>Create the fastest, most scalable and secure network solution for building Web 3 and bringing our vision to life</p>
+                <p class='paragraph_medium vision__text'>Create the fastest, most scalable and secure network solution for building Web 3 and bringing our vision to life</p>
               </div>
             </div>
           </div>
@@ -28,6 +28,9 @@ import MissionIcon from "@/assets/img/about/mission-icon.svg";
     @include sm {
       display: block;
     }
+  }
+  &__text {
+    line-height: 150%;
   }
   &__card {
     display: flex;
