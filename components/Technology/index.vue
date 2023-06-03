@@ -19,7 +19,7 @@
 
 <script>
 import Desc from "@/components/Desc";
-import HowItWorks from "@/components/HowItWorks";
+import HowItWorks from "@/components/Technology/HowItWorks.vue";
 import Building from "@/components/Technology/Building.vue";
 import Socials from "@/components/Socials/Section";
 import FirstImg from './images/first-image.vue'

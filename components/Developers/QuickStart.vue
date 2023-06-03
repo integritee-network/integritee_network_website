@@ -63,10 +63,10 @@ export default {
       margin-bottom: 40px;
     }
     @include sm {
-      width: 235px;
+      width: 49%;
     }
     @include xsm {
-      width: 140px;
+      width: 40%;
     }
     &:nth-child(2) {
       width: 298px;
@@ -74,10 +74,10 @@ export default {
         width: 405px;
       }
       @include sm {
-        width: 235px;
+        width: 49%;
       }
       @include xsm {
-        width: 191px;
+        width: 54%;
       }
     }
     &:nth-child(3) {
@@ -87,10 +87,10 @@ export default {
         margin-bottom: 0;
       }
       @include sm {
-        width: 235px;
+        width: 49%;
       }
       @include xsm {
-        width: 140px;
+        width: 40%;
       }
     }
     &:nth-child(4) {
@@ -100,10 +100,10 @@ export default {
         margin-bottom: 0;
       }
       @include sm {
-        width: 235px;
+        width: 49%;
       }
       @include xsm {
-        width: 191px;
+        width: 54%;
       }
     }
     svg {

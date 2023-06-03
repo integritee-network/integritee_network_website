@@ -71,32 +71,31 @@ export default {
 svg {
   position: absolute;
   display: block;
-  right: -640px;
+  left: 491px;
   top: -373px;
-  width: 749px;
+  height: 912px;
   @include lg {
-    right: -607px;
+    left: 458px;
   }
   @include slg {
     top: -182px;
-    width: 519px;
-    right: -480px;
+    height: 632px;
+    left: 441px;
   }
   @include md {
     top: -131px;
-    width: 435px;
-    right: -380px;
+    height: 530px;
+    left: 365px;
   }
   @include sm {
     top: -575px;
-    width: 607px;
-    right: unset;
+    height: 740px;
     left: 50%;
     transform: translateX(-50%);
   }
   @include xsm {
     top: -501px;
-    width: 518px;
+    height: 632px;
   }
 }
 </style>
