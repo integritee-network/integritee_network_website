@@ -23,10 +23,10 @@ import Desc from "@/components/Desc";
 import HowItWorks from "@/components/Technology/HowItWorks.vue";
 import Building from "@/components/Technology/Building.vue";
 import Socials from "@/components/Socials/Section.vue";
-import FirstImg from '@/components/Technology/images/FirstImage.vue'
-import SecondImg from '@/components/Technology/images/SecondImage.vue'
-import ThirdImg from '@/components/Technology/images/ThirdImage.vue'
-import FourthImg from '@/components/Technology/images/FourthImage.vue'
+import FirstImg from './images/First.vue'
+import SecondImg from './images/Second.vue'
+import ThirdImg from './images/Third.vue'
+import FourthImg from './images/Fourth.vue'
 
 const items = [
   {
