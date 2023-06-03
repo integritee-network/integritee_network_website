@@ -22,9 +22,9 @@ import Desc from "@/components/Desc";
 import HowItWorks from "@/components/Teer/HowItWorks.vue";
 import Questions from "@/components/Teer/Questions.vue";
 import Socials from "@/components/Socials/Section.vue";
-import FirstImg from '@/components/Teer/images/FirstImage.vue'
-import SecondImg from '@/components/Teer/images/SecondImage.vue'
-import ThirdImg from '@/components/Teer/images/ThirdImage.vue'
+import FirstImg from './images/FirstImage.vue'
+import SecondImg from './images/SecondImage.vue'
+import ThirdImg from './images/ThirdImage.vue'
 
 const items = [
   {
