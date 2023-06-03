@@ -21,10 +21,10 @@
 import Desc from "@/components/Desc";
 import HowItWorks from "@/components/Teer/HowItWorks.vue";
 import Questions from "@/components/Teer/Questions.vue";
-import Socials from "@/components/Socials/Section";
-import FirstImg from '@/components/Teer/images/FirstImage'
-import SecondImg from '@/components/Teer/images/SecondImage'
-import ThirdImg from '@/components/Teer/images/ThirdImage'
+import Socials from "@/components/Socials/Section.vue";
+import FirstImg from '@/components/Teer/images/FirstImage.vue'
+import SecondImg from '@/components/Teer/images/SecondImage.vue'
+import ThirdImg from '@/components/Teer/images/ThirdImage.vue'
 
 const items = [
   {
