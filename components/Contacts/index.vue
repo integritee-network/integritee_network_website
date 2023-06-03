@@ -2,7 +2,8 @@
   <div class="contacts">
     <Desc>
       <template #title>
-        <span>Build</span> and <span>deploy</span> a new generation of data-driven platforms with Integritee.
+        <span>Build</span> and <span class="text-gradient_purple-blue">deploy</span> a new generation of data-driven
+        platforms with Integritee.
       </template>
     </Desc>
     <div class='block'>
@@ -22,11 +23,11 @@ import Desc from "@/components/Desc";
 import Info from "@/components/Contacts/Info.vue";
 import Form from "@/components/Contacts/Form.vue";
 import Socials from "@/components/Socials/Section.vue";
-
 </script>
 <style lang="scss" scoped>
 .contacts {
   position: relative;
+
   &__row {
     @include md {
       display: block;

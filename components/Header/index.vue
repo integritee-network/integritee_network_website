@@ -5,12 +5,12 @@
         <Logo />
       </NuxtLink>
       <div v-if="width > breakpoints.slg" class="header__nav">
-        <NuxtLink to="/about" class="text-link paragraph_smll">Products</NuxtLink>
-        <NuxtLink to="/about" class="text-link paragraph_smll">
+        <NuxtLink to="/products" class="text-link paragraph_smll">Products</NuxtLink>
+        <NuxtLink to="/usecases" class="text-link paragraph_smll">
           Use Cases
         </NuxtLink>
-        <NuxtLink to="/about" class="text-link paragraph_smll">Technology</NuxtLink>
-        <NuxtLink to="/about" class="text-link paragraph_smll">Developers</NuxtLink>
+        <NuxtLink to="/technology" class="text-link paragraph_smll">Technology</NuxtLink>
+        <NuxtLink to="/developers" class="text-link paragraph_smll">Developers</NuxtLink>
         <NuxtLink to="/teer-token" class="text-link paragraph_smll">TEER Token</NuxtLink>
         <NuxtLink to="/blog" class="text-link paragraph_smll">Blog</NuxtLink>
         <NuxtLink to="/about" class="text-link paragraph_smll">About</NuxtLink>

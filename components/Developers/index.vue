@@ -3,10 +3,13 @@
     <Desc>
       <template #title>
         Get ready to build<br>
-        in <span>Web3</span> like you were <span>always</span> meant to
+        in <span class="text-gradient_blue-purple">Web3</span> like you were <span
+          class="text-gradient_purple-blue">always</span> meant to
       </template>
       <template #text>
-        Integritee combines the security and trust of Polkadot, the scalability of second-layer solutions, and the confidentiality of trusted execution environments (TEEs) to help you build applications with unrivaled speed, verifiable privacy, and interoperability at scale
+        Integritee combines the security and trust of Polkadot, the scalability of second-layer solutions, and the
+        confidentiality of trusted execution environments (TEEs) to help you build applications with unrivaled speed,
+        verifiable privacy, and interoperability at scale
       </template>
       <template #button>
         <a href="#" class="btn btn_gradient desc__button">Github</a>

@@ -9,9 +9,7 @@
           <slot name='text' />
         </p>
         <div class='desc__row'>
-          <a href="#" class="btn btn_gradient desc__button">
-            <slot name='button' />
-          </a>
+          <slot name='button' />
           <slot name='docs' />
         </div>
       </div>
@@ -22,14 +20,12 @@
 <style lang="scss" scoped>
 :slotted(span) {
   display: inline-block;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
 }
 
 :slotted(span:first-child) {
   background: linear-gradient(90deg, #30DAFF -20.25%, #B000FD 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 :slotted(.docs__button) {

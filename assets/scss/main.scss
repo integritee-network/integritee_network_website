@@ -252,4 +252,8 @@ a {
     &_purple-blue {
         background: linear-gradient(90deg, #B000FD 16.25%, #30DAFF 90%);
     }
+
+    &_blue-purple {
+        background: linear-gradient(90deg, #30DAFF -20.25%, #B000FD 50%);
+    }
 }

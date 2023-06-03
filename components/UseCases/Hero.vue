@@ -11,7 +11,7 @@
                 millions of users.
             </template>
             <template #button>
-                Learn More
+                <a href="#" class="btn btn_gradient desc__button">Learn More</a>
             </template>
         </Desc>
     </div>

@@ -2,10 +2,10 @@
   <Transition name="menu-toggle">
     <div v-show="active" class="menu">
       <nav class="menu__nav">
-        <NuxtLink to="/about" class="text-link">Products</NuxtLink>
-        <NuxtLink to="/about" class="text-link"> Use Cases </NuxtLink>
-        <NuxtLink to="/about" class="text-link">Technology</NuxtLink>
-        <NuxtLink to="/about" class="text-link">Developers</NuxtLink>
+        <NuxtLink to="/products" class="text-link">Products</NuxtLink>
+        <NuxtLink to="/usecases" class="text-link"> Use Cases </NuxtLink>
+        <NuxtLink to="/technology" class="text-link">Technology</NuxtLink>
+        <NuxtLink to="/developers" class="text-link">Developers</NuxtLink>
         <NuxtLink to="/teer-token" class="text-link">TEER Token</NuxtLink>
         <NuxtLink to="/blog" class="text-link">Blog</NuxtLink>
         <NuxtLink to="/about" class="text-link">About</NuxtLink>
