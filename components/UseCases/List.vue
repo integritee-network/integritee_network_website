@@ -1,7 +1,10 @@
 <template>
   <section id="list">
-    <div class="block list">
-      <div class="container">
+    <div class="container">
+      <h2 class="title title_h2 margin_large">Use cases</h2>
+      <div class="block list">
+        <Item />
+        <Item />
         <Item />
       </div>
     </div>

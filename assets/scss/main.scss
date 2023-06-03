@@ -247,3 +247,9 @@ a {
         margin-bottom: 12px;
     }
 }
+
+.text-gradient {
+    &_purple-blue {
+        background: linear-gradient(90deg, #B000FD 16.25%, #30DAFF 90%);
+    }
+}
