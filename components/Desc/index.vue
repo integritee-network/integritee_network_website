@@ -48,6 +48,7 @@
 
   &__title {
     line-height: 110%;
+    font-weight: 500;
   }
 
   &__row {
