@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     '/technology': { static: true },
     '/developers': { static: true },
     '/teer-token': { static: true },
+    '/contacts': { static: true },
     '/about': { static: true },
     '/blog': { ssr: true },
     // '/old-page2': { redirect: { to: '/new-page', statusCode: 302 } },
