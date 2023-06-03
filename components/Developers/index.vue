@@ -9,7 +9,7 @@
         Integritee combines the security and trust of Polkadot, the scalability of second-layer solutions, and the confidentiality of trusted execution environments (TEEs) to help you build applications with unrivaled speed, verifiable privacy, and interoperability at scale
       </template>
       <template #button>
-        Github
+        <a href="#" class="btn btn_gradient desc__button">Github</a>
       </template>
       <template #docs>
         <a href="#" class="btn docs__button">Documentation</a>
@@ -17,6 +17,7 @@
     </Desc>
     <QuickStart />
     <Resources />
+    <Socials />
   </div>
 </template>
 
@@ -24,6 +25,7 @@
 import Desc from "@/components/Desc";
 import QuickStart from "@/components/Developers/QuickStart";
 import Resources from "@/components/Developers/Resources";
+import Socials from "@/components/Socials/Section";
 </script>
 <style lang="scss" scoped>
 .developers {

@@ -8,18 +8,20 @@
         The combination of confidential computing and a Substrate-based public chain is the foundation for our superior tech.
       </template>
       <template #button>
-        Start Building
+        <a href="#" class="btn btn_gradient desc__button">Start Building</a>
       </template>
     </Desc>
     <HowItWorks :items='items' />
     <Building />
+    <Socials />
   </div>
 </template>
 
 <script>
 import Desc from "@/components/Desc";
 import HowItWorks from "@/components/HowItWorks";
-import Building from "@/components/Technology/Building";
+import Building from "@/components/Technology/Building.vue";
+import Socials from "@/components/Socials/Section";
 import FirstImg from './images/first-image.vue'
 import SecondImg from './images/second-image.vue'
 import ThirdImg from './images/third-image.vue'
@@ -27,7 +29,7 @@ import FourthImg from './images/fourth-image.vue'
 
 export default {
   components: {
-    Desc, HowItWorks, Building
+    Desc, HowItWorks, Building, Socials
   },
   setup() {
     const items = [

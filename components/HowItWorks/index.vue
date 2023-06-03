@@ -5,7 +5,7 @@
         How it works
       </h2>
       <div>
-        <div v-for='item in items' class='block how-it-works__item'>
+        <div v-for='(item, index) in items' :key='index' class='block how-it-works__item'>
           <p class='how-it-works__item-title margin_medium'>
             {{ item.title }}
           </p>
@@ -48,6 +48,11 @@ export default {
     @include sm {
       width: 100%;
       margin-top: 500px;
+    }
+    @include xsm {
+      &:first-child {
+        margin-top: 400px;
+      }
     }
     &:last-child {
       margin-bottom: 0;
