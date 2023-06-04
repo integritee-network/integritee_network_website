@@ -257,3 +257,18 @@ a {
         background: linear-gradient(90deg, #30DAFF -20.25%, #B000FD 50%);
     }
 }
+
+
+.tag {
+    font-size: $pSm;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #34343a;
+    backdrop-filter: blur(30px);
+    border-radius: 8px;
+    padding: 9px 12px;
+}
+
+.date {
+    color: #E5E5E5;
+    opacity: 0.5;
+}

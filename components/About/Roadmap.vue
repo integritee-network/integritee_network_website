@@ -119,6 +119,7 @@ watch(y, (value) => {
       display: flex;
       gap: 8px;
       align-items: flex-start;
+      overflow-x: scroll;
     }
 
     &.active {
