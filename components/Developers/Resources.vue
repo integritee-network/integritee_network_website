@@ -15,7 +15,7 @@
               {{ item.text }}
             </div>
             <div>
-              <div v-for='el in item.list' class='paragraph paragraph_medium resources__item-li'>
+              <div v-for='(el, idx) in item.list' class='paragraph paragraph_medium resources__item-li' :key="idx">
                 {{ el.li }}
               </div>
             </div>
@@ -46,14 +46,14 @@ export default {
             li: 'Develop a new dapp from scratch',
           },
           {
-            li:  'Add to an existing project',
-          },{
-            li:  'Sub-second block production times',
-          },{
-            li:  'Combined 1M transactions per second',
+            li: 'Add to an existing project',
+          }, {
+            li: 'Sub-second block production times',
+          }, {
+            li: 'Combined 1M transactions per second',
           },
           {
-            li:  'Advanced privacy features',
+            li: 'Advanced privacy features',
           },
         ]
       },
@@ -61,7 +61,7 @@ export default {
         title: 'Off-Chain Worker',
         img: '/img/resources/off-chain-img.png',
         gray: 'Secure off-chain computational tool',
-        text: 'Extend blockchain utility with secure off-chain computation  and increase the available computing power for your applications',
+        text: 'Extend blockchain utility with secure off-chain computation and increase the available computing power for your applications',
         list: [
           {
             li: 'Set up trusted Off-Chain Workers to execute customs state transition functions inside TEEs'
@@ -117,19 +117,24 @@ export default {
 <style lang="scss" scoped>
 .resources {
   position: relative;
+
   &__column {
     width: 600px;
     flex-shrink: 0;
+
     @include slg {
       width: 500px;
     }
+
     @include md {
       width: 431px;
     }
+
     @include sm {
       width: 100%;
     }
   }
+
   &__item-title {
     font-family: 'WhyteInktrap';
     font-weight: 500;
@@ -139,36 +144,44 @@ export default {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 8px;
+
     @include slg {
       font-size: $sm_tMd;
     }
+
     @include sm {
       font-size: 1.688em;
     }
   }
+
   &__item-img {
     display: block;
     width: 504px;
     height: 504px;
+
     @include slg {
       width: 448px;
       height: 448px;
     }
+
     @include md {
       width: 340px;
       height: 340px;
     }
+
     @include sm {
       order: -1;
-      margin:  0 auto;
+      margin: 0 auto;
       margin-bottom: 18px;
     }
+
     @include xsm {
       width: 150px;
       height: 150px;
       margin-bottom: 29px;
     }
   }
+
   &__item {
     position: relative;
     width: 100%;
@@ -176,15 +189,19 @@ export default {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 95px;
+
     @include slg {
       margin-bottom: 116px;
     }
+
     @include md {
       margin-bottom: 60px;
     }
+
     @include sm {
       flex-wrap: wrap;
     }
+
     &:nth-child(2) {
       .resources__item-title {
         background: linear-gradient(270deg, #D5A222 0%, #F242E1 100%);
@@ -192,6 +209,7 @@ export default {
         -webkit-text-fill-color: transparent;
       }
     }
+
     &:nth-child(3) {
       .resources__item-title {
         background: linear-gradient(270deg, #9B08CE 0%, #FC315A 100%);
@@ -199,6 +217,7 @@ export default {
         -webkit-text-fill-color: transparent;
       }
     }
+
     &:nth-child(4) {
       .resources__item-title {
         background: linear-gradient(270deg, #24AD7C 9.13%, #1845B9 100%);
@@ -206,41 +225,53 @@ export default {
         -webkit-text-fill-color: transparent;
       }
     }
+
     &:last-child {
       margin-bottom: 0;
     }
   }
+
   &__item-gray {
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 32px;
+
     @include slg {
       margin-bottom: 24px;
     }
+
     @include sm {
       margin-bottom: 16px;
     }
   }
+
   &__item-text {
     margin-bottom: 32px;
+
     @include slg {
       margin-bottom: 24px;
     }
+
     @include sm {
       margin-bottom: 16px;
     }
   }
+
   &__item-li {
     position: relative;
     padding-left: 20px;
+
     &:last-child {
       margin-bottom: 48px;
+
       @include slg {
         margin-bottom: 32px;
       }
+
       @include sm {
         margin-bottom: 24px;
       }
     }
+
     &:before {
       content: '';
       position: absolute;
@@ -252,19 +283,23 @@ export default {
       background: #fff;
     }
   }
+
   &__row {
     display: flex;
     gap: 10px;
   }
+
   &__button {
     border: 2px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(30px);
     border-radius: 12px;
     cursor: pointer;
     transition: 0.4s;
+
     @include sm {
       border-radius: 9px;
     }
+
     &:hover {
       border: 2px solid rgba(255, 255, 255, 0.5);
     }

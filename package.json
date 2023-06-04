@@ -9,6 +9,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.195",
     "@types/node": "^18",
     "nuxt": "^3.4.3"
   },
@@ -16,6 +17,7 @@
     "@vuelidate/core": "^2.0.2",
     "@vuelidate/validators": "^2.0.2",
     "@vueuse/core": "^10.1.2",
+    "lodash": "^4.17.21",
     "nuxt-svgo": "^3.1.0",
     "sass": "^1.62.1"
   }

@@ -1,5 +1,5 @@
 <template>
-  <header class="header" :class="{ active: y > 80, 'header_no-bg': active }">
+  <header class="header" :class="{ active: fixed, 'header_no-bg': active }">
     <div class="container">
       <NuxtLink to="/" class="header__logo">
         <Logo />
@@ -36,8 +36,11 @@ import Socials from '@/components/Socials'
 import Menu from '@/components/Header/Menu.vue'
 import { useWindowSize, useWindowScroll } from '@vueuse/core'
 import { breakpoints } from '@/configs/app.config'
+import { ref, watch, onMounted } from 'vue'
 
 const active = ref(false)
+
+const fixed = ref(false)
 
 const { width } = useWindowSize()
 const { y } = useWindowScroll()
@@ -48,6 +51,15 @@ const toggleMenu = () => {
   active.value = !active.value
   $lockScroll(active.value)
 }
+
+onMounted(() => {
+  fixed.value = window.scrollY > 80
+})
+
+watch(y, (value) => {
+  fixed.value = value > 80
+})
+
 </script>
 
 <style lang="scss">
