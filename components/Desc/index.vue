@@ -8,7 +8,7 @@
         <p class="paragraph paragraph_medium main__description margin_large">
           <slot name='text' />
         </p>
-        <div class='desc__row'>
+        <div v-if="$slots.button || $slots.docs" class='desc__row'>
           <slot name='button' />
           <slot name='docs' />
         </div>
