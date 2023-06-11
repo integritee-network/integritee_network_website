@@ -3,7 +3,7 @@
     <div class="hero">
       <Desc>
         <template #title>
-          We’re blockchain veterans who believe
+          We’re blockchain veterans who believe<br />
           in the power<br />
           of a <span class="text-gradient_blue-purple">decentralized</span> <span
             class="text-gradient_purple-blue">Web3</span>
@@ -21,6 +21,12 @@
 <script setup>
 import Desc from "@/components/Desc";
 </script>
-<style lang="">
-    
+<style lang="scss" scoped>
+    .title {
+      br {
+        @include slg {
+          display: none;
+        }
+      }
+    }
 </style>
