@@ -183,8 +183,8 @@ watch(route, value => {
 
   &.active {
     position: fixed;
-    background: rgba(81, 81, 81, 0.146);
-    backdrop-filter: blur(38.335px);
+    background: linear-gradient(180deg, #0A0A0F 0%, rgba(10, 10, 15, 0) 100%);
+    backdrop-filter: blur(4px);
   }
 }
 </style>
