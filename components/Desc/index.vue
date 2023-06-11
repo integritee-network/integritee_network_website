@@ -28,12 +28,6 @@
   background: linear-gradient(90deg, #30DAFF -20.25%, #B000FD 50%);
 }
 
-:slotted(.docs__button) {
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  background: transparent;
-  backdrop-filter: blur(30px);
-}
-
 .desc {
   position: relative;
   padding-top: 90px;

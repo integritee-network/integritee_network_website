@@ -50,6 +50,12 @@ import Documentation from '@/assets/img/blog/categories/documentation.svg'
     color: #fff;
     padding: 18px 0;
     margin-bottom: 12px;
+    transition: .3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(120, 120, 120, 0.24);
+    }
 
     @include slg {
       padding: 16px 24px;

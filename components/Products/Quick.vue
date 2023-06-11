@@ -6,8 +6,8 @@
                 <h2 class="title title_h2 margin_medium">Quick start guides</h2>
                 <div class="paragraph paragraph_medium margin_large">Explore our guides to learn more about our tech</div>
                 <div class="row quick__links-row margin_large">
-                    <a href="#" class="quick__link">GitHub</a>
-                    <a href="#" class="quick__link">Docs</a>
+                    <a href="#" class="btn btn_border quick__link">GitHub</a>
+                    <a href="#" class="btn btn_border quick__link">Docs</a>
                 </div>
                 <div class="quick__link-list">
                     <LineLink text="What is the TEER Token" link="#" />
@@ -38,18 +38,6 @@ import LineLink from '@/components/Global/LineLink.vue';
         @include sm {
             right: unset;
             left: 0;
-        }
-    }
-
-    &__link {
-        font-size: $pDef;
-        padding: 14px 24px;
-        border: 2px solid rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(30px);
-        border-radius: 12px;
-
-        @include sm {
-            font-size: $sm_pDef;
         }
     }
 

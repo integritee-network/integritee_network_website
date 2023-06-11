@@ -78,6 +78,9 @@ a {
     font-weight: 500;
     border-radius: 12px;
     line-height: 150%;
+    transition: .3s ease;
+    cursor: pointer;
+    backdrop-filter: blur(30px);
 
     @include sm {
         font-size: $sm_pDef;
@@ -86,8 +89,37 @@ a {
     }
 
     &_gradient {
-        backdrop-filter: blur(30px);
         background: linear-gradient(84.58deg, #559CFF 0%, #9E20FE 100%);
+
+        &:before {
+            position: absolute;
+            content: "";
+            inset: 0;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(84.58deg, #559CFF 0%, #9E20FE 100%);
+            transition: opacity 0.25s ease;
+            opacity: 0;
+            border-radius: 12px;
+            z-index: -1;
+
+            @include sm {
+                border-radius: 10px;
+            }
+        }
+
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
+
+        }
+    }
+
+    &_border {
+        border: 2px solid rgba(255, 255, 255, 0.2);
+
+        &:hover {
+            border: 2px solid rgba(255, 255, 255, 0.5);
+        }
     }
 
 }

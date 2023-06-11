@@ -15,7 +15,7 @@
         <a href="#" class="btn btn_gradient desc__button">Github</a>
       </template>
       <template #docs>
-        <a href="#" class="btn docs__button">Documentation</a>
+        <a href="#" class="btn btn_border">Documentation</a>
       </template>
     </Desc>
     <QuickStart />

@@ -20,9 +20,9 @@
               </div>
             </div>
             <div class='resources__row'>
-              <a href='#' class='btn resources__button'>Github</a>
-              <a href='#' class='btn resources__button'>Docs</a>
-              <a href='#' class='btn resources__button'>Demo</a>
+              <a href='#' class='btn btn_border'>Github</a>
+              <a href='#' class='btn btn_border'>Docs</a>
+              <a href='#' class='btn btn_border'>Demo</a>
             </div>
           </div>
           <img class='resources__item-img' :src='item.img' />
@@ -287,22 +287,6 @@ export default {
   &__row {
     display: flex;
     gap: 10px;
-  }
-
-  &__button {
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(30px);
-    border-radius: 12px;
-    cursor: pointer;
-    transition: 0.4s;
-
-    @include sm {
-      border-radius: 9px;
-    }
-
-    &:hover {
-      border: 2px solid rgba(255, 255, 255, 0.5);
-    }
   }
 }
 </style>

@@ -94,6 +94,7 @@ import Link from '@/assets/img/link.svg'
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
+    transition: .3s ease;
 
     @include lg {
       gap: 15px;
@@ -103,6 +104,10 @@ import Link from '@/assets/img/link.svg'
       margin-bottom: 10px;
       padding: 40px;
       gap: 40px;
+    }
+
+    &:hover {
+      background: rgba(120, 120, 120, 0.24);
     }
 
     &:last-child {
