@@ -4,7 +4,7 @@
       <div class='container'>
         <div class='row jcsb join__row'>
           <div class='join__titleWrap'>
-            <h2 class='title_h2 margin_medium'>
+            <h2 class='title title_h2 margin_medium'>
               Want to join
               our&nbsp;team?
             </h2>
@@ -46,7 +46,6 @@ import LineLink from '@/components/Global/LineLink'
     }
   }
   &__text {
-    color: #E5E5E5;
     line-height: 150%;
   }
   &__links {
