@@ -121,11 +121,18 @@ import Socials from '@/components/Socials'
   &__logo {
     display: block;
     width: 191px;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
+
+    @include slg {
+      margin-bottom: 0;
+      width: 117px;
+      margin-bottom: 20px;
+    }
 
     @include md {
       margin-bottom: 0;
       width: 144px;
+      flex-shrink: 0;
     }
 
     @include sm {
@@ -208,7 +215,7 @@ import Socials from '@/components/Socials'
 
       @include sm {
         display: block;
-        margin-bottom: 24px;
+        margin-bottom: 24px !important;
       }
 
     }
@@ -260,14 +267,15 @@ import Socials from '@/components/Socials'
 
     @include md {
       margin-bottom: 0;
-      max-width: 315px;
+      max-width: 415px;
       margin-right: auto;
-      font-size: 0.75em;
+      font-size: 1em;
     }
 
     @include sm {
       margin-bottom: 24px;
       max-width: 100%;
+      font-size: 0.875em;
     }
   }
 
