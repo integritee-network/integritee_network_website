@@ -17,9 +17,11 @@
       </div>
       <div class="header__nav-right">
         <Socials />
-        <a v-if="width > breakpoints.slg" href="/" target="_blank" class="header__button paragraph_small">Start
+        <a v-if="width > breakpoints.slg" href="/" target="_blank" class="btn_border header__button paragraph_small">Start
           Building</a>
-        <button v-if="width <= breakpoints.slg" class="header__burger" type="button" @click="toggleMenu()">
+        <button v-if="width <= breakpoints.slg" class="header__burger" :class="{
+          active: active
+        }" type="button" @click="toggleMenu()">
           <div class="header__burger-line" />
           <div class="header__burger-line" />
           <div class="header__burger-line" />
@@ -47,6 +49,8 @@ const { y } = useWindowScroll()
 
 const { $lockScroll } = useNuxtApp()
 
+const route = useRoute();
+
 const toggleMenu = () => {
   active.value = !active.value
   $lockScroll(active.value)
@@ -59,6 +63,10 @@ onMounted(() => {
 watch(y, (value) => {
   fixed.value = value > 80
 })
+
+watch(route, value => {
+  active.value = false
+}, { deep: true, immediate: true })
 
 </script>
 
@@ -135,14 +143,34 @@ watch(y, (value) => {
     border: 0;
     padding: 0;
     flex-shrink: 0;
+
+    &.active {
+      .header__burger-line {
+        &:nth-child(1) {
+          transform: rotate(45deg);
+          top: 3px;
+        }
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+          bottom: 3px;
+        }
+      }
+    }
   }
 
   &__burger-line {
+    position: relative;
     width: 100%;
     height: 2px;
     margin-bottom: 4px;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 40px;
+    /* transition: .3s ease; */
 
     &:last-child {
       margin-bottom: 0;

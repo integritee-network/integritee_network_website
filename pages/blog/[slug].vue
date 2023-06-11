@@ -164,6 +164,10 @@ import New from '@/components/Blog/New.vue'
 
     a {
       color: #5B92FF;
+      transition: .3s ease;
+      &:hover {
+        color: #7ca8ff;
+      }
     }
 
     img {

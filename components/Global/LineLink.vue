@@ -34,7 +34,9 @@ const props = defineProps({
 
   &:hover {
     .line-link__underline {
-      background: linear-gradient(90deg, #B000FD 0.01%, #B000FD 0.02%, #30DAFF 97.96%);
+      &:before {
+        width: 100%;
+      }
     }
   }
 
@@ -56,6 +58,16 @@ const props = defineProps({
     height: 2px;
     background: rgba(255, 255, 255, 0.2);
     transition: .3s ease;
+
+    &:before {
+      position: absolute;
+      content: '';
+      inset: 0;
+      width: 0%;
+      height: 100%;
+      transition: width .3s ease;
+      background: linear-gradient(90deg, #B000FD 0.01%, #B000FD 0.02%, #30DAFF 97.96%);
+    }
   }
 }
 </style>

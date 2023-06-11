@@ -10,7 +10,7 @@
         <NuxtLink to="/blog" class="text-link">Blog</NuxtLink>
         <NuxtLink to="/about" class="text-link">About</NuxtLink>
       </nav>
-      <a href="/" target="_blank" class="header__button menu__button">
+      <a href="/" target="_blank" class="btn_border header__button menu__button">
         Start Building
       </a>
     </div>

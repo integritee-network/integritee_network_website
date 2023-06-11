@@ -295,6 +295,13 @@ import Socials from '@/components/Socials'
       padding: 24px 0;
       margin-top: 24px;
     }
+
+    a {
+      transition: .3s ease;
+      &:hover {
+        color: #7ca8ff;
+      }
+    }
   }
 }
 </style>
