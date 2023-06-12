@@ -57,7 +57,7 @@ const props = defineProps({
     width: 100%;
     height: 2px;
     background: rgba(255, 255, 255, 0.2);
-    transition: .3s ease;
+    transition: .6s ease;
 
     &:before {
       position: absolute;
@@ -65,7 +65,7 @@ const props = defineProps({
       inset: 0;
       width: 0%;
       height: 100%;
-      transition: width .3s ease;
+      transition: width .6s ease;
       background: linear-gradient(90deg, #B000FD 0.01%, #B000FD 0.02%, #30DAFF 97.96%);
     }
   }

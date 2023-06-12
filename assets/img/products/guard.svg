@@ -1,10 +1,4 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<path fill-rule="evenodd" clip-rule="evenodd" d="M31.2509 9.33336C18.3691 9.87221 8.15756 20.3906 8.00011 33.2827C7.9765 41.017 11.6902 48.2864 17.9709 52.8C19.7488 54.042 21.8716 54.6949 24.0402 54.6667H39.9816C42.1009 54.6984 44.1771 54.0672 45.9202 52.8614C54.5466 46.7325 58.1376 35.6749 54.7582 25.647C51.3787 15.6192 41.8273 8.99071 31.2509 9.33336Z" fill="#9928FE" />
-	<path d="M31.9998 17.3386V20.0053" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-	<path d="M20.6851 22.0267L22.5704 23.912" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-	<path d="M35.304 30.0373L43.3146 22.0266" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-	<path d="M22.6665 45.3387H41.3332" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-	<circle cx="32.0002" cy="33.3334" r="4.66667" fill="white" />
-	<path d="M48.0002 33.3387H45.3335" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-	<path d="M18.6667 33.3387H16" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M10.0002 28.712C10.0003 40.5135 17.3261 51.0751 28.3797 55.2095L28.4598 55.2395C31.1732 56.2544 34.1622 56.2534 36.8749 55.2368L36.9399 55.2125C48.0033 51.0663 55.3336 40.4912 55.3336 28.6764V18.7473C55.3336 16.4143 53.8172 14.352 51.5903 13.6565L34.257 8.24254C33.2216 7.91915 32.1123 7.91915 31.0769 8.24254L13.7436 13.6563C11.5166 14.3519 10.0002 16.4141 10.0002 18.7471V28.712Z" fill="#9928FE" />
+	<path d="M27.3333 32L31.3333 36L39.3333 28" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </svg>

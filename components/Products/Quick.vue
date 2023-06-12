@@ -10,10 +10,10 @@
                     <a href="#" class="btn btn_border quick__link">Docs</a>
                 </div>
                 <div class="quick__link-list">
-                    <LineLink text="What is the TEER Token" link="#" />
-                    <LineLink text="How to setup Integritee infrastructure" link="#" />
-                    <LineLink text="Governance on Integritee Network" link="#" />
-                    <LineLink text="Check out our Technology" link="#" />
+                    <LineLink text="What is the TEER Token" :link="TEER_TOKEN_LINK" />
+                    <LineLink text="How to setup Integritee infrastructure" :link="GOVERNANCE_LINK" />
+                    <LineLink text="Governance on Integritee Network" :link="HOW_TO_SETUP_LINK" />
+                    <LineLink text="Check out our Technology" :link="CHECK_TECH_LINK" />
                 </div>
             </div>
         </div>
@@ -21,6 +21,7 @@
 </template>
 <script setup>
 import LineLink from '@/components/Global/LineLink.vue';
+import { TEER_TOKEN_LINK, GOVERNANCE_LINK, HOW_TO_SETUP_LINK, CHECK_TECH_LINK } from '@/configs/app.config';
 </script>
 <style lang="scss" scoped>
 .quick {
