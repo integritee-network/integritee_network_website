@@ -22,7 +22,7 @@ import Telegram from '@/assets/img/socials/telegram.svg'
 .socials {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
   svg {
     display: block;
     width: 24px;

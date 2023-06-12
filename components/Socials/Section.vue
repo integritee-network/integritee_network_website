@@ -37,6 +37,14 @@ import Discord from '@/assets/img/socials/discord.svg'
 import Twitter from '@/assets/img/socials/twitter.svg'
 import Telegram from '@/assets/img/socials/telegram.svg'
 </script>
+<style lang="scss">
+.socials__list-item-icon {
+  path {
+      fill-opacity: 1;
+    }
+}
+</style>
+
 <style lang="scss" scoped>
 .socials {
   &__description {
@@ -130,6 +138,7 @@ import Telegram from '@/assets/img/socials/telegram.svg'
     @include sm {
       height: 150px;
       font-size: $sm_pDef;
+      border-radius: 14px;
     }
 
     &:hover {

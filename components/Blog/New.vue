@@ -21,17 +21,30 @@
 
   &__image {
     object-fit: cover;
-    height: 209px;
+    height: 225px;
     width: 100%;
     border-radius: 24px;
     margin-bottom: 32px;
 
-    @include md {
-      height: 200px;
-      border-radius: 18px;
-      margin-bottom: 8px;
+    @include lg {
+      height: 202px;
     }
 
+    @include slg {
+      height: 176px;
+    }
+
+    @include md {
+      height: 146px;
+    }
+
+    @include sm {
+      height: 304px;
+    }
+
+    @include xsm {
+      height: 197px;
+    }
   }
 
   &__p {
