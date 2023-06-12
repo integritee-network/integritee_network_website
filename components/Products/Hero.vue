@@ -10,13 +10,14 @@
         internet and beyond
       </template>
       <template #button>
-        <a href="#" class="btn btn_gradient desc__button">Learn More</a>
+        <a :href="DOCS_LINK" class="btn btn_gradient desc__button">Learn More</a>
       </template>
     </Desc>
   </div>
 </template>
 <script setup>
 import Desc from "@/components/Desc";
+import { DOCS_LINK } from "@/configs/app.config";
 </script>
 <style lang="">
     

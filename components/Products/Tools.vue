@@ -104,6 +104,7 @@ import Link from '@/assets/img/link.svg'
       margin-bottom: 10px;
       padding: 40px;
       gap: 40px;
+      border-radius: 18px;
     }
 
     &:hover {
