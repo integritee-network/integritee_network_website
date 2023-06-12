@@ -7,8 +7,9 @@
         <NuxtLink to="/technology" class="text-link">Technology</NuxtLink>
         <NuxtLink to="/developers" class="text-link">Developers</NuxtLink>
         <NuxtLink to="/teer-token" class="text-link">TEER Token</NuxtLink>
-        <NuxtLink to="/blog" class="text-link">Blog</NuxtLink>
         <NuxtLink to="/about" class="text-link">About</NuxtLink>
+        <NuxtLink to="/blog" class="text-link">Blog</NuxtLink>
+        <NuxtLink to="/contacts" class="text-link">Contacts</NuxtLink>
       </nav>
       <a href="/" target="_blank" class="btn_border header__button menu__button">
         Start Building

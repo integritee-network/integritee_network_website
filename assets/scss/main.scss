@@ -155,6 +155,7 @@ a {
 
     &_hero {
         font-size: $tLg;
+        font-weight: 500;
 
         @include slg {
             font-size: $md_tLg;

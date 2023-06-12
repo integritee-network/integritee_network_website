@@ -12,8 +12,9 @@
         <NuxtLink to="/technology" class="text-link paragraph_smll">Technology</NuxtLink>
         <NuxtLink to="/developers" class="text-link paragraph_smll">Developers</NuxtLink>
         <NuxtLink to="/teer-token" class="text-link paragraph_smll">TEER Token</NuxtLink>
-        <NuxtLink to="/blog" class="text-link paragraph_smll">Blog</NuxtLink>
         <NuxtLink to="/about" class="text-link paragraph_smll">About</NuxtLink>
+        <NuxtLink to="/blog" class="text-link paragraph_smll">Blog</NuxtLink>
+        <NuxtLink to="/contacts" class="text-link paragraph_smll">Contacts</NuxtLink>
       </div>
       <div class="header__nav-right">
         <Socials />
@@ -118,6 +119,7 @@ watch(route, value => {
     }
 
     a {
+      font-size: 0.875em;
       margin-left: 24px;
 
       @include lg {
