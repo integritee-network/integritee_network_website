@@ -112,6 +112,7 @@ export default {}
     @include sm {
       width: 360px;
       padding: 40px;
+      border-radius: 18px;
     }
 
     @include xsm {
