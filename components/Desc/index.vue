@@ -25,7 +25,7 @@
 }
 
 :slotted(span:first-child) {
-  background: linear-gradient(90deg, #30DAFF -20.25%, #B000FD 50%);
+  background: linear-gradient(90deg, #30DAFF -25%, #A11BFE);
 }
 
 .desc {
