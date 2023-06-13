@@ -32,14 +32,16 @@
         protect our users’ privacy while still giving us the speed and
         scalability we needed.”</quote>
       <div class="row item__quote-author">
-        <div class="item__quote-author-photo"></div>
+        <div class="item__quote-author-photo">
+          <Avatar image="/img/use-cases/avatar.jpg" />
+        </div>
         <div class="item__quote-author-name paragraph_large">Cedric Decoster<br /> instead of John Snow</div>
       </div>
     </div>
   </div>
 </template>
-<script>
-export default {}
+<script setup>
+import Avatar from './Avatar.vue'
 </script>
 <style lang="scss" scoped>
 .item {
@@ -118,6 +120,15 @@ export default {}
     @include xsm {
       width: 100%;
       gap: 30px;
+    }
+  }
+
+  &__quote-author-photo {
+    width: 61px;
+    height: 61px;
+    flex-shrink: 0;
+    svg {
+      width: 100%;
     }
   }
 
