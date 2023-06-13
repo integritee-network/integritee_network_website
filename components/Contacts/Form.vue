@@ -1,45 +1,57 @@
 <template>
   <form class='form' @submit.prevent='onSubmit()'>
     <div class='form__row row jcsb'>
-      <div class='form__field'>
+      <div
+        class='form__field'
+        :class='{ error: (v$.$errors.length > 0 && v$.$errors[0].$property === "name"), active: (formData.name !== "") }'
+      >
         <input
-          :class='{ active: (formData.name !== "") }'
           @input='onFieldChange("name", $event.target.value)'
           :value='formData.name'
           type='text'
           class='paragraph_medium form__input'
         />
         <label :class='{ active: (formData.name !== "") }' class='form__label paragraph_medium'>Name</label>
+        <div class='form__field_caption'>{{ v$.$errors.length > 0 && v$.$errors[0].$message }}</div>
       </div>
-      <div class='form__field'>
+      <div
+        class='form__field'
+        :class='{ error: (v$.$errors.length > 0 && v$.$errors[0].$property === "email"), active: (formData.email !== "")}'
+      >
         <input
-          :class='{ active: (formData.email !== "") }'
           @input='onFieldChange("email", $event.target.value)'
           :value='formData.email'
           type='text'
           class='paragraph_medium form__input'
         />
         <label :class='{ active: (formData.email !== "") }' class='form__label paragraph_medium'>Email</label>
+        <div class='form__field_caption'>{{ v$.$errors.length > 0 && v$.$errors[0].$message }}</div>
       </div>
-      <div class='form__field'>
+      <div
+        class='form__field'
+        :class='{ error: (v$.$errors.length > 0 && v$.$errors[0].$property === "subject"), active: (formData.subject !== "") }'
+      >
         <input
-          :class='{ active: (formData.subject !== "") }'
           @input='onFieldChange("subject", $event.target.value)'
           :value='formData.subject'
           type='text'
           class='paragraph_medium form__input'
         />
         <label :class='{ active: (formData.subject !== "") }' class='form__label paragraph_medium'>Subject</label>
+        <div class='form__field_caption'>{{ v$.$errors.length > 0 && v$.$errors[0].$message }}</div>
         <span class='form__count'>{{ getCount(formData.subject) }}/80</span>
       </div>
-      <div class='form__field'>
+      <div
+        class='form__field'
+        :class='{ error: (v$.$errors.length > 0 && v$.$errors[0].$property === "message"), active: (formData.message !== "")  }'
+      >
         <textarea
-          :class='{ active: (formData.message !== "") }'
           @input='onFieldChange("message", $event.target.value)'
           :value='formData.message'
-          class='paragraph_medium form__textarea'
+          class='paragraph_medium form__textarea hide-scrollbar'
         />
         <label :class='{ active: (formData.message !== "") }' class='form__label paragraph_medium'>Message</label>
+        <div class='form__field_caption'>{{ v$.$errors.length > 0 && v$.$errors[0].$message }}</div>
         <span class='form__count'>{{ getCount(formData.message) }}/200</span>
       </div>
       <div class='btn__row row'>
@@ -83,6 +95,7 @@ export default {
       if (result) {
 
       } else {
+        console.log(v$.value.$errors)
         console.log(`${v$.value.$errors[0].$property} - ${v$.value.$errors[0].$message}`)
       }
     }
@@ -133,6 +146,7 @@ export default {
     position: relative;
     margin-bottom: 86px;
     width: 100%;
+    transition: 0.4s;
     @include sm {
       margin-bottom: 76px;
     }
@@ -149,6 +163,34 @@ export default {
       margin-bottom: 57px;
       @include sm {
         margin-bottom: 54px;
+      }
+    }
+    &_caption {
+      font-family: 'Inter';
+      width: 100%;
+      position: absolute;
+      top: 110%;
+      left: 0;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 150%;
+      color: #E54F45;
+      opacity: 0;
+      transition: 0.4s;
+    }
+    &.error {
+      input, textarea {
+        color: #E54F45;
+        border-bottom: 1px solid rgba(229, 79, 69, 0.2);
+      }
+      .form__field_caption {
+        opacity: 1;
+      }
+    }
+    &.active {
+      input, textarea {
+        color: #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
       }
     }
   }
@@ -192,9 +234,6 @@ export default {
           font-size: 12px;
         }
       }
-    }
-    &.active {
-      border-bottom: 1px solid rgba(255,255,255,0.4);
     }
   }
   &__textarea {
@@ -304,5 +343,13 @@ export default {
   position: relative;
   width: 100%;
   align-items: center;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 </style>

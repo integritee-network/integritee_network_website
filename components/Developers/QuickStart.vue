@@ -7,7 +7,7 @@
         <div v-for='(item, index) in items' :key='index' class='building__item'>
           <component :is='item.img' />
           <p class='title title_sub building__item-title'>{{ item.title }}</p>
-          <p class='paragraph paragraph_medium'>{{ item.text }}</p>
+          <p class='paragraph paragraph_medium'><a :href='item.link'>{{ item.linkText }}</a> {{ item.text }}</p>
         </div>
       </div>
     </div>
@@ -24,23 +24,31 @@ export default {
     const items = [
       {
         title: 'Step 1',
-        text: 'Read the intro about our SDK and what it offers',
+        text: 'the intro about our SDK and what it offers',
         img: FirstIcon,
+        link: 'https://docs.integritee.network/3-our-technology/3.1-software-development-kit',
+        linkText: 'Read',
       },
       {
         title: 'Step 2',
-        text: 'Play through our Sidechain tutorial to get a local setup working',
+        text: 'through our Sidechain tutorial to get a local setup working',
         img: SecondIcon,
+        link: 'https://docs.integritee.network/4-development/4.6-demos/4.6.1-sidechain-demo',
+        linkText: 'Play',
       },
       {
         title: 'Step 3',
-        text: 'Write your own logic',
+        text: 'your own logic',
         img: ThirdIcon,
+        link: 'https://docs.integritee.network/4-development/4.4-sdk/4.4.4-custom-business-logic-stf',
+        linkText: 'Write',
       },
       {
         title: 'Step 4',
-        text: 'Deploy  your dApp publicly',
+        text: 'your dApp publicly',
         img: FourthIcon,
+        link: 'https://docs.integritee.network/5-nodes-and-infrastructure/5.2-how-to-set-up-and-run-a-sidechain-or-tocw-node',
+        linkText: 'Deploy',
       },
     ]
 
@@ -119,6 +127,9 @@ export default {
         width: 32px;
         height: 32px
       }
+    }
+    a {
+      color: #5B92FF;
     }
   }
   &__item-title {
