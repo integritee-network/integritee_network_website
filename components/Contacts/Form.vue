@@ -48,7 +48,7 @@
         <textarea
           @input='onFieldChange("message", $event.target.value)'
           :value='formData.message'
-          class='paragraph_medium form__textarea hide-scrollbar'
+          class='paragraph_medium form__textarea scrollbar'
         />
         <label :class='{ active: (formData.message !== "") }' class='form__label paragraph_medium'>Message</label>
         <div class='form__field_caption'>{{ v$.$errors.length > 0 && v$.$errors[0].$message }}</div>
@@ -147,6 +147,7 @@ export default {
     margin-bottom: 86px;
     width: 100%;
     transition: 0.4s;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
     @include sm {
       margin-bottom: 76px;
     }
@@ -179,19 +180,22 @@ export default {
       transition: 0.4s;
     }
     &.error {
+      border-bottom: 1px solid rgba(229, 79, 69, 0.2);
       input, textarea {
         color: #E54F45;
-        border-bottom: 1px solid rgba(229, 79, 69, 0.2);
       }
       .form__field_caption {
         opacity: 1;
       }
     }
     &.active {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
       input, textarea {
         color: #fff;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
       }
+    }
+    &:focus-within {
+      border-bottom: 1px solid rgba(255,255,255,0.4);
     }
   }
   &__label {
@@ -215,16 +219,14 @@ export default {
   &__input,  &__textarea {
     width: 100%;
     background: transparent;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
     border: 0;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
     outline: none;
     color: #fff;
     @include sm {
-      padding-bottom: 18px;
+      margin-bottom: 18px;
     }
     &:focus {
-      border-bottom: 1px solid rgba(255,255,255,0.4);
       +label {
         bottom: calc(100% + 8px);
         font-size: 14px;
@@ -237,13 +239,13 @@ export default {
     }
   }
   &__textarea {
-    height: 113px;
+    height: 81px;
     resize: none;
     @include lg {
-      height: 140px;
+      height: 108px;
     }
     @include sm {
-      height: 81px;
+      height: 63px;
     }
   }
   button {
@@ -344,12 +346,15 @@ export default {
   width: 100%;
   align-items: center;
 }
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
+.scrollbar::-webkit-scrollbar {
+  width: 1px;
 }
 
-.hide-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+.scrollbar::-webkit-scrollbar-track {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,1);
 }
 </style>
