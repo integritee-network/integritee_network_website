@@ -38,7 +38,7 @@ const items = [
     img: SecondImg,
   },
   {
-    title: 'Keeping a healthy\nbalance through\nthe network Treasury.',
+    title: 'Keeping a healthy\nbalance through\nthe network Treasury',
     text: 'Fees are collected in an on-chain treasury. Treasury funds are used for ongoing maintenance and software, as well as ecosystemdevelopment and community activity rewards missing full stop',
     img: ThirdImg,
   },

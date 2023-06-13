@@ -20,9 +20,9 @@
               </div>
             </div>
             <div class='resources__row'>
-              <a href='#' class='btn btn_border'>Github</a>
-              <a href='#' class='btn btn_border'>Docs</a>
-              <a href='#' class='btn btn_border'>Demo</a>
+              <a href='#' class='btn btn_border resources__btn'>Github</a>
+              <a href='#' class='btn btn_border resources__btn'>Docs</a>
+              <a href='#' class='btn btn_border resources__btn'>Demo</a>
             </div>
           </div>
           <img class='resources__item-img' :src='item.img' />
@@ -117,7 +117,11 @@ export default {
 <style lang="scss" scoped>
 .resources {
   position: relative;
-
+  &__btn {
+    padding: 12px 22px;
+    backdrop-filter: unset;
+    background: transparent;
+  }
   &__column {
     width: 600px;
     flex-shrink: 0;

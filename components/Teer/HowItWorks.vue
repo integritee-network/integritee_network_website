@@ -9,7 +9,7 @@
           <p class='how-it-works__item-title margin_medium'>
             {{ item.title }}
           </p>
-          <p class='paragraph paragraph_medium'>
+          <p class='how-it-works__item-text paragraph paragraph_medium'>
             {{ item.text }}
           </p>
           <component :is='item.img' />
@@ -73,7 +73,9 @@ export default {
     }
   }
   &__item-title {
-    font-family: 'Inter';
+    position: relative;
+    z-index: 2;
+    font-family: 'WhyteInktrap';
     font-weight: 500;
     font-size: $tDef;
     line-height: 110%;
@@ -84,6 +86,10 @@ export default {
     @include sm {
       font-size: 1.688em;
     }
+  }
+  &__item-text {
+    position: relative;
+    z-index: 2;
   }
 }
 </style>
