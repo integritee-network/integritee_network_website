@@ -155,7 +155,9 @@ watch(y, (value) => {
   &__list-years-wrapper,
   &__list-years {
     width: 137px;
-
+    @media screen and (max-height: 740px) and (min-width: 841px){
+      width: 121px;
+    }
     @include sm {
       width: 100%;
       height: 56px;
@@ -179,6 +181,11 @@ watch(y, (value) => {
     font-weight: 500;
     transition: .3s ease;
     cursor: pointer;
+
+    @media screen and (max-height: 740px) and (min-width: 841px){
+      font-size: 1.125em;
+      padding: 21px 0;
+    }
 
     @include sm {
       font-size: .875em;
