@@ -74,6 +74,7 @@ import Avatar from './Avatar.vue'
 
   &__text {
     width: 600px;
+    flex-shrink: 0;
 
     @include lg {
       width: 480px;
@@ -159,7 +160,7 @@ import Avatar from './Avatar.vue'
     font-size: $tDef;
     font-weight: 500;
     font-family: "WhyteInktrap";
-
+    line-height: 120%;
     @include slg {
       font-size: 2.25em;
     }
