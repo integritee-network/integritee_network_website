@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer paragraph_medium">
+  <footer class="footer">
     <div class="container">
       <div class="footer__row">
         <div class="footer__column footer__column_about">
@@ -197,10 +197,10 @@ import Socials from '@/components/Socials'
     &_about {
       flex-shrink: 0;
       max-width: 255px;
-      font-size: $pDef;
+      font-size: 1.125em;
 
       @include slg {
-        font-size: $sm_pDef;
+        font-size: 0.875em;
       }
 
       @include md {
@@ -211,11 +211,13 @@ import Socials from '@/components/Socials'
         width: 100%;
         gap: 24px;
         margin-bottom: 35px;
+        font-size: 0.75em;
       }
 
       @include sm {
         display: block;
         margin-bottom: 24px !important;
+        font-size: 0.875em;
       }
 
     }
@@ -233,7 +235,13 @@ import Socials from '@/components/Socials'
     display: block;
     line-height: 150%;
     margin-bottom: 14px;
-
+    font-size: 1.125em;
+    @include slg {
+      font-size: 1em;
+    }
+    @include sm {
+      font-size: 0.875em;
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -269,13 +277,11 @@ import Socials from '@/components/Socials'
       margin-bottom: 0;
       max-width: 415px;
       margin-right: auto;
-      font-size: 1em;
     }
 
     @include sm {
       margin-bottom: 24px;
       max-width: 100%;
-      font-size: 0.875em;
     }
   }
 
