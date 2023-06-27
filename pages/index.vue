@@ -8,7 +8,7 @@
   <Socials />
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Main from '@/components/Index/Main'
 import Things from '@/components/Index/Things'
 import Scalability from '@/components/Index/Scalability'
@@ -16,9 +16,9 @@ import Token from '@/components/Index/Token'
 import Community from '@/components/Index/Community'
 import News from '@/components/Index/News'
 import Socials from '@/components/Socials/Section.vue'
-import { useSeoMeta } from 'nuxt/app'
+import { useServerSeoMeta } from '#imports'
 
-useSeoMeta({
+useServerSeoMeta({
   title: 'Integritee | HomePage',
   ogTitle: 'My Amazing Site',
   description: 'This is my amazing site, let me tell you all about it.',

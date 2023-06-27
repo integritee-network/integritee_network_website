@@ -23,6 +23,14 @@ import { useWpApi } from '@/api/wordpress'
 import { usePostsStore } from '@/store/posts'
 import { useCategoriesStore } from '@/store/categories'
 import { Post } from '@/types/post'
+import { useSeoMeta } from '#imports'
+
+useSeoMeta({
+  title: '',
+  ogTitle: '',
+  description: '',
+  ogDescription: '',
+})
 
 // const wpApi = useWpApi()
 

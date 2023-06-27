@@ -36,6 +36,7 @@ import New from '@/components/Blog/New.vue'
 import { useCategoriesStore } from '@/store/categories'
 import { usePostsStore } from '@/store/posts'
 import { useRoute } from 'nuxt/app'
+import { useSeoMeta } from '#imports'
 
 const postsStore = usePostsStore()
 const catsStore = useCategoriesStore()
@@ -46,6 +47,15 @@ const slug = route.params.slug as string
 const post = await postsStore.getPostBySlug(slug)
 
 if (!post) throw { statusCode: 404, message: 'Post not found' }
+
+console.log(post)
+
+useSeoMeta({
+  title: post.yoast_head_json.title,
+  ogTitle: post.yoast_head_json.og_title,
+  description: post.yoast_head_json.description ?? post.yoast_head_json.og_description,
+  ogDescription: post.yoast_head_json.og_description,
+})
 
 const date = computed(() => parse(post.date))
 
