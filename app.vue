@@ -1,8 +1,19 @@
-<script setup>
+<script setup lang="ts">
+import { defineAsyncComponent } from 'vue'
+import { useAsyncData } from 'nuxt/app'
+
 import Footer from '@/components/Footer'
+import { useCategoriesStore } from '@/store/categories'
 
-const Header = defineAsyncComponent(() => import('@/components/Header'));
+const Header = defineAsyncComponent(() => import('@/components/Header'))
 
+const catsStore = useCategoriesStore()
+const { initCategories, initUseCasesTags } = catsStore
+
+await Promise.all([
+  useAsyncData('init', initCategories),
+  useAsyncData('initTags', initUseCasesTags),
+])
 </script>
 
 <template>

@@ -1,28 +1,36 @@
 <template>
-  <div class="nav">
-    <button class="nav__item paragraph paragraph_medium" type="button">
+  <div v-if="!isLinks" class="nav">
+    <button class="nav__item paragraph paragraph_medium" :class="{ active: activeId === null }" type="button"
+      @click="$emit('onActiveChange', null)">
       <All class="nav__icon" /> All
     </button>
-    <button class="nav__item paragraph paragraph_medium" type="button">
-      <News class="nav__icon" /> News
-    </button>
-    <button class="nav__item paragraph paragraph_medium" type="button">
-      <Insights class="nav__icon" /> Industry Insights
-    </button>
-    <button class="nav__item paragraph paragraph_medium" type="button">
-      <Updates class="nav__icon" /> Platform updates
-    </button>
-    <button class="nav__item paragraph paragraph_medium" type="button">
-      <Documentation class="nav__icon" /> Technical documentation
-    </button>
+    <NavItem v-for="cat in catsStore.cats" :key="cat.id" :cat="cat" :activeId="activeId"
+      @onActiveClick="handleActiveClick" />
+  </div>
+  <div v-else class="nav">
+    <NuxtLink :to="{ path: '/blog' }" class="nav__item paragraph paragraph_medium" :class="{ active: activeId === null }">
+      <All class="nav__icon" /> All
+    </NuxtLink>
+    <NavItem :isLink="true" v-for="cat in catsStore.cats" :key="cat.id" :cat="cat" :activeId="activeId"
+      @onActiveClick="handleActiveClick" />
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
 import All from '@/assets/img/blog/categories/all.svg'
-import News from '@/assets/img/blog/categories/news.svg'
-import Insights from '@/assets/img/blog/categories/insights.svg'
-import Updates from '@/assets/img/blog/categories/updates.svg'
-import Documentation from '@/assets/img/blog/categories/documentation.svg'
+import { useCategoriesStore } from '~/store/categories'
+import NavItem from './NavItem.vue'
+
+const catsStore = useCategoriesStore()
+
+defineProps<{ activeId: number | null, isLinks?: boolean }>()
+
+const emit = defineEmits<{
+  (e: 'onActiveChange', id: number | null): void
+}>()
+
+const handleActiveClick = (id: number) => {
+  emit('onActiveChange', id)
+}
 </script>
 <style lang="scss">
 .nav {
@@ -50,12 +58,8 @@ import Documentation from '@/assets/img/blog/categories/documentation.svg'
     color: #fff;
     padding: 18px 0;
     margin-bottom: 12px;
-    transition: .3s ease;
+    transition: 0.3s ease;
     cursor: pointer;
-
-    &:hover {
-      background: rgba(120, 120, 120, 0.24);
-    }
 
     @include slg {
       padding: 16px 24px;
@@ -63,6 +67,14 @@ import Documentation from '@/assets/img/blog/categories/documentation.svg'
       flex-shrink: 1;
       width: auto;
       flex-shrink: 0;
+    }
+
+    &.active {
+      background: rgba(120, 120, 120, 0.24);
+    }
+
+    &:hover {
+      background: rgba(120, 120, 120, 0.24);
     }
 
     &:last-child {

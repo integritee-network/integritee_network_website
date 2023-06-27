@@ -6,16 +6,26 @@
           Network <a href="#" class="color_blue">news</a>
         </h2>
         <div class="row news__list">
-          <New class="news__item" />
-          <New class="news__item" />
-          <New class="news__item" />
+          <New
+            v-for="post in data"
+            :post="post"
+            class="news__item"
+            :key="post.id"
+          />
         </div>
       </div>
     </div>
   </section>
 </template>
-<script setup>
+<script setup lang="ts">
+import { useWpApi } from '@/api/wordpress'
 import New from '@/components/Blog/New.vue'
+
+const wpApi = useWpApi()
+
+const { data, error } = await wpApi.getPosts({
+  limit: 3,
+})
 </script>
 <style lang="scss">
 .news {
@@ -46,6 +56,5 @@ import New from '@/components/Blog/New.vue'
       }
     }
   }
-
 }
 </style>

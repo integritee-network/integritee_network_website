@@ -1,18 +1,37 @@
 <template>
-  <a href="#" class="new">
-    <img src="http://c5com.com/wp/wp-content/uploads/2011/05/400x400.png" alt="New image" class="new__image" />
+  <NuxtLink :to="`/blog/${post.slug}`" class="new">
+    <img :src="image" alt="New image" class="new__image" />
     <div class="row new__info">
-      <span class="tag new__tag">News</span>
-      <span class="date">June 3, 2023</span>
+      <span class="tag new__tag">{{ catName }}</span>
+      <span class="date">{{ date }}</span>
     </div>
     <p class="paragraph paragraph_large new__p">
-      Monthly Wrap-Up March 2023: Product Releases, a Privacy Sidechain
-      & More
+      {{ post.title.rendered }}
     </p>
-  </a>
+  </NuxtLink>
 </template>
 <script setup lang="ts">
+import { computed } from 'vue'
+import { Post } from '@/types/post'
+import { parse } from '@/helpers/date'
+import { useCategoriesStore } from '@/store/categories'
 
+const props = defineProps<{ post: Post }>()
+
+const { post } = props
+
+const catsStore = useCategoriesStore()
+
+const date = computed(() => parse(post.date))
+const image = computed(() => {
+  if (post._embedded) {
+    if (post._embedded['wp:featuredmedia'])
+      return post._embedded['wp:featuredmedia'][0].link
+  }
+  return 'http://c5com.com/wp/wp-content/uploads/2011/05/400x400.png'
+})
+
+const catName = computed(() => catsStore.getCatById(post.categories[0])?.name)
 </script>
 <style lang="scss" scoped>
 .new {

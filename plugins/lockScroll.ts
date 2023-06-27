@@ -1,3 +1,4 @@
+import { defineNuxtPlugin } from 'nuxt/app'
 import { useScrollLock } from '@vueuse/core'
 
 export default defineNuxtPlugin(() => {

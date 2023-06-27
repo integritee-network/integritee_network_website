@@ -1,47 +1,69 @@
 <template>
   <div class="item row">
     <div class="item__text">
-      <span class="item__text-tag margin_medium paragraph paragraph_small">Gaming</span>
+      <span
+        v-if="tag"
+        class="item__text-tag margin_medium paragraph paragraph_small"
+        >{{ tag?.name }}</span
+      >
       <div class="item__text-title margin_large">
-        Ajuna builds performant decentralized games
+        {{ useCase.title.rendered }}
       </div>
-      <div class="item__text-subtitle margin_xmedium paragraph paragraph_large">Problem</div>
+      <div class="item__text-subtitle margin_xmedium paragraph paragraph_large">
+        Problem
+      </div>
       <p class="paragraph paragraph_medium margin_medium">
-        “Decentralized” games often still rely on a centralized backend
-        architecture and are only using blockchain technology for minor
-        features, such as tokens and NFTs
+        {{ useCase.acf.problem }}
       </p>
-      <div class="item__text-subtitl margin_xmedium paragraph paragraph_large">Solution</div>
-      <p class="item__text-solution-point">
-        Performant TEE-based Sidechain that is running the high-end game logic,
-        which can scale to potential millions of users and 2,000 transactions
-        per second
-      </p>
-      <p class="item__text-solution-point">
-        High-quality decentralized gaming experience with low latencies ensured
-        through 300 ms block times
-      </p>
-      <p class="item__text-solution-point">
-        Confidential game states and transfers of value and information without
-        revealing details
+      <div class="item__text-subtitl margin_xmedium paragraph paragraph_large">
+        Solution
+      </div>
+      <p
+        v-for="(point, idx) in useCase.acf.solution"
+        class="item__text-solution-point"
+        :key="idx"
+      >
+        {{ point.point }}
       </p>
     </div>
     <div class="item__quote">
-      <quote class="item__quote-text">“Integritee was instrumental in helping us get our game to market. The
-        platform is the only it is the only platform out there that let us
-        protect our users’ privacy while still giving us the speed and
-        scalability we needed.”</quote>
+      <quote class="item__quote-text">{{ useCase.acf.quote }}</quote>
       <div class="row item__quote-author">
         <div class="item__quote-author-photo">
-          <Avatar image="/img/use-cases/avatar.jpg" />
+          <Avatar :image="image" />
         </div>
-        <div class="item__quote-author-name paragraph_large">Cedric Decoster<br /> instead of John Snow</div>
+        <div class="item__quote-author-name paragraph_large">
+          {{ useCase.acf.author }}<br />
+          {{ useCase.acf.role }}
+        </div>
       </div>
     </div>
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
+import { computed } from 'vue'
 import Avatar from './Avatar.vue'
+import { UseCase } from '@/types/useCase'
+import { useCategoriesStore } from '~/store/categories'
+
+const props = defineProps<{ useCase: UseCase }>()
+
+const { useCase } = props
+
+const catsStore = useCategoriesStore()
+
+const image = computed(() => {
+  if (useCase._embedded) {
+    if (useCase._embedded['wp:featuredmedia'])
+      return useCase._embedded['wp:featuredmedia'][0].link
+  }
+  return 'http://c5com.com/wp/wp-content/uploads/2011/05/400x400.png'
+})
+
+const tag = computed(() => {
+  if (useCase['use-cases-tag']?.length)
+    return catsStore.getUseCaseTagById(useCase['use-cases-tag'][0])
+})
 </script>
 <style lang="scss" scoped>
 .item {
@@ -128,11 +150,11 @@ import Avatar from './Avatar.vue'
     width: 61px;
     height: 61px;
     flex-shrink: 0;
+
     svg {
       width: 100%;
     }
   }
-
 
   &__quote-text {
     font-size: 2.125em;
@@ -159,8 +181,9 @@ import Avatar from './Avatar.vue'
   &__text-title {
     font-size: $tDef;
     font-weight: 500;
-    font-family: "WhyteInktrap";
+    font-family: 'WhyteInktrap';
     line-height: 120%;
+
     @include slg {
       font-size: 2.25em;
     }
