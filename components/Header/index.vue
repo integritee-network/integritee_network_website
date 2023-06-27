@@ -5,24 +5,45 @@
         <Logo />
       </NuxtLink>
       <div v-if="width > breakpoints.slg" class="header__nav">
-        <NuxtLink to="/products" class="text-link paragraph_smll">Products</NuxtLink>
+        <NuxtLink to="/products" class="text-link paragraph_smll"
+          >Products</NuxtLink
+        >
         <NuxtLink to="/usecases" class="text-link paragraph_smll">
           Use Cases
         </NuxtLink>
-        <NuxtLink to="/technology" class="text-link paragraph_smll">Technology</NuxtLink>
-        <NuxtLink to="/developers" class="text-link paragraph_smll">Developers</NuxtLink>
-        <NuxtLink to="/teer-token" class="text-link paragraph_smll">TEER Token</NuxtLink>
+        <NuxtLink to="/technology" class="text-link paragraph_smll"
+          >Technology</NuxtLink
+        >
+        <NuxtLink to="/developers" class="text-link paragraph_smll"
+          >Developers</NuxtLink
+        >
+        <NuxtLink to="/teer-token" class="text-link paragraph_smll"
+          >TEER Token</NuxtLink
+        >
         <NuxtLink to="/about" class="text-link paragraph_smll">About</NuxtLink>
         <NuxtLink to="/blog" class="text-link paragraph_smll">Blog</NuxtLink>
-        <NuxtLink to="/contacts" class="text-link paragraph_smll">Contacts</NuxtLink>
+        <NuxtLink to="/contacts" class="text-link paragraph_smll"
+          >Contacts</NuxtLink
+        >
       </div>
       <div class="header__nav-right">
         <Socials />
-        <a v-if="width > breakpoints.slg" href="/" target="_blank" class="btn_border header__button paragraph_small">Start
-          Building</a>
-        <button v-if="width <= breakpoints.slg" class="header__burger" :class="{
-          active: active
-        }" type="button" @click="toggleMenu()">
+        <a
+          v-if="width > breakpoints.slg"
+          href="/"
+          target="_blank"
+          class="btn_border header__button paragraph_small"
+          >Start Building</a
+        >
+        <button
+          v-if="width <= breakpoints.slg"
+          class="header__burger"
+          :class="{
+            active: active,
+          }"
+          type="button"
+          @click="toggleMenu()"
+        >
           <div class="header__burger-line" />
           <div class="header__burger-line" />
           <div class="header__burger-line" />
@@ -40,6 +61,7 @@ import Menu from '@/components/Header/Menu.vue'
 import { useWindowSize, useWindowScroll } from '@vueuse/core'
 import { breakpoints } from '@/configs/app.config'
 import { ref, watch, onMounted } from 'vue'
+import { useNuxtApp, useRoute } from 'nuxt/app'
 
 const active = ref(false)
 
@@ -50,7 +72,7 @@ const { y } = useWindowScroll()
 
 const { $lockScroll } = useNuxtApp()
 
-const route = useRoute();
+const route = useRoute()
 
 const toggleMenu = () => {
   active.value = !active.value
@@ -65,10 +87,13 @@ watch(y, (value) => {
   fixed.value = value > 80
 })
 
-watch(route, value => {
-  active.value = false
-}, { deep: true, immediate: true })
-
+watch(
+  route,
+  (value) => {
+    active.value = false
+  },
+  { deep: true, immediate: true }
+)
 </script>
 
 <style lang="scss">
@@ -88,7 +113,7 @@ watch(route, value => {
   width: 100%;
   padding: 25px 0;
   z-index: 10;
-  transition: .3s ease;
+  transition: 0.3s ease;
 
   @include slg {
     padding: 21px 0;
@@ -185,7 +210,7 @@ watch(route, value => {
 
   &.active {
     position: fixed;
-    background: linear-gradient(180deg, #0A0A0F 0%, rgba(10, 10, 15, 0) 100%);
+    background: linear-gradient(180deg, #0a0a0f 0%, rgba(10, 10, 15, 0) 100%);
     backdrop-filter: blur(4px);
   }
 }

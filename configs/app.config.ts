@@ -14,3 +14,4 @@ export const HOW_TO_SETUP_LINK =
   'https://docs.integritee.network/5-nodes-and-infrastructure'
 export const CHECK_TECH_LINK =
   'https://docs.integritee.network/3-our-technology'
+export const WP_API_URL = 'https://test.integritee.network/wp-json/wp/v2'

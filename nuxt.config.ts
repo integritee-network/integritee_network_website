@@ -1,3 +1,5 @@
+import { defineNuxtConfig } from 'nuxt/config'
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -25,8 +27,11 @@ export default defineNuxtConfig({
     '/blog': { ssr: true },
     // '/old-page2': { redirect: { to: '/new-page', statusCode: 302 } },
   },
+  imports: {
+    autoImport: false,
+  },
   css: ['@/assets/scss/main.scss'],
-  modules: ['nuxt-svgo'],
+  modules: ['nuxt-svgo', '@pinia/nuxt'],
   plugins: [{ src: '~/plugins/lockScroll', mode: 'client' }],
   svgo: {
     defaultImport: 'component',

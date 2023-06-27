@@ -3,64 +3,24 @@
     <div class="new new-root block">
       <div class="container row blog-row">
         <div class="blog__nav blog-nav-column">
-          <Nav />
+          <Nav :activeId="post.categories[0]" :isLinks="true" />
         </div>
         <div class="new__article">
           <div class="new__article-padding block">
-            <h1 class="title new__title margin_medium">{{ $route.params.slug }}</h1>
+            <h1 class="title new__title margin_medium">
+              {{ post.title.rendered }}
+            </h1>
             <div class="row new__info">
-              <span class="tag">News</span>
-              <span class="date">June 3, 2023</span>
+              <span v-if="catName" class="tag">{{ catName }}</span>
+              <span class="date">{{ date }}</span>
             </div>
-            <img src="http://c5com.com/wp/wp-content/uploads/2011/05/400x400.png" class="new__image margin_large"
-              alt="New image" />
-            <div class="new__content">
-              <h2>Business Updates</h2>
-              <h3>Roadmap 2023 Release</h3>
-              <p>The 2023 roadmap was finally revealed, and we are excited about what’s ahead! From upcoming partnerships
-                with both Web3 and traditional businesses to product releases and tech development, the team has a lot
-                planned for these coming months. Interested to check it out? Read through our <a href="#">updated
-                  roadmap.</a></p>
-              <h3>Partnering up with OLI Systems</h3>
-              <p>Integritee is teaming up with the German company OLI Systems, which showcases the relevance of our
-                technology for any given use case. OLI is building an energy market solution on Integritee Network by
-                using
-                our SDK and infrastructure, which combines the benefits of blockchain and Confidential Computing. This
-                partnership will enable OLI to offer a LEM solution that’s decentralized as it provides an opportunity for
-                household owners to directly trade electricity with each other.</p>
-              <p>As you might know, our technology can cover virtually any use case, and this time we’re doing so by
-                teaming
-                up with an enterprise client. They are using blockchain technology to power their services and to deliver
-                innovative solutions for traditional markets. If you want to know more about how Integritee and OLI’s
-                collaboration will work, read here.</p>
-              <h3>Welcoming our Community</h3>
-              <p>We kicked off 2023 with a new podcast series, where our CEO Waldemar Scherer, and Advisor Sergei Medvedev
-                answer the community’s questions, talk about the latest updates and discuss other Integritee and
-                Web3-related aspects.</p>
-              <img src="http://c5com.com/wp/wp-content/uploads/2011/05/400x400.png" />
-              <p>You can leave your questions on our Discord channel. We will then collect them and reply live on our
-                podcast, so be sure to hit us up once we announce the new date! The next one takes place on March 8,
-                4:00pm
-                CET, so stay tuned through our social media channels.</p>
-              <h2>Tech Updates</h2>
-              <h3>Release of the New SDK Version</h3>
-              <p>Who doesn’t like updates? Our dev team has been busy working on both product development and software
-                improvement to deliver unique, state-of-the-art services. We’ve just released a new version of our
-                Sidechain
-                SDK! Developers creating their own Web3 apps can now make use of the SDK and all its added benefits. To
-                know
-                all the technical details regarding the SDK v0.11.0, read our article on it.</p>
-            </div>
+            <img :src="image" class="new__image margin_large" alt="New image" />
+            <div class="new__content" v-html="post.content.rendered"></div>
           </div>
-          <div class="new__news">
+          <div v-if="related.length" class="new__news">
             <h2 class="title new__title margin_medium">You Might Also Like</h2>
             <div class="new__news-list blog-list">
-              <New class="new__news-list-item" />
-              <New class="new__news-list-item" />
-              <New class="new__news-list-item" />
-              <New class="new__news-list-item" />
-              <New class="new__news-list-item" />
-              <New class="new__news-list-item" />
+              <New v-for="post in related" :post="post" class="new__news-list-item" :key="post.id" />
             </div>
           </div>
         </div>
@@ -68,11 +28,40 @@
     </div>
   </section>
 </template>
-<script setup>
+<script setup lang="ts">
+import { computed } from 'vue'
+import { parse } from '@/helpers/date'
 import Nav from '@/components/Blog/Nav.vue'
 import New from '@/components/Blog/New.vue'
+import { useCategoriesStore } from '@/store/categories'
+import { usePostsStore } from '@/store/posts'
+import { useRoute } from 'nuxt/app'
+
+const postsStore = usePostsStore()
+const catsStore = useCategoriesStore()
+
+const route = useRoute()
+
+const slug = route.params.slug as string
+const post = await postsStore.getPostBySlug(slug)
+
+if (!post) throw { statusCode: 404, message: 'Post not found' }
+
+const date = computed(() => parse(post.date))
+
+const catName = computed(() => catsStore.getCatById(post.categories[0])?.name)
+
+const image = computed(() => {
+  if (post._embedded) {
+    if (post._embedded['wp:featuredmedia'])
+      return post._embedded['wp:featuredmedia'][0].link
+  }
+  return 'http://c5com.com/wp/wp-content/uploads/2011/05/400x400.png'
+})
+
+const related = await postsStore.getPostsByCat(post.categories[0], post.id)
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .new-root {
   padding-top: 90px;
 }
@@ -157,14 +146,15 @@ import New from '@/components/Blog/New.vue'
       }
 
       @include sm {
-        font-size: .875em;
+        font-size: 0.875em;
         margin-bottom: 12px;
       }
     }
 
     a {
-      color: #5B92FF;
-      transition: .3s ease;
+      color: #5b92ff;
+      transition: 0.3s ease;
+
       &:hover {
         color: #7ca8ff;
       }
@@ -172,6 +162,7 @@ import New from '@/components/Blog/New.vue'
 
     img {
       margin: 22px 0;
+      object-fit: cover;
 
       @include sm {
         margin: 18px 0;
