@@ -1,6 +1,12 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      apiBase:
+        process.env.API_BASE || 'https://test.integritee.network/wp-json/wp/v2',
+    },
+  },
   app: {
     head: {
       title: 'Integritee',
