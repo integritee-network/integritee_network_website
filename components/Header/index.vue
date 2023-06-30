@@ -5,45 +5,24 @@
         <Logo />
       </NuxtLink>
       <div v-if="width > breakpoints.slg" class="header__nav">
-        <NuxtLink to="/products" class="text-link paragraph_smll"
-          >Products</NuxtLink
-        >
+        <NuxtLink to="/products" class="text-link paragraph_smll">Products</NuxtLink>
         <NuxtLink to="/usecases" class="text-link paragraph_smll">
           Use Cases
         </NuxtLink>
-        <NuxtLink to="/technology" class="text-link paragraph_smll"
-          >Technology</NuxtLink
-        >
-        <NuxtLink to="/developers" class="text-link paragraph_smll"
-          >Developers</NuxtLink
-        >
-        <NuxtLink to="/teer-token" class="text-link paragraph_smll"
-          >TEER Token</NuxtLink
-        >
+        <NuxtLink to="/technology" class="text-link paragraph_smll">Technology</NuxtLink>
+        <NuxtLink to="/developers" class="text-link paragraph_smll">Developers</NuxtLink>
+        <NuxtLink to="/teer-token" class="text-link paragraph_smll">TEER Token</NuxtLink>
         <NuxtLink to="/about" class="text-link paragraph_smll">About</NuxtLink>
         <NuxtLink to="/blog" class="text-link paragraph_smll">Blog</NuxtLink>
-        <NuxtLink to="/contacts" class="text-link paragraph_smll"
-          >Contacts</NuxtLink
-        >
+        <NuxtLink to="/contacts" class="text-link paragraph_smll">Contacts</NuxtLink>
       </div>
       <div class="header__nav-right">
         <Socials />
-        <a
-          v-if="width > breakpoints.slg"
-          href="/"
-          target="_blank"
-          class="btn_border header__button paragraph_small"
-          >Start Building</a
-        >
-        <button
-          v-if="width <= breakpoints.slg"
-          class="header__burger"
-          :class="{
-            active: active,
-          }"
-          type="button"
-          @click="toggleMenu()"
-        >
+        <a v-if="width > breakpoints.slg" href="/" target="_blank" class="btn_border header__button paragraph_small">Start
+          Building</a>
+        <button v-if="width <= breakpoints.slg" class="header__burger" :class="{
+          active: active,
+        }" type="button" @click="toggleMenu()">
           <div class="header__burger-line" />
           <div class="header__burger-line" />
           <div class="header__burger-line" />
@@ -89,10 +68,10 @@ watch(y, (value) => {
 
 watch(
   route,
-  (value) => {
+  () => {
     active.value = false
+    $lockScroll(false)
   },
-  { deep: true, immediate: true }
 )
 </script>
 
