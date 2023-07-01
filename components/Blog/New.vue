@@ -58,11 +58,7 @@ const catName = computed(() => catsStore.getCatById(post.categories[0])?.name)
     }
 
     @include sm {
-      height: 304px;
-    }
-
-    @include xsm {
-      height: 197px;
+      height: auto;
     }
   }
 

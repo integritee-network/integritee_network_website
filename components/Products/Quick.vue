@@ -1,23 +1,22 @@
 <template>
-    <section id="quick">
-        <div class="quick block">
-            <div class="container">
-                <div class="quick__blur" />
-                <h2 class="title title_h2 margin_medium">Quick start guides</h2>
-                <div class="paragraph paragraph_medium margin_large">Explore our guides to learn more about our tech</div>
-                <div class="row quick__links-row margin_large">
-                    <a href="#" class="btn btn_border quick__link">GitHub</a>
-                    <a href="#" class="btn btn_border quick__link">Docs</a>
-                </div>
-                <div class="quick__link-list">
-                    <LineLink text="What is the TEER Token" :link="TEER_TOKEN_LINK" />
-                    <LineLink text="How to setup Integritee infrastructure" :link="GOVERNANCE_LINK" />
-                    <LineLink text="Governance on Integritee Network" :link="HOW_TO_SETUP_LINK" />
-                    <LineLink text="Check out our Technology" :link="CHECK_TECH_LINK" />
-                </div>
-            </div>
+  <section id="quick">
+    <div class="quick block">
+      <div class="container blur-gradient blur-gradient_top">
+        <h2 class="title title_h2 margin_medium">Quick start guides</h2>
+        <div class="paragraph paragraph_medium margin_large">Explore our guides to learn more about our tech</div>
+        <div class="row quick__links-row margin_large">
+          <a href="#" class="btn btn_border quick__link">GitHub</a>
+          <a href="#" class="btn btn_border quick__link">Docs</a>
         </div>
-    </section>
+        <div class="quick__link-list">
+          <LineLink text="What is the TEER Token" :link="TEER_TOKEN_LINK" />
+          <LineLink text="How to setup Integritee infrastructure" :link="GOVERNANCE_LINK" />
+          <LineLink text="Governance on Integritee Network" :link="HOW_TO_SETUP_LINK" />
+          <LineLink text="Check out our Technology" :link="CHECK_TECH_LINK" />
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 <script setup>
 import LineLink from '@/components/Global/LineLink.vue';
@@ -25,52 +24,39 @@ import { TEER_TOKEN_LINK, GOVERNANCE_LINK, HOW_TO_SETUP_LINK, CHECK_TECH_LINK } 
 </script>
 <style lang="scss" scoped>
 .quick {
-    &__blur {
-        position: absolute;
-        right: 190px;
-        top: -270px;
-        width: 506px;
-        height: 506px;
-        background: #30A8FF;
-        opacity: 0.3;
-        filter: blur(150px);
-        transform: rotate(-20deg);
+  &__links-row {
+    display: flex;
+    gap: 15px;
+  }
 
-        @include sm {
-            right: unset;
-            left: 0;
-        }
+  .container {
+    position: relative;
+  }
+
+  &__link-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 48px;
+
+    @include md {
+      display: block;
     }
 
-    &__links-row {
-        display: flex;
-        gap: 15px;
-    }
+    a {
+      @include md {
+        margin-bottom: 32px;
 
-    &__link-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 48px;
-
-        @include md {
-            display: block;
+        &:last-child {
+          margin-bottom: 0;
         }
+      }
 
-        a {
-            @include md {
-                margin-bottom: 32px;
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-
-            @include sm {
-                margin-bottom: 24px;
-            }
-        }
+      @include sm {
+        margin-bottom: 24px;
+      }
     }
+  }
 }
 </style>

@@ -112,7 +112,7 @@
 </template>
 
 <script setup>
-import Logo from '@/assets/img/logo.svg'
+import Logo from '@/components/Logo'
 import Socials from '@/components/Socials'
 </script>
 
@@ -121,7 +121,7 @@ import Socials from '@/components/Socials'
   &__logo {
     display: block;
     width: 191px;
-    margin-bottom: 10px;
+    margin-bottom: 19px;
 
     @include slg {
       margin-bottom: 0;
@@ -142,6 +142,7 @@ import Socials from '@/components/Socials'
 
     svg {
       width: 100%;
+      height: auto;
     }
   }
 
@@ -236,12 +237,15 @@ import Socials from '@/components/Socials'
     line-height: 150%;
     margin-bottom: 14px;
     font-size: 1.125em;
+
     @include slg {
       font-size: 1em;
     }
+
     @include sm {
       font-size: 0.875em;
     }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -271,7 +275,7 @@ import Socials from '@/components/Socials'
 
   &__description {
     line-height: 150%;
-    margin-bottom: 24px;
+    margin-bottom: 19px;
 
     @include md {
       margin-bottom: 0;
@@ -312,6 +316,7 @@ import Socials from '@/components/Socials'
 
     a {
       transition: .3s ease;
+
       &:hover {
         color: #7ca8ff;
       }

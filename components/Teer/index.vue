@@ -8,7 +8,7 @@
         Our token empowers utility, governance and value at the same time, making it a valuable asset
       </template>
       <template #button>
-        <a href="#" class="btn btn_gradient desc__button"> Learn more</a>
+        <a :href="TEER_TOKEN_LINK" class="btn btn_gradient desc__button" target="_blank"> Learn more</a>
       </template>
     </Desc>
     <HowItWorks :items='items' />
@@ -25,6 +25,7 @@ import Socials from "@/components/Socials/Section.vue";
 import FirstImg from './images/First.vue'
 import SecondImg from './images/Second.vue'
 import ThirdImg from './images/Third.vue'
+import { TEER_TOKEN_LINK } from '@/configs/app.config'
 
 const items = [
   {

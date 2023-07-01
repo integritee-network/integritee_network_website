@@ -16,7 +16,9 @@
             <a href="#" class="btn btn_gradient">Learn more</a>
           </div>
           <div class="token__right">
-            <img src="/img/index/token/polygon.svg" class="token__polygon" alt="Polygon" />
+            <RadialGradient class="token__radial-gradient" />
+            <!-- <img src="/img/index/token/polygon.svg" class="token__polygon" alt="Polygon" /> -->
+            <img src="/img/index/token/polygon1.svg" class="token__polygon1" alt="Polygon" />
             <div class="token__right-content">
               <div class="token__right-title title_sub">
                 Teer Token<br />
@@ -50,40 +52,54 @@
 <script setup>
 import Kraken from '@/assets/img/index/token/kraken.svg'
 import Gateio from '@/assets/img/index/token/gateio.svg'
+import RadialGradient from '@/components/Global/RadialGradient'
 </script>
 <style lang="scss">
 .token {
   &__right {
     position: relative;
-    width: 504px;
-    height: 414px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 91px;
-
-    @include slg {
-      height: 324px;
-    }
-
-    @include md {
-      padding-top: 147px;
-    }
 
     @include sm {
+      margin-bottom: 64px;
       width: 100%;
-      height: 484px;
     }
 
     @include xsm {
-      height: 345px;
-      padding-top: 77px;
+      margin-bottom: 49px;
+    }
+  }
+
+  &__radial-gradient {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 1049px;
+    height: 1049px;
+    z-index: -1;
+
+    @include slg {
+      width: 855px;
+      height: 855px;
+    }
+
+    @include xsm {
+      width: 644px;
+      height: 644px;
     }
   }
 
   &__row {
+    padding-right: 50px;
+    align-items: flex-start;
+
+    @include slg {
+      padding-right: 30px;
+    }
+
     @include sm {
       flex-direction: column-reverse;
+      padding-right: 0;
     }
   }
 
@@ -117,30 +133,21 @@ import Gateio from '@/assets/img/index/token/gateio.svg'
     }
   }
 
-  &__polygon {
-    position: absolute;
-    top: -303px;
-    left: -217px;
-    width: 938px;
+  &__polygon1 {
+    width: 429px;
 
     @include slg {
-      top: -253px;
-      left: -147px;
-      width: 798px;
-    }
-
-    @include md {
-      top: -180px;
-      left: -197px;
+      width: 349px;
     }
 
     @include sm {
-      left: 50%;
-      transform: translateX(-50%);
+      display: block;
+      margin: 0 auto;
     }
 
+
     @include xsm {
-      width: 598px;
+      width: 263px;
     }
   }
 
@@ -203,7 +210,15 @@ import Gateio from '@/assets/img/index/token/gateio.svg'
   }
 
   &__right-content {
-    position: relative;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     z-index: 2;
   }
 

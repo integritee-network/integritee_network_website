@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" class="line-link">
+  <a :href="link" class="line-link" target="_blank">
     <span class="line-link__text paragraph_large">{{ text }}</span>
     <LinkIcon class="line-link__icon" />
     <div class="line-link__underline" />
