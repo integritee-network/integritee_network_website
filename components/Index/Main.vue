@@ -15,7 +15,11 @@
           <a href="#" class="btn btn_gradient main__button">Start building</a>
         </div>
         <div class="main__img-wrapper">
-          <img src="/img/index/main/scheme.svg" class="main__scheme" alt="Scheme" />
+          <img
+            src="/img/index/main/scheme.svg"
+            class="main__scheme"
+            alt="Scheme"
+          />
         </div>
       </div>
     </div>
@@ -113,6 +117,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: 11px;
     }
 
     @include xsm {

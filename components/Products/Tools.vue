@@ -46,7 +46,7 @@
             </span>
             <Link class="tools__item-icon" />
           </a>
-          <a href="#" class="tools__item">
+          <a :href="SECURE_LINK" target="_blank" class="tools__item">
             <span>
               <span class="tools__item-title title_sub">Secure TEE Infrastructure</span>
               <span class="tools__item-subtitle paragraph_small">A framework for external data</span>
@@ -65,6 +65,7 @@
 </template>
 <script setup>
 import Link from '@/assets/img/link.svg'
+import { SECURE_LINK } from '~/configs/app.config'
 </script>
 <style lang="scss" scoped>
 .tools {

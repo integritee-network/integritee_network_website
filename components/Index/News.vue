@@ -3,15 +3,10 @@
     <div class="block news">
       <div class="container">
         <h2 class="title title_h2 news__title margin_large">
-          Network <a href="#" class="color_blue">news</a>
+          Network <NuxtLink to="/blog" class="color_blue">news</NuxtLink>
         </h2>
         <div class="row news__list">
-          <New
-            v-for="post in data"
-            :post="post"
-            class="news__item"
-            :key="post.id"
-          />
+          <New v-for="post in data" :post="post" class="news__item" :key="post.id" />
         </div>
       </div>
     </div>

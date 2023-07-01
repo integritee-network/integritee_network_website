@@ -24,7 +24,9 @@
             </a>
             <a href="#" class="socials__list-item">
               <Twitter class="socials__list-item-icon" />
-              <span class="socials__list-item-name paragraph_medium">Twitter</span>
+              <span class="socials__list-item-name paragraph_medium"
+                >Twitter</span
+              >
             </a>
           </div>
         </div>
@@ -40,13 +42,19 @@ import Telegram from '@/assets/img/socials/telegram.svg'
 <style lang="scss">
 .socials__list-item-icon {
   path {
-      fill-opacity: 1;
-    }
+    fill-opacity: 1;
+  }
 }
 </style>
 
 <style lang="scss" scoped>
 .socials {
+  &__title {
+    line-height: unset;
+    @include md {
+      line-height: 110%;
+    }
+  }
   &__description {
     line-height: 230%;
 

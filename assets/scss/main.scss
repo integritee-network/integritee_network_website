@@ -17,6 +17,10 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+textarea {
+    font-family: 'Inter', sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -35,7 +39,7 @@ a {
 
     &.text-link {
         &:hover {
-            color: #C84AFF;
+            color: #5B92FF;
         }
     }
 
@@ -72,6 +76,7 @@ a {
 }
 
 .btn {
+    position: relative;
     display: inline-block;
     font-size: $pDef;
     padding: 14px 22px;
@@ -304,4 +309,50 @@ a {
 .date {
     color: #E5E5E5;
     opacity: 0.5;
+}
+
+.blur-gradient {
+    &.blur-gradient_extra-top {
+        &:before {
+            top: -100%;
+        }
+    }
+
+    &.blur-gradient_bottom {
+        &:before {
+            bottom: 0;
+            top: unset;
+        }
+    }
+
+    &.blur-gradient_top {
+        &:before {
+            top: -75%;
+        }
+    }
+
+    &.blur-gradient_top-middle {
+        &:before {
+            top: -50%;
+        }
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 506px;
+        height: 506px;
+        background: #30A8FF;
+        opacity: 0.3;
+        filter: blur(150px);
+        transform: rotate(-20deg) translateX(-50%);
+        z-index: -1;
+
+        @include sm {
+            right: unset;
+            left: 0;
+        }
+    }
 }

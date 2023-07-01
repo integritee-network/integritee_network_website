@@ -1,7 +1,7 @@
 <template>
   <section id="community">
     <div class="block community">
-      <div class="container">
+      <div class="container blur-gradient">
         <div class="column column_medium community__column">
           <h2 class="title title_h2 community__title">
             Join our developer community <br /> and start your integritee journey

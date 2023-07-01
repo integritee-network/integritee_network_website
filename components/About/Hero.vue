@@ -12,7 +12,7 @@
           We’ve been developing decentralized solutions for tangible, real-world use cases for over half a decade
         </template>
         <template #button>
-          <a href="#" class="btn btn_gradient desc__button">Contact us</a>
+          <a href="mailto: hello@integritee.network" class="btn btn_gradient desc__button">Contact us</a>
         </template>
       </Desc>
     </div>
@@ -22,11 +22,11 @@
 import Desc from "@/components/Desc";
 </script>
 <style lang="scss" scoped>
-    .title {
-      br {
-        @include slg {
-          display: none;
-        }
-      }
+.title {
+  br {
+    @include slg {
+      display: none;
     }
+  }
+}
 </style>

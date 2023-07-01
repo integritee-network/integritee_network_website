@@ -23,9 +23,23 @@ import Telegram from '@/assets/img/socials/telegram.svg'
   display: flex;
   align-items: center;
   gap: 12px;
+
   svg {
-    display: block;
+    display: inline-block;
     width: 24px;
+    transition: 0.3s ease;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      svg {
+        fill-opacity: 1;
+      }
+    }
   }
 }
 </style>

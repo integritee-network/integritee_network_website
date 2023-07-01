@@ -1,5 +1,5 @@
 <template>
-  <header class="header" :class="{ active: fixed, 'header_no-bg': active }">
+  <header class="header" :class="{ 'header_no-bg': active }">
     <div class="container">
       <NuxtLink to="/" class="header__logo">
         <Logo />
@@ -34,7 +34,8 @@
 </template>
 
 <script setup>
-import Logo from '@/assets/img/logo.svg'
+// import Logo from '@/assets/img/logo.svg'
+import Logo from '@/components/Logo'
 import Socials from '@/components/Socials'
 import Menu from '@/components/Header/Menu.vue'
 import { useWindowSize, useWindowScroll } from '@vueuse/core'
@@ -43,8 +44,6 @@ import { ref, watch, onMounted } from 'vue'
 import { useNuxtApp, useRoute } from 'nuxt/app'
 
 const active = ref(false)
-
-const fixed = ref(false)
 
 const { width } = useWindowSize()
 const { y } = useWindowScroll()
@@ -57,14 +56,6 @@ const toggleMenu = () => {
   active.value = !active.value
   $lockScroll(active.value)
 }
-
-onMounted(() => {
-  fixed.value = window.scrollY > 80
-})
-
-watch(y, (value) => {
-  fixed.value = value > 80
-})
 
 watch(
   route,
@@ -86,7 +77,9 @@ watch(
 
 <style lang="scss" scoped>
 .header {
-  position: absolute;
+  position: fixed;
+  background: linear-gradient(180deg, #0a0a0f 0%, rgba(10, 10, 15, 0) 100%);
+  backdrop-filter: blur(4px);
   top: 0;
   left: 0;
   width: 100%;
@@ -114,6 +107,14 @@ watch(
 
     svg {
       width: 100%;
+    }
+
+    &:hover {
+      svg {
+        &.blue-hover {
+          background: #5B92FF;
+        }
+      }
     }
   }
 
@@ -185,12 +186,6 @@ watch(
 
   &_no-bg {
     background: rgba(81, 81, 81, 0) !important;
-  }
-
-  &.active {
-    position: fixed;
-    background: linear-gradient(180deg, #0a0a0f 0%, rgba(10, 10, 15, 0) 100%);
-    backdrop-filter: blur(4px);
   }
 }
 </style>

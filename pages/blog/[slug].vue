@@ -20,7 +20,12 @@
           <div v-if="related.length" class="new__news">
             <h2 class="title new__title margin_medium">You Might Also Like</h2>
             <div class="new__news-list blog-list">
-              <New v-for="post in related" :post="post" class="new__news-list-item" :key="post.id" />
+              <New
+                v-for="post in related"
+                :post="post"
+                class="new__news-list-item"
+                :key="post.id"
+              />
             </div>
           </div>
         </div>
@@ -48,12 +53,11 @@ const post = await postsStore.getPostBySlug(slug)
 
 if (!post) throw { statusCode: 404, message: 'Post not found' }
 
-console.log(post)
-
 useSeoMeta({
   title: post.yoast_head_json.title,
   ogTitle: post.yoast_head_json.og_title,
-  description: post.yoast_head_json.description ?? post.yoast_head_json.og_description,
+  description:
+    post.yoast_head_json.description ?? post.yoast_head_json.og_description,
   ogDescription: post.yoast_head_json.og_description,
 })
 
@@ -80,7 +84,7 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
   &__title {
     font-size: $tDef;
     font-weight: 500;
-
+    line-height: 120%;
     @include slg {
       font-size: 2.25em;
     }

@@ -3,7 +3,8 @@
     <div class='container'>
       <h2 class='title title_h2 margin_large'>Resource center</h2>
       <div>
-        <div v-for='(item, index) in items' :key='index' class='resources__item'>
+        <div v-for='(item, index) in items' :key='index' class='resources__item'
+          :class="{ 'blur-gradient': items.length === index + 1, 'blur-gradient_extra-top': items.length === index + 1 }">
           <div class='resources__column'>
             <div class='resources__item-title'>
               {{ item.title }}
@@ -117,11 +118,13 @@ export default {
 <style lang="scss" scoped>
 .resources {
   position: relative;
+
   &__btn {
     padding: 12px 22px;
     backdrop-filter: unset;
     background: transparent;
   }
+
   &__column {
     width: 600px;
     flex-shrink: 0;
@@ -175,7 +178,6 @@ export default {
 
     @include sm {
       order: -1;
-      margin: 0 auto;
       margin-bottom: 18px;
     }
 

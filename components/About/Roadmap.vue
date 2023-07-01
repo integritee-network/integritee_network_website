@@ -37,10 +37,9 @@
 </template>
 <script setup lang="ts">
 import useRoadmap from '@/hooks/useRoadmap'
-import { useWindowScroll } from '@vueuse/core'
-import { ref, watch } from 'vue'
-import { useWindowSize } from '@vueuse/core'
-import { clone } from 'lodash'
+import { ref, watch, onMounted, onUnmounted } from 'vue'
+import { useWindowSize, useWindowScroll } from '@vueuse/core'
+import _ from 'lodash'
 import { breakpoints } from '@/configs/app.config'
 
 const { getYears, getInfoList, setActive } = useRoadmap()
@@ -58,6 +57,27 @@ const endNav = ref(false)
 
 const years = getYears()
 const roadmap = getInfoList()
+
+const mouseWheelFunc = (event: any) => {
+  if (!event.deltaY) return
+
+  const scrollLeft = event.currentTarget.scrollLeft
+  const scrollRight = event.currentTarget.scrollWidth - scrollLeft - event.currentTarget.clientWidth
+
+  if (event.deltaY > 0 && scrollRight === 0) return
+  if (event.deltaY < 0 && scrollLeft === 0) return
+
+  event.currentTarget.scrollLeft += event.deltaY + event.deltaX
+  event.preventDefault()
+}
+
+onMounted(() => {
+  nav.value?.addEventListener('wheel', mouseWheelFunc)
+})
+
+onUnmounted(() => {
+  nav.value?.removeEventListener('wheel', mouseWheelFunc)
+})
 
 const onYearClick = (idx: number) => {
   if (!root.value) return
@@ -86,7 +106,7 @@ watch(y, (value) => {
     endNav.value = elementInEnd <= 84
   }
 
-  const clonedItems = clone(items.value)
+  const clonedItems = _.clone(items.value)
   for (const [idx, item] of clonedItems.reverse().entries()) {
     if (item.getBoundingClientRect().y - height.value / 2 <= 0) {
       setActive(years[years.length - 1 - idx].year)
@@ -119,7 +139,12 @@ watch(y, (value) => {
       display: flex;
       gap: 8px;
       align-items: flex-start;
-      overflow-x: scroll;
+      overflow-y: auto;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        height: 0;
+      }
     }
 
     &.active {
@@ -155,9 +180,11 @@ watch(y, (value) => {
   &__list-years-wrapper,
   &__list-years {
     width: 137px;
-    @media screen and (max-height: 740px) and (min-width: 841px){
+
+    @media screen and (max-height: 740px) and (min-width: 841px) {
       width: 121px;
     }
+
     @include sm {
       width: 100%;
       height: 56px;
@@ -182,7 +209,7 @@ watch(y, (value) => {
     transition: .3s ease;
     cursor: pointer;
 
-    @media screen and (max-height: 740px) and (min-width: 841px){
+    @media screen and (max-height: 740px) and (min-width: 841px) {
       font-size: 1.125em;
       padding: 21px 0;
     }

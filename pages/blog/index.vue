@@ -1,10 +1,12 @@
 <template>
   <Hero />
-  <section id="blog">
+  <section id="blog" ref="root">
     <div class="blog block">
-      <div class="container row blog-row">
-        <div class="blog__nav blog-nav-column">
-          <Nav :activeId="activeCatId" @onActiveChange="handleActiveChange" />
+      <div class="container row blog-row blur-gradient blur-gradient_bottom" ref="parent">
+        <div class="blog-nav-column">
+          <div class="blog__nav-wrapper blog-nav-column" ref="nav" :class="{ active: fixedNav, end: endNav }">
+            <Nav class="blog__nav" :activeId="activeCatId" @onActiveChange="handleActiveChange" />
+          </div>
         </div>
         <div v-if="posts?.length" class="blog-list">
           <New v-for="post in posts" :post="post" class="blog__new-item" :key="post.id" />
@@ -24,6 +26,7 @@ import { usePostsStore } from '@/store/posts'
 import { useCategoriesStore } from '@/store/categories'
 import { Post } from '@/types/post'
 import { useSeoMeta } from '#imports'
+import { useWindowScroll, useWindowSize } from '@vueuse/core'
 
 useSeoMeta({
   title: '',
@@ -34,13 +37,25 @@ useSeoMeta({
 
 // const wpApi = useWpApi()
 
+const { y } = useWindowScroll()
+const { height, width } = useWindowSize()
+
 const route = useRoute()
 const router = useRouter()
 
 const postsStore = usePostsStore()
 const catsStore = useCategoriesStore()
 
+const parent = ref<HTMLElement | null>(null)
+const nav = ref<HTMLElement | null>(null)
+const root = ref<HTMLElement | null>(null)
+
+const fixedNav = ref(false)
+const endNav = ref(false)
+
 const posts = ref<Post[] | null>([])
+
+import { breakpoints } from '@/configs/app.config'
 
 // const { data, error } = await wpApi.getPosts({})
 
@@ -80,7 +95,29 @@ const handleActiveChange = async (activeId: number | null) => {
 
   if (activeId !== null) posts.value = await postsStore.getPostsByCat(activeId)
   else posts.value = postsStore.posts
+
+  if (!parent.value || !nav.value || !root.value || width.value <= breakpoints.slg) return
+
+  const middleHeight = height.value / 2
+
+  const elementInMiddle = parent.value?.getBoundingClientRect().y + nav.value.offsetHeight / 2
+  const elementInEnd = parent.value?.getBoundingClientRect().y + parent.value.offsetHeight - height.value / 2 - nav.value.offsetHeight / 2
+
+  fixedNav.value = middleHeight >= elementInMiddle && elementInEnd > 0
+  endNav.value = elementInEnd <= 0
 }
+
+watch(y, (value) => {
+  if (!parent.value || !nav.value || !root.value || width.value <= breakpoints.slg) return
+
+  const middleHeight = height.value / 2
+
+  const elementInMiddle = parent.value?.getBoundingClientRect().y + nav.value.offsetHeight / 2
+  const elementInEnd = parent.value?.getBoundingClientRect().y + parent.value.offsetHeight - height.value / 2 - nav.value.offsetHeight / 2
+
+  fixedNav.value = middleHeight >= elementInMiddle && elementInEnd > 0
+  endNav.value = elementInEnd <= 0
+})
 
 watch(route, value => {
   if (value.query.category === undefined) {
@@ -105,6 +142,7 @@ watch(route, value => {
 .blog-nav-column {
   width: 360px;
   flex-shrink: 0;
+  min-height: 360px;
 
   @include lg {
     width: 310px;
@@ -112,6 +150,7 @@ watch(route, value => {
 
   @include slg {
     width: auto;
+    min-height: auto;
   }
 }
 
@@ -122,8 +161,13 @@ watch(route, value => {
   grid-row-gap: 40px;
   width: 100%;
 
+  @include slg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   @include sm {
     grid-column-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   @include xsm {
@@ -141,6 +185,23 @@ watch(route, value => {
       &:last-child {
         margin-bottom: 0;
       }
+    }
+  }
+
+  &__nav-wrapper {
+    &.active {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include lg {
+        position: static;
+      }
+    }
+
+    &.end {
+      position: absolute;
+      bottom: 0;
     }
   }
 }
