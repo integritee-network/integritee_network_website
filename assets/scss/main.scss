@@ -342,15 +342,26 @@ a {
         position: absolute;
         left: 50%;
         top: 0;
-        width: 506px;
-        height: 506px;
-        background: #30A8FF;
-        opacity: 0.3;
-        filter: blur(150px);
+        width: 856px;
+        height: 856px;
+        background: radial-gradient(49.25% 49.25% at 50% 50.00%, #30A8FF 0%, rgba(48, 168, 255, 0.00) 100%);
+        opacity: 0.2;
         transform: rotate(-20deg) translateX(-50%);
         z-index: -1;
 
+        @include lg {
+            width: 818px;
+            height: 818px;
+        }
+
+        @include slg {
+            width: 806px;
+            height: 806px;
+        }
+
         @include sm {
+            width: 732px;
+            height: 732px;
             right: unset;
             left: 0;
         }

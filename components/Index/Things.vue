@@ -17,7 +17,9 @@
           <a href="#" class="btn btn_gradient things__button">Learn more</a>
         </div>
         <div class="things__image-wrapper">
+          <!-- <img src="/img/index/things/polygons.svg" class="things__image" alt="Polygons" /> -->
           <img src="/img/index/things/polygons.svg" class="things__image" alt="Polygons" />
+          <GlobalRadialGradient class="things__image-gradient" />
         </div>
       </div>
     </div>
@@ -28,48 +30,72 @@
 .things {
   .container {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    @include md {
+      gap: 15px;
+    }
 
     @include sm {
-      display: flex;
       flex-direction: column-reverse;
     }
   }
 
   &__image {
-    position: absolute;
-    right: -240px;
-    top: -204px;
-    width: 1054px;
-
-    @include lg {
-      right: -198px;
-      top: -174px;
-      width: 955px;
-    }
-
-    @include slg {
-      right: -232px;
-      top: -213px;
-      width: 985px;
-    }
-
-    @include md {
-      right: -186px;
-      top: -135px;
-      width: 735px;
-    }
+    width: 100%;
 
     @include sm {
-      position: static;
+      width: 90%;
+    }
+  }
+
+  &__image-wrapper {
+    position: relative;
+
+    @include sm {
+      text-align: center;
+      margin-bottom: 70px;
     }
 
     @include xsm {
-      width: 550px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__image-gradient {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 950px;
+    height: 445px;
+
+    @include slg {
+      height: 338px;
+      width: 676px;
     }
 
+    @include md {
+      height: 309px;
+      width: 618px;
+    }
+
+    @include sm {
+      height: 330px;
+      width: 660px;
+    }
+
+    @include xsm {
+      height: 258px;
+      width: 516px;
+    }
   }
 
   &__column {
+    flex-shrink: 0;
+
     @include lg {
       width: 560px;
     }
@@ -92,19 +118,6 @@
       br {
         display: none;
       }
-    }
-  }
-
-  &__image-wrapper {
-    @include sm {
-      height: 360px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    @include xsm {
-      height: 240px;
     }
   }
 }

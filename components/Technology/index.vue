@@ -18,36 +18,33 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Desc from "@/components/Desc";
 import HowItWorks from "@/components/Technology/HowItWorks.vue";
 import Building from "@/components/Technology/Building.vue";
 import Socials from "@/components/Socials/Section.vue";
-import FirstImg from './images/First.vue'
-import SecondImg from './images/Second.vue'
-import ThirdImg from './images/Third.vue'
-import FourthImg from './images/Fourth.vue'
+import { ITechnology } from "~/types";
 
-const items = [
+const items: ITechnology[] = [
   {
     title: 'TEE enterprise hardware\nensures the speed\nand confidentiality\nof our solution',
     text: 'A trusted execution environment (TEE) is an isolated area within a computer processor that runs separately from the standard OS. Any data processed within a TEE is accessible to no one, not even the admin. A public auditability service will provide all users with assurance that their data can only be processed in pre-defined ways in an isolated and trustworthy hardware environment',
-    img: FirstImg,
+    img: '/img/technology/tee.svg',
   },
   {
     title: 'Integritee’s blockchain\nbuilds upon the Polkadot\nnetwork',
     text: 'Polkadot is a scalable and secure protocol that serves as the foundation for an interoperable network of blockchains. The network provides the basis for Web 3.0 — a new, fully decentralized internet. On Polkadot, any type of data can be exchanged between the blockchains inside the ecosystem. Polkadot’s key benefit is that it provides pooled security and cross-chain messaging for all network participants',
-    img: SecondImg,
+    img: '/img/technology/network.svg',
   },
   {
     title: 'Deployment at any stage\nof your development',
     text: 'Our architecture allows a permissioned or permissionless deployment no matter what requirement you have. Servers can also be self hosted on premise or hosted in the cloud. Our network is providing a great flexlibility for applications operators to host and maintain the solutions',
-    img: ThirdImg,
+    img: '/img/technology/deployment.svg',
   },
   {
     title: 'Rust & Substrate runtime\ncompatibility',
     text: 'The Integritee SDK is compatible with Substrate runtime pallets and Rust code can be simply integrated with our SDK to run a decentralized application. With a few lines of glue-code, you can reuse your pallets and instantiate them on our chain. It is even possible to trustlessly interact between on- and off-chain runtimes',
-    img: FourthImg,
+    img: '/img/technology/substrate.svg',
   },
 ]
 </script>

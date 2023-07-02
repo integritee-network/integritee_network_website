@@ -15,11 +15,8 @@
           <a href="#" class="btn btn_gradient main__button">Start building</a>
         </div>
         <div class="main__img-wrapper">
-          <img
-            src="/img/index/main/scheme.svg"
-            class="main__scheme"
-            alt="Scheme"
-          />
+          <img src="/img/index/main/scheme.svg" class="main__scheme" alt="Scheme" />
+          <GlobalRadialGradient class="main__img-gradient" />
         </div>
       </div>
     </div>
@@ -28,6 +25,10 @@
 <style lang="scss" scoped>
 .main {
   padding-top: 90px;
+
+  @include xsm {
+    padding-top: 70px;
+  }
 
   .container {
     @include sm {
@@ -38,6 +39,8 @@
 
   .container {
     position: relative;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__title {
@@ -70,26 +73,55 @@
 
   &__scheme {
     position: absolute;
-    right: -460px;
-    top: -261px;
-    width: 1131px;
+    right: -454px;
+    top: -71px;
+    width: 831px;
 
     @include slg {
-      right: -410px;
-      top: -271px;
-      width: 941px;
+      right: -380px;
+      top: -81px;
+      width: 741px
+    }
+
+    @include md {
+      right: -411px;
+      top: -50px;
     }
 
     @include sm {
       position: relative;
-      right: -101px;
+      left: 196px;
       top: -50px;
+      right: unset;
     }
 
+
     @include xsm {
-      width: 720px;
-      right: -79px;
-      top: -60px;
+      width: 550px;
+      left: 150px;
+    }
+  }
+
+  &__img-gradient {
+    width: 456px;
+    height: 456px;
+    left: -320px;
+    top: -30px;
+
+    @include slg {
+      width: 407px;
+      height: 407px;
+      left: -400px;
+      top: -70px;
+    }
+
+    @include md {
+      left: -370px;
+      top: -40px;
+    }
+
+    @include sm {
+      left: 20px;
     }
   }
 
@@ -112,6 +144,8 @@
   }
 
   &__img-wrapper {
+    position: relative;
+
     @include sm {
       height: 430px;
       display: flex;
