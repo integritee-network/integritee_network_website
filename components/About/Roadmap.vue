@@ -153,10 +153,10 @@ watch(y, (value) => {
       transform: translateY(-50%);
 
       @include sm {
-        top: 76px;
+        top: 72px;
         left: 0;
-        background: rgba(81, 81, 81, 0.146);
-        backdrop-filter: blur(38.335px);
+        background: rgba(81, 81, 81, 0.25);
+        backdrop-filter: blur(4px);
         transform: none;
         padding: 8px 0 8px 21px;
         z-index: 5;
@@ -224,11 +224,15 @@ watch(y, (value) => {
     }
 
     &.active {
-      background: rgba(133, 133, 133, 0.25);
+      background: #5B92FF;
     }
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &:hover {
+      background: rgba(133, 133, 133, 0.25);
     }
   }
 

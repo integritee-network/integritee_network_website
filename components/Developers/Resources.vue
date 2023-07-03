@@ -6,10 +6,21 @@
         <div v-for='(item, index) in items' :key='index' class='resources__item'
           :class="{ 'blur-gradient': items.length === index + 1, 'blur-gradient_extra-top': items.length === index + 1 }">
           <div class='resources__column'>
-            <div class='resources__item-title'>
+            <div v-if='width > 840' class='resources__item-title'>
               {{ item.title }}
             </div>
-            <div class='paragraph paragraph_small resources__item-gray'>
+            <div v-if='width <= 840' class='resources__item-row'>
+              <img class='resources__item-img' :src='item.imgSm' />
+              <div>
+                <div class='resources__item-title'>
+                  {{ item.title }}
+                </div>
+                <div class='paragraph paragraph_small resources__item-gray'>
+                  {{ item.gray }}
+                </div>
+              </div>
+            </div>
+            <div v-if='width > 840' class='paragraph paragraph_small resources__item-gray'>
               {{ item.gray }}
             </div>
             <div class='paragraph paragraph_medium resources__item-text'>
@@ -26,94 +37,96 @@
               <a href='#' class='btn btn_border resources__btn'>Demo</a>
             </div>
           </div>
-          <img class='resources__item-img' :src='item.img' />
+          <img v-if='width > 840' class='resources__item-img' :src='item.img' />
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  setup() {
-    const items = [
+<script setup>
+import { useWindowSize } from '@vueuse/core'
+
+const { width } = useWindowSize()
+
+const items = [
+  {
+    title: 'Sidechain SDK',
+    img: '/img/resources/sdk-img.png',
+    imgSm: '/img/resources/sdk-img-sm.png',
+    gray: 'Web3 development tool',
+    text: 'Integritee\'s Sidechain SDK is ideal for building any decentralized application that requires low latency, scalability, and confidentiality',
+    list: [
       {
-        title: 'Sidechain SDK',
-        img: '/img/resources/sdk-img.png',
-        gray: 'Web3 development tool',
-        text: 'Integritee\'s Sidechain SDK is ideal for building any decentralized application that requires low latency, scalability, and confidentiality',
-        list: [
-          {
-            li: 'Develop a new dapp from scratch',
-          },
-          {
-            li: 'Add to an existing project',
-          }, {
-            li: 'Sub-second block production times',
-          }, {
-            li: 'Combined 1M transactions per second',
-          },
-          {
-            li: 'Advanced privacy features',
-          },
-        ]
+        li: 'Develop a new dapp from scratch',
       },
       {
-        title: 'Off-Chain Worker',
-        img: '/img/resources/off-chain-img.png',
-        gray: 'Secure off-chain computational tool',
-        text: 'Extend blockchain utility with secure off-chain computation and increase the available computing power for your applications',
-        list: [
-          {
-            li: 'Set up trusted Off-Chain Workers to execute customs state transition functions inside TEEs'
-          },
-          {
-            li: 'Balance high performance with cost efficiency',
-          },
-          {
-            li: 'Increase computational efficiency by integrating off-chain operations',
-          },
-        ]
+        li: 'Add to an existing project',
+      }, {
+        li: 'Sub-second block production times',
+      }, {
+        li: 'Combined 1M transactions per second',
       },
       {
-        title: 'Teeracle',
-        img: '/img/resources/teeracle-img.png',
-        gray: 'Trusted oracle framework',
-        text: 'Build trusted oracles that run inside TEEs to securely and efficiently bridge the gap between Web2 data sources and Web3 systems',
-        list: [
-          {
-            li: 'Be assured that both the oracle service and all retrieved data are secure and unaltered'
-          },
-          {
-            li: 'Customize data requests (e.g., source, content, type) and schedules according to your needs',
-          },
-          {
-            li: 'Obtain the security of a decentralized oracle and match the efficiency of a centralized provider',
-          },
-        ]
-      },
-      {
-        title: 'Attesteer',
-        img: '/img/resources/attersteer.png',
-        gray: 'Public auditability service',
-        text: 'Add public auditability to your confidential processes with our decentralized remote attestation service - a transparent on-chain proof of integrity',
-        list: [
-          {
-            li: 'Prove that the TEE hardware used is genuine',
-          },
-          {
-            li: 'Verify that all data and processes inside TEEs are untampered and confidential at all times',
-          },
-          {
-            li: 'Add public auditability by storing the verification proof (attestation result) on our public network',
-          },
-        ]
+        li: 'Advanced privacy features',
       },
     ]
-
-    return { items }
-  }
-}
+  },
+  {
+    title: 'Off-Chain Worker',
+    img: '/img/resources/off-chain-img.png',
+    imgSm: '/img/resources/off-chain-img-sm.png',
+    gray: 'Secure off-chain computational tool',
+    text: 'Extend blockchain utility with secure off-chain computation and increase the available computing power for your applications',
+    list: [
+      {
+        li: 'Set up trusted Off-Chain Workers to execute customs state transition functions inside TEEs'
+      },
+      {
+        li: 'Balance high performance with cost efficiency',
+      },
+      {
+        li: 'Increase computational efficiency by integrating off-chain operations',
+      },
+    ]
+  },
+  {
+    title: 'Teeracle',
+    img: '/img/resources/teeracle-img.png',
+    imgSm: '/img/resources/teeracle-img-sm.png',
+    gray: 'Trusted oracle framework',
+    text: 'Build trusted oracles that run inside TEEs to securely and efficiently bridge the gap between Web2 data sources and Web3 systems',
+    list: [
+      {
+        li: 'Be assured that both the oracle service and all retrieved data are secure and unaltered'
+      },
+      {
+        li: 'Customize data requests (e.g., source, content, type) and schedules according to your needs',
+      },
+      {
+        li: 'Obtain the security of a decentralized oracle and match the efficiency of a centralized provider',
+      },
+    ]
+  },
+  {
+    title: 'Attesteer',
+    img: '/img/resources/attersteer.png',
+    imgSm: '/img/resources/attersteer-img-sm.png',
+    gray: 'Public auditability service',
+    text: 'Add public auditability to your confidential processes with our decentralized remote attestation service - a transparent on-chain proof of integrity',
+    list: [
+      {
+        li: 'Prove that the TEE hardware used is genuine',
+      },
+      {
+        li: 'Verify that all data and processes inside TEEs are untampered and confidential at all times',
+      },
+      {
+        li: 'Add public auditability by storing the verification proof (attestation result) on our public network',
+      },
+    ]
+  },
+]
 </script>
 <style lang="scss" scoped>
 .resources {
@@ -141,6 +154,11 @@ export default {
       width: 100%;
     }
   }
+  &__item-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
 
   &__item-title {
     font-family: 'WhyteInktrap';
@@ -156,7 +174,7 @@ export default {
       font-size: $sm_tMd;
     }
 
-    @include sm {
+    @include md {
       font-size: 1.688em;
     }
   }
@@ -177,14 +195,14 @@ export default {
     }
 
     @include sm {
-      order: -1;
-      margin-bottom: 18px;
+      width: 80px;
+      height: 90px;
+      margin-right: 24px;
     }
 
     @include xsm {
-      width: 150px;
-      height: 150px;
-      margin-bottom: 29px;
+      width: 85px;
+      height: 93px;
     }
   }
 
@@ -205,7 +223,11 @@ export default {
     }
 
     @include sm {
-      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    @include xsm {
+      margin-bottom: 60px;
     }
 
     &:nth-child(2) {
@@ -246,7 +268,7 @@ export default {
     }
 
     @include sm {
-      margin-bottom: 16px;
+      margin-bottom: 0;
     }
   }
 

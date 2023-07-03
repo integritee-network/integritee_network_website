@@ -17,7 +17,7 @@
       </div>
       <div class='form__field'
         :class='{ error: (v$.$errors.length > 0 && v$.$errors[0].$property === "subject"), active: (formData.subject !== "") }'>
-        <input @input='onFieldChange("subject", $event.target.value)' :value='formData.subject' type='text'
+        <input maxlength='80' @input='onFieldChange("subject", $event.target.value)' :value='formData.subject' type='text'
           class='paragraph_medium form__input' />
         <label :class='{ active: (formData.subject !== "") }' class='form__label paragraph_medium'>Subject</label>
         <div class='form__field_caption'>{{ v$.$errors.length > 0 && v$.$errors[0].$message }}</div>
@@ -25,7 +25,7 @@
       </div>
       <div class='form__field'
         :class='{ error: (v$.$errors.length > 0 && v$.$errors[0].$property === "message"), active: (formData.message !== "") }'>
-        <textarea @input='onFieldChange("message", $event.target.value)' :value='formData.message'
+        <textarea maxlength='200' @input='onFieldChange("message", $event.target.value)' :value='formData.message'
           class='paragraph_medium form__textarea scrollbar' />
         <label :class='{ active: (formData.message !== "") }' class='form__label paragraph_medium'>Message</label>
         <div class='form__field_caption'>{{ v$.$errors.length > 0 && v$.$errors[0].$message }}</div>
@@ -62,8 +62,8 @@ export default {
     const rules = {
       name: { required, minLength: minLength(2) },
       email: { required, email },
-      subject: { required, maxLength: maxLength(80) },
-      message: { required, maxLength: maxLength(200) },
+      subject: { required },
+      message: { required },
     }
 
     const v$ = useVuelidate(rules, formData)

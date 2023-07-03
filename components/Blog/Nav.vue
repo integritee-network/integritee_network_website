@@ -97,6 +97,10 @@ onUnmounted(() => {
       flex-shrink: 0;
     }
 
+    @include md {
+      padding: 12px 18px;
+    }
+
     &.active {
       background: #5B92FF;
     }
