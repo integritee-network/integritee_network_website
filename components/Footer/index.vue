@@ -121,23 +121,26 @@ import Socials from '@/components/Socials'
   &__logo {
     display: block;
     width: 191px;
+    height: 40px;
     margin-bottom: 19px;
 
     @include slg {
-      margin-bottom: 0;
       width: 117px;
-      margin-bottom: 20px;
+      height: 24px;
+      margin-bottom: 26px;
     }
 
     @include md {
       margin-bottom: 0;
       width: 144px;
+      height: 30px;
       flex-shrink: 0;
     }
 
     @include sm {
       margin-bottom: 24px;
       width: 117px;
+      height: 24px;
     }
 
     svg {
@@ -277,6 +280,10 @@ import Socials from '@/components/Socials'
     line-height: 150%;
     margin-bottom: 19px;
 
+    @include slg {
+      margin-bottom: 26px;
+    }
+
     @include md {
       margin-bottom: 0;
       max-width: 415px;
@@ -292,6 +299,8 @@ import Socials from '@/components/Socials'
   &__column-title {
     color: $gray;
     margin-bottom: 32px;
+    line-height: 150%;
+    font-size: 1.125em;
 
     @include slg {
       margin-bottom: 24px;
@@ -299,6 +308,10 @@ import Socials from '@/components/Socials'
 
     @include md {
       margin-bottom: 16px;
+    }
+
+    @include sm {
+      font-size: 0.875em;
     }
   }
 
