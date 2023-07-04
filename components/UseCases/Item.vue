@@ -176,6 +176,14 @@ const tag = computed(() => {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     padding: 9px 12px;
+
+    @include slg {
+      margin-bottom: 24px;
+    }
+
+    @include md {
+      margin-bottom: 18px;
+    }
   }
 
   &__text-title {

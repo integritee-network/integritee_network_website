@@ -50,7 +50,7 @@ import Telegram from '@/assets/img/socials/telegram.svg'
 <style lang="scss" scoped>
 .socials {
   &__title {
-    line-height: unset;
+    //line-height: unset;
     @include md {
       line-height: 110%;
     }

@@ -4,7 +4,7 @@
     <div class="blog block">
       <div class="container row blog-row blur-gradient blur-gradient_bottom" ref="parent">
         <div class="blog-nav-column">
-          <div class="blog__nav-wrapper blog-nav-column" ref="nav" :class="{ active: fixedNav, end: endNav }">
+          <div class="blog__nav-wrapper blog-nav-column" ref="nav">
             <Nav class="blog__nav" :activeId="activeCatId" @onActiveChange="handleActiveChange" />
           </div>
         </div>
@@ -189,15 +189,21 @@ watch(route, value => {
   }
 
   &__nav-wrapper {
-    &.active {
-      position: fixed;
-      top: 50%;
-      transform: translateY(-50%);
-
-      @include lg {
-        position: static;
-      }
+    position: sticky;
+    top: 180px;
+    @include lg {
+      top: unset;
+      position: relative;
     }
+    //&.active {
+    //  position: fixed;
+    //  top: 50%;
+    //  transform: translateY(-50%);
+    //
+    //  @include lg {
+    //    position: static;
+    //  }
+    //}
 
     &.end {
       position: absolute;

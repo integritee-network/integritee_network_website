@@ -95,10 +95,16 @@ defineProps<{
     }
 
     img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       width: 100%;
       max-height: 420px;
 
       @include sm {
+        position: relative;
+        top: unset;
+        transform: unset;
         height: 100%;
         max-width: 80%;
         max-height: 300px;

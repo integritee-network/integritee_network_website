@@ -19,8 +19,10 @@ await Promise.all([
 <template>
   <div class="wrapper">
     <Header />
-    <div class="container">
-      <img src="/img/global/bg-line.png" class="top-lines" alt="Lines" />
+    <div class='image-wrap'>
+      <div class="container">
+        <img src="/img/global/bg-line.png" class="top-lines" alt="Lines" />
+      </div>
     </div>
     <div class="page-wrapper">
       <NuxtPage />
@@ -40,6 +42,20 @@ await Promise.all([
 
 .wrapper {
   position: relative;
+  //overflow-x: hidden;
+  //overflow-y: auto;
+
+  @include lg {
+    overflow: hidden;
+  }
+}
+
+.image-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200vh;
   overflow: hidden;
 }
 
