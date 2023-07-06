@@ -14,15 +14,15 @@
             </p>
           </div>
           <div class="column_medium socials__list">
-            <a href="#" class="socials__list-item">
+            <a :href="TELEGRAM_LINK" class="socials__list-item">
               <Telegram class="socials__list-item-icon" />
               <span class="socials__list-item-name">Telegram</span>
             </a>
-            <a href="#" class="socials__list-item">
+            <a :href="DISCORD_LINK" class="socials__list-item">
               <Discord class="socials__list-item-icon" />
               <span class="socials__list-item-name">Discord</span>
             </a>
-            <a href="#" class="socials__list-item">
+            <a :href="TWITTER_LINK" class="socials__list-item">
               <Twitter class="socials__list-item-icon" />
               <span class="socials__list-item-name paragraph_medium"
                 >Twitter</span
@@ -34,10 +34,11 @@
     </div>
   </section>
 </template>
-<script setup>
+<script setup lang='ts'>
 import Discord from '@/assets/img/socials/discord.svg'
 import Twitter from '@/assets/img/socials/twitter.svg'
 import Telegram from '@/assets/img/socials/telegram.svg'
+import { TELEGRAM_LINK, TWITTER_LINK, DISCORD_LINK } from '@/configs/app.config'
 </script>
 <style lang="scss">
 .socials__list-item-icon {

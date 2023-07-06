@@ -16,7 +16,7 @@
               convenient, but involve big compromises of user privacy and data
               security
             </p>
-            <a href="#" class="btn btn_gradient">Learn more</a>
+            <a href="/technology" class="btn btn_gradient">Learn more</a>
           </div>
           <div class="column scalability__column_icons">
             <div class="scalability__item margin_large">

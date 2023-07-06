@@ -5,8 +5,8 @@
         <h2 class="title title_h2 margin_medium">Quick start guides</h2>
         <div class="paragraph paragraph_medium margin_large">Explore our guides to learn more about our tech</div>
         <div class="row quick__links-row margin_large">
-          <a href="#" class="btn btn_border quick__link">GitHub</a>
-          <a href="#" class="btn btn_border quick__link">Docs</a>
+          <a :href="GITHUB_LINK" class="btn btn_border quick__link">GitHub</a>
+          <a :href="DOCS_LINK" class="btn btn_border quick__link">Docs</a>
         </div>
         <div class="quick__link-list">
           <LineLink text="What is the TEER Token" :link="TEER_TOKEN_LINK" />
@@ -18,9 +18,15 @@
     </div>
   </section>
 </template>
-<script setup>
+<script setup lang="ts">
 import LineLink from '@/components/Global/LineLink.vue';
-import { TEER_TOKEN_LINK, GOVERNANCE_LINK, HOW_TO_SETUP_LINK, CHECK_TECH_LINK } from '@/configs/app.config';
+import {
+  TEER_TOKEN_LINK,
+  GOVERNANCE_LINK,
+  HOW_TO_SETUP_LINK,
+  CHECK_TECH_LINK,
+  GITHUB_LINK,
+  DOCS_LINK } from '@/configs/app.config';
 </script>
 <style lang="scss" scoped>
 .quick {

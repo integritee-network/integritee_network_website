@@ -15,10 +15,22 @@
             </p>
           </div>
           <div class='join__links'>
-            <LineLink text='Full-Stack Developer' link='#' />
-            <LineLink text='Rust Core Developer' link='#' />
-            <LineLink text='Senior DevOps Engineer' link='#' />
-            <LineLink text='View all positions' link='#' />
+            <LineLink
+              text='Full-Stack Developer'
+              link='https://jobs.smartrecruiters.com/IntegriteeAG/743999815448800-full-stack-developer'
+            />
+            <LineLink
+              text='Rust Core Developer'
+              link='https://jobs.smartrecruiters.com/IntegriteeAG/743999815462880-rust-core-developer'
+            />
+            <LineLink
+              text='Senior DevOps Engineer'
+              link='https://jobs.smartrecruiters.com/IntegriteeAG/743999815439156-senior-devops-engineer'
+            />
+            <LineLink
+              text='View all positions'
+              link='https://careers.smartrecruiters.com/IntegriteeAG'
+            />
           </div>
         </div>
       </div>

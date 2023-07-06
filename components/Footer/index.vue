@@ -16,19 +16,39 @@
           <div class="footer__column">
             <div class="footer__column-title">TEER Token</div>
             <div class="footer__column-list">
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="https://www.kraken.com/prices/integritee?quote=usd&interval=24h"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Kraken
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="https://www.gate.io/de/trade/TEER_USDT"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Gate.io
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="https://coinmarketcap.com/currencies/integritee-network/"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 CoinMarketCap
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="https://coinmarketcap.com/currencies/integritee-network/"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 CoinGecko
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="https://www.tradingview.com/chart/?symbol=GATEIO%3ATEERUSDT"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 TradingView
               </a>
             </div>
@@ -36,13 +56,25 @@
           <div class="footer__column">
             <div class="footer__column-title">Network</div>
             <div class="footer__column-list">
-              <a href="/" target="_blank" class="footer__column-link text-link">
-                For Developer
+              <a
+                href="https://integritee.polkassembly.io"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
+                Governance
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="https://integritee.subscan.io/"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Integritee Subscan
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.api.integritee.network#/explorer"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Integritee Network
               </a>
             </div>
@@ -53,13 +85,21 @@
               <a href="/" target="_blank" class="footer__column-link text-link">
                 Tokenomics
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="https://docs.integritee.network"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Documentation
               </a>
               <a href="/" target="_blank" class="footer__column-link text-link">
                 Lightpaper
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="https://helpdesk.integritee.network/docs/"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Help Center
               </a>
             </div>
@@ -67,35 +107,68 @@
           <div class="footer__column">
             <div class="footer__column-title">Community</div>
             <div class="footer__column-list">
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="https://app.element.io/#/room/#integritee-watercooler:matrix.org"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Watercooler
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="https://app.subsocial.network/4638"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Subsocial
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="https://www.youtube.com/channel/UCOgztU-FYDdG8ptLKaItBow/featured"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 YouTube
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
-                GitHub
+              <a
+                href="https://medium.com/integritee"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
+                Medium
+              </a>
+              <a
+                href="https://www.reddit.com/r/Integritee/"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
+                Reddit
               </a>
             </div>
           </div>
           <div class="footer__column">
             <div class="footer__column-title">Company</div>
             <div class="footer__column-list">
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="/about#join"
+                class="footer__column-link text-link"
+              >
                 Jobs
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="/about#roadmap"
+                class="footer__column-link text-link"
+              >
                 Roadmap
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="https://www.linkedin.com/company/integritee/"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 LinkedIn
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
-                Contacts
-              </a>
+<!--              <a href="/" target="_blank" class="footer__column-link text-link">-->
+<!--                Contacts-->
+<!--              </a>-->
             </div>
           </div>
         </div>

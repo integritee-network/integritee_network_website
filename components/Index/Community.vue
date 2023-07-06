@@ -16,14 +16,14 @@
               thinking devs like you
             </p>
           </div>
-          <a href="#" class="btn btn_gradient">Join Discord</a>
+          <a :href="DISCORD_LINK" target='_blank' class="btn btn_gradient">Join Discord</a>
         </div>
       </div>
     </div>
   </section>
 </template>
-<script>
-export default {}
+<script setup lang='ts'>
+import { DISCORD_LINK } from '@/configs/app.config'
 </script>
 <style lang="scss">
 .community {

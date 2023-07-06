@@ -9,7 +9,7 @@
         tech.
       </template>
       <template #button>
-        <a href="#" class="btn btn_gradient desc__button">Start Building</a>
+        <a :href="TECHNOLOGY_LINK" class="btn btn_gradient desc__button">Start Building</a>
       </template>
     </Desc>
     <HowItWorks :items='items' />
@@ -19,11 +19,12 @@
 </template>
 
 <script setup lang="ts">
-import Desc from "@/components/Desc";
+import Desc from "@/components/Desc/index.vue";
 import HowItWorks from "@/components/Technology/HowItWorks.vue";
 import Building from "@/components/Technology/Building.vue";
 import Socials from "@/components/Socials/Section.vue";
 import { ITechnology } from "~/types";
+import { TECHNOLOGY_LINK } from '@/configs/app.config';
 
 const items: ITechnology[] = [
   {

@@ -29,10 +29,10 @@ import { useSeoMeta } from '#imports'
 import { useWindowScroll, useWindowSize } from '@vueuse/core'
 
 useSeoMeta({
-  title: '',
-  ogTitle: '',
-  description: '',
-  ogDescription: '',
+  title: 'Integritee Network - Blog',
+  ogTitle: 'Integritee Network - Blog',
+  description: 'Our Latest News and Insights: Exploring the Frontiers of Web3 and Beyond. Stay Updated on the Exciting World of Web3 Technology and Innovations.',
+  ogDescription: 'Our Latest News and Insights: Exploring the Frontiers of Web3 and Beyond. Stay Updated on the Exciting World of Web3 Technology and Innovations.',
 })
 
 // const wpApi = useWpApi()

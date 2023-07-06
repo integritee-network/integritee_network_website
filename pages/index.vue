@@ -16,14 +16,14 @@ import Token from '@/components/Index/Token'
 import Community from '@/components/Index/Community'
 import News from '@/components/Index/News'
 import Socials from '@/components/Socials/Section.vue'
-import { useServerSeoMeta } from '#imports'
+import { useSeoMeta } from '#imports'
 
-useServerSeoMeta({
-  title: 'Integritee | HomePage',
-  ogTitle: 'My Amazing Site',
-  description: 'This is my amazing site, let me tell you all about it.',
-  ogDescription: 'This is my amazing site, let me tell you all about it.',
-  ogImage: 'https://example.com/image.png',
-  twitterCard: 'summary_large_image',
+useSeoMeta({
+  title: 'Integritee Network - Home',
+  ogTitle: 'Integritee Network - Home',
+  description: 'Let’s power the future Web3 . The fastest, most scalable and secure Web3 network bringing the vision of a trustless, decentralized future for all.',
+  ogDescription: 'Let’s power the future Web3 . The fastest, most scalable and secure Web3 network bringing the vision of a trustless, decentralized future for all.',
+  // ogImage: 'https://example.com/image.png',
+  //twitterCard: 'summary_large_image',
 })
 </script>

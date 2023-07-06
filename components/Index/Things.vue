@@ -14,7 +14,7 @@
             of public blockchains to create the fastest, most scalable Web3
             protocol for securely processing sensitive data
           </p>
-          <a href="#" class="btn btn_gradient things__button">Learn more</a>
+          <a href="/usecases" class="btn btn_gradient things__button">Learn more</a>
         </div>
         <div class="things__image-wrapper">
           <!-- <img src="/img/index/things/polygons.svg" class="things__image" alt="Polygons" /> -->

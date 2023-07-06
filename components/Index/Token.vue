@@ -13,7 +13,7 @@
               by our trusted community of TEER token holders. Join<br />
               the movement for scaling a secure and fast Web3
             </p>
-            <a href="#" class="btn btn_gradient">Learn more</a>
+            <a href="/teer-token" class="btn btn_gradient">Learn more</a>
           </div>
           <div class="token__right">
             <RadialGradient class="token__radial-gradient" />
@@ -25,7 +25,7 @@
                 is available on:
               </div>
               <div class="token__right-list">
-                <a href="#" class="token__right-item">
+                <a href="https://www.kraken.com/prices/integritee?quote=usd&interval=24h" class="token__right-item">
                   <span class="token__right-item-icon-wrp">
                     <Kraken />
                   </span>
@@ -33,7 +33,7 @@
                     Kraken
                   </span>
                 </a>
-                <a href="#" class="token__right-item">
+                <a href="https://www.gate.io/de/trade/TEER_USDT" class="token__right-item">
                   <span class="token__right-item-icon-wrp">
                     <Gateio />
                   </span>
