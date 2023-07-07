@@ -12,7 +12,7 @@
             The fastest, most scalable and secure Web3 network bringing <br />
             the vision of a trustless, decentralized future for all.
           </p>
-          <a href="/developers" class="btn btn_gradient main__button">Start building</a>
+          <NuxtLink href="/developers" class="btn btn_gradient main__button">Start building</NuxtLink>
         </div>
         <div class="main__img-wrapper">
           <img src="/img/index/main/scheme.svg" class="main__scheme" alt="Scheme" />

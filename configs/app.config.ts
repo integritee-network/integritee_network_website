@@ -83,3 +83,42 @@ export const TELEGRAM_LINK = 'https://t.me/Integritee_Official'
 export const DISCORD_LINK = 'https://discord.com/invite/wwGcqhfXtZ'
 
 export const TWITTER_LINK = 'https://twitter.com/integri_t_e_e'
+
+export const FULL_STACK_DEV = 'https://jobs.smartrecruiters.com/IntegriteeAG/743999815448800-full-stack-developer'
+
+export const RUST_CORE_DEV = 'https://jobs.smartrecruiters.com/IntegriteeAG/743999815462880-rust-core-developer'
+
+export const SENIOR_DEVOPS = 'https://jobs.smartrecruiters.com/IntegriteeAG/743999815439156-senior-devops-engineer'
+
+export const ALL_POSITION = 'https://careers.smartrecruiters.com/IntegriteeAG'
+
+export const KRAKEN_LINK = 'https://www.kraken.com/prices/integritee?quote=usd&interval=24h'
+
+export const GATE_LINK = 'https://www.gate.io/de/trade/TEER_USDT'
+
+export const COIN_MARKET_LINK = 'https://coinmarketcap.com/currencies/integritee-network/'
+
+export const COIN_GECKO_LINK = 'https://coinmarketcap.com/currencies/integritee-network/'
+
+export const TRADING_LINK = 'https://www.tradingview.com/chart/?symbol=GATEIO%3ATEERUSDT'
+
+export const GOVERNANCE_FOOTER_LINK = 'https://integritee.polkassembly.io'
+
+export const SUBSCAN_LINK = 'https://integritee.subscan.io/'
+
+export const INTEGRITEE_NETWORK_LINK =
+  'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.api.integritee.network#/explorer'
+
+export const HELP_CENTER_LINK = 'https://helpdesk.integritee.network/docs/'
+
+export const WATERCOOLER_LINK = 'https://app.element.io/#/room/#integritee-watercooler:matrix.org'
+
+export const SUBSOCIAL_LINK = 'https://app.subsocial.network/4638'
+
+export const YOUTUBE_LINK = 'https://www.youtube.com/channel/UCOgztU-FYDdG8ptLKaItBow/featured'
+
+export const MEDIUM_LINK = 'https://medium.com/integritee'
+
+export const REDDIT_LINK = 'https://www.reddit.com/r/Integritee/'
+
+export const LINKEDIN_LINK = 'https://www.linkedin.com/company/integritee/'
