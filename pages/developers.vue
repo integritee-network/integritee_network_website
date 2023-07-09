@@ -1,16 +1,12 @@
 <template lang="">
   <Developers />
 </template>
-<script setup>
-import { useSeoMeta } from '#imports'
+<script setup lang='ts'>
+import { generateSEO } from '~/helpers/generateSEO'
 
-useSeoMeta({
+generateSEO({
   title: 'Integritee Network - Developers',
-  ogTitle: 'Integritee Network - Developers',
-  description: 'Get ready to build Web3. Integritee helps you build applications with unrivaled speed, verifiable privacy, and interoperability at scale.',
-  ogDescription: 'Get ready to build Web3. Integritee helps you build applications with unrivaled speed, verifiable privacy, and interoperability at scale.',
-  // ogImage: 'https://example.com/image.png',
-  //twitterCard: 'summary_large_image',
+  description: 'Get ready to build Web3. Integritee helps you build applications with unrivaled speed, verifiable privacy, and interoperability at scale.'
 })
 </script>
 <style lang=""></style>

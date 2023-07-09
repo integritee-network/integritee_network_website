@@ -1,16 +1,12 @@
 <template lang="">
   <Contacts />
 </template>
-<script setup>
-import { useSeoMeta } from '#imports'
+<script setup lang='ts'>
+import { generateSEO } from '~/helpers/generateSEO'
 
-useSeoMeta({
+generateSEO({
   title: 'Integritee Network - Contacts',
-  ogTitle: 'Integritee Network - Contacts',
-  description: 'Build and deploy a new generation of data-driven platforms with Integritee. Get in touch with Integritee.',
-  ogDescription: 'Build and deploy a new generation of data-driven platforms with Integritee. Get in touch with Integritee.',
-  // ogImage: 'https://example.com/image.png',
-  //twitterCard: 'summary_large_image',
+  description: 'Build and deploy a new generation of data-driven platforms with Integritee. Get in touch with Integritee.'
 })
 </script>
 <style lang=""></style>

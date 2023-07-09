@@ -148,13 +148,13 @@
             <div class="footer__column-title">Company</div>
             <div class="footer__column-list">
               <NuxtLink
-                href="/about#join"
+                to="/about#join"
                 class="footer__column-link text-link"
               >
                 Jobs
               </NuxtLink>
               <NuxtLink
-                href="/about#roadmap"
+                to="/about#roadmap"
                 class="footer__column-link text-link"
               >
                 Roadmap

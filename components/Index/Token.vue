@@ -13,7 +13,7 @@
               by our trusted community of TEER token holders. Join<br />
               the movement for scaling a secure and fast Web3
             </p>
-            <NuxtLink href="/teer-token" class="btn btn_gradient">Learn more</NuxtLink>
+            <NuxtLink to="/teer-token" class="btn btn_gradient">Learn more</NuxtLink>
           </div>
           <div class="token__right">
             <RadialGradient class="token__radial-gradient" />

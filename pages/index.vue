@@ -9,21 +9,17 @@
 </template>
 
 <script setup lang="ts">
-import Main from '@/components/Index/Main'
-import Things from '@/components/Index/Things'
-import Scalability from '@/components/Index/Scalability'
-import Token from '@/components/Index/Token'
-import Community from '@/components/Index/Community'
-import News from '@/components/Index/News'
+import Main from '@/components/Index/Main.vue'
+import Things from '@/components/Index/Things.vue'
+import Scalability from '@/components/Index/Scalability.vue'
+import Token from '@/components/Index/Token.vue'
+import Community from '@/components/Index/Community.vue'
+import News from '@/components/Index/News.vue'
 import Socials from '@/components/Socials/Section.vue'
-import { useSeoMeta } from '#imports'
+import { generateSEO } from '~/helpers/generateSEO'
 
-useSeoMeta({
+generateSEO({
   title: 'Integritee Network - Home',
-  ogTitle: 'Integritee Network - Home',
-  description: 'Let’s power the future Web3 . The fastest, most scalable and secure Web3 network bringing the vision of a trustless, decentralized future for all.',
-  ogDescription: 'Let’s power the future Web3 . The fastest, most scalable and secure Web3 network bringing the vision of a trustless, decentralized future for all.',
-  // ogImage: 'https://example.com/image.png',
-  //twitterCard: 'summary_large_image',
+  description: 'Let’s power the future Web3 . The fastest, most scalable and secure Web3 network bringing the vision of a trustless, decentralized future for all.'
 })
 </script>

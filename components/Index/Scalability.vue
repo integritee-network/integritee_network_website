@@ -16,7 +16,7 @@
               convenient, but involve big compromises of user privacy and data
               security
             </p>
-            <NuxtLink href="/technology" class="btn btn_gradient">Learn more</NuxtLink>
+            <NuxtLink to="/technology" class="btn btn_gradient">Learn more</NuxtLink>
           </div>
           <div class="column scalability__column_icons">
             <div class="scalability__item margin_large">
