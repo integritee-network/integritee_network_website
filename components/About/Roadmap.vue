@@ -159,7 +159,7 @@ watch(y, (value) => {
         backdrop-filter: blur(4px);
         transform: none;
         padding: 8px 0 8px 21px;
-        z-index: 5;
+        z-index: 3;
       }
     }
 

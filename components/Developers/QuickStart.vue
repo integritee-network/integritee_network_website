@@ -14,47 +14,42 @@
   </div>
 </template>
 
-<script>
+<script setup lang='ts'>
 import FirstIcon from "@/assets/img/developers/first-icon.svg";
 import SecondIcon from "@/assets/img/developers/second-icon.svg";
 import ThirdIcon from "@/assets/img/developers/third-icon.svg";
 import FourthIcon from "@/assets/img/developers/fourth-icon.svg";
-export default {
-  setup() {
-    const items = [
-      {
-        title: 'Step 1',
-        text: 'the intro about our SDK and what it offers',
-        img: FirstIcon,
-        link: 'https://docs.integritee.network/3-our-technology/3.1-software-development-kit',
-        linkText: 'Read',
-      },
-      {
-        title: 'Step 2',
-        text: 'through our Sidechain tutorial to get a local setup working',
-        img: SecondIcon,
-        link: 'https://docs.integritee.network/4-development/4.6-demos/4.6.1-sidechain-demo',
-        linkText: 'Play',
-      },
-      {
-        title: 'Step 3',
-        text: 'your own logic',
-        img: ThirdIcon,
-        link: 'https://docs.integritee.network/4-development/4.4-sdk/4.4.4-custom-business-logic-stf',
-        linkText: 'Write',
-      },
-      {
-        title: 'Step 4',
-        text: 'your dApp publicly',
-        img: FourthIcon,
-        link: 'https://docs.integritee.network/5-nodes-and-infrastructure/5.2-how-to-set-up-and-run-a-sidechain-or-tocw-node',
-        linkText: 'Deploy',
-      },
-    ]
-
-    return { items }
-  }
-}
+import { READ_LINK, PLAY_LINK, WRITE_LINK, DEPLOY_LINK } from '@/configs/app.config';
+const items = [
+  {
+    title: 'Step 1',
+    text: 'the intro about our SDK and what it offers',
+    img: FirstIcon,
+    link: READ_LINK,
+    linkText: 'Read',
+  },
+  {
+    title: 'Step 2',
+    text: 'through our Sidechain tutorial to get a local setup working',
+    img: SecondIcon,
+    link: PLAY_LINK,
+    linkText: 'Play',
+  },
+  {
+    title: 'Step 3',
+    text: 'your own logic',
+    img: ThirdIcon,
+    link: WRITE_LINK,
+    linkText: 'Write',
+  },
+  {
+    title: 'Step 4',
+    text: 'your dApp publicly',
+    img: FourthIcon,
+    link: DEPLOY_LINK,
+    linkText: 'Deploy',
+  },
+]
 </script>
 <style lang="scss" scoped>
 .building {

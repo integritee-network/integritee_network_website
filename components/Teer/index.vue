@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import Desc from "@/components/Desc";
+import Desc from "@/components/Desc/index.vue";
 import HowItWorks from "@/components/Teer/HowItWorks.vue";
 import Questions from "@/components/Teer/Questions.vue";
 import Socials from "@/components/Socials/Section.vue";

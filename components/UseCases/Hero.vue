@@ -11,13 +11,14 @@
         millions of users.
       </template>
       <template #button>
-        <a href="#" class="btn btn_gradient desc__button" target="_blank">Use cases</a>
+        <a :href="USE_CASES_LINK" class="btn btn_gradient desc__button" target="_blank">Use cases</a>
       </template>
     </Desc>
   </div>
 </template>
-<script setup>
-import Desc from "@/components/Desc";
+<script setup lang="ts">
+import Desc from "@/components/Desc/index.vue";
+import { USE_CASES_LINK } from '@/configs/app.config';
 </script>
 <style lang="scss">
 .use-cases-hero {

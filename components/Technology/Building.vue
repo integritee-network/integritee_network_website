@@ -7,20 +7,16 @@
       <h2 class='title title_h2 margin_medium building__title'>What will you create?</h2>
       <p class='paragraph paragraph_medium margin_large'>If the major problems associated with programming on the
         blockchain solved...</p>
-      <a href="#" class="btn btn_gradient">
+      <a :href="TECHNOLOGY_LINK" class="btn btn_gradient">
         Start Building
       </a>
     </div>
   </div>
 </template>
 
-<script>
+<script setup lang='ts'>
 import Icon from "@/assets/img/technology/icon.svg";
-export default {
-  components: {
-    Icon
-  }
-}
+import { TECHNOLOGY_LINK } from '@/configs/app.config';
 </script>
 <style lang="scss" scoped>
 .building {

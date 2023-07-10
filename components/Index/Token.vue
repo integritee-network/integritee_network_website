@@ -13,7 +13,7 @@
               by our trusted community of TEER token holders. Join<br />
               the movement for scaling a secure and fast Web3
             </p>
-            <a href="#" class="btn btn_gradient">Learn more</a>
+            <NuxtLink to="/teer-token" class="btn btn_gradient">Learn more</NuxtLink>
           </div>
           <div class="token__right">
             <RadialGradient class="token__radial-gradient" />
@@ -25,7 +25,7 @@
                 is available on:
               </div>
               <div class="token__right-list">
-                <a href="#" class="token__right-item">
+                <a :href="KRAKEN_LINK" class="token__right-item">
                   <span class="token__right-item-icon-wrp">
                     <Kraken />
                   </span>
@@ -33,7 +33,7 @@
                     Kraken
                   </span>
                 </a>
-                <a href="#" class="token__right-item">
+                <a :href="GATE_LINK" class="token__right-item">
                   <span class="token__right-item-icon-wrp">
                     <Gateio />
                   </span>
@@ -49,10 +49,14 @@
     </div>
   </section>
 </template>
-<script setup>
+<script setup lang='ts'>
 import Kraken from '@/assets/img/index/token/kraken.svg'
 import Gateio from '@/assets/img/index/token/gateio.svg'
 import RadialGradient from '@/components/Global/RadialGradient'
+import {
+  KRAKEN_LINK,
+  GATE_LINK,
+} from '@/configs/app.config';
 </script>
 <style lang="scss">
 .token {

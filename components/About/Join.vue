@@ -15,18 +15,36 @@
             </p>
           </div>
           <div class='join__links'>
-            <LineLink text='Full-Stack Developer' link='#' />
-            <LineLink text='Rust Core Developer' link='#' />
-            <LineLink text='Senior DevOps Engineer' link='#' />
-            <LineLink text='View all positions' link='#' />
+            <LineLink
+              text='Full-Stack Developer'
+              :link="FULL_STACK_DEV"
+            />
+            <LineLink
+              text='Rust Core Developer'
+              :link="RUST_CORE_DEV"
+            />
+            <LineLink
+              text='Senior DevOps Engineer'
+              :link="SENIOR_DEVOPS"
+            />
+            <LineLink
+              text='View all positions'
+              :link="ALL_POSITION"
+            />
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
-<script setup>
-import LineLink from '@/components/Global/LineLink'
+<script setup lang='ts'>
+import LineLink from '@/components/Global/LineLink.vue'
+import {
+  FULL_STACK_DEV,
+  RUST_CORE_DEV,
+  SENIOR_DEVOPS,
+  ALL_POSITION
+} from '@/configs/app.config';
 </script>
 <style lang="scss">
 .join {

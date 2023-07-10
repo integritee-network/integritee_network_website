@@ -32,9 +32,9 @@
               </div>
             </div>
             <div class='resources__row'>
-              <a href='#' class='btn btn_border resources__btn'>Github</a>
-              <a href='#' class='btn btn_border resources__btn'>Docs</a>
-              <a href='#' class='btn btn_border resources__btn'>Demo</a>
+              <a :href="item.github" class='btn btn_border resources__btn'>Github</a>
+              <a :href="item.docs" class='btn btn_border resources__btn'>Docs</a>
+              <a :href="item.demo" class='btn btn_border resources__btn'>Demo</a>
             </div>
           </div>
           <img v-if='width > 840' class='resources__item-img' :src='item.img' />
@@ -44,9 +44,22 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang='ts'>
 import { useWindowSize } from '@vueuse/core'
-
+import {
+  SDK_GITHUB_LINK,
+  SDK_DOCS_LINK,
+  SDK_DEMO_LINK,
+  WORKER_GITHUB_LINK,
+  WORKER_DOCS_LINK,
+  WORKER_DEMO_LINK,
+  TEERACLE_GITHUB_LINK,
+  TEERACLE_DOCS_LINK,
+  TEERACLE_DEMO_LINK,
+  ATTESTEER_GITHUB_LINK,
+  ATTESTEER_DOCS_LINK,
+  ATTESTEER_DEMO_LINK
+} from '@/configs/app.config';
 const { width } = useWindowSize()
 
 const items = [
@@ -70,7 +83,10 @@ const items = [
       {
         li: 'Advanced privacy features',
       },
-    ]
+    ],
+    github: SDK_GITHUB_LINK,
+    docs: SDK_DOCS_LINK,
+    demo: SDK_DEMO_LINK
   },
   {
     title: 'Off-Chain Worker',
@@ -88,7 +104,10 @@ const items = [
       {
         li: 'Increase computational efficiency by integrating off-chain operations',
       },
-    ]
+    ],
+    github: WORKER_GITHUB_LINK,
+    docs: WORKER_DOCS_LINK,
+    demo: WORKER_DEMO_LINK
   },
   {
     title: 'Teeracle',
@@ -106,7 +125,10 @@ const items = [
       {
         li: 'Obtain the security of a decentralized oracle and match the efficiency of a centralized provider',
       },
-    ]
+    ],
+    github: TEERACLE_GITHUB_LINK,
+    docs: TEERACLE_DOCS_LINK,
+    demo: TEERACLE_DEMO_LINK
   },
   {
     title: 'Attesteer',
@@ -124,7 +146,10 @@ const items = [
       {
         li: 'Add public auditability by storing the verification proof (attestation result) on our public network',
       },
-    ]
+    ],
+    github: ATTESTEER_GITHUB_LINK,
+    docs: ATTESTEER_DOCS_LINK,
+    demo: ATTESTEER_DEMO_LINK
   },
 ]
 </script>

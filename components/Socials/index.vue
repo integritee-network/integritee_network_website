@@ -1,21 +1,22 @@
 <template>
   <div class="socials">
-    <a href="/" target="_blank">
+    <a :href="DISCORD_LINK" target="_blank">
       <Discord />
     </a>
-    <a href="/" target="_blank">
+    <a :href="TWITTER_LINK" target="_blank">
       <Twitter />
     </a>
-    <a href="/" target="_blank">
+    <a :href="TELEGRAM_LINK" target="_blank">
       <Telegram />
     </a>
   </div>
 </template>
 
-<script setup>
+<script setup lang='ts'>
 import Discord from '@/assets/img/socials/discord.svg'
 import Twitter from '@/assets/img/socials/twitter.svg'
 import Telegram from '@/assets/img/socials/telegram.svg'
+import { TELEGRAM_LINK, TWITTER_LINK, DISCORD_LINK } from '@/configs/app.config'
 </script>
 
 <style lang="scss" scoped>

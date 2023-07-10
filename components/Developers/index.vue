@@ -12,10 +12,10 @@
         verifiable privacy, and interoperability at scale
       </template>
       <template #button>
-        <a href="#" class="btn btn_gradient desc__button">Github</a>
+        <a :href="GITHUB_LINK" class="btn btn_gradient desc__button">Github</a>
       </template>
       <template #docs>
-        <a href="#" class="btn btn_border">Documentation</a>
+        <a :href="DEVELOPMENT_DOCS" class="btn btn_border">Docs</a>
       </template>
     </Desc>
     <QuickStart />
@@ -24,11 +24,12 @@
   </div>
 </template>
 
-<script setup>
-import Desc from "@/components/Desc";
-import QuickStart from "@/components/Developers/QuickStart";
-import Resources from "@/components/Developers/Resources";
-import Socials from "@/components/Socials/Section";
+<script setup lang='ts'>
+import Desc from "@/components/Desc/index.vue";
+import QuickStart from "@/components/Developers/QuickStart.vue";
+import Resources from "@/components/Developers/Resources.vue";
+import Socials from "@/components/Socials/Section.vue";
+import { GITHUB_LINK, DEVELOPMENT_DOCS } from '@/configs/app.config';
 </script>
 <style lang="scss" scoped>
 .developers {

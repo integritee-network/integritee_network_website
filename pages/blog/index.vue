@@ -25,16 +25,13 @@ import { useWpApi } from '@/api/wordpress'
 import { usePostsStore } from '@/store/posts'
 import { useCategoriesStore } from '@/store/categories'
 import { Post } from '@/types/post'
-import { useSeoMeta } from '#imports'
 import { useWindowScroll, useWindowSize } from '@vueuse/core'
+import { generateSEO } from '~/helpers/generateSEO'
 
-useSeoMeta({
-  title: '',
-  ogTitle: '',
-  description: '',
-  ogDescription: '',
+generateSEO({
+  title: 'Integritee Network - Blog',
+  description: 'Our Latest News and Insights: Exploring the Frontiers of Web3 and Beyond. Stay Updated on the Exciting World of Web3 Technology and Innovations.'
 })
-
 // const wpApi = useWpApi()
 
 const { y } = useWindowScroll()

@@ -3,7 +3,7 @@
     <div class="tools block">
       <div class="container">
         <div class="tools__list">
-          <a href="#" class="tools__item">
+          <a :href="SIDECHAIN_SDK_LINK" class="tools__item">
             <span>
               <span class="tools__item-title title_sub">Sidechain SDK</span>
               <span class="tools__item-subtitle paragraph_small">A Tool for Web3 Development</span>
@@ -14,7 +14,7 @@
             </span>
             <Link class="tools__item-icon" />
           </a>
-          <a href="#" class="tools__item">
+          <a :href="OFF_CHAIN_WORKER_LINK" class="tools__item">
             <span>
               <span class="tools__item-title title_sub">Off-Chain Worker</span>
               <span class="tools__item-subtitle paragraph_small">A Tool for Web3 Development</span>
@@ -24,7 +24,7 @@
             </span>
             <Link class="tools__item-icon" />
           </a>
-          <a href="#" class="tools__item">
+          <a :href="TEERACLE_LINK" class="tools__item">
             <span>
               <span class="tools__item-title title_sub">Teeracle</span>
               <span class="tools__item-subtitle paragraph_small">A framework for external data</span>
@@ -35,7 +35,7 @@
             </span>
             <Link class="tools__item-icon" />
           </a>
-          <a href="#" class="tools__item">
+          <a :href="ATTESTEER_LINK" class="tools__item">
             <span>
               <span class="tools__item-title title_sub">Attesteer</span>
               <span class="tools__item-subtitle paragraph_small">A framework for external data</span>
@@ -46,7 +46,7 @@
             </span>
             <Link class="tools__item-icon" />
           </a>
-          <a :href="SECURE_LINK" target="_blank" class="tools__item">
+          <a :href="SECURE_TEE_INFRASTRUCTURE_LINK" target="_blank" class="tools__item">
             <span>
               <span class="tools__item-title title_sub">Secure TEE Infrastructure</span>
               <span class="tools__item-subtitle paragraph_small">A framework for external data</span>
@@ -63,9 +63,15 @@
     </div>
   </section>
 </template>
-<script setup>
+<script setup lang="ts">
 import Link from '@/assets/img/link.svg'
-import { SECURE_LINK } from '~/configs/app.config'
+import {
+  SIDECHAIN_SDK_LINK,
+  OFF_CHAIN_WORKER_LINK,
+  TEERACLE_LINK,
+  ATTESTEER_LINK,
+  SECURE_TEE_INFRASTRUCTURE_LINK
+} from '~/configs/app.config'
 </script>
 <style lang="scss" scoped>
 .tools {

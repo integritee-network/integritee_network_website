@@ -16,19 +16,39 @@
           <div class="footer__column">
             <div class="footer__column-title">TEER Token</div>
             <div class="footer__column-list">
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                :href="KRAKEN_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Kraken
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                :href="GATE_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Gate.io
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                :href="COIN_MARKET_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 CoinMarketCap
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                :href="COIN_GECKO_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 CoinGecko
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                :href="TRADING_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 TradingView
               </a>
             </div>
@@ -36,13 +56,25 @@
           <div class="footer__column">
             <div class="footer__column-title">Network</div>
             <div class="footer__column-list">
-              <a href="/" target="_blank" class="footer__column-link text-link">
-                For Developer
+              <a
+                :href="GOVERNANCE_FOOTER_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
+                Governance
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                :href="SUBSCAN_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Integritee Subscan
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                :href="INTEGRITEE_NETWORK_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Integritee Network
               </a>
             </div>
@@ -53,13 +85,21 @@
               <a href="/" target="_blank" class="footer__column-link text-link">
                 Tokenomics
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                :href="DOCS_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Documentation
               </a>
               <a href="/" target="_blank" class="footer__column-link text-link">
                 Lightpaper
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                :href="HELP_CENTER_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Help Center
               </a>
             </div>
@@ -67,35 +107,68 @@
           <div class="footer__column">
             <div class="footer__column-title">Community</div>
             <div class="footer__column-list">
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                :href="WATERCOOLER_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Watercooler
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                :href="SUBSOCIAL_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Subsocial
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                :href="YOUTUBE_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 YouTube
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
-                GitHub
+              <a
+                :href="MEDIUM_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
+                Medium
+              </a>
+              <a
+                :href="REDDIT_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
+                Reddit
               </a>
             </div>
           </div>
           <div class="footer__column">
             <div class="footer__column-title">Company</div>
             <div class="footer__column-list">
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <NuxtLink
+                to="/about#join"
+                class="footer__column-link text-link"
+              >
                 Jobs
-              </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              </NuxtLink>
+              <NuxtLink
+                to="/about#roadmap"
+                class="footer__column-link text-link"
+              >
                 Roadmap
-              </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              </NuxtLink>
+              <a
+                :href="LINKEDIN_LINK"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 LinkedIn
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
-                Contacts
-              </a>
+<!--              <a href="/" target="_blank" class="footer__column-link text-link">-->
+<!--                Contacts-->
+<!--              </a>-->
             </div>
           </div>
         </div>
@@ -111,9 +184,27 @@
   </footer>
 </template>
 
-<script setup>
-import Logo from '@/components/Logo'
-import Socials from '@/components/Socials'
+<script setup lang='ts'>
+import Logo from '@/components/Logo/index.vue'
+import Socials from '@/components/Socials/index.vue'
+import {
+  KRAKEN_LINK,
+  GATE_LINK,
+  COIN_MARKET_LINK,
+  COIN_GECKO_LINK,
+  TRADING_LINK,
+  GOVERNANCE_FOOTER_LINK,
+  SUBSCAN_LINK,
+  INTEGRITEE_NETWORK_LINK,
+  HELP_CENTER_LINK,
+  DOCS_LINK,
+  WATERCOOLER_LINK,
+  SUBSOCIAL_LINK,
+  YOUTUBE_LINK,
+  MEDIUM_LINK,
+  REDDIT_LINK,
+  LINKEDIN_LINK
+} from '@/configs/app.config';
 </script>
 
 <style lang="scss" scoped>
