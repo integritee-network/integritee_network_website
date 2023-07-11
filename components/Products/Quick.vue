@@ -5,13 +5,25 @@
         <h2 class="title title_h2 margin_medium">Quick start guides</h2>
         <div class="paragraph paragraph_medium margin_large">Explore our guides to learn more about our tech</div>
         <div class="row quick__links-row margin_large">
-          <a :href="GITHUB_LINK" class="btn btn_border quick__link">GitHub</a>
-          <a :href="DOCS_LINK" class="btn btn_border quick__link">Docs</a>
+          <a
+            :href="GITHUB_LINK"
+            target="_blank"
+            class="btn btn_border quick__link"
+          >
+            GitHub
+          </a>
+          <a
+            :href="DOCS_LINK"
+            target="_blank"
+            class="btn btn_border quick__link"
+          >
+            Docs
+          </a>
         </div>
         <div class="quick__link-list">
           <LineLink text="What is the TEER Token" :link="TEER_TOKEN_LINK" />
-          <LineLink text="How to setup Integritee infrastructure" :link="GOVERNANCE_LINK" />
-          <LineLink text="Governance on Integritee Network" :link="HOW_TO_SETUP_LINK" />
+          <LineLink text="How to setup Integritee infrastructure" :link="HOW_TO_SETUP_LINK" />
+          <LineLink text="Governance on Integritee Network" :link="GOVERNANCE_LINK" />
           <LineLink text="Check out our Technology" :link="CHECK_TECH_LINK" />
         </div>
       </div>

@@ -32,9 +32,27 @@
               </div>
             </div>
             <div class='resources__row'>
-              <a :href="item.github" class='btn btn_border resources__btn'>Github</a>
-              <a :href="item.docs" class='btn btn_border resources__btn'>Docs</a>
-              <a :href="item.demo" class='btn btn_border resources__btn'>Demo</a>
+              <a
+                :href="item.github"
+                target="_blank"
+                class='btn btn_border resources__btn'
+              >
+                Github
+              </a>
+              <a
+                :href="item.docs"
+                target="_blank"
+                class='btn btn_border resources__btn'
+              >
+                Docs
+              </a>
+              <a
+                :href="item.demo"
+                target="_blank"
+                class='btn btn_border resources__btn'
+              >
+                Demo
+              </a>
             </div>
           </div>
           <img v-if='width > 840' class='resources__item-img' :src='item.img' />

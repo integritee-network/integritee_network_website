@@ -82,7 +82,11 @@
           <div class="footer__column">
             <div class="footer__column-title">Resources</div>
             <div class="footer__column-list">
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="https://uploads-ssl.webflow.com/60c21bdfde439ba700ea5c56/60e6b16b0d252defda72fe07_Integritee AG Token Economics_2021.pdf"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Tokenomics
               </a>
               <a
@@ -92,7 +96,11 @@
               >
                 Documentation
               </a>
-              <a href="/" target="_blank" class="footer__column-link text-link">
+              <a
+                href="https://uploads-ssl.webflow.com/60c21bdfde439ba700ea5c56/612892db018a36f054100b4d_Integritee AG Lightpaper.pdf"
+                target="_blank"
+                class="footer__column-link text-link"
+              >
                 Lightpaper
               </a>
               <a
@@ -177,7 +185,7 @@
         <span class="paragraph_medium">©2023 Integritee, Inc.</span>
         <span>
           <a href="#" target="_blank" class="blue paragraph_medium">Imprint</a> and
-          <NuxtLink to="/privacy-policy" target="_blank" class="blue paragraph_medium">Privacy Policy</NuxtLink>
+          <NuxtLink to="/privacy-policy" class="blue paragraph_medium">Privacy Policy</NuxtLink>
         </span>
       </div>
     </div>
