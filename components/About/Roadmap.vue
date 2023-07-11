@@ -139,10 +139,11 @@ watch(y, (value) => {
       display: flex;
       gap: 8px;
       align-items: flex-start;
-      overflow-y: auto;
       scrollbar-width: none;
+      overflow-y: hidden;
 
       &::-webkit-scrollbar {
+        display: none;
         height: 0;
       }
     }
