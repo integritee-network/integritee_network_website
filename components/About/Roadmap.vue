@@ -110,8 +110,10 @@ watch(y, (value) => {
   for (const [idx, item] of clonedItems.reverse().entries()) {
     if (item.getBoundingClientRect().y - height.value / 2 <= 0) {
       setActive(years[years.length - 1 - idx].year)
-      const value = fixedNav.value ? 13 : 0
-      nav.value.scrollTo({ left: 89 * (years.length - 1 - idx) + value , behavior: "smooth" })
+      if (width.value <= breakpoints.sm) {
+        const value = fixedNav.value ? 13 : 0
+        nav.value.scrollTo({ left: 89 * (years.length - 1 - idx) + value , behavior: "smooth" })
+      }
       break
     }
   }
