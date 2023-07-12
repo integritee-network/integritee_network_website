@@ -171,6 +171,29 @@ watch(route, value => {
     display: block;
   }
 }
+
+.blog__nav-wrapper {
+  position: sticky;
+  top: 180px;
+  @include lg {
+    top: unset;
+    position: relative;
+  }
+  //&.active {
+  //  position: fixed;
+  //  top: 50%;
+  //  transform: translateY(-50%);
+  //
+  //  @include lg {
+  //    position: static;
+  //  }
+  //}
+
+  &.end {
+    position: absolute;
+    bottom: 0;
+  }
+}
 </style>
 
 <style lang="scss" scoped>
@@ -182,29 +205,6 @@ watch(route, value => {
       &:last-child {
         margin-bottom: 0;
       }
-    }
-  }
-
-  &__nav-wrapper {
-    position: sticky;
-    top: 180px;
-    @include lg {
-      top: unset;
-      position: relative;
-    }
-    //&.active {
-    //  position: fixed;
-    //  top: 50%;
-    //  transform: translateY(-50%);
-    //
-    //  @include lg {
-    //    position: static;
-    //  }
-    //}
-
-    &.end {
-      position: absolute;
-      bottom: 0;
     }
   }
 }

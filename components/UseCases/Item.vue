@@ -29,7 +29,7 @@
     <div class="item__quote">
       <quote class="item__quote-text">{{ useCase.acf.quote }}</quote>
       <div class="row item__quote-author">
-        <div class="item__quote-author-photo">
+        <div v-if='image' class="item__quote-author-photo">
           <Avatar :image="image" />
         </div>
         <div class="item__quote-author-name paragraph_large">
@@ -57,7 +57,7 @@ const image = computed(() => {
     if (useCase._embedded['wp:featuredmedia'])
       return useCase._embedded['wp:featuredmedia'][0].link
   }
-  return 'http://c5com.com/wp/wp-content/uploads/2011/05/400x400.png'
+  return false
 })
 
 const tag = computed(() => {
