@@ -1,5 +1,6 @@
 interface UseCaseAcf {
   author: string
+  author_photo: string
   problem: string
   quote: string
   role: string

@@ -71,7 +71,7 @@ export const useWpApi = () => {
 
     async getUseCases() {
       return this.get<UseCase[]>(
-        `${WP_API_URL}/use-case?_fields=_embedded,id,use-cases-tag,title,acf,_links.wp:featuredmedia&_embed=wp:featuredmedia`
+        `${WP_API_URL}/use-case?_fields=_embedded,id,use-cases-tag,title,acf,_links.wp:featuredmedia&_embed=wp:featuredmedia&acf_format=standard`
       )
     },
 

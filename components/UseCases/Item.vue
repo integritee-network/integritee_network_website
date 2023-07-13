@@ -26,11 +26,14 @@
         {{ point.point }}
       </p>
     </div>
-    <div class="item__quote">
+    <div v-if='!useCase.acf.quote' class='item__image'>
+      <img :src='image' />
+    </div>
+    <div v-if='useCase.acf.quote' class="item__quote">
       <quote class="item__quote-text">{{ useCase.acf.quote }}</quote>
       <div class="row item__quote-author">
-        <div v-if='image' class="item__quote-author-photo">
-          <Avatar :image="image" />
+        <div v-if='authorPhoto' class="item__quote-author-photo">
+          <Avatar :image="authorPhoto" />
         </div>
         <div class="item__quote-author-name paragraph_large">
           {{ useCase.acf.author }}<br />
@@ -51,6 +54,12 @@ const props = defineProps<{ useCase: UseCase }>()
 const { useCase } = props
 
 const catsStore = useCategoriesStore()
+
+const authorPhoto = computed(() => {
+    if (useCase.acf.author_photo)
+      return useCase.acf.author_photo
+  return false
+})
 
 const image = computed(() => {
   if (useCase._embedded) {
@@ -108,6 +117,35 @@ const tag = computed(() => {
 
     @include md {
       width: 100%;
+    }
+  }
+
+  &__image {
+    width: 590px;
+    @include lg {
+      width: 580px;
+    }
+
+    @include slg {
+      width: 475px;
+    }
+
+    @include md {
+      width: 460px;
+    }
+
+    @include sm {
+      width: 360px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 24px;
+      object-fit: cover;
+      @include sm {
+        border-radius: 18px;
+      }
     }
   }
 
