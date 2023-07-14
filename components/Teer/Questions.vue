@@ -1,14 +1,11 @@
 <template>
   <div class="questions block">
     <div class='container blur-gradient blur-gradient_top'>
-      <div class='questions__icon'>
-        <Icon />
-      </div>
       <h2 class='title title_h2 margin_medium questions__title'>Questions about TEER?</h2>
       <p class='paragraph paragraph_medium margin_medium questions__desc'>Read our Tokenomics paper to fully understand
         how TEER integrates with Integritee network and what its benefits and utility are</p>
       <div class='questions__row margin_large'>
-        <p class='paragraph paragraph_large questions__row-text'>Teer Token is available on:</p>
+        <p class='paragraph paragraph_large questions__row-text'>TEER Token is available on:</p>
         <a href="#" class="questions__right-item">
           <Kraken />
           <span class="paragraph_large">Kraken</span>

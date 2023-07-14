@@ -107,8 +107,7 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
 
     img {
       position: relative;
-      left: -30px;
-      width: calc(100% + 30px);
+      width: 100%;
       height: auto;
       border-radius: 24px;
 

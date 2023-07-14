@@ -2,10 +2,10 @@
   <div class="teer">
     <Desc>
       <template #title>
-        TEER, a token with <span>utility</span> and long-term <span class="text-gradient_purple-blue">value</span>
+        TEER, a token with <span>utility</span> and long-term <span class="text-gradient_purple-blue">value</span>.
       </template>
       <template #text>
-        Our token empowers utility, governance and value at the same time, making it a valuable asset
+        Our token empowers utility, governance and value at the same time, making it a valuable asset.
       </template>
       <template #button>
         <a :href="TEER_TOKEN_LINK" class="btn btn_gradient desc__button" target="_blank"> Learn more</a>
@@ -27,18 +27,18 @@ import { ITechnology } from "~/types";
 
 const items: ITechnology[] = [
   {
-    title: 'TEER, a Substrate native\ntoken',
-    text: 'The TEER token is the fuel driving the Integritee platform — a common token across both our Kusama and Polkadot parachains. The token is designed in such a way that it has an intrinsic value that increases with adoption',
+    title: 'TEER, a Substrate native\ntoken.',
+    text: 'The TEER token is the fuel driving the Integritee platform — a common token across both our Kusama and Polkadot parachains. The token is designed in such a way that it has an intrinsic value that increases with adoption.',
     img: '/img/teer/substrate.svg',
   },
   {
-    title: 'Governance\nby TEER holders keeps\nthe network thriving\nand secured',
-    text: 'TEER holders are the heart of our network, as they decide on how the network is governed and moving forward. Every TEER holder is an equal active participating member with a voice and responsible to ensure the healthiness of the ecosystem',
+    title: 'Governance\nby TEER holders keeps\nthe network thriving\nand secured.',
+    text: 'TEER holders are the heart of our network, as they decide on how the network is governed and moving forward. Every TEER holder is an equal active participating member with a voice and responsible to ensure the healthiness of the ecosystem.',
     img: '/img/teer/governance.svg',
   },
   {
-    title: 'Keeping a healthy\nbalance through\nthe network Treasury',
-    text: 'Fees are collected in an on-chain treasury. Treasury funds are used for ongoing maintenance and software, as well as ecosystemdevelopment and community activity rewards missing full stop',
+    title: 'Keeping a healthy\nbalance through\nthe network Treasury.',
+    text: 'Fees are collected in an on-chain treasury. Treasury funds are used for ongoing maintenance and software, as well as ecosystem development and community activity rewards.',
     img: '/img/teer/treasury.svg',
   },
 ]

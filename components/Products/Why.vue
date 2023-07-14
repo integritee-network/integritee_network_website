@@ -11,7 +11,7 @@
               deliver
               unrivalled
               transaction speed and volumes at
-              sub-second block production times</p>
+              sub-second block production times.</p>
           </div>
           <div class="why__item">
             <Guard class="why__item-icon margin_medium" />
@@ -20,7 +20,7 @@
               state
               transitions, our
               solution protects sensitive data and helps to ensure compliance with privacy regulations like
-              GDPR</p>
+              GDPR.</p>
           </div>
           <div class="why__item">
             <Agree class="why__item-icon margin_medium" />
@@ -28,7 +28,7 @@
             <p class="why__item-description paragraph paragraph_medium">Users can verify that their data has
               been
               processed in a genuine
-              TEE through public records on our parachain, fostering transparency and trust</p>
+              TEE through public records on our parachain, fostering transparency and trust.</p>
           </div>
           <div class="why__item">
             <Stars class="why__item-icon margin_medium" />
@@ -37,7 +37,7 @@
             <p class="why__item-description paragraph paragraph_medium">Every sidechain or Dapp operator can
               determine the
               fees for
-              exchange independently from integritee</p>
+              exchange independently from integritee.</p>
           </div>
           <div class="why__item">
             <Cloud class="why__item-icon margin_medium" />
@@ -45,7 +45,7 @@
             <p class="why__item-description paragraph paragraph_medium">You are free to run TEEs on own suitable
               hardware
               or rent it at
-              standard market rates. Operate the nodes either on premise or in the cloud</p>
+              standard market rates. Operate the nodes either on premise or in the cloud.</p>
           </div>
           <div class="why__item">
             <Money class="why__item-icon margin_medium" />
@@ -54,7 +54,7 @@
               token and
               keep transaction
               costs at only a fraction of a cent and maintained at a stable USD price to ensure predictable
-              costs</p>
+              costs.</p>
           </div>
         </div>
       </div>

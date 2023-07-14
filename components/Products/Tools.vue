@@ -10,10 +10,10 @@
           >
             <span>
               <span class="tools__item-title title_sub">Sidechain SDK</span>
-              <span class="tools__item-subtitle paragraph_small">A Tool for Web3 Development</span>
+              <span class="tools__item-subtitle paragraph_small">Web3 development tool</span>
               <p class="paragraph paragraph_medium">Build any decentralized application or service that requires low
                 latency, scalability, and
-                confidentiality
+                confidentiality.
               </p>
             </span>
             <Link class="tools__item-icon" />
@@ -25,9 +25,9 @@
           >
             <span>
               <span class="tools__item-title title_sub">Off-Chain Worker</span>
-              <span class="tools__item-subtitle paragraph_small">A Tool for Web3 Development</span>
+              <span class="tools__item-subtitle paragraph_small">Secure off-chain computational tool</span>
               <p class="paragraph paragraph_medium">Set up OCWs, to execute a custom state transition function or other
-                operations inside a TEE
+                operations inside a TEE.
               </p>
             </span>
             <Link class="tools__item-icon" />
@@ -39,10 +39,10 @@
           >
             <span>
               <span class="tools__item-title title_sub">Teeracle</span>
-              <span class="tools__item-subtitle paragraph_small">A framework for external data</span>
+              <span class="tools__item-subtitle paragraph_small">Trusted oracle Framework</span>
               <p class="paragraph paragraph_medium">Create your own TEE-based oracle and connect to any Web2 API to gather
                 untampered data and process it in
-                a highly secured environment and confidentiality
+                a highly secured environment and confidentiality.
               </p>
             </span>
             <Link class="tools__item-icon" />
@@ -54,10 +54,10 @@
           >
             <span>
               <span class="tools__item-title title_sub">Attesteer</span>
-              <span class="tools__item-subtitle paragraph_small">A framework for external data</span>
+              <span class="tools__item-subtitle paragraph_small">Public auditability service</span>
               <p class="paragraph paragraph_medium">Add a Proof of Code and a Proof of Execution to your TEE to provide
                 your customers a publicy auditable
-                solution
+                solution.
               </p>
             </span>
             <Link class="tools__item-icon" />
@@ -68,12 +68,12 @@
             class="tools__item"
           >
             <span>
-              <span class="tools__item-title title_sub">Secure TEE Infrastructure</span>
-              <span class="tools__item-subtitle paragraph_small">A framework for external data</span>
+              <span class="tools__item-title title_sub">Securitee TEE Infrastructure</span>
+              <span class="tools__item-subtitle paragraph_small">Secure TEE Infrastructure</span>
               <p class="paragraph paragraph_medium">Leverage our complementary secure infrastructure offering for
                 deployment: Intel SGX-capable bare-metal
                 servers that come with a pre-installed software management system, which enables a seamless deployment of
-                your developed TEE-based application
+                your developed TEE-based application.
               </p>
             </span>
             <Link class="tools__item-icon" />

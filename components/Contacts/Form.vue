@@ -204,6 +204,7 @@ export default {
     bottom: 32px;
     left: 0;
     transition: 0.4s;
+    pointer-events: none;
 
     @include sm {
       bottom: 18px;

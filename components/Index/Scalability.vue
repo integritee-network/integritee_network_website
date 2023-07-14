@@ -5,16 +5,14 @@
         <div class="row scalability__row">
           <div class="column column_medium scalability__column scalability__column_left">
             <h2 class="title title_h2 scalability__title">
-              Scalability <br /> and performance without sacrificing trust
+              Scalability <br /> and performance without sacrificing trust.
             </h2>
-            <p class="paragraph paragraph_large margin_medium">
+            <p class="paragraph paragraph_medium margin_large">
               Integritee utilizes the blockchain to create security and trust
               without the computational compromises.
-            </p>
-            <p class="paragraph paragraph_medium margin_large">
               Centralized approaches to data-driven services tend to be fast and
               convenient, but involve big compromises of user privacy and data
-              security
+              security.
             </p>
             <NuxtLink to="/technology" class="btn btn_gradient">Learn more</NuxtLink>
           </div>
@@ -28,7 +26,7 @@
               </h3>
               <p class="paragraph paragraph_medium scalability__item-description">
                 The security and trust of the blockchain with the speed and
-                power of enterprise grade confidential computing hardware
+                power of enterprise grade confidential computing hardware.
               </p>
             </div>
             <div class="scalability__item">
@@ -40,7 +38,7 @@
               </h3>
               <p class="paragraph paragraph_medium scalability__item-description">
                 The scalability of second-layer technology based on substrate
-                for building state of the art data-driven dApps and services
+                for building state of the art data-driven dApps and services.
               </p>
             </div>
           </div>

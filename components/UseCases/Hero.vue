@@ -4,7 +4,7 @@
       <template #title>
         From <span>DeFi</span><br />
         to <span class="text-gradient_purple-blue">gaming</span>, Integritee powers scalability
-        and security for Web3
+        and security for Web3.
       </template>
       <template #text>
         A new generation technology serving thousands of possible use cases across multiple industries for the next

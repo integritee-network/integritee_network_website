@@ -18,8 +18,8 @@
       </div>
       <div class="header__nav-right">
         <Socials />
-        <a v-if="width > breakpoints.slg" href="/" target="_blank" class="btn_border header__button paragraph_small">Start
-          Building</a>
+        <NuxtLink v-if="width > breakpoints.slg" to="/developers" target="_blank" class="btn_border header__button paragraph_small">Start
+          Building</NuxtLink>
         <button v-if="width <= breakpoints.slg" class="header__burger" :class="{
           active: active,
         }" type="button" @click="toggleMenu()">
@@ -134,6 +134,10 @@ watch(
       &:first-child {
         margin-left: 0;
       }
+    }
+
+    a.router-link-active {
+      color: #5B92FF;
     }
   }
 

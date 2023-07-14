@@ -1,11 +1,13 @@
 <template>
-  <Main />
-  <Things />
-  <Scalability />
-  <Token />
-  <Community />
-  <News />
-  <Socials />
+  <div class='home-section'>
+    <Main />
+    <Things />
+    <Scalability />
+    <Token />
+    <Community />
+    <News />
+    <Socials />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -23,3 +25,9 @@ generateSEO({
   description: 'Let’s power the future Web3 . The fastest, most scalable and secure Web3 network bringing the vision of a trustless, decentralized future for all.'
 })
 </script>
+
+<style lang='scss'>
+.home-section {
+  overflow: hidden;
+}
+</style>

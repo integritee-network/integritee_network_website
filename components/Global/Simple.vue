@@ -100,6 +100,7 @@ defineProps<{
       transform: translateY(-50%);
       width: 100%;
       max-height: 420px;
+      z-index: 2;
 
       @include sm {
         position: relative;

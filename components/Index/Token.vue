@@ -6,12 +6,12 @@
           <div class="column column_medium token__column">
             <h2 class="title title_h2 token__title">
               A network secured and governed <br />
-              by our TEER token
+              by our TEER token.
             </h2>
             <p class="paragraph paragraph_medium margin_large token__description">
               The Integritee ecosystem is securely built and governed<br />
               by our trusted community of TEER token holders. Join<br />
-              the movement for scaling a secure and fast Web3
+              the movement for scaling a secure and fast Web3.
             </p>
             <NuxtLink to="/teer-token" class="btn btn_gradient">Learn more</NuxtLink>
           </div>
@@ -21,7 +21,7 @@
             <img src="/img/index/token/polygon1.svg" class="token__polygon1" alt="Polygon" />
             <div class="token__right-content">
               <div class="token__right-title title_sub">
-                Teer Token<br />
+                TEER Token<br />
                 is available on:
               </div>
               <div class="token__right-list">
