@@ -110,6 +110,10 @@ watch(y, (value) => {
   for (const [idx, item] of clonedItems.reverse().entries()) {
     if (item.getBoundingClientRect().y - height.value / 2 <= 0) {
       setActive(years[years.length - 1 - idx].year)
+      if (width.value <= breakpoints.sm) {
+        const value = fixedNav.value ? 13 : 0
+        nav.value.scrollTo({ left: 89 * (years.length - 1 - idx) + value , behavior: "smooth" })
+      }
       break
     }
   }
@@ -139,10 +143,12 @@ watch(y, (value) => {
       display: flex;
       gap: 8px;
       align-items: flex-start;
-      overflow-y: auto;
       scrollbar-width: none;
+      overflow-y: hidden;
+      transition: 0.4s;
 
       &::-webkit-scrollbar {
+        display: none;
         height: 0;
       }
     }
@@ -158,7 +164,7 @@ watch(y, (value) => {
         background: rgba(81, 81, 81, 0.25);
         backdrop-filter: blur(4px);
         transform: none;
-        padding: 8px 0 8px 21px;
+        padding: 8px 13px 8px 21px;
         z-index: 3;
       }
     }
@@ -185,6 +191,13 @@ watch(y, (value) => {
       width: 121px;
     }
 
+    @include sm {
+      width: 100%;
+      height: 56px;
+    }
+  }
+
+  &__list-years {
     @include sm {
       width: 100%;
       height: 56px;

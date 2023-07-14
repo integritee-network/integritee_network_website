@@ -3,7 +3,9 @@
     <div class="new new-root block">
       <div class="container row blog-row">
         <div class="blog__nav blog-nav-column">
-          <Nav :activeId="post.categories[0]" :isLinks="true" />
+          <div class="blog__nav-wrapper blog-nav-column" ref="nav">
+            <Nav :activeId="post.categories[0]" :isLinks="true" />
+          </div>
         </div>
         <div class="new__article">
           <div class="new__article-padding block">
@@ -107,6 +109,7 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
       position: relative;
       left: -30px;
       width: calc(100% + 30px);
+      height: auto;
       border-radius: 24px;
 
       @include sm {

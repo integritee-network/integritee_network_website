@@ -10,7 +10,13 @@
         internet and beyond
       </template>
       <template #button>
-        <a :href="PRODUCTS_DOCS_LINK" class="btn btn_gradient desc__button" target="_blank">Learn More</a>
+        <a
+          :href="PRODUCTS_DOCS_LINK"
+          class="btn btn_gradient desc__button"
+          target="_blank"
+        >
+          Learn More
+        </a>
       </template>
     </Desc>
   </div>

@@ -14,15 +14,27 @@
             </p>
           </div>
           <div class="column_medium socials__list">
-            <a :href="TELEGRAM_LINK" class="socials__list-item">
+            <a
+              :href="TELEGRAM_LINK"
+              target='_blank'
+              class="socials__list-item"
+            >
               <Telegram class="socials__list-item-icon" />
               <span class="socials__list-item-name">Telegram</span>
             </a>
-            <a :href="DISCORD_LINK" class="socials__list-item">
+            <a
+              :href="DISCORD_LINK"
+              target='_blank'
+              class="socials__list-item"
+            >
               <Discord class="socials__list-item-icon" />
               <span class="socials__list-item-name">Discord</span>
             </a>
-            <a :href="TWITTER_LINK" class="socials__list-item">
+            <a
+              :href="TWITTER_LINK"
+              target='_blank'
+              class="socials__list-item"
+            >
               <Twitter class="socials__list-item-icon" />
               <span class="socials__list-item-name paragraph_medium"
                 >Twitter</span

@@ -30,7 +30,7 @@
       </div>
     </div>
   </header>
-  <Menu v-if="width <= breakpoints.slg" :active="active" />
+  <Menu v-if="width <= breakpoints.slg" :active="active" :clickHandler='toggleMenu' />
 </template>
 
 <script setup>

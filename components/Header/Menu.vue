@@ -2,14 +2,14 @@
   <Transition name="menu-toggle">
     <div v-show="active" class="menu">
       <nav class="menu__nav">
-        <NuxtLink to="/products" class="text-link">Products</NuxtLink>
-        <NuxtLink to="/usecases" class="text-link"> Use Cases </NuxtLink>
-        <NuxtLink to="/technology" class="text-link">Technology</NuxtLink>
-        <NuxtLink to="/developers" class="text-link">Developers</NuxtLink>
-        <NuxtLink to="/teer-token" class="text-link">TEER Token</NuxtLink>
-        <NuxtLink to="/about" class="text-link">About</NuxtLink>
-        <NuxtLink to="/blog" class="text-link">Blog</NuxtLink>
-        <NuxtLink to="/contacts" class="text-link">Contacts</NuxtLink>
+        <NuxtLink to="/products" @click='clickHandler' class="text-link">Products</NuxtLink>
+        <NuxtLink to="/usecases" @click='clickHandler' class="text-link"> Use Cases </NuxtLink>
+        <NuxtLink to="/technology" @click='clickHandler' class="text-link">Technology</NuxtLink>
+        <NuxtLink to="/developers" @click='clickHandler' class="text-link">Developers</NuxtLink>
+        <NuxtLink to="/teer-token" @click='clickHandler' class="text-link">TEER Token</NuxtLink>
+        <NuxtLink to="/about" @click='clickHandler' class="text-link">About</NuxtLink>
+        <NuxtLink to="/blog" @click='clickHandler' class="text-link">Blog</NuxtLink>
+        <NuxtLink to="/contacts" @click='clickHandler' class="text-link">Contacts</NuxtLink>
       </nav>
       <a href="/" target="_blank" class="btn_border header__button menu__button">
         Start Building
@@ -23,6 +23,10 @@ const props = defineProps({
     type: Boolean,
     required: true,
     default: false
+  },
+  clickHandler: {
+    type: Function,
+    required: true
   }
 })
 </script>
