@@ -122,3 +122,7 @@ export const MEDIUM_LINK = 'https://medium.com/integritee'
 export const REDDIT_LINK = 'https://www.reddit.com/r/Integritee/'
 
 export const LINKEDIN_LINK = 'https://www.linkedin.com/company/integritee/'
+
+export const LIGHTPAPER_LINK = '/docs/Integritee_ Lightpaper_2021.pdf'
+
+export const TOKENOMICS_LINK = '/docs/Integritee_Tokenomics_2021.pdf'
