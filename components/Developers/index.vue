@@ -12,10 +12,22 @@
         verifiable privacy, and interoperability at scale.
       </template>
       <template #button>
-        <a :href="GITHUB_LINK" class="btn btn_gradient desc__button">Github</a>
+        <a
+          :href="GITHUB_LINK"
+          target="_blank"
+          class="btn btn_gradient desc__button"
+        >
+          Github
+        </a>
       </template>
       <template #docs>
-        <a :href="DEVELOPMENT_DOCS" class="btn btn_border">Docs</a>
+        <a
+          :href="DEVELOPMENT_DOCS"
+          target="_blank"
+          class="btn btn_border"
+        >
+          Docs
+        </a>
       </template>
     </Desc>
     <QuickStart />

@@ -159,6 +159,7 @@ const tag = computed(() => {
     flex-direction: column;
     justify-content: space-between;
     gap: 50px;
+    align-self: self-start;
 
     @include lg {
       width: 580px;

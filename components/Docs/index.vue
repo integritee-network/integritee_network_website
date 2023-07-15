@@ -3,26 +3,28 @@
     <div class='container'>
       <div class='docs__row'>
         <div class='docs__column'>
-          <Info>
-            <template #items>
-              <div class='info__row'>
-                <div class='info__item'>
-                  <div class='address__icon margin_medium' />
-                  <p class='title_sub margin_medium'>Integritee AG</p>
-                  <p class='paragraph_large'>Technoparkstrasse 18005, Zurich, Switzerland</p>
+          <div class='docs__info-wrap'>
+            <Info>
+              <template #items>
+                <div class='info__row'>
+                  <div class='info__item'>
+                    <div class='address__icon margin_medium' />
+                    <p class='title_sub margin_medium'>Integritee AG</p>
+                    <p class='paragraph_large'>Technoparkstrasse 18005, Zurich, Switzerland</p>
+                  </div>
+                  <div class='info__item'>
+                    <div class='contact__icon margin_medium' />
+                    <p class='title_sub margin_medium'>Contact Us</p>
+                    <p class='paragraph_large'>
+                      <a href="mailto: hello@integritee.network" class="text-link info__link">hello@integritee.network</a>
+                      <a href="mailto: support@integritee.network" class="text-link info__link">support@integritee.network</a>
+                    </p>
+                  </div>
                 </div>
-                <div class='info__item'>
-                  <div class='contact__icon margin_medium' />
-                  <p class='title_sub margin_medium'>Contact Us</p>
-                  <p class='paragraph_large'>
-                    <a href="mailto: hello@integritee.network" class="text-link info__link">hello@integritee.network</a>
-                    <a href="mailto: support@integritee.network" class="text-link info__link">support@integritee.network</a>
-                  </p>
-                </div>
-              </div>
-            </template>
-          </Info>
-          <a class="btn btn_gradient docs__button">Get In touch</a>
+              </template>
+            </Info>
+            <a class="btn btn_gradient docs__button">Get In touch</a>
+          </div>
         </div>
         <Texts>
           <h1>Privacy Policy</h1>
@@ -86,6 +88,11 @@ import Info from '~/components/Contacts/Info.vue'
     padding-bottom: 100px;
   }
 
+  &__info-wrap {
+    position: sticky;
+    top: 104px;
+  }
+
   &__row {
     display: flex;
     justify-content: space-between;
@@ -116,6 +123,10 @@ import Info from '~/components/Contacts/Info.vue'
 }
 .info__item {
   margin-bottom: 32px !important;
+
+  @include md {
+    width: 100% !important;
+  }
 
   @include sm {
     margin-bottom: 24px !important;

@@ -69,11 +69,7 @@ import { TELEGRAM_LINK, TWITTER_LINK, DISCORD_LINK } from '@/configs/app.config'
     }
   }
   &__description {
-    line-height: 230%;
-
-    @include lg {
-      line-height: 150%;
-    }
+    line-height: 150%;
 
     @include slg {
       br {

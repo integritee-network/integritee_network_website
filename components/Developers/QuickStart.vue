@@ -7,7 +7,7 @@
         <div v-for='(item, index) in items' :key='index' class='building__item'>
           <component :is='item.img' />
           <p class='title title_sub building__item-title'>{{ item.title }}</p>
-          <p class='paragraph paragraph_medium'><a :href='item.link'>{{ item.linkText }}</a> {{ item.text }}</p>
+          <p class='paragraph paragraph_medium'><a :href='item.link' target='_blank'>{{ item.linkText }}</a> {{ item.text }}</p>
         </div>
       </div>
     </div>
