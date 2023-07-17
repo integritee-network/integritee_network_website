@@ -50,14 +50,28 @@ export default function useRoadmap() {
     '2023': {
       info: [
         {
-          name: 'Q1-Q4',
+          name: 'Q1',
           content: [
             'Release Kusama-Polkadot TEER bridge',
+          ],
+        },
+        {
+          name: 'Q2',
+          content: [
             'Release Hybrid Sidechain',
+          ],
+        },
+        {
+          name: 'Q3',
+          content: [
             'Bridge to other Ecosystems',
+          ],
+        },
+        {
+          name: 'Q4',
+          content: [
             'Deploy first enterprise PoCs',
           ],
-          type: 'long',
         },
       ],
       active: true,

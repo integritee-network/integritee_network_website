@@ -9,4 +9,3 @@ generateSEO({
   description: 'The combination of confidential computing and a Substrate-based public chain is the foundation for our superior tech.'
 })
 </script>
-<style lang=""></style>

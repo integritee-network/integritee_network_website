@@ -4,16 +4,14 @@
       <div class="container blur-gradient">
         <div class="column column_medium community__column">
           <h2 class="title title_h2 community__title">
-            Join our developer community <br /> and start your integritee journey
+            Join our developer community <br /> and start your Integritee journey.
           </h2>
           <div class="community__text">
-            <p class="paragraph paragraph_medium margin_small">
-              Developers are building amazing DApps that utilize our expanding
-              suite of tools
-            </p>
             <p class="paragraph paragraph_medium margin_large">
+              Developers are building amazing DApps that utilize our expanding
+              suite of tools.
               Join us on Discord where we’re building a community of forward
-              thinking devs like you
+              thinking devs like you.
             </p>
           </div>
           <a :href="DISCORD_LINK" target='_blank' class="btn btn_gradient">Join Discord</a>

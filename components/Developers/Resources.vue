@@ -86,7 +86,7 @@ const items = [
     img: '/img/resources/sdk-img.png',
     imgSm: '/img/resources/sdk-img-sm.png',
     gray: 'Web3 development tool',
-    text: 'Integritee\'s Sidechain SDK is ideal for building any decentralized application that requires low latency, scalability, and confidentiality',
+    text: 'Integritee\'s Sidechain SDK is ideal for building any decentralized application that requires low latency, scalability, and confidentiality.',
     list: [
       {
         li: 'Develop a new dapp from scratch',
@@ -111,7 +111,7 @@ const items = [
     img: '/img/resources/off-chain-img.png',
     imgSm: '/img/resources/off-chain-img-sm.png',
     gray: 'Secure off-chain computational tool',
-    text: 'Extend blockchain utility with secure off-chain computation and increase the available computing power for your applications',
+    text: 'Extend blockchain utility with secure off-chain computation and increase the available computing power for your applications.',
     list: [
       {
         li: 'Set up trusted Off-Chain Workers to execute customs state transition functions inside TEEs'
@@ -132,7 +132,7 @@ const items = [
     img: '/img/resources/teeracle-img.png',
     imgSm: '/img/resources/teeracle-img-sm.png',
     gray: 'Trusted oracle framework',
-    text: 'Build trusted oracles that run inside TEEs to securely and efficiently bridge the gap between Web2 data sources and Web3 systems',
+    text: 'Build trusted oracles that run inside TEEs to securely and efficiently bridge the gap between Web2 data sources and Web3 systems.',
     list: [
       {
         li: 'Be assured that both the oracle service and all retrieved data are secure and unaltered'
@@ -151,9 +151,9 @@ const items = [
   {
     title: 'Attesteer',
     img: '/img/resources/attersteer.png',
-    imgSm: '/img/resources/attersteer-img-sm.png',
+    imgSm: '/img/resources/attesteer-img-sm.png',
     gray: 'Public auditability service',
-    text: 'Add public auditability to your confidential processes with our decentralized remote attestation service - a transparent on-chain proof of integrity',
+    text: 'Add public auditability to your confidential processes with our decentralized remote attestation service - a transparent on-chain proof of integrity.',
     list: [
       {
         li: 'Prove that the TEE hardware used is genuine',

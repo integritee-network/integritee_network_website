@@ -3,11 +3,11 @@
     <div class="hero">
       <Desc>
         <template #title>
-          Our Latest <span>News</span><br />
-          and <span class="text-gradient_purple-blue">Insights</span>: Exploring the Frontiers of Web3 and Beyond
+          Our latest <span>news</span><br />
+          and <span class="text-gradient_purple-blue">insights</span>: Exploring the frontiers of Web3 and beyond.
         </template>
         <template #text>
-          Stay Updated on the Exciting World of Web3 Technology and Innovations
+          Stay updated on the exciting world of Web3 Technology and our innovations.
         </template>
       </Desc>
     </div>

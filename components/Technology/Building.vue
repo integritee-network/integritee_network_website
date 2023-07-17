@@ -1,12 +1,8 @@
 <template>
   <div class="building block">
     <div class='container blur-gradient blur-gradient_extra-top'>
-      <div class='building__icon'>
-        <Icon />
-      </div>
       <h2 class='title title_h2 margin_medium building__title'>What will you create?</h2>
-      <p class='paragraph paragraph_medium margin_large'>If the major problems associated with programming on the
-        blockchain solved...</p>
+      <p class='paragraph paragraph_medium margin_large'>If the major problems associated with programming on the blockchain are solved...</p>
       <a :href="TECHNOLOGY_LINK" class="btn btn_gradient">
         Start Building
       </a>

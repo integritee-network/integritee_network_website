@@ -5,7 +5,7 @@
         <h2 class="title title_h2 margin_medium">Project roadmap</h2>
         <p class="roadmap__description margin_large paragraph paragraph_medium">Here’s what we’re building and just as
           importantly, what we’ve
-          already built</p>
+          already built.</p>
         <div class="row roadmap__row" ref="parent">
           <div class="roadmap__list-years-wrapper">
             <div class="roadmap__list-years" :class="{ active: fixedNav, end: endNav }" ref="nav">

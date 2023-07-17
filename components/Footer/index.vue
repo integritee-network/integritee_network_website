@@ -83,7 +83,7 @@
             <div class="footer__column-title">Resources</div>
             <div class="footer__column-list">
               <a
-                href="https://uploads-ssl.webflow.com/60c21bdfde439ba700ea5c56/60e6b16b0d252defda72fe07_Integritee AG Token Economics_2021.pdf"
+                :href="TOKENOMICS_LINK"
                 target="_blank"
                 class="footer__column-link text-link"
               >
@@ -97,7 +97,7 @@
                 Documentation
               </a>
               <a
-                href="https://uploads-ssl.webflow.com/60c21bdfde439ba700ea5c56/612892db018a36f054100b4d_Integritee AG Lightpaper.pdf"
+                :href="LIGHTPAPER_LINK"
                 target="_blank"
                 class="footer__column-link text-link"
               >
@@ -184,7 +184,7 @@
       <div class="footer__bottom">
         <span class="paragraph_medium">©2023 Integritee, Inc.</span>
         <span>
-          <a href="#" target="_blank" class="blue paragraph_medium">Imprint</a> and
+          Imprint and
           <NuxtLink to="/privacy-policy" class="blue paragraph_medium">Privacy Policy</NuxtLink>
         </span>
       </div>
@@ -211,7 +211,9 @@ import {
   YOUTUBE_LINK,
   MEDIUM_LINK,
   REDDIT_LINK,
-  LINKEDIN_LINK
+  LINKEDIN_LINK,
+  LIGHTPAPER_LINK,
+  TOKENOMICS_LINK
 } from '@/configs/app.config';
 </script>
 

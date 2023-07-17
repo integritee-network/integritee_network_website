@@ -10,7 +10,7 @@
             <p class="paragraph paragraph_medium socials__description">
               Whether you’re a developer, investor, or Web 3.0 enthusiast, get
               <br />
-              in touch to learn more about our tools and solutions
+              in touch to learn more about our tools and solutions.
             </p>
           </div>
           <div class="column_medium socials__list">
@@ -69,11 +69,7 @@ import { TELEGRAM_LINK, TWITTER_LINK, DISCORD_LINK } from '@/configs/app.config'
     }
   }
   &__description {
-    line-height: 230%;
-
-    @include lg {
-      line-height: 150%;
-    }
+    line-height: 150%;
 
     @include slg {
       br {
