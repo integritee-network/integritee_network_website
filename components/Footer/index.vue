@@ -184,8 +184,7 @@
       <div class="footer__bottom">
         <span class="paragraph_medium">©2023 Integritee, Inc.</span>
         <span>
-          Imprint and
-          <NuxtLink to="/privacy-policy" class="blue paragraph_medium">Privacy Policy</NuxtLink>
+          <NuxtLink to="/privacy-policy" class="blue paragraph_medium">Imprint and Privacy Policy</NuxtLink>
         </span>
       </div>
     </div>

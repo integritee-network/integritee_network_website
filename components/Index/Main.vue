@@ -6,7 +6,7 @@
           <h1 class="title title_hero main__title margin_medium">
             <span class="gradient gradient_one">It’s time.</span> Let’s<br />
             power the Web3<br />
-            of the <span class="gradient gradient_two">future</span> together.
+            of the <span class="gradient gradient_two">future</span> together
           </h1>
           <p class="paragraph paragraph_medium main__description margin_large">
             The fastest, most scalable and secure Web3 network bringing <br />

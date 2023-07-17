@@ -6,7 +6,7 @@
           We’re blockchain veterans who believe<br />
           in the power<br />
           of a <span class="text-gradient_blue-purple">decentralized</span> <span
-            class="text-gradient_purple-blue">Web3</span>.
+            class="text-gradient_purple-blue">Web3</span>
         </template>
         <template #text>
           We’ve been developing decentralized solutions for tangible, real-world use cases for over half a decade.

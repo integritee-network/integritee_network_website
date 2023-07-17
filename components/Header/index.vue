@@ -18,7 +18,7 @@
       </div>
       <div class="header__nav-right">
         <Socials />
-        <NuxtLink v-if="width > breakpoints.slg" to="/developers" target="_blank" class="btn_border header__button paragraph_small">Start
+        <NuxtLink v-if="width > breakpoints.slg" to="/developers" class="btn_border header__button paragraph_small">Start
           Building</NuxtLink>
         <button v-if="width <= breakpoints.slg" class="header__burger" :class="{
           active: active,

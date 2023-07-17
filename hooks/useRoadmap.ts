@@ -21,8 +21,12 @@ interface Roadmap {
 export default function useRoadmap() {
   const years = reactive<Year[]>([
     {
-      year: '2023',
+      year: '2024',
       active: true,
+    },
+    {
+      year: '2023',
+      active: false,
     },
     {
       year: '2022',
@@ -32,98 +36,102 @@ export default function useRoadmap() {
       year: '2021',
       active: false,
     },
-    {
-      year: '2020',
-      active: false,
-    },
-    {
-      year: '2019',
-      active: false,
-    },
-    {
-      year: '2018',
-      active: false,
-    },
   ])
 
   const roadmap = reactive<Roadmap>({
+    '2024': {
+      info: [
+        {
+          name: 'Q1-Q4',
+          content: [
+            'Release of Sidechain SDK v 1.0.0',
+            'Release of Privacy Sidechain for Statemine/Statemint',
+            'Release of Hybrid Sidechains',
+            'Bridge TEER from Kusama Parachain to Polkadot Parachain',
+            'Bridge to other Ecosystems',
+          ],
+          type: 'long',
+        },
+      ],
+      active: true,
+    },
     '2023': {
       info: [
         {
           name: 'Q1',
           content: [
-            'Release Kusama-Polkadot TEER bridge',
+            'Partnership with OLI Systems',
+            'Release of Sidechain SDK v.0.11.0',
+            'Release of Teeracle, an TEE-based oracle framework',
           ],
         },
         {
           name: 'Q2',
           content: [
-            'Release Hybrid Sidechain',
+            'Partnership with Enclaive',
+            'Launch of Securitee ConfidenDal CompuDng Pla_orm',
+            'Launch of Integritee Governance Pla_orm on Polkassembly',
+            'Release of Teeracle as Add-on on Securitee Platorm',
           ],
         },
         {
           name: 'Q3',
           content: [
-            'Bridge to other Ecosystems',
+            'Release of DCAP A`estaDon on Integritee Network',
+            'Release of A`esteer service for TEEs via API',
+            'IntegraDon of A`esteer service with Securitee',
+            'Release of Sidechain SDK v 0.12.0',
+            'Go-Live of first projects on Integritee Mainnet',
+            'Brand refresh and new Website',
           ],
         },
         {
           name: 'Q4',
           content: [
-            'Deploy first enterprise PoCs',
+            'ImplementaDon of final fee burning mechanism',
+            'Launch treasury grant program and bounDes',
+            'Release of Sidechain SDK v 0.13.0',
+            'Release of Sidechain as a Service on Securitee',
+            'DEX LisDng',
           ],
         },
       ],
-      active: true,
+      active: false,
     },
     '2022': {
       info: [
         {
           name: 'Q1',
           content: [
-            'Secure Kusama slot',
-            'Release Sidechain Demo ',
-            '2nd Exchange Listing ',
-            'Finish strategic planning for 2022',
+            'Kusama Parachain slot secured',
+            'Release of Sidechain Demo',
+            'CollaboraDon with OVH Cloud and Intel',
           ],
         },
         {
           name: 'Q2',
           content: [
-            'Migration from Solo to Kusama Parachain',
-            'XCM Integrations with other projects',
-            'Release Sidechain SDK v 1.0',
-            'Release of Sidechains with Smart Contracts',
-            'Release of generic trusted oracle framework',
-            'Deploy first end client usable App',
-            'Forge partnerships with international institutions and universities',
-            'Release of Securitee Solution on OVH Marketplace',
-            '3rd Exchange Listing',
-            'Network Decentralization: Remove Sudo and enable coin voting with TEER',
+            'MigraDon from Solo to Kusama Parachain',
+            'Release of Sidechains Benchmark',
+            'Network DecentralizaDon: Remove Sudo and enable coin voDng with TEER',
+            'LisDng on Kraken Exchange',
           ],
         },
         {
           name: 'Q3',
           content: [
-            'Release Sidechain SDK v 1.1',
-            'Issue Treasury grants to expand the Integritee ecosystem and community',
-            'Expand to more countries and create new local communities',
-            'Implement final fee burning and lockdrop mechanisms',
-            'Release of Attesteer',
-            'Forge partnerships with new projects',
-            '4th Exchange Listing',
+            'XCM IntegraDon with Karura and Moonriver',
+            'Polkadot Parachain slot secured',
+            'Partnership with Crust',
+            'Release of Sidechain SDK v.0.9.0',
           ],
         },
         {
           name: 'Q4',
           content: [
-            'Release Sidechain SDK v 1.2',
-            'Establish a multi-environment TEER token',
-            'Release of Securitee Sidechain as a Service',
-            'Forge partnerships with new projects',
-            '5th Exchange Listing',
-            'Secure Polkadot Parachain slot',
-            'Establish Integritee as the leading Polkadot privacy solution.',
+            'Partnership and XCM IntegraDon with Bifrost',
+            'Release of Sidechain SDK v.0.10.0',
+            'PoC for EVM compaDble Sidechains',
           ],
         },
       ],
@@ -132,88 +140,24 @@ export default function useRoadmap() {
     '2021': {
       info: [
         {
-          name: 'Q1',
-          content: [
-            'Launch Rococo Testnet Parachain',
-            'Conceptualize and Preparation of Spin-off',
-          ],
-        },
-        {
-          name: 'Q2',
-          content: [
-            'Spin-off from SCS and birth of Integritee AG',
-            'Seed Round Close',
-          ],
-        },
-        {
           name: 'Q3',
           content: [
             'New Brand and Website relaunch',
             'Move from SubstraTEE to Integritee',
-            'Release Tokenomics',
-            'Participation in public slot auctions on Kusama',
-            'Mainnet & Token Launch',
+            'Release Tokenomics paper',
+            'ParDcipaDon in public slot aucDons on Kusama',
             'Start of Community Growth',
+            'Series A Round Close',
           ],
         },
         {
           name: 'Q4',
           content: [
-            'First deployment and practical use case hosted on the Integritee mainnet will be launched: the US dollar exchange rate oracle.',
-            'List TEER on major exchange',
+            'Mainnet & Token Launch',
+            'First deployment and pracDcal use case hosted on the Integritee mainnet: the US dollar exchange rate oracle.',
+            'List TEER on major exchange Gate',
             'Start of Integritee Ambassador Program',
-          ],
-        },
-      ],
-      active: false,
-    },
-    '2020': {
-      info: [
-        {
-          name: 'Q1',
-          content: ['3rd Web3 Grant for: SubstraTEE extension pack'],
-        },
-        {
-          name: 'Q2-Q3',
-          content: [
-            'Development Prototype Platform based on SubstraTEE.',
-            'First deployed and running use case with Encointer on the Platform',
-          ],
-        },
-        {
-          name: 'Q4',
-          content: ['Polkadot Treasury Grant “SubstraTEE scalability”'],
-        },
-      ],
-      active: false,
-    },
-    '2019': {
-      info: [
-        {
-          name: 'Q1',
-          content: [
-            '1st Web3 Grant for: Substrate Transaction Privacy using Intel SGX',
-          ],
-        },
-        {
-          name: 'Q3',
-          content: ['2nd Web3 Grant for: Substrate Rust API client'],
-        },
-        {
-          name: 'Q4',
-          content: [
-            'First SubstraTEE Meetup to demonstrate private token transactions.',
-          ],
-        },
-      ],
-      active: false,
-    },
-    '2018': {
-      info: [
-        {
-          name: 'Q4',
-          content: [
-            'Release of the Encointer Whitepaper – “Local Community Cryptocurrencies with Universal Basic Income” and start of the SubstraTEE journey',
+            'Partnership with Ajuna, KILT, Fractal',
           ],
         },
       ],

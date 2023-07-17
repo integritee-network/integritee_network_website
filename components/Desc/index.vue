@@ -41,7 +41,7 @@
   }
 
   &__title {
-    line-height: 115%;
+    line-height: 116%;
     font-weight: 500;
   }
 

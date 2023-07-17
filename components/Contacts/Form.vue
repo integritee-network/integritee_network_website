@@ -226,13 +226,13 @@ export default {
   &__textarea {
     width: 100%;
     background: transparent;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
     border: 0;
     outline: none;
     color: #fff;
 
     @include sm {
-      margin-bottom: 18px;
+      padding-bottom: 18px;
     }
 
     &:focus {

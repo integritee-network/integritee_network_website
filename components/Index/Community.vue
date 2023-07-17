@@ -4,7 +4,7 @@
       <div class="container blur-gradient">
         <div class="column column_medium community__column">
           <h2 class="title title_h2 community__title">
-            Join our developer community <br /> and start your Integritee journey.
+            Join our developer community <br /> and start your Integritee journey
           </h2>
           <div class="community__text">
             <p class="paragraph paragraph_medium margin_large">

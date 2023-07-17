@@ -330,15 +330,16 @@ watch(y, (value) => {
       grid-area: 1 / 1 / 2 / 3;
 
       .roadmap__item-text-points-wrapper {
-        display: flex;
-        flex-wrap: wrap;
+        column-count: 2;
+        column-gap: 20px;
 
         @include sm {
-          display: block;
+          column-count: 1;
+          column-gap: 0;
         }
 
         .roadmap__item-text-point {
-          width: 50%;
+          width: 99%;
 
           @include sm {
             width: 100%;

@@ -5,7 +5,7 @@
         <div class="row scalability__row">
           <div class="column column_medium scalability__column scalability__column_left">
             <h2 class="title title_h2 scalability__title">
-              Scalability <br /> and performance without sacrificing trust.
+              Scalability <br /> and performance without sacrificing trust
             </h2>
             <p class="paragraph paragraph_medium margin_large">
               Integritee utilizes the blockchain to create security and trust

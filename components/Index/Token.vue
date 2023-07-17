@@ -6,7 +6,7 @@
           <div class="column column_medium token__column">
             <h2 class="title title_h2 token__title">
               A network secured and governed <br />
-              by our TEER token.
+              by our TEER token
             </h2>
             <p class="paragraph paragraph_medium margin_large token__description">
               The Integritee ecosystem is securely built and governed<br />
