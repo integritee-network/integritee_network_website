@@ -68,7 +68,7 @@
             class="tools__item"
           >
             <span>
-              <span class="tools__item-title title_sub">Securitee TEE Infrastructure</span>
+              <span class="tools__item-title title_sub">Securitee</span>
               <span class="tools__item-subtitle paragraph_small">Secure TEE Infrastructure</span>
               <p class="paragraph paragraph_medium">Leverage our complementary secure infrastructure offering for
                 deployment: Intel SGX-capable bare-metal

@@ -4,7 +4,7 @@
       <template #title>
         Get ready to build<br>
         in <span class="text-gradient_blue-purple">Web3</span> like you were <span
-          class="text-gradient_purple-blue">always</span> meant to.
+          class="text-gradient_purple-blue">always</span> meant to
       </template>
       <template #text>
         Integritee combines the security and trust of Polkadot, the scalability of second-layer solutions, and the

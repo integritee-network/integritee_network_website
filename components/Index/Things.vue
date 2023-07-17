@@ -6,7 +6,7 @@
           <h2 class="title title_h2 things__title">
             Great things<br />
             are built with<br />
-            Integritee.
+            Integritee
           </h2>
           <p class="paragraph paragraph_medium margin_large things__description">
             Integritee harnesses the speed and confidentiality of Trusted

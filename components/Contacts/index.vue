@@ -3,7 +3,7 @@
     <Desc>
       <template #title>
         <span>Build</span> and <span class="text-gradient_purple-blue">deploy</span> a new generation of data-driven
-        platforms with Integritee.
+        platforms with Integritee
       </template>
     </Desc>
     <div class='block'>

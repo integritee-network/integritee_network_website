@@ -141,10 +141,25 @@ const tag = computed(() => {
     img {
       display: block;
       width: 100%;
+      height: 611px;
       border-radius: 24px;
       object-fit: cover;
+
+      @include slg {
+        height: 500px;
+      }
+
+      @include md {
+        height: 539px;
+      }
+
       @include sm {
         border-radius: 18px;
+        height: 420px;
+      }
+
+      @include xsm {
+        height: 369px;
       }
     }
   }
