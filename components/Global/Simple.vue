@@ -1,10 +1,10 @@
 <template>
-  <div class='block simple'>
+  <div class="block simple">
     <div class="simple__text">
-      <p class='simple__item-title margin_medium'>
+      <p class="simple__item-title margin_medium">
         {{ item.title }}
       </p>
-      <p class='simple__item-text paragraph paragraph_medium'>
+      <p class="simple__item-text paragraph paragraph_medium">
         {{ item.text }}
       </p>
     </div>
@@ -18,7 +18,7 @@
 <script setup lang="ts">
 defineProps<{
   item: {
-    title: string,
+    title: string
     text: string
     img: string
   }
@@ -69,7 +69,7 @@ defineProps<{
     font-weight: 500;
     font-size: $tDef;
     line-height: 110%;
-    color: #FFFFFF;
+    color: #ffffff;
 
     @include slg {
       font-size: $sm_tMd;
@@ -101,6 +101,19 @@ defineProps<{
       width: 100%;
       max-height: 420px;
       z-index: 2;
+      object-fit: contain;
+
+      @include lg {
+        max-height: 390px;
+      }
+
+      @include slg {
+        max-height: 350px;
+      }
+
+      @include md {
+        max-height: 310px;
+      }
 
       @include sm {
         position: relative;
