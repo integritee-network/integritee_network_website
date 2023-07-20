@@ -3,20 +3,12 @@
     <div class="quick block">
       <div class="container blur-gradient blur-gradient_top">
         <h2 class="title title_h2 margin_medium">Quick start guides</h2>
-        <div class="paragraph paragraph_medium margin_large">Explore our guides to learn more about our tech</div>
+        <div class="paragraph paragraph_medium margin_large">Explore our guides to learn more about our tech.</div>
         <div class="row quick__links-row margin_large">
-          <a
-            :href="GITHUB_LINK"
-            target="_blank"
-            class="btn btn_border quick__link"
-          >
+          <a :href="GITHUB_LINK" target="_blank" class="btn btn_border quick__link">
             GitHub
           </a>
-          <a
-            :href="DOCS_LINK"
-            target="_blank"
-            class="btn btn_border quick__link"
-          >
+          <a :href="DOCS_LINK" target="_blank" class="btn btn_border quick__link">
             Docs
           </a>
         </div>
@@ -38,7 +30,8 @@ import {
   HOW_TO_SETUP_LINK,
   CHECK_TECH_LINK,
   GITHUB_LINK,
-  DOCS_LINK } from '@/configs/app.config';
+  DOCS_LINK
+} from '@/configs/app.config';
 </script>
 <style lang="scss" scoped>
 .quick {

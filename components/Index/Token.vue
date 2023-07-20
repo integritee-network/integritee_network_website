@@ -20,6 +20,7 @@
             <!-- <img src="/img/index/token/polygon.svg" class="token__polygon" alt="Polygon" /> -->
             <img src="/img/index/token/polygon1.svg" class="token__polygon1" alt="Polygon" />
             <div class="token__right-content">
+              <img src="/img/global/logo-icon.svg" class="token__logo-icon" alt="Logo icon" />
               <div class="token__right-title title_sub">
                 TEER Token<br />
                 is available on:
@@ -116,6 +117,21 @@ import {
         width: 24px;
         height: auto;
       }
+    }
+  }
+
+  &__logo-icon {
+    margin-bottom: 32px;
+    width: 44px;
+    height: 48px;
+
+    @include slg {
+      margin-bottom: 24px;
+    }
+
+    @include xsm {
+      width: 30px;
+      height: 32px;
     }
   }
 

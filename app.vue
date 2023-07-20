@@ -19,7 +19,7 @@ await Promise.all([
 <template>
   <div class="wrapper">
     <Header />
-    <div class='image-wrap'>
+    <div class="image-wrap">
       <div class="container">
         <img src="/img/global/bg-line.png" class="top-lines" alt="Lines" />
       </div>
@@ -42,12 +42,7 @@ await Promise.all([
 
 .wrapper {
   position: relative;
-  //overflow-x: hidden;
-  //overflow-y: auto;
-
-  @include lg {
-    overflow: hidden;
-  }
+  overflow: hidden;
 }
 
 .image-wrap {

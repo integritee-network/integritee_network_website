@@ -8,7 +8,7 @@
           </NuxtLink>
           <p class="footer__description">
             The fastest, most scalable and secure Web3 network bringing the
-            vision of a trustless, decentralized future for all
+            vision of a trustless, decentralized future for all.
           </p>
           <Socials />
         </div>
@@ -16,39 +16,19 @@
           <div class="footer__column">
             <div class="footer__column-title">TEER Token</div>
             <div class="footer__column-list">
-              <a
-                :href="KRAKEN_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="KRAKEN_LINK" target="_blank" class="footer__column-link text-link">
                 Kraken
               </a>
-              <a
-                :href="GATE_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="GATE_LINK" target="_blank" class="footer__column-link text-link">
                 Gate.io
               </a>
-              <a
-                :href="COIN_MARKET_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="COIN_MARKET_LINK" target="_blank" class="footer__column-link text-link">
                 CoinMarketCap
               </a>
-              <a
-                :href="COIN_GECKO_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="COIN_GECKO_LINK" target="_blank" class="footer__column-link text-link">
                 CoinGecko
               </a>
-              <a
-                :href="TRADING_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="TRADING_LINK" target="_blank" class="footer__column-link text-link">
                 TradingView
               </a>
             </div>
@@ -56,25 +36,13 @@
           <div class="footer__column">
             <div class="footer__column-title">Network</div>
             <div class="footer__column-list">
-              <a
-                :href="GOVERNANCE_FOOTER_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="GOVERNANCE_FOOTER_LINK" target="_blank" class="footer__column-link text-link">
                 Governance
               </a>
-              <a
-                :href="SUBSCAN_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="SUBSCAN_LINK" target="_blank" class="footer__column-link text-link">
                 Integritee Subscan
               </a>
-              <a
-                :href="INTEGRITEE_NETWORK_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="INTEGRITEE_NETWORK_LINK" target="_blank" class="footer__column-link text-link">
                 Integritee Network
               </a>
             </div>
@@ -82,32 +50,16 @@
           <div class="footer__column">
             <div class="footer__column-title">Resources</div>
             <div class="footer__column-list">
-              <a
-                :href="TOKENOMICS_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="TOKENOMICS_LINK" target="_blank" class="footer__column-link text-link">
                 Tokenomics
               </a>
-              <a
-                :href="DOCS_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="DOCS_LINK" target="_blank" class="footer__column-link text-link">
                 Documentation
               </a>
-              <a
-                :href="LIGHTPAPER_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="LIGHTPAPER_LINK" target="_blank" class="footer__column-link text-link">
                 Lightpaper
               </a>
-              <a
-                :href="HELP_CENTER_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="HELP_CENTER_LINK" target="_blank" class="footer__column-link text-link">
                 Help Center
               </a>
             </div>
@@ -115,39 +67,19 @@
           <div class="footer__column">
             <div class="footer__column-title">Community</div>
             <div class="footer__column-list">
-              <a
-                :href="WATERCOOLER_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="WATERCOOLER_LINK" target="_blank" class="footer__column-link text-link">
                 Watercooler
               </a>
-              <a
-                :href="SUBSOCIAL_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="SUBSOCIAL_LINK" target="_blank" class="footer__column-link text-link">
                 Subsocial
               </a>
-              <a
-                :href="YOUTUBE_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="YOUTUBE_LINK" target="_blank" class="footer__column-link text-link">
                 YouTube
               </a>
-              <a
-                :href="MEDIUM_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="MEDIUM_LINK" target="_blank" class="footer__column-link text-link">
                 Medium
               </a>
-              <a
-                :href="REDDIT_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="REDDIT_LINK" target="_blank" class="footer__column-link text-link">
                 Reddit
               </a>
             </div>
@@ -155,28 +87,18 @@
           <div class="footer__column">
             <div class="footer__column-title">Company</div>
             <div class="footer__column-list">
-              <NuxtLink
-                to="/about#join"
-                class="footer__column-link text-link"
-              >
+              <NuxtLink to="/about#join" class="footer__column-link text-link">
                 Jobs
               </NuxtLink>
-              <NuxtLink
-                to="/about#roadmap"
-                class="footer__column-link text-link"
-              >
+              <NuxtLink to="/about#roadmap" class="footer__column-link text-link">
                 Roadmap
               </NuxtLink>
-              <a
-                :href="LINKEDIN_LINK"
-                target="_blank"
-                class="footer__column-link text-link"
-              >
+              <a :href="LINKEDIN_LINK" target="_blank" class="footer__column-link text-link">
                 LinkedIn
               </a>
-<!--              <a href="/" target="_blank" class="footer__column-link text-link">-->
-<!--                Contacts-->
-<!--              </a>-->
+              <!--              <a href="/" target="_blank" class="footer__column-link text-link">-->
+              <!--                Contacts-->
+              <!--              </a>-->
             </div>
           </div>
         </div>

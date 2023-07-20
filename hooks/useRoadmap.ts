@@ -69,17 +69,17 @@ export default function useRoadmap() {
           name: 'Q2',
           content: [
             'Partnership with Enclaive',
-            'Launch of Securitee ConfidenDal CompuDng Pla_orm',
-            'Launch of Integritee Governance Pla_orm on Polkassembly',
+            'Launch of Securitee Confidential Computing Platform',
+            'Launch of Integritee Governance Platform on Polkassembly',
             'Release of Teeracle as Add-on on Securitee Platorm',
           ],
         },
         {
           name: 'Q3',
           content: [
-            'Release of DCAP A`estaDon on Integritee Network',
-            'Release of A`esteer service for TEEs via API',
-            'IntegraDon of A`esteer service with Securitee',
+            'Release of DCAP Attestation on Integritee Network',
+            'Release of Attesteer service for TEEs via API',
+            'Integration of Attesteer service with Securitee',
             'Release of Sidechain SDK v 0.12.0',
             'Go-Live of first projects on Integritee Mainnet',
             'Brand refresh and new Website',
@@ -88,11 +88,11 @@ export default function useRoadmap() {
         {
           name: 'Q4',
           content: [
-            'ImplementaDon of final fee burning mechanism',
-            'Launch treasury grant program and bounDes',
+            'Implementation of final fee burning mechanism',
+            'Launch treasury grant program and bounties',
             'Release of Sidechain SDK v 0.13.0',
             'Release of Sidechain as a Service on Securitee',
-            'DEX LisDng',
+            'DEX Listing',
           ],
         },
       ],
@@ -105,22 +105,22 @@ export default function useRoadmap() {
           content: [
             'Kusama Parachain slot secured',
             'Release of Sidechain Demo',
-            'CollaboraDon with OVH Cloud and Intel',
+            'Collaboration with OVH Cloud and Intel',
           ],
         },
         {
           name: 'Q2',
           content: [
-            'MigraDon from Solo to Kusama Parachain',
+            'Migration from Solo to Kusama Parachain',
             'Release of Sidechains Benchmark',
-            'Network DecentralizaDon: Remove Sudo and enable coin voDng with TEER',
-            'LisDng on Kraken Exchange',
+            'Network Decentralization: Remove Sudo and enable coin voting with TEER',
+            'Listing on Kraken Exchange',
           ],
         },
         {
           name: 'Q3',
           content: [
-            'XCM IntegraDon with Karura and Moonriver',
+            'XCM Integration with Karura and Moonriver',
             'Polkadot Parachain slot secured',
             'Partnership with Crust',
             'Release of Sidechain SDK v.0.9.0',
@@ -129,9 +129,9 @@ export default function useRoadmap() {
         {
           name: 'Q4',
           content: [
-            'Partnership and XCM IntegraDon with Bifrost',
+            'Partnership and XCM Integration with Bifrost',
             'Release of Sidechain SDK v.0.10.0',
-            'PoC for EVM compaDble Sidechains',
+            'PoC for EVM compatible Sidechains',
           ],
         },
       ],
@@ -145,7 +145,7 @@ export default function useRoadmap() {
             'New Brand and Website relaunch',
             'Move from SubstraTEE to Integritee',
             'Release Tokenomics paper',
-            'ParDcipaDon in public slot aucDons on Kusama',
+            'Participation in public slot auctions on Kusama',
             'Start of Community Growth',
             'Series A Round Close',
           ],
@@ -154,7 +154,7 @@ export default function useRoadmap() {
           name: 'Q4',
           content: [
             'Mainnet & Token Launch',
-            'First deployment and pracDcal use case hosted on the Integritee mainnet: the US dollar exchange rate oracle.',
+            'First deployment and practical use case hosted on the Integritee mainnet: the US dollar exchange rate oracle',
             'List TEER on major exchange Gate',
             'Start of Integritee Ambassador Program',
             'Partnership with Ajuna, KILT, Fractal',
