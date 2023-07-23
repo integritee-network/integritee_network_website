@@ -6,11 +6,11 @@
         how TEER integrates with Integritee network and what its benefits and utility are.</p>
       <div class='questions__row margin_large'>
         <p class='paragraph paragraph_large questions__row-text'>TEER Token is available on:</p>
-        <a href="#" class="questions__right-item">
+        <a :href="KRAKEN_LINK" class="questions__right-item" target="_blank">
           <Kraken />
           <span class="paragraph_large">Kraken</span>
         </a>
-        <a href="#" class="questions__right-item">
+        <a :href="GATE_LINK" class="questions__right-item" target="_blank">
           <Gateio />
           <span class="paragraph_large">Gate.io</span>
         </a>
@@ -23,10 +23,13 @@
 </template>
 
 <script setup>
-import Icon from "@/assets/img/teer/icon.svg";
 import Kraken from '@/assets/img/index/token/kraken.svg'
 import Gateio from '@/assets/img/index/token/gateio.svg'
-import { TEER_TOKEN_WALLET_LINK } from '@/configs/app.config'
+import {
+  TEER_TOKEN_WALLET_LINK,
+  KRAKEN_LINK,
+  GATE_LINK,
+} from '@/configs/app.config';
 </script>
 <style lang="scss" scoped>
 .questions {

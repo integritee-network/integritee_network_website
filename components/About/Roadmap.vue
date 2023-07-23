@@ -19,7 +19,8 @@
             <div v-for="(year, idx) in roadmap" ref="items" class="roadmap__item-text" :class="{ active: year.active }"
               :key="idx">
               <div v-for="(quartal, index) in year.info" class="roadmap__item-text-quartal"
-                :class="{ full: quartal.type === 'long' }" :key="index">
+                :class="{ full: quartal.type === 'long', mult: quartal.type === 'long' && quartal.content.length > 1 }"
+                :key="index">
                 <div class="roadmap__item-text-name">{{ quartal.name }}</div>
                 <div class="roadmap__item-text-points-wrapper">
                   <span v-for="(point, pIndex) in quartal.content"
@@ -112,7 +113,7 @@ watch(y, (value) => {
       setActive(years[years.length - 1 - idx].year)
       if (width.value <= breakpoints.sm) {
         const value = fixedNav.value ? 13 : 0
-        nav.value.scrollTo({ left: 89 * (years.length - 1 - idx) + value , behavior: "smooth" })
+        nav.value.scrollTo({ left: 89 * (years.length - 1 - idx) + value, behavior: "smooth" })
       }
       break
     }
@@ -330,19 +331,24 @@ watch(y, (value) => {
       grid-area: 1 / 1 / 2 / 3;
 
       .roadmap__item-text-points-wrapper {
-        column-count: 2;
-        column-gap: 20px;
-
-        @include sm {
-          column-count: 1;
-          column-gap: 0;
-        }
 
         .roadmap__item-text-point {
           width: 99%;
 
           @include sm {
             width: 100%;
+          }
+        }
+      }
+
+      &.mult {
+        .roadmap__item-text-points-wrapper {
+          column-count: 2;
+          column-gap: 20px;
+
+          @include sm {
+            column-count: 1;
+            column-gap: 0;
           }
         }
       }

@@ -36,6 +36,18 @@ export default function useRoadmap() {
       year: '2021',
       active: false,
     },
+    {
+      year: '2020',
+      active: false,
+    },
+    {
+      year: '2019',
+      active: false,
+    },
+    {
+      year: '2018',
+      active: false,
+    },
   ])
 
   const roadmap = reactive<Roadmap>({
@@ -159,6 +171,59 @@ export default function useRoadmap() {
             'Start of Integritee Ambassador Program',
             'Partnership with Ajuna, KILT, Fractal',
           ],
+        },
+      ],
+      active: false,
+    },
+    '2020': {
+      info: [
+        {
+          name: 'Q1',
+          content: ['3rd Web3 Grant for: SubstraTEE extension pack'],
+        },
+        {
+          name: 'Q2-Q3',
+          content: [
+            'Development Prototype Platform based on SubstraTEE.',
+            'First deployed and running use case with Encointer on the Platform',
+          ],
+        },
+        {
+          name: 'Q4',
+          content: ['Polkadot Treasury Grant “SubstraTEE scalability”'],
+        },
+      ],
+      active: false,
+    },
+    '2019': {
+      info: [
+        {
+          name: 'Q1',
+          content: [
+            '1st Web3 Grant for: Substrate Transaction Privacy using Intel SGX',
+          ],
+        },
+        {
+          name: 'Q3',
+          content: ['2nd Web3 Grant for: Substrate Rust API client'],
+        },
+        {
+          name: 'Q4',
+          content: [
+            'First SubstraTEE Meetup to demonstrate private token transactions.',
+          ],
+        },
+      ],
+      active: false,
+    },
+    '2018': {
+      info: [
+        {
+          name: 'Q4',
+          content: [
+            `Release of the Encointer Whitepaper – “Local Community Cryptocurrencies with Universal Basic Income” and start of the SubstraTEE journey`,
+          ],
+          type: 'long',
         },
       ],
       active: false,
