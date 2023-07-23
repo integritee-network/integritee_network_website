@@ -1,5 +1,5 @@
 import Joi from 'joi'
-import { defineEventHandler, createError } from 'h3'
+import { defineEventHandler, createError, readBody } from 'h3'
 import stripHTML from '@/helpers/stripHTML'
 import { sendEmail } from '@/transport/smtp'
 
@@ -40,6 +40,6 @@ export default defineEventHandler(async (event) => {
   await sendEmail(mailHTML)
 
   return {
-    hello: 'world',
+    message: 'email succefully sent',
   }
 })

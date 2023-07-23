@@ -8,9 +8,11 @@
         {{ item.text }}
       </p>
     </div>
-    <div class="simple__image">
-      <img :src="item.img" />
-      <GlobalRadialGradient class="simple__image-gradient" />
+    <div class="simple__image-wrapper">
+      <div class="simple__image">
+        <img :src="item.img" />
+        <GlobalRadialGradient class="simple__image-gradient" />
+      </div>
     </div>
     <!-- <component :is='item.img' /> -->
   </div>
@@ -29,7 +31,7 @@ defineProps<{
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   gap: 75px;
 
   @include lg {
@@ -85,19 +87,27 @@ defineProps<{
     z-index: 2;
   }
 
-  &__image {
+  &__image-wrapper {
     position: relative;
     width: 100%;
+  }
+
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @include sm {
+      position: relative;
       text-align: center;
       margin-bottom: 40px;
     }
 
     img {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
       width: 100%;
       max-height: 420px;
       z-index: 2;
@@ -117,8 +127,6 @@ defineProps<{
 
       @include sm {
         position: relative;
-        top: unset;
-        transform: unset;
         height: 100%;
         max-width: 80%;
         max-height: 300px;
