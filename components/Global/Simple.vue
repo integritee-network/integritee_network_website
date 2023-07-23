@@ -31,7 +31,6 @@ defineProps<{
   position: relative;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   gap: 75px;
 
   @include lg {
