@@ -18,7 +18,7 @@ export const getTransport = () => {
 
   const transport = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
-    secure: isDev ? false : true,
+    secure: false,
     port: Number(process.env.SMTP_PORT),
     auth: {
       user: process.env.SMTP_USER,
