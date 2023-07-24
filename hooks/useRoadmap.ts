@@ -152,6 +152,20 @@ export default function useRoadmap() {
     '2021': {
       info: [
         {
+          name: 'Q1',
+          content: [
+            'Launch Rococo Testnet Parachain',
+            'Conceptualize and Preparation of Spin-off',
+          ],
+        },
+        {
+          name: 'Q2',
+          content: [
+            'Spin-off from SCS and birth of Integritee AG',
+            'Seed Round Close',
+          ],
+        },
+        {
           name: 'Q3',
           content: [
             'New Brand and Website relaunch',
