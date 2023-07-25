@@ -5,9 +5,7 @@
       <span class="tag new__tag">{{ catName }}</span>
       <span class="date">{{ date }}</span>
     </div>
-    <p class="paragraph paragraph_large new__p">
-      {{ post.title.rendered }}
-    </p>
+    <p v-html="post.title.rendered" class="paragraph paragraph_large new__p" />
   </NuxtLink>
 </template>
 <script setup lang="ts">
