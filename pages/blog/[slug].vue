@@ -9,9 +9,7 @@
         </div>
         <div class="new__article">
           <div class="new__article-padding block">
-            <h1 class="title new__title margin_medium">
-              {{ post.title.rendered }}
-            </h1>
+            <h1 v-html="post.title.rendered" class="title new__title margin_medium" />
             <div class="row new__info">
               <span v-if="catName" class="tag">{{ catName }}</span>
               <span class="date">{{ date }}</span>
@@ -22,12 +20,7 @@
           <div v-if="related.length" class="new__news">
             <h2 class="title new__title margin_medium">You Might Also Like</h2>
             <div class="new__news-list blog-list">
-              <New
-                v-for="post in related"
-                :post="post"
-                class="new__news-list-item"
-                :key="post.id"
-              />
+              <New v-for="post in related" :post="post" class="new__news-list-item" :key="post.id" />
             </div>
           </div>
         </div>
@@ -87,6 +80,7 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
     font-size: $tDef;
     font-weight: 500;
     line-height: 120%;
+
     @include slg {
       font-size: 2.25em;
     }
