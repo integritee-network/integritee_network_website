@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { defineAsyncComponent } from 'vue'
 import { useAsyncData } from 'nuxt/app'
-
 import Footer from '@/components/Footer'
 import { useCategoriesStore } from '@/store/categories'
+import CookiesIcon from '@/assets/img/cookies/icon.svg'
 
 const Header = defineAsyncComponent(() => import('@/components/Header'))
 
@@ -31,6 +31,17 @@ await Promise.all([
       <img src="/img/global/bg-line.png" class="bottom-lines" alt="Lines" />
     </div>
     <Footer />
+  </div>
+  <div class="cookie-wrapper">
+    <CookieControl locale="en">
+      <template #bar>
+        <CookiesIcon />
+        <p>
+          We use third-party cookies in order to personalize your site
+          experience
+        </p>
+      </template>
+    </CookieControl>
   </div>
 </template>
 
@@ -117,6 +128,114 @@ await Promise.all([
     width: 634px;
     left: -115px;
     top: -216px;
+  }
+}
+
+.cookie-wrapper {
+  font-family: 'Inter';
+  .cookieControl__BarContainer {
+    border-radius: 24px;
+    background: rgba(81, 81, 81, 0.25);
+    backdrop-filter: blur(38px);
+    padding: 40px;
+    align-items: center;
+    @include slg {
+      display: block;
+    }
+    @include sm {
+      padding: 30px;
+    }
+    svg {
+      width: 64px;
+      @include slg {
+        width: 48px;
+        margin-bottom: 24px;
+      }
+      @include sm {
+        width: 32px;
+      }
+    }
+    & > div {
+      &:first-child {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        @include slg {
+          display: block;
+        }
+      }
+    }
+  }
+  .cookieControl__BarButtons {
+    gap: 18px;
+    @include sm {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    button {
+      border-radius: 12px;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      margin: 0;
+      padding: 17px 20px;
+      @include sm {
+        font-size: 14px;
+        width: auto;
+        padding: 11px 15px;
+      }
+      &:first-child {
+        background: linear-gradient(45deg, #559cff 0%, #9e20fe 100%);
+      }
+      &:nth-child(2) {
+        background: none;
+        border: 2px solid var(--transparent-white-20, rgba(255, 255, 255, 0.2));
+      }
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+  .cookieControl__Bar {
+    max-width: 1240px;
+    margin: 0 auto;
+    bottom: 100px;
+    @include lg {
+      max-width: 1120px;
+      bottom: 80px;
+    }
+
+    @include slg {
+      max-width: 980px;
+      bottom: 60px;
+    }
+
+    @include md {
+      max-width: 800px;
+      bottom: 40px;
+    }
+    @include sm {
+      max-width: 100%;
+      width: 100%;
+      padding: 0 20px;
+      bottom: 20px;
+    }
+    @include xsm {
+      padding: 0 12px;
+      bottom: 12px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 500;
+      @include slg {
+        margin-bottom: 24px;
+      }
+      @include sm {
+        font-size: 18px;
+      }
+    }
   }
 }
 </style>
