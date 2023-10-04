@@ -3,14 +3,13 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "NUXT_HOST=0.0.0.0 nuxt dev --force",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "start": "nuxt start"
   },
   "devDependencies": {
-    "@dargmuesli/nuxt-cookie-control": "^6.1.5",
     "@types/lodash": "^4.14.195",
     "@types/node": "^18",
     "@types/nodemailer": "^6.4.8",

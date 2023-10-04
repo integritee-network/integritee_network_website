@@ -76,16 +76,7 @@ export default defineNuxtConfig({
   css: ['@/assets/scss/main.scss'],
   modules: [
     'nuxt-svgo',
-    '@pinia/nuxt',
-    [
-      '@dargmuesli/nuxt-cookie-control',
-      {
-        isControlButtonEnabled: false,
-        colors: {
-          barBackground: '',
-        },
-      },
-    ],
+    '@pinia/nuxt'
   ],
   plugins: [{ src: '~/plugins/lockScroll', mode: 'client' }],
   svgo: {

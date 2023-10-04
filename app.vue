@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import { defineAsyncComponent } from 'vue'
-import { useAsyncData } from 'nuxt/app'
+import { useAsyncData } from '#imports'
 import Footer from '@/components/Footer'
 import { useCategoriesStore } from '@/store/categories'
-import CookiesIcon from '@/assets/img/cookies/icon.svg'
 
 const Header = defineAsyncComponent(() => import('@/components/Header'))
 
@@ -31,17 +30,6 @@ await Promise.all([
       <img src="/img/global/bg-line.png" class="bottom-lines" alt="Lines" />
     </div>
     <Footer />
-  </div>
-  <div class="cookie-wrapper">
-    <CookieControl locale="en">
-      <template #bar>
-        <CookiesIcon />
-        <p>
-          We use third-party cookies in order to personalize your site
-          experience
-        </p>
-      </template>
-    </CookieControl>
   </div>
 </template>
 

@@ -17,7 +17,7 @@
 </template>
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { useRoute, useRouter } from 'nuxt/app'
+import { useRoute, useRouter } from '#imports'
 import Hero from '@/components/Blog/Hero.vue'
 import Nav from '@/components/Blog/Nav.vue'
 import New from '@/components/Blog/New.vue'

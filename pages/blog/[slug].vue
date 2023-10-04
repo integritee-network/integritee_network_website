@@ -35,7 +35,7 @@ import Nav from '@/components/Blog/Nav.vue'
 import New from '@/components/Blog/New.vue'
 import { useCategoriesStore } from '@/store/categories'
 import { usePostsStore } from '@/store/posts'
-import { useRoute } from 'nuxt/app'
+import { useRoute } from '#imports'
 import { generateSEO } from '~/helpers/generateSEO'
 
 const postsStore = usePostsStore()

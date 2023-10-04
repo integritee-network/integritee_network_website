@@ -41,7 +41,7 @@ import Menu from '@/components/Header/Menu.vue'
 import { useWindowSize, useWindowScroll } from '@vueuse/core'
 import { breakpoints } from '@/configs/app.config'
 import { ref, watch, onMounted } from 'vue'
-import { useNuxtApp, useRoute } from 'nuxt/app'
+import { useNuxtApp, useRoute } from '#imports'
 
 const active = ref(false)
 
