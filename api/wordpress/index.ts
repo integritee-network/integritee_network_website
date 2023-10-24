@@ -1,8 +1,8 @@
 import { Category } from '~/types/category'
 import { Post } from '~/types/post'
 import { UseCase, UseCaseTag } from '~/types/useCase'
-import { useAsyncData } from 'nuxt/app'
-import { useRuntimeConfig } from 'nuxt/app'
+import { useAsyncData } from '#imports'
+import { useRuntimeConfig } from '#imports'
 
 interface QueryConfig {
   method: 'post' | 'get'
