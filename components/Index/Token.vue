@@ -8,19 +8,31 @@
               A network secured and governed <br />
               by our TEER token
             </h2>
-            <p class="paragraph paragraph_medium margin_large token__description">
+            <p
+              class="paragraph paragraph_medium margin_large token__description"
+            >
               The Integritee ecosystem is securely built and governed<br />
               by our trusted community of TEER token holders. Join<br />
               the movement for scaling a secure and fast Web3.
             </p>
-            <NuxtLink to="/teer-token" class="btn btn_gradient">Learn more</NuxtLink>
+            <NuxtLink to="/teer-token" class="btn btn_gradient"
+              >Learn more</NuxtLink
+            >
           </div>
           <div class="token__right">
             <RadialGradient class="token__radial-gradient" />
             <!-- <img src="/img/index/token/polygon.svg" class="token__polygon" alt="Polygon" /> -->
-            <img src="/img/index/token/polygon1.svg" class="token__polygon1" alt="Polygon" />
+            <img
+              src="/img/index/token/polygon1.svg"
+              class="token__polygon1"
+              alt="Polygon"
+            />
             <div class="token__right-content">
-              <img src="/img/global/logo-icon.svg" class="token__logo-icon" alt="Logo icon" />
+              <img
+                src="/img/global/logo-icon.svg"
+                class="token__logo-icon"
+                alt="Logo icon"
+              />
               <div class="token__right-title title_sub">
                 TEER Token<br />
                 is available on:
@@ -42,6 +54,14 @@
                     Gate.io
                   </span>
                 </a>
+                <a :href="BASILISK_LINK" class="token__right-item">
+                  <span class="token__right-item-icon-wrp">
+                    <Basilisk />
+                  </span>
+                  <span class="token__right-item-name paragraph_large">
+                    Basilisk
+                  </span>
+                </a>
               </div>
             </div>
           </div>
@@ -50,14 +70,12 @@
     </div>
   </section>
 </template>
-<script setup lang='ts'>
-import Kraken from '@/assets/img/index/token/kraken.svg'
+<script setup lang="ts">
+import Basilisk from '@/assets/img/index/token/basilisk-logo-icon.svg'
 import Gateio from '@/assets/img/index/token/gateio.svg'
+import Kraken from '@/assets/img/index/token/kraken.svg'
 import RadialGradient from '@/components/Global/RadialGradient'
-import {
-  KRAKEN_LINK,
-  GATE_LINK,
-} from '@/configs/app.config';
+import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
 </script>
 <style lang="scss">
 .token {
@@ -165,7 +183,6 @@ import {
       margin: 0 auto;
     }
 
-
     @include xsm {
       width: 263px;
     }
@@ -198,7 +215,6 @@ import {
       gap: 15px;
     }
 
-
     @include xsm {
       gap: 8px;
     }
@@ -206,7 +222,6 @@ import {
     &:last-child {
       margin-bottom: 0;
     }
-
 
     &:first-child {
       svg {

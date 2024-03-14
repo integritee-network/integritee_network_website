@@ -3,28 +3,53 @@
     <div class="roadmap block">
       <div class="container">
         <h2 class="title title_h2 margin_medium">Project roadmap</h2>
-        <p class="roadmap__description margin_large paragraph paragraph_medium">Here’s what we’re building and just as
-          importantly, what we’ve
-          already built.</p>
+        <p class="roadmap__description margin_large paragraph paragraph_medium">
+          Here’s what we’re building and just as importantly, what we’ve already
+          built.
+        </p>
         <div class="row roadmap__row" ref="parent">
           <div class="roadmap__list-years-wrapper">
-            <div class="roadmap__list-years" :class="{ active: fixedNav, end: endNav }" ref="nav">
-              <button v-for="(year, idx) in years" class="roadmap__item-year" :class="{ active: year.active }"
-                type="button" @click="onYearClick(idx)" :key="year.year">
+            <div
+              class="roadmap__list-years"
+              :class="{ active: fixedNav, end: endNav }"
+              ref="nav"
+            >
+              <button
+                v-for="(year, idx) in years"
+                class="roadmap__item-year"
+                :class="{ active: year.active }"
+                type="button"
+                @click="onYearClick(idx)"
+                :key="year.year"
+              >
                 {{ year.year }}
               </button>
             </div>
           </div>
           <div class="roadmap__list-text">
-            <div v-for="(year, idx) in roadmap" ref="items" class="roadmap__item-text" :class="{ active: year.active }"
-              :key="idx">
-              <div v-for="(quartal, index) in year.info" class="roadmap__item-text-quartal"
-                :class="{ full: quartal.type === 'long', mult: quartal.type === 'long' && quartal.content.length > 1 }"
-                :key="index">
+            <div
+              v-for="(year, idx) in roadmap"
+              ref="items"
+              class="roadmap__item-text"
+              :class="{ active: year.active }"
+              :key="idx"
+            >
+              <div
+                v-for="(quartal, index) in year.info"
+                class="roadmap__item-text-quartal"
+                :class="{
+                  full: quartal.type === 'long',
+                  mult: quartal.type === 'long' && quartal.content.length > 1,
+                }"
+                :key="index"
+              >
                 <div class="roadmap__item-text-name">{{ quartal.name }}</div>
                 <div class="roadmap__item-text-points-wrapper">
-                  <span v-for="(point, pIndex) in quartal.content"
-                    class="roadmap__item-text-point paragraph paragraph_medium" :key="pIndex">
+                  <span
+                    v-for="(point, pIndex) in quartal.content"
+                    class="roadmap__item-text-point paragraph paragraph_medium"
+                    :key="pIndex"
+                  >
                     {{ point }}
                   </span>
                 </div>
@@ -37,11 +62,11 @@
   </section>
 </template>
 <script setup lang="ts">
-import useRoadmap from '@/hooks/useRoadmap'
-import { ref, watch, onMounted, onUnmounted } from 'vue'
-import { useWindowSize, useWindowScroll } from '@vueuse/core'
-import _ from 'lodash'
 import { breakpoints } from '@/configs/app.config'
+import useRoadmap from '@/hooks/useRoadmap'
+import { useWindowScroll, useWindowSize } from '@vueuse/core'
+import _ from 'lodash'
+import { onMounted, onUnmounted, ref, watch } from 'vue'
 
 const { getYears, getInfoList, setActive } = useRoadmap()
 
@@ -63,7 +88,10 @@ const mouseWheelFunc = (event: any) => {
   if (!event.deltaY) return
 
   const scrollLeft = event.currentTarget.scrollLeft
-  const scrollRight = event.currentTarget.scrollWidth - scrollLeft - event.currentTarget.clientWidth
+  const scrollRight =
+    event.currentTarget.scrollWidth -
+    scrollLeft -
+    event.currentTarget.clientWidth
 
   if (event.deltaY > 0 && scrollRight === 0) return
   if (event.deltaY < 0 && scrollLeft === 0) return
@@ -83,9 +111,19 @@ onUnmounted(() => {
 const onYearClick = (idx: number) => {
   if (!root.value) return
   if (width.value > breakpoints.sm) {
-    window.scrollTo({ top: items.value[idx].offsetTop + root.value.offsetTop - height.value / 2 + items.value[idx].offsetHeight / 2, behavior: "smooth" })
+    window.scrollTo({
+      top:
+        items.value[idx].offsetTop +
+        root.value.offsetTop -
+        height.value / 2 +
+        items.value[idx].offsetHeight / 2,
+      behavior: 'smooth',
+    })
   } else {
-    window.scrollTo({ top: items.value[idx].offsetTop + root.value.offsetTop - 84, behavior: "smooth" })
+    window.scrollTo({
+      top: items.value[idx].offsetTop + root.value.offsetTop - 84,
+      behavior: 'smooth',
+    })
   }
 }
 
@@ -95,13 +133,19 @@ watch(y, (value) => {
   const middleHeight = height.value / 2
 
   if (width.value > breakpoints.sm) {
-    const elementInMiddle = parent.value?.getBoundingClientRect().y + nav.value.offsetHeight / 2
-    const elementInEnd = parent.value?.getBoundingClientRect().y + parent.value.offsetHeight - height.value / 2 - nav.value.offsetHeight / 2
+    const elementInMiddle =
+      parent.value?.getBoundingClientRect().y + nav.value.offsetHeight / 2
+    const elementInEnd =
+      parent.value?.getBoundingClientRect().y +
+      parent.value.offsetHeight -
+      height.value / 2 -
+      nav.value.offsetHeight / 2
 
     fixedNav.value = middleHeight >= elementInMiddle && elementInEnd > 0
     endNav.value = elementInEnd <= 0
   } else {
-    const elementInEnd = parent.value?.getBoundingClientRect().y + parent.value.offsetHeight
+    const elementInEnd =
+      parent.value?.getBoundingClientRect().y + parent.value.offsetHeight
 
     fixedNav.value = parent.value?.getBoundingClientRect().y <= 84
     endNav.value = elementInEnd <= 84
@@ -113,13 +157,15 @@ watch(y, (value) => {
       setActive(years[years.length - 1 - idx].year)
       if (width.value <= breakpoints.sm) {
         const value = fixedNav.value ? 13 : 0
-        nav.value.scrollTo({ left: 89 * (years.length - 1 - idx) + value, behavior: "smooth" })
+        nav.value.scrollTo({
+          left: 89 * (years.length - 1 - idx) + value,
+          behavior: 'smooth',
+        })
       }
       break
     }
   }
 })
-
 </script>
 <style lang="scss" scoped>
 .roadmap {
@@ -220,7 +266,7 @@ watch(y, (value) => {
     border: 0;
     color: #fff;
     font-weight: 500;
-    transition: .3s ease;
+    transition: 0.3s ease;
     cursor: pointer;
 
     @media screen and (max-height: 740px) and (min-width: 841px) {
@@ -229,7 +275,7 @@ watch(y, (value) => {
     }
 
     @include sm {
-      font-size: .875em;
+      font-size: 0.875em;
       padding: 12px 25px;
       flex-shrink: 0;
       width: auto;
@@ -238,7 +284,7 @@ watch(y, (value) => {
     }
 
     &.active {
-      background: #5B92FF;
+      background: #5b92ff;
     }
 
     &:last-child {
@@ -315,7 +361,7 @@ watch(y, (value) => {
     background: rgba(120, 120, 120, 0.25);
     backdrop-filter: blur(12px);
     border-radius: 24px;
-    transition: .3s ease;
+    transition: 0.3s ease;
 
     @include sm {
       border-radius: 14px;
@@ -331,7 +377,6 @@ watch(y, (value) => {
       grid-area: 1 / 1 / 2 / 3;
 
       .roadmap__item-text-points-wrapper {
-
         .roadmap__item-text-point {
           width: 99%;
 
@@ -354,6 +399,5 @@ watch(y, (value) => {
       }
     }
   }
-
 }
 </style>

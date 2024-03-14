@@ -1,6 +1,6 @@
-import { reactive } from 'vue'
 import { objectEntries } from '@vueuse/core'
 import map from 'lodash/map'
+import { reactive } from 'vue'
 
 interface Year {
   year: string
@@ -54,15 +54,36 @@ export default function useRoadmap() {
     '2024': {
       info: [
         {
-          name: 'Q1-Q4',
+          name: 'Q1',
           content: [
-            'Release of Sidechain SDK v 1.0.0',
-            'Release of Privacy Sidechain for Statemine/Statemint',
-            'Release of Hybrid Sidechains',
+            'Launch of Incognitee Public Testnet',
+            'Launch of Public referenda for TEER holder',
+            'Issue of first Treasury grant',
+            'Listing on Basilisk DEX',
+            'Participation in Polkadot Sub0',
+          ],
+        },
+        {
+          name: 'Q2',
+          content: [
+            'Launch of Incognitee User & Bounty Campaign',
+            'Go-Live of first projects on Integritee Mainnet',
+            'Release Sidechain SDK v 0.13.0',
+            'Release of Sidechain as a Service on Securitee',
+            'Launch of treasury grant program ',
+          ],
+        },
+        {
+          name: 'Q3-Q4',
+          content: [
+            'Participation in Polkadot Decoded',
+            'Launch of Incognitee on Mainnet in Beta',
+            'Implementation of final fee burning mechanism',
+            'Release Sidechain SDK v 1.0.0',
             'Bridge TEER from Kusama Parachain to Polkadot Parachain',
             'Bridge to other Ecosystems',
+            'Launch of Incognitee on Mainnet in Production',
           ],
-          type: 'long',
         },
       ],
       active: true,
@@ -73,16 +94,19 @@ export default function useRoadmap() {
           name: 'Q1',
           content: [
             'Partnership with OLI Systems',
-            'Release of Sidechain SDK v.0.11.0',
-            'Release of Teeracle, an TEE-based oracle framework',
+            'Participation in WEF in Davos',
+            'Release Sidechain SDK v 0.11.0',
+            'Release of generic trusted oracle framework',
+            'Release of Securitee Confidential Computing Platform',
           ],
         },
         {
           name: 'Q2',
           content: [
             'Partnership with Enclaive',
-            'Launch of Securitee Confidential Computing Platform',
+            'Participation in Polkadot India Now and Polkadot Decoded',
             'Launch of Integritee Governance Platform on Polkassembly',
+            'Release of Sidechain SDK v 0.12.0',
             'Release of Teeracle as Add-on on Securitee Platorm',
           ],
         },
@@ -92,19 +116,15 @@ export default function useRoadmap() {
             'Release of DCAP Attestation on Integritee Network',
             'Release of Attesteer service for TEEs via API',
             'Integration of Attesteer service with Securitee',
-            'Release of Sidechain SDK v 0.12.0',
-            'Go-Live of first projects on Integritee Mainnet',
-            'Brand refresh and new Website',
           ],
         },
         {
           name: 'Q4',
           content: [
-            'Implementation of final fee burning mechanism',
-            'Launch treasury grant program and bounties',
-            'Release of Sidechain SDK v 0.13.0',
-            'Release of Sidechain as a Service on Securitee',
-            'DEX Listing',
+            'Brand Refresh and new Website launched',
+            'Acceptance to Tech4Trust Accelerator Season 5',
+            'Release of Privacy Sidechain Demo',
+            'Release of Incognitee Public Testnet',
           ],
         },
       ],

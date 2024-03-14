@@ -1,11 +1,17 @@
 <template>
   <div class="questions block">
-    <div class='container blur-gradient blur-gradient_top'>
-      <h2 class='title title_h2 margin_medium questions__title'>Questions about TEER?</h2>
-      <p class='paragraph paragraph_medium margin_medium questions__desc'>Read our Tokenomics paper to fully understand
-        how TEER integrates with Integritee network and what its benefits and utility are.</p>
-      <div class='questions__row margin_large'>
-        <p class='paragraph paragraph_large questions__row-text'>TEER Token is available on:</p>
+    <div class="container blur-gradient blur-gradient_top">
+      <h2 class="title title_h2 margin_medium questions__title">
+        Questions about TEER?
+      </h2>
+      <p class="paragraph paragraph_medium margin_medium questions__desc">
+        Read our Tokenomics paper to fully understand how TEER integrates with
+        Integritee network and what its benefits and utility are.
+      </p>
+      <div class="questions__row margin_large">
+        <p class="paragraph paragraph_large questions__row-text">
+          TEER Token is available on:
+        </p>
         <a :href="KRAKEN_LINK" class="questions__right-item" target="_blank">
           <Kraken />
           <span class="paragraph_large">Kraken</span>
@@ -14,8 +20,16 @@
           <Gateio />
           <span class="paragraph_large">Gate.io</span>
         </a>
+        <a :href="BASILISK_LINK" class="questions__right-item" target="_blank">
+          <Basilisk />
+          <span class="paragraph_large">Basilisk</span>
+        </a>
       </div>
-      <a :href="TEER_TOKEN_WALLET_LINK" class="btn btn_gradient" target="_blank">
+      <a
+        :href="TEER_TOKEN_WALLET_LINK"
+        class="btn btn_gradient"
+        target="_blank"
+      >
         Create wallet
       </a>
     </div>
@@ -23,13 +37,15 @@
 </template>
 
 <script setup>
-import Kraken from '@/assets/img/index/token/kraken.svg'
+import Basilisk from '@/assets/img/index/token/Basilisk-logo-icon.svg'
 import Gateio from '@/assets/img/index/token/gateio.svg'
+import Kraken from '@/assets/img/index/token/kraken.svg'
 import {
-  TEER_TOKEN_WALLET_LINK,
-  KRAKEN_LINK,
+  BASILISK_LINK,
   GATE_LINK,
-} from '@/configs/app.config';
+  KRAKEN_LINK,
+  TEER_TOKEN_WALLET_LINK,
+} from '@/configs/app.config'
 </script>
 <style lang="scss" scoped>
 .questions {
