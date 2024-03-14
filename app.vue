@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { defineAsyncComponent } from 'vue'
 import { useAsyncData } from '#imports'
 import Footer from '@/components/Footer'
 import { useCategoriesStore } from '@/store/categories'
+import { defineAsyncComponent } from 'vue'
 
 const Header = defineAsyncComponent(() => import('@/components/Header'))
 
