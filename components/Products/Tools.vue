@@ -74,7 +74,12 @@
             </span>
             <Link class="tools__item-icon" />
           </a>
-          <a :href="INCOGNITEE_LINK" target="_blank" class="tools__item">
+          <a
+            :href="INCOGNITEE_LINK"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="tools__item"
+          >
             <span>
               <span class="tools__item-title title_sub">Incognitee</span>
               <span class="tools__item-subtitle paragraph_small"

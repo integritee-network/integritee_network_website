@@ -19,6 +19,7 @@
               <a
                 :href="KRAKEN_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 Kraken
@@ -26,6 +27,7 @@
               <a
                 :href="GATE_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 Gate.io
@@ -33,6 +35,7 @@
               <a
                 :href="BASILISK_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 Basilisk
@@ -40,6 +43,7 @@
               <a
                 :href="COIN_MARKET_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 CoinMarketCap
@@ -47,6 +51,7 @@
               <a
                 :href="COIN_GECKO_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 CoinGecko
@@ -54,6 +59,7 @@
               <a
                 :href="TRADING_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 TradingView
@@ -66,6 +72,7 @@
               <a
                 :href="GOVERNANCE_FOOTER_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 Governance
@@ -73,6 +80,7 @@
               <a
                 :href="SUBSCAN_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 Integritee Subscan
@@ -80,6 +88,7 @@
               <a
                 :href="INTEGRITEE_NETWORK_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 Integritee Network
@@ -92,6 +101,7 @@
               <a
                 :href="TOKENOMICS_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 Tokenomics
@@ -99,6 +109,7 @@
               <a
                 :href="DOCS_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 Documentation
@@ -106,6 +117,7 @@
               <a
                 :href="LIGHTPAPER_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 Lightpaper
@@ -113,6 +125,7 @@
               <a
                 :href="HELP_CENTER_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 Help Center
@@ -125,6 +138,7 @@
               <a
                 :href="TELEGRAM_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 Telegram
@@ -132,6 +146,7 @@
               <a
                 :href="TWITTER_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 Twitter
@@ -139,6 +154,7 @@
               <a
                 :href="DISCORD_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 Discord
@@ -146,6 +162,7 @@
               <a
                 :href="YOUTUBE_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 YouTube
@@ -153,6 +170,7 @@
               <a
                 :href="MEDIUM_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 Medium
@@ -160,6 +178,7 @@
               <a
                 :href="REDDIT_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 Reddit
@@ -181,6 +200,7 @@
               <a
                 :href="LINKEDIN_LINK"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="footer__column-link text-link"
               >
                 LinkedIn

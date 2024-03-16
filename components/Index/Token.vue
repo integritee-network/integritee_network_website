@@ -38,7 +38,12 @@
                 is available on:
               </div>
               <div class="token__right-list">
-                <a :href="KRAKEN_LINK" class="token__right-item">
+                <a
+                  :href="KRAKEN_LINK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="token__right-item"
+                >
                   <span class="token__right-item-icon-wrp">
                     <Kraken />
                   </span>
@@ -46,7 +51,12 @@
                     Kraken
                   </span>
                 </a>
-                <a :href="GATE_LINK" class="token__right-item">
+                <a
+                  :href="GATE_LINK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="token__right-item"
+                >
                   <span class="token__right-item-icon-wrp">
                     <Gateio />
                   </span>
@@ -54,7 +64,12 @@
                     Gate.io
                   </span>
                 </a>
-                <a :href="BASILISK_LINK" class="token__right-item">
+                <a
+                  :href="BASILISK_LINK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="token__right-item"
+                >
                   <span class="token__right-item-icon-wrp">
                     <Basilisk />
                   </span>
