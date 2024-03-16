@@ -37,7 +37,7 @@
 </template>
 
 <script setup>
-import Basilisk from '@/assets/img/index/token/Basilisk-logo-icon.svg'
+import Basilisk from '@/assets/img/index/token/basilisk-logo-icon.svg'
 import Gateio from '@/assets/img/index/token/gateio.svg'
 import Kraken from '@/assets/img/index/token/kraken.svg'
 import {
