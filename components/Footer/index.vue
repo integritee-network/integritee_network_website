@@ -93,6 +93,14 @@
               >
                 Integritee Network
               </a>
+              <a
+                :href="BUGBOUNTY_LINK"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__column-link text-link"
+              >
+                Bug Bounty
+              </a>
             </div>
           </div>
           <div class="footer__column">
@@ -231,6 +239,7 @@ import Logo from '@/components/Logo/index.vue'
 import Socials from '@/components/Socials/index.vue'
 import {
   BASILISK_LINK,
+  BUGBOUNTY_LINK,
   COIN_GECKO_LINK,
   COIN_MARKET_LINK,
   DISCORD_LINK,

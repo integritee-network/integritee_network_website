@@ -18,8 +18,8 @@
       </div>
       <div class="header__nav-right">
         <Socials />
-        <NuxtLink v-if="width > breakpoints.slg" to="/developers" class="btn_border header__button paragraph_small">Start
-          Building</NuxtLink>
+        <NuxtLink v-if="width > breakpoints.slg" to="https://immunefi.com/bug-bounty/integriteenetwork" target="_blank" class="btn_border header__button paragraph_small">Bug Bounty</NuxtLink>
+        
         <button v-if="width <= breakpoints.slg" class="header__burger" :class="{
           active: active,
         }" type="button" @click="toggleMenu()">
@@ -35,13 +35,13 @@
 
 <script setup>
 // import Logo from '@/assets/img/logo.svg'
+import { useNuxtApp, useRoute } from '#imports'
+import Menu from '@/components/Header/Menu.vue'
 import Logo from '@/components/Logo'
 import Socials from '@/components/Socials'
-import Menu from '@/components/Header/Menu.vue'
-import { useWindowSize, useWindowScroll } from '@vueuse/core'
 import { breakpoints } from '@/configs/app.config'
-import { ref, watch, onMounted } from 'vue'
-import { useNuxtApp, useRoute } from '#imports'
+import { useWindowScroll, useWindowSize } from '@vueuse/core'
+import { ref, watch } from 'vue'
 
 const active = ref(false)
 

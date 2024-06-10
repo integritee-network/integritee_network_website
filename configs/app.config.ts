@@ -151,3 +151,5 @@ export const LINKEDIN_LINK = 'https://www.linkedin.com/company/integritee/'
 export const LIGHTPAPER_LINK = '/docs/Integritee_ Lightpaper_2021.pdf'
 
 export const TOKENOMICS_LINK = '/docs/Integritee_Tokenomics_2021.pdf'
+
+export const BUGBOUNTY_LINK = 'https://immunefi.com/bug-bounty/integriteenetwork/'
