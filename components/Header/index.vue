@@ -18,7 +18,7 @@
       </div>
       <div class="header__nav-right">
         <Socials />
-        <NuxtLink v-if="width > breakpoints.slg" to="https://app.incognitee.io" target="_blank" class="btn_border header__button paragraph_small"><span class="gradient gradient_two">Incognitee is live</span></NuxtLink>
+        <NuxtLink v-if="width > breakpoints.slg" to="https://app.incognitee.io" target="_blank" class="btn_border header__button paragraph_small">Incognitee is live</NuxtLink>
 
         <button v-if="width <= breakpoints.slg" class="header__burger" :class="{
           active: active,
