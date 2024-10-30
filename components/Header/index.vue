@@ -18,8 +18,8 @@
       </div>
       <div class="header__nav-right">
         <Socials />
-        <NuxtLink v-if="width > breakpoints.slg" to="https://immunefi.com/bug-bounty/integriteenetwork" target="_blank" class="btn_border header__button paragraph_small">Bug Bounty</NuxtLink>
-        
+        <NuxtLink v-if="width > breakpoints.slg" to="https://app.incognitee.io" target="_blank" class="btn_border header__button paragraph_small"><span class="gradient gradient_two">Incognitee is live</span></NuxtLink>
+
         <button v-if="width <= breakpoints.slg" class="header__burger" :class="{
           active: active,
         }" type="button" @click="toggleMenu()">
@@ -190,6 +190,22 @@ watch(
 
   &_no-bg {
     background: rgba(81, 81, 81, 0) !important;
+  }
+}
+
+.gradient {
+  display: inline-block;
+
+  &_one {
+    background: linear-gradient(90deg, #30daff -12.5%, #b000fd 41%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &_two {
+    background: linear-gradient(90deg, #b000fd, #30daff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 </style>

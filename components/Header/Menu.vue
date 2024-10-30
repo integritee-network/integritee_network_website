@@ -11,8 +11,8 @@
         <NuxtLink to="/blog" @click='clickHandler' class="text-link">Blog</NuxtLink>
         <NuxtLink to="/contacts" @click='clickHandler' class="text-link">Contacts</NuxtLink>
       </nav>
-      <a href="https://immunefi.com/bug-bounty/integriteenetwork" target="_blank" class="btn_border header__button menu__button">
-        Bug Bounty
+      <a href="https://app.incognitee.io" target="_blank" class="btn_border header__button menu__button">
+        Incognitee is live
       </a>
     </div>
   </Transition>
