@@ -7,14 +7,7 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 Make sure to install the dependencies:
 
 ```bash
-# yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
 ```
 
 ## Development Server
@@ -22,7 +15,7 @@ pnpm install
 Start the development server on `http://localhost:3000`
 
 ```bash
-npm run dev
+yarn run dev
 ```
 
 ## Production
@@ -30,13 +23,13 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+yarn build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+yarn preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
@@ -44,14 +37,22 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ## deploy to portainer
 
 ```bash
-docker buildx build -t integritee/website:1.1 .
+docker buildx build -t integritee/website:1.18 .
+# test the image locally
+docker run integritee/website:1.18
 docker login
-docker push integritee/website:1.1
+docker push integritee/website:1.18
 ```
 
 change portainer config:
 
-Stacks -> integritee-website -> edit -> update image to integritee/website:1.1 -> deploy the stack
+Stacks -> integritee-website -> edit -> update image
+
+there are two stages. First you should test staging: 
+* node-web.image: integritee/website:X.XX -> 2 replicas for https://staging.integritee.network
+* node-web-prod.image: integritee/website:X.XX -> 2 replicas for https://integritee.network
+
+deploy the stack
 
 https://portainer.integritee.network/#!/2/docker/stacks/incognitee-landing?id=21&type=1&regular=true&external=false&orphaned=false
 

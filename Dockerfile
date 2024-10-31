@@ -1,4 +1,4 @@
-FROM node:18.15.0
+FROM node:20.9.0
 
 # Create app directory
 WORKDIR /app
@@ -11,7 +11,7 @@ RUN rm yarn.lock
 RUN yarn
 RUN yarn build
 
-ENV HOST 0.0.0.0
+ENV HOST=0.0.0.0
 EXPOSE 3000
 
 # start command
