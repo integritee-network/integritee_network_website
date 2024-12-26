@@ -21,8 +21,12 @@ interface Roadmap {
 export default function useRoadmap() {
   const years = reactive<Year[]>([
     {
-      year: '2024',
+      year: '2025',
       active: true,
+    },
+    {
+      year: '2024',
+      active: false,
     },
     {
       year: '2023',
@@ -51,6 +55,49 @@ export default function useRoadmap() {
   ])
 
   const roadmap = reactive<Roadmap>({
+    '2025': {
+      info: [
+        {
+          name: 'Q1',
+          content: [
+            'Release Sidechain SDK v 0.16-17-18',
+            'Launch of Referral Campaign',
+            'Launch of Incognitee Mainnet on Polkadot Assethub in Beta version',
+            'Bridge TEER from Kusama Parachain to Polkadot Parachain',
+            'Hydration DEX Listing',
+          ],
+        },
+        {
+          name: 'Q2',
+          content: [
+            'Bridge TEER to Ethereum and other ERC compatible chains',
+            'New DEX listing',
+            'Release Sidechain SDK v 0.19-20-21',
+            'Launch of Incognitee Mainnet on Kusama Assethub in Beta version',
+            'Launch of Incognitee on other Parachains',
+          ],
+        },
+        {
+          name: 'Q3',
+          content: [
+            'Release Sidechain SDK v 0.22-23-24',
+            'Launch of Incognitee Mainnet on Ethereum and other ERC compatible chains',
+            'Release of External Validateers for Incognitee',
+            'Release of Nomination of Validateers for Incognitee',
+          ],
+        },
+        {
+          name: 'Q4',
+          content: [
+            'Release Sidechain SDK v 1.0.0',
+            'Release of Incognitee Mainnet stable production version',
+            'Integration of Incognitee with other wallets',
+            'Launch of Incognitee on other chains like Cardano, Avalanche, Ethereum L2s.',
+          ],
+        },
+      ],
+      active: true,
+    },
     '2024': {
       info: [
         {
@@ -94,7 +141,7 @@ export default function useRoadmap() {
           ],
         },
       ],
-      active: true,
+      active: false,
     },
     '2023': {
       info: [
