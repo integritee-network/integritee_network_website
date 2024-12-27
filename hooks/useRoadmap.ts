@@ -21,8 +21,12 @@ interface Roadmap {
 export default function useRoadmap() {
   const years = reactive<Year[]>([
     {
-      year: '2024',
+      year: '2025',
       active: true,
+    },
+    {
+      year: '2024',
+      active: false,
     },
     {
       year: '2023',
@@ -51,32 +55,74 @@ export default function useRoadmap() {
   ])
 
   const roadmap = reactive<Roadmap>({
-    '2024': {
+    '2025': {
       info: [
         {
           name: 'Q1',
           content: [
-            'Launch of Incognitee Public Testnet',
-            'Launch of Public referenda for TEER holder',
-            'Issue of first Treasury grant',
-            'Listing on Basilisk DEX',
-            'Participation in Polkadot Sub0',
+            'Release sidechain SDK updates',
+            'Launch of referral campaign',
+            'Launch of Incognitee mainnet on Polkadot Asset Hub as beta deployment',
+            'Bridge TEER from Kusama parachain to Polkadot parachain',
+            'Hydration DEX listing',
           ],
         },
         {
           name: 'Q2',
           content: [
-            'Launch of Incognitee User & Bounty Campaign',
-            'Launch of treasury grant program',
-            'Release Sidechain SDK v 0.13.0',
-            'Release of unpermissioned Collators',
+            'Bridge TEER to Ethereum and other ERC compatible chains',
+            'New DEX listing',
+            'Release sidechain SDK updates',
+            'Launch of Incognitee on other parachains',
           ],
         },
         {
           name: 'Q3',
           content: [
-            'Release Sidechain SDK v 0.14.0',
-            'Participation in Polkadot Decoded',
+            'Release sidechain SDK updates',
+            'Launch of Incognitee mainnet on Ethereum and other ERC compatible chains',
+            'Onboard 3rd-party validateers for Incognitee',
+            'Launch TEERday nomination of validateers for Incognitee',
+          ],
+        },
+        {
+          name: 'Q4',
+          content: [
+            'Release sidechain SDK v 1.0.0',
+            'Release of Incognitee mainnet stable production version',
+            'Integration of Incognitee with other wallets',
+            'Launch of Incognitee on other chains like Cardano, Avalanche, Ethereum L2s.',
+          ],
+        },
+      ],
+      active: true,
+    },
+    '2024': {
+      info: [
+        {
+          name: 'Q1',
+          content: [
+            'Launch of Incognitee public testnet',
+            'Launch of public referenda for TEER holders',
+            'Payout of first treasury grant',
+            'Listing on Basilisk DEX',
+            'Presentation of randomness oracle at Polkadot Sub0',
+          ],
+        },
+        {
+          name: 'Q2',
+          content: [
+            'Launch of Incognitee user & bounty campaign',
+            'Launch of treasury grant program',
+            'Release sidechain SDK v 0.13.0',
+            'Release of unpermissioned collators',
+          ],
+        },
+        {
+          name: 'Q3',
+          content: [
+            'Release sidechain SDK v 0.14.0',
+            'Presenting Incognitee at Polkadot Decoded',
             'Launch of Incognitee TEERdays campaign',
             'TEER available on Telenova Telegram app',
           ],
@@ -85,16 +131,16 @@ export default function useRoadmap() {
           name: 'Q4',
           content: [
             'Ledger support for Integritee Network',
-            'Launch of Incognitee in Beta on Integriee Network Mainnet',
-            'Release Sidechain SDK v 0.15.0',
-            'Launch of Incognitee Vouchers feature',
-            'Launch of Incognitee Messaging feature',
-            'Launch of Guess the Number Contest',
-            'Launch of TEE Quest campaign',
+            'Launch of Incognitee in beta on Integriee Network mainnet',
+            'Release sidechain SDK v 0.15.0',
+            'Launch of Incognitee vouchers feature',
+            'Launch of Incognitee private messaging feature',
+            'Launch of guess-the-number contest',
+            'Launch of TEE-Quest campaign',
           ],
         },
       ],
-      active: true,
+      active: false,
     },
     '2023': {
       info: [
@@ -103,7 +149,7 @@ export default function useRoadmap() {
           content: [
             'Partnership with OLI Systems',
             'Participation in WEF in Davos',
-            'Release Sidechain SDK v 0.11.0',
+            'Release sidechain SDK v 0.11.0',
             'Release of generic trusted oracle framework',
             'Release of Securitee Confidential Computing Platform',
           ],
@@ -113,15 +159,15 @@ export default function useRoadmap() {
           content: [
             'Partnership with Enclaive',
             'Participation in Polkadot India Now and Polkadot Decoded',
-            'Launch of Integritee Governance Platform on Polkassembly',
-            'Release of Sidechain SDK v 0.12.0',
-            'Release of Teeracle as Add-on on Securitee Platorm',
+            'Launch of Integritee governance platform on Polkassembly',
+            'Release of sidechain SDK v 0.12.0',
+            'Release of Teeracle as add-on on Securitee platorm',
           ],
         },
         {
           name: 'Q3',
           content: [
-            'Release of DCAP Attestation on Integritee Network',
+            'Release of DCAP attestation on Integritee Network',
             'Release of Attesteer service for TEEs via API',
             'Integration of Attesteer service with Securitee',
           ],
@@ -129,10 +175,10 @@ export default function useRoadmap() {
         {
           name: 'Q4',
           content: [
-            'Brand Refresh and new Website launched',
-            'Acceptance to Tech4Trust Accelerator Season 5',
-            'Release of Privacy Sidechain Demo',
-            'Release of Incognitee Public Testnet',
+            'Brand Refresh and new website launched',
+            'Acceptance to Tech4Trust accelerator season 5',
+            'Release of privacy sidechain demo',
+            'Release of Incognitee public testnet',
           ],
         },
       ],
@@ -143,15 +189,15 @@ export default function useRoadmap() {
         {
           name: 'Q1',
           content: [
-            'Kusama Parachain slot secured',
-            'Release of Sidechain Demo',
+            'Kusama parachain slot secured',
+            'Release of sidechain demo',
             'Collaboration with OVH Cloud and Intel',
           ],
         },
         {
           name: 'Q2',
           content: [
-            'Migration from Solo to Kusama Parachain',
+            'Migration from Solo to Kusama parachain',
             'Release of Sidechains Benchmark',
             'Network Decentralization: Remove Sudo and enable coin voting with TEER',
             'Listing on Kraken Exchange',
@@ -161,16 +207,16 @@ export default function useRoadmap() {
           name: 'Q3',
           content: [
             'XCM Integration with Karura and Moonriver',
-            'Polkadot Parachain slot secured',
+            'Polkadot parachain slot secured',
             'Partnership with Crust',
-            'Release of Sidechain SDK v.0.9.0',
+            'Release of sidechain SDK v.0.9.0',
           ],
         },
         {
           name: 'Q4',
           content: [
             'Partnership and XCM Integration with Bifrost',
-            'Release of Sidechain SDK v.0.10.0',
+            'Release of sidechain SDK v.0.10.0',
             'PoC for EVM compatible Sidechains',
           ],
         },
@@ -182,35 +228,35 @@ export default function useRoadmap() {
         {
           name: 'Q1',
           content: [
-            'Launch Rococo Testnet Parachain',
-            'Conceptualize and Preparation of Spin-off',
+            'Launch Rococo testnet parachain',
+            'Conceptualize and preparation of spin-off',
           ],
         },
         {
           name: 'Q2',
           content: [
             'Spin-off from SCS and birth of Integritee AG',
-            'Seed Round Close',
+            'Seed round close',
           ],
         },
         {
           name: 'Q3',
           content: [
-            'New Brand and Website relaunch',
+            'New brand and website relaunch',
             'Move from SubstraTEE to Integritee',
-            'Release Tokenomics paper',
+            'Release tokenomics paper',
             'Participation in public slot auctions on Kusama',
-            'Start of Community Growth',
-            'Series A Round Close',
+            'Start of community growth',
+            'Series A round close',
           ],
         },
         {
           name: 'Q4',
           content: [
-            'Mainnet & Token Launch',
+            'Mainnet & token launch',
             'First deployment and practical use case hosted on the Integritee mainnet: the US dollar exchange rate oracle',
             'List TEER on major exchange Gate',
-            'Start of Integritee Ambassador Program',
+            'Start of Integritee ambassador program',
             'Partnership with Ajuna, KILT, Fractal',
           ],
         },
@@ -226,13 +272,13 @@ export default function useRoadmap() {
         {
           name: 'Q2-Q3',
           content: [
-            'Development Prototype Platform based on SubstraTEE.',
-            'First deployed and running use case with Encointer on the Platform',
+            'Development of prototype platform based on SubstraTEE.',
+            'First deployed and running use case with Encointer on the platform',
           ],
         },
         {
           name: 'Q4',
-          content: ['Polkadot Treasury Grant “SubstraTEE scalability”'],
+          content: ['Polkadot treasury grant “SubstraTEE scalability”'],
         },
       ],
       active: false,
@@ -242,17 +288,17 @@ export default function useRoadmap() {
         {
           name: 'Q1',
           content: [
-            '1st Web3 Grant for: Substrate Transaction Privacy using Intel SGX',
+            '1st Web3 grant for: Substrate transaction privacy using Intel SGX',
           ],
         },
         {
           name: 'Q3',
-          content: ['2nd Web3 Grant for: Substrate Rust API client'],
+          content: ['2nd Web3 grant for: Substrate Rust API client'],
         },
         {
           name: 'Q4',
           content: [
-            'First SubstraTEE Meetup to demonstrate private token transactions.',
+            'First SubstraTEE meetup to demonstrate private token transactions.',
           ],
         },
       ],
@@ -263,7 +309,7 @@ export default function useRoadmap() {
         {
           name: 'Q4',
           content: [
-            `Release of the Encointer Whitepaper – “Local Community Cryptocurrencies with Universal Basic Income” and start of the SubstraTEE journey`,
+            `Release of the Encointer whitepaper – “Local Community Cryptocurrencies with Universal Basic Income” and start of the SubstraTEE journey`,
           ],
           type: 'long',
         },
