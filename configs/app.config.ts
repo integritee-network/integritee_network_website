@@ -125,7 +125,7 @@ export const COIN_MARKET_LINK =
   'https://coinmarketcap.com/currencies/integritee-network/'
 
 export const COIN_GECKO_LINK =
-  'https://coinmarketcap.com/currencies/integritee-network/'
+'https://www.coingecko.com/en/coins/integritee'
 
 export const TRADING_LINK =
   'https://www.tradingview.com/chart/?symbol=GATEIO%3ATEERUSDT'

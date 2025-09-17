@@ -21,6 +21,10 @@ interface Roadmap {
 export default function useRoadmap() {
   const years = reactive<Year[]>([
     {
+      year: '2026',
+      active: true,
+    },
+    {
       year: '2025',
       active: true,
     },
@@ -55,43 +59,60 @@ export default function useRoadmap() {
   ])
 
   const roadmap = reactive<Roadmap>({
+    '2026': {
+      info: [
+        {
+          name: 'Q1-Q4',
+          content: [
+            'Release sidechain SDK v 1.0.0',
+            'Release of Incognitee mainnet stable production version',
+            'Launch of Incognitee mainnet on Ethereum and other ERC compatible chains',
+            'Launch of Incognitee on other parachains',
+            'Launch of Incognitee on other chains like Cardano, Avalanche',
+            'Integration of Incognitee with other wallets',
+            'Onboard 3rd-party validateers for Incognitee',
+            'Launch TEERday nomination of validateers for Incognitee',
+            'TEER other ERC compatible chains',
+          ],
+        },
+      ],
+      active: true,
+    },
     '2025': {
       info: [
         {
           name: 'Q1',
           content: [
-            'Release sidechain SDK updates',
+            'Release sidechain SDK v 0.14.0',
             'Launch of referral campaign',
             'Launch of Incognitee mainnet on Polkadot Asset Hub as beta deployment',
-            'Bridge TEER from Kusama parachain to Polkadot parachain',
-            'Hydration DEX listing',
+            
           ],
         },
         {
           name: 'Q2',
           content: [
-            'Bridge TEER to Ethereum and other ERC compatible chains',
-            'New DEX listing',
-            'Release sidechain SDK updates',
-            'Launch of Incognitee on other parachains',
+            'Limited TEER on Ethereum',
+            'Release sidechain SDK v 0.14.0',
+            'Release of Incognitee feature W2W Messaging',
           ],
         },
         {
           name: 'Q3',
           content: [
-            'Release sidechain SDK updates',
-            'Launch of Incognitee mainnet on Ethereum and other ERC compatible chains',
-            'Onboard 3rd-party validateers for Incognitee',
-            'Launch TEERday nomination of validateers for Incognitee',
+            'Release sidechain SDK v 0.14.0',
+            'Release of Incognitee feature AI Messaging',
+            'Bridge TEER from Kusama parachain to Polkadot parachain',
+        
           ],
         },
         {
           name: 'Q4',
           content: [
-            'Release sidechain SDK v 1.0.0',
-            'Release of Incognitee mainnet stable production version',
-            'Integration of Incognitee with other wallets',
-            'Launch of Incognitee on other chains like Cardano, Avalanche, Ethereum L2s.',
+            'TEER Hydration DEX listing',
+            'TEER Uniswap DEX listing',
+            'TEER on Ethereum',
+            'Release of new Incognitee Omnichat',
           ],
         },
       ],

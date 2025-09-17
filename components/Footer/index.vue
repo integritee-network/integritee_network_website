@@ -384,14 +384,14 @@ import {
     display: block;
     line-height: 150%;
     margin-bottom: 14px;
-    font-size: 1.125em;
+    font-size: 14px;
 
     @include slg {
-      font-size: 1em;
+      font-size: 14px;
     }
 
     @include sm {
-      font-size: 0.875em;
+      font-size: 14px;
     }
 
     &:last-child {
@@ -424,19 +424,23 @@ import {
   &__description {
     line-height: 150%;
     margin-bottom: 19px;
+    font-size: 14px;
 
     @include slg {
       margin-bottom: 26px;
+      font-size: 14px;
     }
 
     @include md {
       margin-bottom: 0;
       max-width: 415px;
       margin-right: auto;
+      font-size: 14px;
     }
 
     @include sm {
       margin-bottom: 24px;
+      font-size: 14px;
       max-width: 100%;
     }
   }
@@ -445,7 +449,8 @@ import {
     color: $gray;
     margin-bottom: 32px;
     line-height: 150%;
-    font-size: 1.125em;
+    font-size: 14px;
+    font-weight: 500;
 
     @include slg {
       margin-bottom: 24px;
