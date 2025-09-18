@@ -73,7 +73,9 @@ export default function useRoadmap() {
             'Onboard 3rd-party validateers for Incognitee',
             'Launch TEERday nomination of validateers for Incognitee',
             'TEER other ERC compatible chains',
+            'Launch of referral campaign',
           ],
+          type: 'long',
         },
       ],
       active: true,
@@ -83,8 +85,8 @@ export default function useRoadmap() {
         {
           name: 'Q1',
           content: [
-            'Release sidechain SDK v 0.14.0',
-            'Launch of referral campaign',
+            'Release sidechain SDK v0.15.7/8/9/10/12/13',
+            'Release sidechain SDK v0.16.0/1/2/3',
             'Launch of Incognitee mainnet on Polkadot Asset Hub as beta deployment',
             
           ],
@@ -93,14 +95,14 @@ export default function useRoadmap() {
           name: 'Q2',
           content: [
             'Limited TEER on Ethereum',
-            'Release sidechain SDK v 0.14.0',
+            'Release sidechain SDK v0.16.4/5/6/7',
             'Release of Incognitee feature W2W Messaging',
           ],
         },
         {
           name: 'Q3',
           content: [
-            'Release sidechain SDK v 0.14.0',
+            'Release sidechain SDK v0.17.0',
             'Release of Incognitee feature AI Messaging',
             'Bridge TEER from Kusama parachain to Polkadot parachain',
         
@@ -135,14 +137,14 @@ export default function useRoadmap() {
           content: [
             'Launch of Incognitee user & bounty campaign',
             'Launch of treasury grant program',
-            'Release sidechain SDK v 0.13.0',
+            'Release sidechain SDK v0.13.0',
             'Release of unpermissioned collators',
           ],
         },
         {
           name: 'Q3',
           content: [
-            'Release sidechain SDK v 0.14.0',
+            'Release sidechain SDK v0.14.0',
             'Presenting Incognitee at Polkadot Decoded',
             'Launch of Incognitee TEERdays campaign',
             'TEER available on Telenova Telegram app',
@@ -153,7 +155,7 @@ export default function useRoadmap() {
           content: [
             'Ledger support for Integritee Network',
             'Launch of Incognitee in beta on Integriee Network mainnet',
-            'Release sidechain SDK v 0.15.0',
+            'Release sidechain SDK v0.15.0/1/2/3/4/5',
             'Launch of Incognitee vouchers feature',
             'Launch of Incognitee private messaging feature',
             'Launch of guess-the-number contest',
@@ -170,7 +172,7 @@ export default function useRoadmap() {
           content: [
             'Partnership with OLI Systems',
             'Participation in WEF in Davos',
-            'Release sidechain SDK v 0.11.0',
+            'Release sidechain SDK v0.11.0',
             'Release of generic trusted oracle framework',
             'Release of Securitee Confidential Computing Platform',
           ],
@@ -181,7 +183,7 @@ export default function useRoadmap() {
             'Partnership with Enclaive',
             'Participation in Polkadot India Now and Polkadot Decoded',
             'Launch of Integritee governance platform on Polkassembly',
-            'Release of sidechain SDK v 0.12.0',
+            'Release of sidechain SDK v0.12.0',
             'Release of Teeracle as add-on on Securitee platorm',
           ],
         },
@@ -230,14 +232,14 @@ export default function useRoadmap() {
             'XCM Integration with Karura and Moonriver',
             'Polkadot parachain slot secured',
             'Partnership with Crust',
-            'Release of sidechain SDK v.0.9.0',
+            'Release of sidechain SDK v0.9.0',
           ],
         },
         {
           name: 'Q4',
           content: [
             'Partnership and XCM Integration with Bifrost',
-            'Release of sidechain SDK v.0.10.0',
+            'Release of sidechain SDK v0.10.0',
             'PoC for EVM compatible Sidechains',
           ],
         },
