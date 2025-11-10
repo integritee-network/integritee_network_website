@@ -11,12 +11,12 @@
         </NuxtLink>
         <NuxtLink to="/technology" class="text-link paragraph_smll">Technology</NuxtLink>
         <NuxtLink to="/developers" class="text-link paragraph_smll">Developers</NuxtLink>
-        <NuxtLink to="/teer-token" class="text-link paragraph_smll">TEER Token</NuxtLink>
+       <!-- <NuxtLink to="/teer-token" class="text-link paragraph_smll">TEER Token</NuxtLink> -->
         <NuxtLink to="/about" class="text-link paragraph_smll">About</NuxtLink>
         <NuxtLink to="/blog" class="text-link paragraph_smll">Blog</NuxtLink>
         <NuxtLink to="/contacts" class="text-link paragraph_smll">Contacts</NuxtLink>
       </div>
-      <div class="header__nav-right">
+     <!-- <div class="header__nav-right">
         <Socials />
         <NuxtLink v-if="width > breakpoints.slg" to="https://app.incognitee.io" target="_blank" class="btn_border header__button paragraph_small">Incognitee is live</NuxtLink>
 
@@ -27,7 +27,7 @@
           <div class="header__burger-line" />
           <div class="header__burger-line" />
         </button>
-      </div>
+      </div>-->
     </div>
   </header>
   <Menu v-if="width <= breakpoints.slg" :active="active" :clickHandler='toggleMenu' />

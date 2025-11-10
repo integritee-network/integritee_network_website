@@ -11,9 +11,9 @@
         <NuxtLink to="/blog" @click='clickHandler' class="text-link">Blog</NuxtLink>
         <NuxtLink to="/contacts" @click='clickHandler' class="text-link">Contacts</NuxtLink>
       </nav>
-      <a href="https://app.incognitee.io" target="_blank" class="btn_border header__button menu__button">
+      <!-- <a href="https://app.incognitee.io" target="_blank" class="btn_border header__button menu__button">
         Incognitee is live
-      </a>
+      </a> -->
     </div>
   </Transition>
 </template>

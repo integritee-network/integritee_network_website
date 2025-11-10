@@ -5,10 +5,8 @@ export const breakpoints = {
   sm: 840,
   xsm: 420,
 }
+/*
 
-export const GITHUB_LINK = 'https://github.com/integritee-network'
-
-export const DOCS_LINK = 'https://docs.integritee.network'
 
 export const TEER_TOKEN_LINK =
   'https://docs.integritee.network/2-integritee-network/2.4-teer-token'
@@ -19,8 +17,7 @@ export const GOVERNANCE_LINK =
   'https://docs.integritee.network/2-integritee-network/2.5-governance'
 export const HOW_TO_SETUP_LINK =
   'https://docs.integritee.network/5-nodes-and-infrastructure'
-export const CHECK_TECH_LINK =
-  'https://docs.integritee.network/3-our-technology'
+
 
 export const SECURE_LINK = 'https://securitee.tech/'
 
@@ -44,57 +41,7 @@ export const INCOGNITEE_LINK = 'https://incognitee.io'
 export const SECURE_TEE_INFRASTRUCTURE_LINK =
   'https://docs.integritee.network/5-nodes-and-infrastructure/5.3-how-to-deploy/5.3.3-securitee-offering'
 
-export const USE_CASES_LINK =
-  'https://docs.integritee.network/3-our-technology/3.5-use-cases'
 
-export const TECHNOLOGY_LINK = 'https://integritee.network/developers'
-
-export const DEVELOPMENT_DOCS = 'https://docs.integritee.network/4-development'
-
-export const READ_LINK =
-  'https://docs.integritee.network/4-development/4.4-sdk/4.4.1-sidechain-sdk'
-
-export const PLAY_LINK =
-  'https://docs.integritee.network/4-development/4.6-demos/4.6.1-sidechain-demo'
-
-export const WRITE_LINK =
-  'https://docs.integritee.network/4-development/4.4-sdk/4.4.4-custom-business-logic-stf'
-
-export const DEPLOY_LINK =
-  'https://docs.integritee.network/5-nodes-and-infrastructure/5.3-how-to-deploy'
-
-export const SDK_GITHUB_LINK = 'https://github.com/integritee-network/worker'
-
-export const SDK_DOCS_LINK =
-  'https://docs.integritee.network/4-development/4.4-sdk/4.4.1-sidechain-sdk'
-
-export const SDK_DEMO_LINK =
-  'https://docs.integritee.network/4-development/4.6-demos/4.6.1-sidechain-demo'
-
-export const WORKER_GITHUB_LINK = 'https://github.com/integritee-network/worker'
-
-export const WORKER_DOCS_LINK =
-  'https://docs.integritee.network/4-development/4.4-sdk/4.4.2-trusted-off-chain-worker'
-
-export const WORKER_DEMO_LINK =
-  'https://docs.integritee.network/4-development/4.6-demos/4.6.2-tocw-demo'
-
-export const TEERACLE_GITHUB_LINK =
-  'https://github.com/integritee-network/worker/tree/master/samples/teeracle'
-
-export const TEERACLE_DOCS_LINK =
-  'https://docs.integritee.network/4-development/4.4-sdk/4.4.3-teeracle-oracle-framework'
-
-export const TEERACLE_DEMO_LINK =
-  'https://docs.integritee.network/4-development/4.6-demos/4.6.3-teeracle-demo'
-
-export const ATTESTEER_GITHUB_LINK = ''
-
-export const ATTESTEER_DOCS_LINK =
-  'https://docs.integritee.network/4-development/4.5-attesteer'
-
-export const ATTESTEER_DEMO_LINK =
-  'https://docs.integritee.network/4-development/4.6-demos/4.6.4-attesteer-demo'
 
 export const TELEGRAM_LINK = 'https://t.me/Integritee_Official'
 
@@ -148,8 +95,70 @@ export const REDDIT_LINK = 'https://www.reddit.com/r/Integritee/'
 
 export const LINKEDIN_LINK = 'https://www.linkedin.com/company/integritee/'
 
+export const BUGBOUNTY_LINK = 'https://immunefi.com/bug-bounty/integriteenetwork/'
+
+*/
+
+export const GITHUB_LINK = 'https://github.com/integritee-network'
+
+export const DOCS_LINK = 'https://docs.integritee.network'
+
 export const LIGHTPAPER_LINK = '/docs/Integritee_ Lightpaper_2021.pdf'
 
 export const TOKENOMICS_LINK = '/docs/Integritee_Tokenomics_2021.pdf'
 
-export const BUGBOUNTY_LINK = 'https://immunefi.com/bug-bounty/integriteenetwork/'
+export const CHECK_TECH_LINK =
+  'https://docs.integritee.network/3-our-technology'
+
+export const TECHNOLOGY_LINK = 'https://integritee.network/developers'
+
+export const DEVELOPMENT_DOCS = 'https://docs.integritee.network/4-development'
+
+export const READ_LINK =
+  'https://docs.integritee.network/4-development/4.4-sdk/4.4.1-sidechain-sdk'
+
+export const PLAY_LINK =
+  'https://docs.integritee.network/4-development/4.6-demos/4.6.1-sidechain-demo'
+
+export const WRITE_LINK =
+  'https://docs.integritee.network/4-development/4.4-sdk/4.4.4-custom-business-logic-stf'
+
+export const DEPLOY_LINK =
+  'https://docs.integritee.network/5-nodes-and-infrastructure/5.3-how-to-deploy'
+
+export const SDK_GITHUB_LINK = 'https://github.com/integritee-network/worker'
+
+export const SDK_DOCS_LINK =
+  'https://docs.integritee.network/4-development/4.4-sdk/4.4.1-sidechain-sdk'
+
+export const SDK_DEMO_LINK =
+  'https://docs.integritee.network/4-development/4.6-demos/4.6.1-sidechain-demo'
+
+export const WORKER_GITHUB_LINK = 'https://github.com/integritee-network/worker'
+
+export const WORKER_DOCS_LINK =
+  'https://docs.integritee.network/4-development/4.4-sdk/4.4.2-trusted-off-chain-worker'
+
+export const WORKER_DEMO_LINK =
+  'https://docs.integritee.network/4-development/4.6-demos/4.6.2-tocw-demo'
+
+export const TEERACLE_GITHUB_LINK =
+  'https://github.com/integritee-network/worker/tree/master/samples/teeracle'
+
+export const TEERACLE_DOCS_LINK =
+  'https://docs.integritee.network/4-development/4.4-sdk/4.4.3-teeracle-oracle-framework'
+
+export const TEERACLE_DEMO_LINK =
+  'https://docs.integritee.network/4-development/4.6-demos/4.6.3-teeracle-demo'
+
+export const ATTESTEER_GITHUB_LINK = ''
+
+export const ATTESTEER_DOCS_LINK =
+  'https://docs.integritee.network/4-development/4.5-attesteer'
+
+export const ATTESTEER_DEMO_LINK =
+  'https://docs.integritee.network/4-development/4.6-demos/4.6.4-attesteer-demo'
+
+  export const USE_CASES_LINK =
+  'https://docs.integritee.network/3-our-technology/3.5-use-cases'
+

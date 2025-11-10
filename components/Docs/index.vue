@@ -1,5 +1,5 @@
 <template>
-  <div class='docs'>
+ <!-- <div class='docs'>
     <div class='container'>
       <div class='docs__row'>
         <div class='docs__column'>
@@ -153,7 +153,7 @@
         </Texts>
       </div>
     </div>
-  </div>
+  </div>-->
 </template>
 
 <script setup lang='ts'>

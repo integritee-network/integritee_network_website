@@ -13,19 +13,19 @@
           <Socials />
         </div>
         <div class="footer__columns-row">
-          <div class="footer__column">
+           <!-- <div class="footer__column">
             <div class="footer__column-title">TEER Token</div>
             <div class="footer__column-list">
               <a
-                :href="KRAKEN_LINK"
+                :href="KRAKEN_LINK" 
                 target="_blank"
                 rel="noopener noreferrer"
                 class="footer__column-link text-link"
-              >
+              > 
                 Kraken
-              </a>
+              </a> 
               <a
-                :href="GATE_LINK"
+                :href="GATE_LINK" 
                 target="_blank"
                 rel="noopener noreferrer"
                 class="footer__column-link text-link"
@@ -65,7 +65,7 @@
                 TradingView
               </a>
             </div>
-          </div>
+          </div> -->
           <div class="footer__column">
             <div class="footer__column-title">Network</div>
             <div class="footer__column-list">
@@ -140,7 +140,7 @@
               </a>
             </div>
           </div>
-          <div class="footer__column">
+         <!-- <div class="footer__column">
             <div class="footer__column-title">Community</div>
             <div class="footer__column-list">
               <a
@@ -193,7 +193,7 @@
               </a>
             </div>
           </div>
-          <div class="footer__column">
+         <div class="footer__column">
             <div class="footer__column-title">Company</div>
             <div class="footer__column-list">
               <NuxtLink to="/about#join" class="footer__column-link text-link">
@@ -213,23 +213,23 @@
               >
                 LinkedIn
               </a>
-              <!--              <a href="/" target="_blank" class="footer__column-link text-link">-->
-              <!--                Contacts-->
-              <!--              </a>-->
-            </div>
-          </div>
-        </div>
-      </div>
+                            <a href="/" target="_blank" class="footer__column-link text-link">
+                              Contacts
+                            </a>
+            </div>  
+          </div>  -->
+        </div>  
+      </div> 
       <div class="footer__bottom">
         <span class="paragraph_medium"
           >©{{ new Date().getFullYear() }} Integritee, Inc.</span
         >
-        <span>
+        <!--<span>
           <NuxtLink to="/privacy-policy" class="blue paragraph_medium"
             >Imprint and Privacy Policy</NuxtLink
           >
-        </span>
-      </div>
+        </span>-->
+      </div> 
     </div>
   </footer>
 </template>

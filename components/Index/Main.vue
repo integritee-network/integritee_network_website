@@ -1,5 +1,15 @@
 <template>
   <section id="main">
+    <div class="shutdown-banner">
+      <div class="container">
+        <div class="shutdown-banner__content">
+          <span class="shutdown-banner__text">
+            ⚠️ Important Network Update: The Integritee Network will be shutting down on November 11, 2025. 
+            <a href="blog/this-is-the-end" class="shutdown-banner__link">Read the full announcement</a>
+          </span>
+        </div>
+      </div>
+    </div>
     <div class="block main">
       <div class="container">
         <div class="column column_large main__column">
@@ -23,6 +33,50 @@
   </section>
 </template>
 <style lang="scss" scoped>
+.shutdown-banner {
+  background-color: #1a73e8;
+  color: white;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.4;
+  width: 100%;
+  
+  &__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__text {
+    display: block;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-left: 8px;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  @include sm {
+    &__content {
+      padding: 0 40px;
+    }
+    
+    &__link {
+      display: inline;
+      margin-left: 8px;
+      white-space: nowrap;
+    }
+  }
+}
+
 .main {
   padding-top: 90px;
 

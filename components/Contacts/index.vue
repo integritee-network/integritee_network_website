@@ -36,13 +36,13 @@
                       >
                     </p>
                   </div>
-                  <div class="info__item">
+                  <!--<div class="info__item">
                     <div class="address__icon margin_medium" />
                     <p class="title_sub margin_medium">Integritee AG</p>
                     <p class="paragraph_large">
                       Technoparkstrasse 1, 8005 Zurich, Switzerland
                     </p>
-                  </div>
+                  </div>-->
                 </div>
               </template>
             </Info>

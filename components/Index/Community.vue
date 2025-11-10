@@ -21,9 +21,9 @@
     </div>
   </section>
 </template>
-<script setup lang='ts'>
+<!--<script setup lang='ts'>
 import { DISCORD_LINK } from '@/configs/app.config'
-</script>
+</script>-->
 <style lang="scss">
 .community {
   &__title {

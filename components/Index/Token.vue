@@ -37,7 +37,7 @@
                 TEER Token<br />
                 is available on:
               </div>
-              <div class="token__right-list">
+              <!--<div class="token__right-list">
                 <a
                   :href="KRAKEN_LINK"
                   target="_blank"
@@ -77,7 +77,7 @@
                     Basilisk
                   </span>
                 </a>
-              </div>
+              </div>-->
             </div>
           </div>
         </div>
