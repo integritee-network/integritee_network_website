@@ -61,15 +61,15 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
-    '/': { ssr: true },
+    '/': { ssr: false },
     '/products': { static: true },
-    '/usecases': { ssr: true },
+    '/usecases': { ssr: false },
     '/technology': { static: true },
     '/developers': { static: true },
     '/teer-token': { static: true },
     '/contacts': { static: true },
     '/about': { static: true },
-    '/blog': { ssr: true },
+    '/blog': { ssr: false },
   },
   imports: {
     autoImport: false,
