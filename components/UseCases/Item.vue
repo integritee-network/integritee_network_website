@@ -241,7 +241,7 @@ const tag = computed(() => {
   }
 
   &__text-title {
-    font-size: $tDef;
+    font-size: 3em;
     font-weight: 500;
     font-family: 'WhyteInktrap';
     line-height: 120%;

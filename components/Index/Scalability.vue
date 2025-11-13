@@ -93,7 +93,7 @@ import Speed from '@/assets/img/index/scalability/speed.svg'
 
   &__item-title {
     @media screen and (max-width: 1024px) {
-      font-size: $pLg;
+      font-size: 1.5em;
     }
   }
 

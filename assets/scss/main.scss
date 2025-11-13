@@ -44,7 +44,7 @@ a {
     }
 
     &.blue {
-        color: $ltBlue;
+        color: #5B92FF;
     }
 }
 
@@ -78,7 +78,7 @@ a {
 .btn {
     position: relative;
     display: inline-block;
-    font-size: $pDef;
+    font-size: 1.125em;
     padding: 14px 22px;
     font-weight: 500;
     border-radius: 12px;
@@ -88,7 +88,7 @@ a {
     backdrop-filter: blur(30px);
 
     @media screen and (max-width: 840px) {
-        font-size: $sm_pDef;
+        font-size: .875em;
         padding: 12px 18px;
         border-radius: 10px;
     }
@@ -135,39 +135,39 @@ a {
 
     &_h2 {
         line-height: 110%;
-        font-size: $tMd;
+        font-size: 4em;
         font-weight: 500;
         margin-bottom: 24px;
 
         @media screen and (max-width: 1200px) {
-            font-size: $md_tMd;
+            font-size: 3em;
             margin-bottom: 16px;
         }
 
         @media screen and (max-width: 840px) {
-            font-size: $sm_tMd;
+            font-size: 2.25em;
         }
     }
 
     &_sub {
-        font-size: $tSmd;
+        font-size: 2em;
         font-weight: 500;
 
         @media screen and (max-width: 840px) {
-            font-size: $sm_tSmd;
+            font-size: 1.5em;
         }
     }
 
     &_hero {
-        font-size: $tLg;
+        font-size: 4.5em;
         font-weight: 500;
 
         @media screen and (max-width: 1200px) {
-            font-size: $md_tLg;
+            font-size: 3.375em;
         }
 
         @media screen and (max-width: 840px) {
-            font-size: $sm_tLg;
+            font-size: 2.5em;
         }
     }
 
@@ -177,31 +177,31 @@ a {
     line-height: 150%;
 
     &_medium {
-        font-size: $pDef;
+        font-size: 1.125em;
 
         @media screen and (max-width: 1200px) {
-            font-size: $md_pDef;
+            font-size: 1em;
         }
 
         @media screen and (max-width: 840px) {
-            font-size: $sm_pDef;
+            font-size: .875em;
         }
     }
 
     &_large {
         font-weight: 500;
-        font-size: $pLg;
+        font-size: 1.5em;
 
         @media screen and (max-width: 840px) {
-            font-size: $sm_pLg;
+            font-size: 1.125em;
         }
     }
 
     &_small {
-        font-size: $pSm;
+        font-size: 0.875em;
 
         @media screen and (max-width: 840px) {
-            font-size: $sm_pSm;
+            font-size: 0.875em;
         }
     }
 }
@@ -236,7 +236,7 @@ a {
 
 .color {
     &_blue {
-        color: $ltBlue;
+        color: #5B92FF;
     }
 }
 
@@ -298,7 +298,7 @@ a {
 
 
 .tag {
-    font-size: $pSm;
+    font-size: 0.875em;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid #34343a;
     backdrop-filter: blur(30px);

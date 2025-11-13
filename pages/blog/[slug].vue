@@ -77,7 +77,7 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
 
 .new {
   &__title {
-    font-size: $tDef;
+    font-size: 3em;
     font-weight: 500;
     line-height: 120%;
 
@@ -123,31 +123,31 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
 
   &__content {
     h2 {
-      font-size: $tSmd;
+      font-size: 2em;
       margin-bottom: 28px;
       margin-top: 22px;
       line-height: 120%;
 
       @media screen and (max-width: 840px) {
         margin: 20px 0;
-        font-size: $sm_tSmd;
+        font-size: 1.5em;
       }
     }
 
     h3 {
-      font-size: $pLg;
+      font-size: 1.5em;
       margin-bottom: 22px;
       margin-top: 22px;
       line-height: 120%;
 
       @media screen and (max-width: 840px) {
         margin: 16px 0;
-        font-size: $sm_pLg;
+        font-size: 1.125em;
       }
     }
 
     p {
-      font-size: $pDef;
+      font-size: 1.125em;
       margin-bottom: 16px;
       line-height: 150%;
 

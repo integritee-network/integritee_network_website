@@ -446,7 +446,7 @@ import {
   }
 
   &__column-title {
-    color: $gray;
+    color: #88888C;
     margin-bottom: 32px;
     line-height: 150%;
     font-size: 14px;
@@ -470,7 +470,7 @@ import {
     justify-content: space-between;
     padding: 36px 0;
     margin-top: 36px;
-    border-top: 2px solid $alphaGray;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
 
     @media screen and (max-width: 1024px) {
       padding: 24px 0;

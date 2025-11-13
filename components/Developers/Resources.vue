@@ -206,7 +206,7 @@ const items = [
   &__item-title {
     font-family: 'WhyteInktrap';
     font-weight: 500;
-    font-size: $md_tMd;
+    font-size: 3em;
     line-height: 120%;
     background: linear-gradient(90deg, #B000FD 0.01%, #B000FD 0.02%, #30DAFF 97.96%);
     -webkit-background-clip: text;
@@ -214,7 +214,7 @@ const items = [
     margin-bottom: 8px;
 
     @media screen and (max-width: 1200px) {
-      font-size: $sm_tMd;
+      font-size: 2.25em;
     }
 
     @media screen and (max-width: 1024px) {

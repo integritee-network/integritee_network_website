@@ -209,11 +209,11 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
 
     @media screen and (max-width: 1200px) {
       margin-bottom: 32px;
-      font-size: $pLg;
+      font-size: 1.5em;
     }
 
     @media screen and (max-width: 420px) {
-      font-size: $sm_pLg;
+      font-size: 1.125em;
       margin-bottom: 24px;
     }
   }
@@ -251,11 +251,11 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
 
   &__right-item-name {
     @media screen and (max-width: 1200px) {
-      font-size: $sm_pLg;
+      font-size: 1.125em;
     }
 
     @media screen and (max-width: 420px) {
-      font-size: $md_pDef;
+      font-size: 1em;
     }
   }
 

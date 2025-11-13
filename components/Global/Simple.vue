@@ -68,12 +68,12 @@ defineProps<{
     z-index: 2;
     font-family: 'WhyteInktrap';
     font-weight: 500;
-    font-size: $tDef;
+    font-size: 3em;
     line-height: 110%;
     color: #ffffff;
 
     @media screen and (max-width: 1200px) {
-      font-size: $sm_tMd;
+      font-size: 2.25em;
     }
 
     @media screen and (max-width: 840px) {

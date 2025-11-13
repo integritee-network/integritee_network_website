@@ -37,7 +37,7 @@ const props = defineProps({
   top: 0;
   height: 100%;
   width: 100%;
-  background: $darkBlue;
+  background: #11111A;
   z-index: 4;
   display: flex;
   align-items: center;
@@ -46,14 +46,14 @@ const props = defineProps({
   gap: 64px;
 
   &__button {
-    font-size: $pDef;
+    font-size: 1.125em;
   }
 
   &__nav {
     a {
       display: block;
       text-align: center;
-      font-size: $pDef;
+      font-size: 1.125em;
       margin-bottom: 24px;
 
       &:last-child {

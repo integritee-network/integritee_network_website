@@ -154,7 +154,7 @@ import { TELEGRAM_LINK, TWITTER_LINK, DISCORD_LINK } from '@/configs/app.config'
 
     @media screen and (max-width: 840px) {
       height: 150px;
-      font-size: $sm_pDef;
+      font-size: .875em;
       border-radius: 14px;
     }
 
