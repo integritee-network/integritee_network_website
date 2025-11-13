@@ -31,6 +31,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Enable Corepack
+        run: corepack enable
+      - name: Use Yarn 4.5.3
+        run: corepack prepare yarn@4.5.3 --activate
       - name: Detect package manager
         id: detect-package-manager
         run: |

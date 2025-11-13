@@ -5,7 +5,7 @@ export const breakpoints = {
   sm: 840,
   xsm: 420,
 }
-/*
+
 
 
 export const TEER_TOKEN_LINK =
@@ -97,7 +97,6 @@ export const LINKEDIN_LINK = 'https://www.linkedin.com/company/integritee/'
 
 export const BUGBOUNTY_LINK = 'https://immunefi.com/bug-bounty/integriteenetwork/'
 
-*/
 
 export const GITHUB_LINK = 'https://github.com/integritee-network'
 
