@@ -23,7 +23,7 @@ import { USE_CASES_LINK } from '@/configs/app.config';
 <style lang="scss">
 .use-cases-hero {
   .title_hero {
-    @include slg {
+    @media screen and (max-width: $slg) {
       br {
         display: none;
       }

@@ -97,12 +97,12 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
   &__right {
     position: relative;
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       margin-bottom: 64px;
       width: 100%;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       margin-bottom: 49px;
     }
   }
@@ -116,12 +116,12 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
     height: 1049px;
     z-index: -1;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 855px;
       height: 855px;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       width: 644px;
       height: 644px;
     }
@@ -131,11 +131,11 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
     padding-right: 50px;
     align-items: flex-start;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       padding-right: 30px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       flex-direction: column-reverse;
       padding-right: 0;
     }
@@ -146,7 +146,7 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
       width: auto;
       height: 32px;
 
-      @include slg {
+      @media screen and (max-width: $slg) {
         width: 24px;
         height: auto;
       }
@@ -158,30 +158,30 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
     width: 44px;
     height: 48px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       margin-bottom: 24px;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       width: 30px;
       height: 32px;
     }
   }
 
   &__column {
-    @include lg {
+    @media screen and (max-width: $lg) {
       width: 560px;
     }
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 480px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       width: 413px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 100%;
     }
   }
@@ -189,16 +189,16 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
   &__polygon1 {
     width: 429px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 349px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       display: block;
       margin: 0 auto;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       width: 263px;
     }
   }
@@ -207,12 +207,12 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
     text-align: center;
     margin-bottom: 45px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       margin-bottom: 32px;
       font-size: $pLg;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       font-size: $sm_pLg;
       margin-bottom: 24px;
     }
@@ -225,12 +225,12 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
     margin-bottom: 19px;
     gap: 20px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       margin-bottom: 14px;
       gap: 15px;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       gap: 8px;
     }
 
@@ -242,7 +242,7 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
       svg {
         height: 28px;
 
-        @include xsm {
+        @media screen and (max-width: $xsm) {
           height: 21px;
         }
       }
@@ -250,11 +250,11 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
   }
 
   &__right-item-name {
-    @include slg {
+    @media screen and (max-width: $slg) {
       font-size: $sm_pLg;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       font-size: $md_pDef;
     }
   }
@@ -275,13 +275,13 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
   &__right-item-icon-wrp {
     width: 36px;
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       width: 24px;
     }
   }
 
   &__description {
-    @include md {
+    @media screen and (max-width: $md) {
       br {
         display: none;
       }

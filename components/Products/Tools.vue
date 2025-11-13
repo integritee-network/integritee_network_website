@@ -117,12 +117,12 @@ import {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       display: block;
     }
   }
@@ -138,11 +138,11 @@ import {
     gap: 40px;
     transition: 0.3s ease;
 
-    @include lg {
+    @media screen and (max-width: $lg) {
       gap: 15px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       margin-bottom: 10px;
       padding: 40px;
       gap: 40px;
@@ -156,11 +156,11 @@ import {
     &:last-child {
       grid-area: 2 / 3 / 4 / 5 / 6;
 
-      @include slg {
+      @media screen and (max-width: $slg) {
         grid-area: 3 / 1 / 4 / 3;
       }
 
-      @include sm {
+      @media screen and (max-width: $sm) {
         margin-bottom: 0;
       }
     }

@@ -49,7 +49,7 @@ import {
 <style lang="scss">
 .join {
   &__row {
-    @include sm {
+    @media screen and (max-width: $sm) {
       display: block;
     }
   }
@@ -57,15 +57,15 @@ import {
   &__titleWrap {
     width: 550px;
 
-    @include lg {
+    @media screen and (max-width: $lg) {
       width: 500px;
     }
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 369px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 100%;
     }
   }
@@ -80,15 +80,15 @@ import {
     gap: 32px;
     width: 610px;
 
-    @include lg {
+    @media screen and (max-width: $lg) {
       width: 551px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       width: 371px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 100%;
       margin-top: 24px;
       gap: 24px;

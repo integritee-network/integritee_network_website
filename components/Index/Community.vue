@@ -27,7 +27,7 @@ import { DISCORD_LINK } from '@/configs/app.config'
 <style lang="scss">
 .community {
   &__title {
-    @include slg {
+    @media screen and (max-width: $slg) {
       br {
         display: none;
       }
@@ -35,22 +35,22 @@ import { DISCORD_LINK } from '@/configs/app.config'
   }
 
   &__column {
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 480px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       width: 420px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 100%;
       order: 2;
     }
   }
 
   &__row {
-    @include sm {
+    @media screen and (max-width: $sm) {
       flex-wrap: wrap;
     }
   }
@@ -63,22 +63,22 @@ import { DISCORD_LINK } from '@/configs/app.config'
     object-fit: cover;
     border-radius: 24px;
 
-    @include lg {
+    @media screen and (max-width: $lg) {
       width: 505px;
       height: 462px;
     }
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 433px;
       height: 394px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       width: 339px;
       height: 310px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       max-width: 540px;
       height: auto;
       width: 100%;

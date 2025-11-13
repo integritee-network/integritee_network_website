@@ -4,7 +4,7 @@
       <div class="container">
         <div class="shutdown-banner__content">
           <span class="shutdown-banner__text">
-            ⚠️ Important Network Update: The Integritee Network will be shutting down on November 11, 2025. 
+            ⚠️ Important Network Update: The Integritee Network will be shutting down on November 11, 2025.
             <a href="blog/this-is-the-end" class="shutdown-banner__link">Read the full announcement</a>
           </span>
         </div>
@@ -41,7 +41,7 @@
   font-size: 15px;
   line-height: 1.4;
   width: 100%;
-  
+
   &__content {
     max-width: 1200px;
     margin: 0 auto;
@@ -64,11 +64,11 @@
     }
   }
 
-  @include sm {
+  @media screen and (max-width: $sm) {
     &__content {
       padding: 0 40px;
     }
-    
+
     &__link {
       display: inline;
       margin-left: 8px;
@@ -80,12 +80,12 @@
 .main {
   padding-top: 90px;
 
-  @include xsm {
+  @media screen and (max-width: $xsm) {
     padding-top: 70px;
   }
 
   .container {
-    @include sm {
+    @media screen and (max-width: $sm) {
       display: flex;
       flex-direction: column-reverse;
     }
@@ -102,7 +102,7 @@
   }
 
   &__description {
-    @include md {
+    @media screen and (max-width: $md) {
       br {
         display: none;
       }
@@ -131,18 +131,18 @@
     top: -71px;
     width: 831px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       right: -380px;
       top: -81px;
       width: 741px
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       right: -411px;
       top: -50px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       position: relative;
       left: 196px;
       top: -50px;
@@ -150,7 +150,7 @@
     }
 
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       width: 550px;
       left: 150px;
     }
@@ -162,37 +162,37 @@
     left: -320px;
     top: -30px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 407px;
       height: 407px;
       left: -400px;
       top: -70px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       left: -370px;
       top: -40px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       left: 20px;
     }
   }
 
   &__column {
-    @include lg {
+    @media screen and (max-width: $lg) {
       width: 730px;
     }
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 600px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       width: 440px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 100%;
     }
   }
@@ -200,7 +200,7 @@
   &__img-wrapper {
     position: relative;
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       height: 430px;
       display: flex;
       justify-content: center;
@@ -208,7 +208,7 @@
       margin-bottom: 11px;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       height: 320px;
     }
   }

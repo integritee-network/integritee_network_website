@@ -52,25 +52,25 @@ a {
     max-width: 1240px;
     margin: 0 auto;
 
-    @include lg {
+    @media screen and (max-width: $lg) {
         max-width: 1120px;
     }
 
-    @include slg {
+    @media screen and (max-width: $slg) {
         max-width: 980px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
         max-width: 800px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
         max-width: 100%;
         width: 100%;
         padding: 0 20px;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
         padding: 0 12px;
     }
 }
@@ -87,7 +87,7 @@ a {
     cursor: pointer;
     backdrop-filter: blur(30px);
 
-    @include sm {
+    @media screen and (max-width: $sm) {
         font-size: $sm_pDef;
         padding: 12px 18px;
         border-radius: 10px;
@@ -106,7 +106,7 @@ a {
             border-radius: 12px;
             z-index: -1;
 
-            @include sm {
+            @media screen and (max-width: $sm) {
                 border-radius: 10px;
             }
         }
@@ -139,12 +139,12 @@ a {
         font-weight: 500;
         margin-bottom: 24px;
 
-        @include slg {
+        @media screen and (max-width: $slg) {
             font-size: $md_tMd;
             margin-bottom: 16px;
         }
 
-        @include sm {
+        @media screen and (max-width: $sm) {
             font-size: $sm_tMd;
         }
     }
@@ -153,7 +153,7 @@ a {
         font-size: $tSmd;
         font-weight: 500;
 
-        @include sm {
+        @media screen and (max-width: $sm) {
             font-size: $sm_tSmd;
         }
     }
@@ -162,11 +162,11 @@ a {
         font-size: $tLg;
         font-weight: 500;
 
-        @include slg {
+        @media screen and (max-width: $slg) {
             font-size: $md_tLg;
         }
 
-        @include sm {
+        @media screen and (max-width: $sm) {
             font-size: $sm_tLg;
         }
     }
@@ -179,11 +179,11 @@ a {
     &_medium {
         font-size: $pDef;
 
-        @include slg {
+        @media screen and (max-width: $slg) {
             font-size: $md_pDef;
         }
 
-        @include sm {
+        @media screen and (max-width: $sm) {
             font-size: $sm_pDef;
         }
     }
@@ -192,7 +192,7 @@ a {
         font-weight: 500;
         font-size: $pLg;
 
-        @include sm {
+        @media screen and (max-width: $sm) {
             font-size: $sm_pLg;
         }
     }
@@ -200,7 +200,7 @@ a {
     &_small {
         font-size: $pSm;
 
-        @include sm {
+        @media screen and (max-width: $sm) {
             font-size: $sm_pSm;
         }
     }
@@ -219,11 +219,11 @@ a {
         width: 800px;
         flex-shrink: 0;
 
-        @include md {
+        @media screen and (max-width: $md) {
             width: 600px;
         }
 
-        @include sm {
+        @media screen and (max-width: $sm) {
             width: 100%;
         }
     }
@@ -243,11 +243,11 @@ a {
 .block {
     margin-bottom: 180px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
         margin-bottom: 140px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
         margin-bottom: 100px;
     }
 }
@@ -256,11 +256,11 @@ a {
     &_large {
         margin-bottom: 48px;
 
-        @include slg {
+        @media screen and (max-width: $slg) {
             margin-bottom: 32px;
         }
 
-        @include sm {
+        @media screen and (max-width: $sm) {
             margin-bottom: 24px;
         }
     }
@@ -268,11 +268,11 @@ a {
     &_medium {
         margin-bottom: 24px;
 
-        @include slg {
+        @media screen and (max-width: $slg) {
             margin-bottom: 16px;
         }
 
-        @include sm {
+        @media screen and (max-width: $sm) {
             margin-bottom: 8px;
         }
     }
@@ -349,17 +349,17 @@ a {
         transform: rotate(-20deg) translateX(-50%);
         z-index: -1;
 
-        @include lg {
+        @media screen and (max-width: $lg) {
             width: 818px;
             height: 818px;
         }
 
-        @include slg {
+        @media screen and (max-width: $slg) {
             width: 806px;
             height: 806px;
         }
 
-        @include sm {
+        @media screen and (max-width: $sm) {
             width: 732px;
             height: 732px;
             right: unset;

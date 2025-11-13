@@ -172,20 +172,20 @@ watch(y, (value) => {
   &__row {
     gap: 20px;
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       position: relative;
       display: block;
     }
   }
 
   &__description {
-    @include sm {
+    @media screen and (max-width: $sm) {
       margin-bottom: 32px;
     }
   }
 
   &__list-years {
-    @include sm {
+    @media screen and (max-width: $sm) {
       margin-bottom: 10px;
       display: flex;
       gap: 8px;
@@ -205,7 +205,7 @@ watch(y, (value) => {
       top: 50%;
       transform: translateY(-50%);
 
-      @include sm {
+      @media screen and (max-width: $sm) {
         top: 72px;
         left: 0;
         background: rgba(81, 81, 81, 0.25);
@@ -225,7 +225,7 @@ watch(y, (value) => {
   &__list-years-wrapper {
     position: relative;
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       position: static;
     }
   }
@@ -238,14 +238,14 @@ watch(y, (value) => {
       width: 121px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 100%;
       height: 56px;
     }
   }
 
   &__list-years {
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 100%;
       height: 56px;
     }
@@ -274,7 +274,7 @@ watch(y, (value) => {
       padding: 21px 0;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       font-size: 0.875em;
       padding: 12px 25px;
       flex-shrink: 0;
@@ -300,7 +300,7 @@ watch(y, (value) => {
     font-size: 2em;
     margin-bottom: 32px;
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       font-size: 1.125em;
       margin-bottom: 18px;
     }
@@ -311,7 +311,7 @@ watch(y, (value) => {
     padding-left: 25px;
     display: block;
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       padding-left: 20px;
       margin-bottom: 15px;
     }
@@ -326,7 +326,7 @@ watch(y, (value) => {
       background: #fff;
       border-radius: 50%;
 
-      @include sm {
+      @media screen and (max-width: $sm) {
         width: 3px;
         height: 3px;
         top: 10px;
@@ -342,7 +342,7 @@ watch(y, (value) => {
     margin-bottom: 20px;
     opacity: 0.5;
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       display: block;
       margin-bottom: 10px;
     }
@@ -363,7 +363,7 @@ watch(y, (value) => {
     border-radius: 24px;
     transition: 0.3s ease;
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       border-radius: 14px;
       padding: 40px;
       margin-bottom: 10px;
@@ -380,7 +380,7 @@ watch(y, (value) => {
         .roadmap__item-text-point {
           width: 99%;
 
-          @include sm {
+          @media screen and (max-width: $sm) {
             width: 100%;
           }
         }
@@ -391,7 +391,7 @@ watch(y, (value) => {
           column-count: 2;
           column-gap: 20px;
 
-          @include sm {
+          @media screen and (max-width: $sm) {
             column-count: 1;
             column-gap: 0;
           }

@@ -166,16 +166,16 @@ import Info from '~/components/Contacts/Info.vue'
   padding-top: 104px;
   padding-bottom: 180px;
 
-  @include slg {
+  @media screen and (max-width: $slg) {
     padding-top: 122px;
     padding-bottom: 140px;
   }
 
-  @include md {
+  @media screen and (max-width: $md) {
     padding-top: 108px;
   }
 
-  @include sm {
+  @media screen and (max-width: $sm) {
     padding-top: 68px;
     padding-bottom: 100px;
   }
@@ -189,7 +189,7 @@ import Info from '~/components/Contacts/Info.vue'
     display: flex;
     justify-content: space-between;
 
-    @include md {
+    @media screen and (max-width: $md) {
       display: block;
     }
   }
@@ -197,15 +197,15 @@ import Info from '~/components/Contacts/Info.vue'
   &__column {
     width: 465px;
 
-    @include lg {
+    @media screen and (max-width: $lg) {
       width: 454px;
     }
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 315px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       width: 100%;
     }
   }
@@ -218,11 +218,11 @@ import Info from '~/components/Contacts/Info.vue'
 .info__item {
   margin-bottom: 32px !important;
 
-  @include md {
+  @media screen and (max-width: $md) {
     width: 100% !important;
   }
 
-  @include sm {
+  @media screen and (max-width: $sm) {
     margin-bottom: 24px !important;
   }
 }</style>

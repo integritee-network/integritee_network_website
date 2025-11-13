@@ -28,7 +28,7 @@ const props = defineProps({
   width: 100%;
   padding-bottom: 32px;
 
-  @include sm {
+  @media screen and (max-width: $sm) {
     padding-bottom: 24px;
   }
 
@@ -44,7 +44,7 @@ const props = defineProps({
     width: 32px;
     height: 32px;
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 18px;
       height: 18px;
     }

@@ -17,15 +17,15 @@
             <div class="footer__column-title">TEER Token</div>
             <div class="footer__column-list">
               <a
-                :href="KRAKEN_LINK" 
+                :href="KRAKEN_LINK"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="footer__column-link text-link"
-              > 
+              >
                 Kraken
-              </a> 
+              </a>
               <a
-                :href="GATE_LINK" 
+                :href="GATE_LINK"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="footer__column-link text-link"
@@ -216,10 +216,10 @@
                             <a href="/" target="_blank" class="footer__column-link text-link">
                               Contacts
                             </a>
-            </div>  
+            </div>
           </div>  -->
-        </div>  
-      </div> 
+        </div>
+      </div>
       <div class="footer__bottom">
         <span class="paragraph_medium"
           >©{{ new Date().getFullYear() }} Integritee, Inc.</span
@@ -229,7 +229,7 @@
             >Imprint and Privacy Policy</NuxtLink
           >
         </span>-->
-      </div> 
+      </div>
     </div>
   </footer>
 </template>
@@ -270,20 +270,20 @@ import {
     height: 40px;
     margin-bottom: 19px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 117px;
       height: 24px;
       margin-bottom: 26px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       margin-bottom: 0;
       width: 144px;
       height: 30px;
       flex-shrink: 0;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       margin-bottom: 24px;
       width: 117px;
       height: 24px;
@@ -299,7 +299,7 @@ import {
     display: flex;
     gap: 48px;
 
-    @include md {
+    @media screen and (max-width: $md) {
       display: block;
     }
   }
@@ -328,7 +328,7 @@ import {
       }
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       &:first-child {
         width: 100% !important;
 
@@ -349,11 +349,11 @@ import {
       max-width: 255px;
       font-size: 1.125em;
 
-      @include slg {
+      @media screen and (max-width: $slg) {
         font-size: 0.875em;
       }
 
-      @include md {
+      @media screen and (max-width: $md) {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -364,7 +364,7 @@ import {
         font-size: 0.75em;
       }
 
-      @include sm {
+      @media screen and (max-width: $sm) {
         display: block;
         margin-bottom: 24px !important;
         font-size: 0.875em;
@@ -386,11 +386,11 @@ import {
     margin-bottom: 14px;
     font-size: 14px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       font-size: 14px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       font-size: 14px;
     }
 
@@ -403,15 +403,15 @@ import {
     display: flex;
     gap: 82px;
 
-    @include lg {
+    @media screen and (max-width: $lg) {
       gap: 52px;
     }
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       gap: 32px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       justify-content: space-between;
     }
 
@@ -426,19 +426,19 @@ import {
     margin-bottom: 19px;
     font-size: 14px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       margin-bottom: 26px;
       font-size: 14px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       margin-bottom: 0;
       max-width: 415px;
       margin-right: auto;
       font-size: 14px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       margin-bottom: 24px;
       font-size: 14px;
       max-width: 100%;
@@ -452,15 +452,15 @@ import {
     font-size: 14px;
     font-weight: 500;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       margin-bottom: 24px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       margin-bottom: 16px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       font-size: 0.875em;
     }
   }
@@ -472,7 +472,7 @@ import {
     margin-top: 36px;
     border-top: 2px solid $alphaGray;
 
-    @include md {
+    @media screen and (max-width: $md) {
       padding: 24px 0;
       margin-top: 24px;
     }

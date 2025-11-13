@@ -55,28 +55,28 @@ import Speed from '@/assets/img/index/scalability/speed.svg'
 .scalability {
   margin-bottom: 200px;
 
-  @include lg {
+  @media screen and (max-width: $lg) {
     margin-bottom: 170px;
   }
 
-  @include slg {
+  @media screen and (max-width: $slg) {
     margin-bottom: 140px;
   }
 
-  @include md {
+  @media screen and (max-width: $md) {
     margin-bottom: 100px;
   }
 
   &__item {
-    @include md {
+    @media screen and (max-width: $md) {
       margin-bottom: 48px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       margin-bottom: 32px;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       margin-bottom: 24px;
     }
   }
@@ -85,14 +85,14 @@ import Speed from '@/assets/img/index/scalability/speed.svg'
     width: 64px;
     height: 64px;
 
-    @include md {
+    @media screen and (max-width: $md) {
       width: 48px;
       height: 48px;
     }
   }
 
   &__item-title {
-    @include md {
+    @media screen and (max-width: $md) {
       font-size: $pLg;
     }
   }
@@ -100,37 +100,37 @@ import Speed from '@/assets/img/index/scalability/speed.svg'
   &__row {
     gap: 135px;
 
-    @include lg {
+    @media screen and (max-width: $lg) {
       gap: 55px;
     }
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       gap: 100px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       gap: 52px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       display: block;
     }
   }
 
   &__column_left {
-    @include lg {
+    @media screen and (max-width: $lg) {
       width: 560px;
     }
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 480px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       width: 420px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 100%;
       margin-bottom: 42px;
     }

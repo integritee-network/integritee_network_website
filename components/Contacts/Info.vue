@@ -30,11 +30,11 @@
   :slotted(.info__row) {
     display: block;
 
-    @include md {
+    @media screen and (max-width: $md) {
       display: flex;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       display: block;
     }
   }
@@ -45,7 +45,7 @@
     background: url("@/assets/img/contacts/contact.svg");
     background-size: cover;
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 32px;
       height: 32px;
     }
@@ -56,7 +56,7 @@
     height: 48px;
     background: url("@/assets/img/contacts/contact.svg");
     background-size: cover;
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 32px;
       height: 32px;
     }
@@ -67,7 +67,7 @@
     height: 48px;
     background: url("@/assets/img/contacts/address-icon.svg");
     background-size: cover;
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 32px;
       height: 32px;
     }
@@ -76,17 +76,17 @@
   :slotted(.info__item) {
     margin-bottom: 32px;
 
-    @include md {
+    @media screen and (max-width: $md) {
       width: 384px;
       margin-bottom: 0;
       margin-right: 32px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 254px;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       margin-bottom: 32px;
       margin-right: 0;
     }

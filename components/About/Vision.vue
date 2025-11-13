@@ -25,7 +25,7 @@ import MissionIcon from "@/assets/img/about/mission-icon.svg";
 <style lang="scss">
 .vision {
   &__row {
-    @include sm {
+    @media screen and (max-width: $sm) {
       display: block;
     }
   }
@@ -39,17 +39,17 @@ import MissionIcon from "@/assets/img/about/mission-icon.svg";
     gap: 24px;
     width: 488px;
     border-radius: 24px;
-    @include lg {
+    @media screen and (max-width: $lg) {
       width: 405px;
     }
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 360px;
       gap: 16px;
     }
-    @include md {
+    @media screen and (max-width: $md) {
       width: 311px;
     }
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 100%;
       padding: 40px;
       gap: 8px;
@@ -60,16 +60,16 @@ import MissionIcon from "@/assets/img/about/mission-icon.svg";
       background: rgba(62, 62, 62, 0.01);
       box-shadow: 0px 4px 250px rgba(153, 40, 254, 0.6);
       backdrop-filter: blur(35px);
-      @include lg {
+      @media screen and (max-width: $lg) {
         width: 695px;
       }
-      @include slg {
+      @media screen and (max-width: $slg) {
         width: 580px;
       }
-      @include md {
+      @media screen and (max-width: $md) {
         width: 469px;
       }
-      @include sm {
+      @media screen and (max-width: $sm) {
         width: 100%;
         margin-bottom: 20px;
       }

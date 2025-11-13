@@ -66,7 +66,7 @@ import Socials from '@/components/Socials/Section.vue'
   position: relative;
 
   &__row {
-    @include md {
+    @media screen and (max-width: $md) {
       display: block;
     }
   }
@@ -74,11 +74,11 @@ import Socials from '@/components/Socials/Section.vue'
   &__column {
     width: 500px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 350px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       width: 100%;
       br {
         display: none;

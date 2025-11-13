@@ -57,7 +57,7 @@ const items = [
   position: relative;
 
   &__row {
-    @include md {
+    @media screen and (max-width: $md) {
       flex-wrap: wrap;
     }
   }
@@ -65,31 +65,31 @@ const items = [
   &__item {
     width: 258px;
 
-    @include md {
+    @media screen and (max-width: $md) {
       width: 325px;
       margin-bottom: 40px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 49%;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       width: 40%;
     }
 
     &:nth-child(2) {
       width: 298px;
 
-      @include md {
+      @media screen and (max-width: $md) {
         width: 405px;
       }
 
-      @include sm {
+      @media screen and (max-width: $sm) {
         width: 49%;
       }
 
-      @include xsm {
+      @media screen and (max-width: $xsm) {
         width: 54%;
       }
     }
@@ -97,16 +97,16 @@ const items = [
     &:nth-child(3) {
       width: 103px;
 
-      @include md {
+      @media screen and (max-width: $md) {
         width: 325px;
         margin-bottom: 0;
       }
 
-      @include sm {
+      @media screen and (max-width: $sm) {
         width: 49%;
       }
 
-      @include xsm {
+      @media screen and (max-width: $xsm) {
         width: 40%;
       }
     }
@@ -114,16 +114,16 @@ const items = [
     &:nth-child(4) {
       width: 133px;
 
-      @include md {
+      @media screen and (max-width: $md) {
         width: 405px;
         margin-bottom: 0;
       }
 
-      @include sm {
+      @media screen and (max-width: $sm) {
         width: 49%;
       }
 
-      @include xsm {
+      @media screen and (max-width: $xsm) {
         width: 54%;
       }
     }
@@ -134,12 +134,12 @@ const items = [
       height: 64px;
       margin-bottom: 24px;
 
-      @include slg {
+      @media screen and (max-width: $slg) {
         width: 48px;
         height: 48px;
       }
 
-      @include sm {
+      @media screen and (max-width: $sm) {
         width: 32px;
         height: 32px
       }

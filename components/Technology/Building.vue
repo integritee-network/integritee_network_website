@@ -20,15 +20,15 @@ import { TECHNOLOGY_LINK } from '@/configs/app.config';
   margin-top: 235px;
   text-align: center;
 
-  @include lg {
+  @media screen and (max-width: $lg) {
     margin-top: 265px;
   }
 
-  @include slg {
+  @media screen and (max-width: $slg) {
     margin-top: 165px;
   }
 
-  @include sm {
+  @media screen and (max-width: $sm) {
     margin-top: 100px;
   }
 
@@ -39,13 +39,13 @@ import { TECHNOLOGY_LINK } from '@/configs/app.config';
     margin: 0 auto;
     margin-bottom: 48px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 48px;
       height: 48px;
       margin-bottom: 32px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 32px;
       height: 32px;
       margin-bottom: 24px;

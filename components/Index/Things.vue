@@ -35,11 +35,11 @@
     justify-content: space-between;
     gap: 50px;
 
-    @include md {
+    @media screen and (max-width: $md) {
       gap: 15px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       flex-direction: column-reverse;
     }
   }
@@ -47,7 +47,7 @@
   &__image {
     width: 100%;
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 90%;
     }
   }
@@ -55,12 +55,12 @@
   &__image-wrapper {
     position: relative;
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       text-align: center;
       margin-bottom: 70px;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       margin-bottom: 50px;
     }
   }
@@ -72,22 +72,22 @@
     width: 950px;
     height: 445px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       height: 338px;
       width: 676px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       height: 309px;
       width: 618px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       height: 330px;
       width: 660px;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       height: 258px;
       width: 516px;
     }
@@ -96,25 +96,25 @@
   &__column {
     flex-shrink: 0;
 
-    @include lg {
+    @media screen and (max-width: $lg) {
       width: 560px;
     }
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 480px;
     }
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 410px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 100%;
     }
   }
 
   &__title {
-    @include slg {
+    @media screen and (max-width: $slg) {
       br {
         display: none;
       }

@@ -127,11 +127,11 @@ watch(route, value => {
 .blog-row {
   gap: 60px;
 
-  @include lg {
+  @media screen and (max-width: $lg) {
     gap: 40px;
   }
 
-  @include slg {
+  @media screen and (max-width: $slg) {
     display: block;
   }
 }
@@ -141,11 +141,11 @@ watch(route, value => {
   flex-shrink: 0;
   min-height: 360px;
 
-  @include lg {
+  @media screen and (max-width: $lg) {
     width: 310px;
   }
 
-  @include slg {
+  @media screen and (max-width: $slg) {
     width: auto;
     min-height: auto;
   }
@@ -158,16 +158,16 @@ watch(route, value => {
   grid-row-gap: 40px;
   width: 100%;
 
-  @include slg {
+  @media screen and (max-width: $slg) {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @include sm {
+  @media screen and (max-width: $sm) {
     grid-column-gap: 10px;
     grid-template-columns: repeat(1, 1fr);
   }
 
-  @include xsm {
+  @media screen and (max-width: $xsm) {
     display: block;
   }
 }
@@ -175,7 +175,7 @@ watch(route, value => {
 .blog__nav-wrapper {
   position: sticky;
   top: 180px;
-  @include lg {
+  @media screen and (max-width: $lg) {
     top: unset;
     position: relative;
   }
@@ -184,7 +184,7 @@ watch(route, value => {
   //  top: 50%;
   //  transform: translateY(-50%);
   //
-  //  @include lg {
+  //  @media screen and (max-width: $lg) {
   //    position: static;
   //  }
   //}
@@ -199,7 +199,7 @@ watch(route, value => {
 <style lang="scss" scoped>
 .blog {
   &__new-item {
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       margin-bottom: 25px;
 
       &:last-child {

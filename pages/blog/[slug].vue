@@ -81,11 +81,11 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
     font-weight: 500;
     line-height: 120%;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       font-size: 2.25em;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       font-size: 1.75em;
     }
   }
@@ -105,7 +105,7 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
       height: auto;
       border-radius: 24px;
 
-      @include sm {
+      @media screen and (max-width: $sm) {
         border-radius: 14px;
         position: static;
         width: 100%;
@@ -116,7 +116,7 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
   &__article-padding {
     padding: 0 30px;
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       padding: 0;
     }
   }
@@ -128,7 +128,7 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
       margin-top: 22px;
       line-height: 120%;
 
-      @include sm {
+      @media screen and (max-width: $sm) {
         margin: 20px 0;
         font-size: $sm_tSmd;
       }
@@ -140,7 +140,7 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
       margin-top: 22px;
       line-height: 120%;
 
-      @include sm {
+      @media screen and (max-width: $sm) {
         margin: 16px 0;
         font-size: $sm_pLg;
       }
@@ -151,11 +151,11 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
       margin-bottom: 16px;
       line-height: 150%;
 
-      @include slg {
+      @media screen and (max-width: $slg) {
         font-size: 1em;
       }
 
-      @include sm {
+      @media screen and (max-width: $sm) {
         font-size: 0.875em;
         margin-bottom: 12px;
       }
@@ -174,14 +174,14 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
       margin: 22px 0;
       object-fit: cover;
 
-      @include sm {
+      @media screen and (max-width: $sm) {
         margin: 18px 0;
       }
     }
   }
 
   &__news-list-item {
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       margin-bottom: 25px;
 
       &:last-child {

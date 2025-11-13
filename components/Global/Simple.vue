@@ -33,11 +33,11 @@ defineProps<{
   justify-content: space-between;
   gap: 75px;
 
-  @include lg {
+  @media screen and (max-width: $lg) {
     gap: 50px;
   }
 
-  @include sm {
+  @media screen and (max-width: $sm) {
     flex-direction: column-reverse;
     gap: 0;
   }
@@ -46,19 +46,19 @@ defineProps<{
     width: 600px;
     flex-shrink: 0;
 
-    @include lg {
+    @media screen and (max-width: $lg) {
       width: 560px;
     }
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 480px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       width: 350px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 100%;
     }
   }
@@ -72,11 +72,11 @@ defineProps<{
     line-height: 110%;
     color: #ffffff;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       font-size: $sm_tMd;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       font-size: 1.688em;
     }
   }
@@ -100,7 +100,7 @@ defineProps<{
     align-items: center;
     justify-content: center;
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       position: relative;
       text-align: center;
       margin-bottom: 40px;
@@ -112,19 +112,19 @@ defineProps<{
       z-index: 2;
       object-fit: contain;
 
-      @include lg {
+      @media screen and (max-width: $lg) {
         max-height: 390px;
       }
 
-      @include slg {
+      @media screen and (max-width: $slg) {
         max-height: 350px;
       }
 
-      @include md {
+      @media screen and (max-width: $md) {
         max-height: 310px;
       }
 
-      @include sm {
+      @media screen and (max-width: $sm) {
         position: relative;
         height: 100%;
         max-width: 80%;
@@ -141,17 +141,17 @@ defineProps<{
     width: 900px;
     height: 900px;
 
-    @include lg {
+    @media screen and (max-width: $lg) {
       width: 850px;
       height: 850px;
     }
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 800px;
       height: 800px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       width: 600px;
       height: 600px;
     }

@@ -185,15 +185,15 @@ const items = [
     width: 600px;
     flex-shrink: 0;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 500px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       width: 431px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 100%;
     }
   }
@@ -213,11 +213,11 @@ const items = [
     -webkit-text-fill-color: transparent;
     margin-bottom: 8px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       font-size: $sm_tMd;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       font-size: 1.688em;
     }
   }
@@ -227,23 +227,23 @@ const items = [
     width: 504px;
     height: 504px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       width: 448px;
       height: 448px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       width: 340px;
       height: 340px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       width: 80px;
       height: 90px;
       margin-right: 24px;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       width: 85px;
       height: 93px;
     }
@@ -257,19 +257,19 @@ const items = [
     justify-content: space-between;
     margin-bottom: 95px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       margin-bottom: 116px;
     }
 
-    @include md {
+    @media screen and (max-width: $md) {
       margin-bottom: 60px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       margin-bottom: 40px;
     }
 
-    @include xsm {
+    @media screen and (max-width: $xsm) {
       margin-bottom: 60px;
     }
 
@@ -306,11 +306,11 @@ const items = [
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 32px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       margin-bottom: 24px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       margin-bottom: 0;
     }
   }
@@ -318,11 +318,11 @@ const items = [
   &__item-text {
     margin-bottom: 32px;
 
-    @include slg {
+    @media screen and (max-width: $slg) {
       margin-bottom: 24px;
     }
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       margin-bottom: 16px;
     }
   }
@@ -334,11 +334,11 @@ const items = [
     &:last-child {
       margin-bottom: 48px;
 
-      @include slg {
+      @media screen and (max-width: $slg) {
         margin-bottom: 32px;
       }
 
-      @include sm {
+      @media screen and (max-width: $sm) {
         margin-bottom: 24px;
       }
     }

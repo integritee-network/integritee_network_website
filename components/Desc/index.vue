@@ -32,11 +32,11 @@
   position: relative;
   padding-top: 90px;
 
-  @include slg {
+  @media screen and (max-width: $slg) {
     padding-top: 108px;
   }
 
-  @include sm {
+  @media screen and (max-width: $sm) {
     padding-top: 68px;
   }
 
@@ -50,7 +50,7 @@
     align-items: center;
     gap: 18px;
 
-    @include sm {
+    @media screen and (max-width: $sm) {
       gap: 12px;
     }
   }

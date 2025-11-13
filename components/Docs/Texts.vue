@@ -12,13 +12,13 @@
 <style scoped lang='scss'>
 .text-block {
   width: 715px;
-  @include lg {
+  @media screen and (max-width: $lg) {
     width: 645px;
   }
-  @include slg {
+  @media screen and (max-width: $slg) {
     width: 605px;
   }
-  @include md {
+  @media screen and (max-width: $md) {
     margin-top: 154px;
     width: 100%;
   }
@@ -29,10 +29,10 @@
     font-weight: 500;
     line-height: 110%;
     margin-bottom: 28px;
-    @include slg {
+    @media screen and (max-width: $slg) {
       font-size: 3em;
     }
-    @include sm {
+    @media screen and (max-width: $sm) {
       font-size: 2.25em;
       margin-bottom: 24px;
     }
@@ -45,11 +45,11 @@
     line-height: 120%;
     margin-top: 54px;
     margin-bottom: 22px;
-    @include slg {
+    @media screen and (max-width: $slg) {
       font-size: 2em;
       margin-top: 46px;
     }
-    @include sm {
+    @media screen and (max-width: $sm) {
       font-size: 1.5em;
       margin-top: 32px;
       margin-left: 10px;
@@ -65,18 +65,18 @@
     font-weight: 400;
     line-height: 150%;
     margin-bottom: 15px;
-    @include slg {
+    @media screen and (max-width: $slg) {
       font-size: 1em;
       margin-bottom: 12px;
     }
-    @include sm {
+    @media screen and (max-width: $sm) {
       font-size: 0.875em;
       margin-bottom: 10px;
     }
     span {
       font-size: 1.5em;
       font-weight: 500;
-      @include sm {
+      @media screen and (max-width: $sm) {
         font-size: 0.875em;
       }
     }
