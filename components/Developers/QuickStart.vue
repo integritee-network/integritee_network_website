@@ -57,7 +57,7 @@ const items = [
   position: relative;
 
   &__row {
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       flex-wrap: wrap;
     }
   }
@@ -65,31 +65,31 @@ const items = [
   &__item {
     width: 258px;
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       width: 325px;
       margin-bottom: 40px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 49%;
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       width: 40%;
     }
 
     &:nth-child(2) {
       width: 298px;
 
-      @media screen and (max-width: $md) {
+      @media screen and (max-width: 1024px) {
         width: 405px;
       }
 
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         width: 49%;
       }
 
-      @media screen and (max-width: $xsm) {
+      @media screen and (max-width: 420px) {
         width: 54%;
       }
     }
@@ -97,16 +97,16 @@ const items = [
     &:nth-child(3) {
       width: 103px;
 
-      @media screen and (max-width: $md) {
+      @media screen and (max-width: 1024px) {
         width: 325px;
         margin-bottom: 0;
       }
 
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         width: 49%;
       }
 
-      @media screen and (max-width: $xsm) {
+      @media screen and (max-width: 420px) {
         width: 40%;
       }
     }
@@ -114,16 +114,16 @@ const items = [
     &:nth-child(4) {
       width: 133px;
 
-      @media screen and (max-width: $md) {
+      @media screen and (max-width: 1024px) {
         width: 405px;
         margin-bottom: 0;
       }
 
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         width: 49%;
       }
 
-      @media screen and (max-width: $xsm) {
+      @media screen and (max-width: 420px) {
         width: 54%;
       }
     }
@@ -134,12 +134,12 @@ const items = [
       height: 64px;
       margin-bottom: 24px;
 
-      @media screen and (max-width: $slg) {
+      @media screen and (max-width: 1200px) {
         width: 48px;
         height: 48px;
       }
 
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         width: 32px;
         height: 32px
       }

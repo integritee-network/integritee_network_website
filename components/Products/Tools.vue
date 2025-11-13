@@ -117,12 +117,12 @@ import {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       display: block;
     }
   }
@@ -138,11 +138,11 @@ import {
     gap: 40px;
     transition: 0.3s ease;
 
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: 1366px) {
       gap: 15px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       margin-bottom: 10px;
       padding: 40px;
       gap: 40px;
@@ -156,11 +156,11 @@ import {
     &:last-child {
       grid-area: 2 / 3 / 4 / 5 / 6;
 
-      @media screen and (max-width: $slg) {
+      @media screen and (max-width: 1200px) {
         grid-area: 3 / 1 / 4 / 3;
       }
 
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         margin-bottom: 0;
       }
     }

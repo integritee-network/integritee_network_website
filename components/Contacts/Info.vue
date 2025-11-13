@@ -30,11 +30,11 @@
   :slotted(.info__row) {
     display: block;
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       display: flex;
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       display: block;
     }
   }
@@ -45,7 +45,7 @@
     background: url("@/assets/img/contacts/contact.svg");
     background-size: cover;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 32px;
       height: 32px;
     }
@@ -56,7 +56,7 @@
     height: 48px;
     background: url("@/assets/img/contacts/contact.svg");
     background-size: cover;
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 32px;
       height: 32px;
     }
@@ -67,7 +67,7 @@
     height: 48px;
     background: url("@/assets/img/contacts/address-icon.svg");
     background-size: cover;
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 32px;
       height: 32px;
     }
@@ -76,17 +76,17 @@
   :slotted(.info__item) {
     margin-bottom: 32px;
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       width: 384px;
       margin-bottom: 0;
       margin-right: 32px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 254px;
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       margin-bottom: 32px;
       margin-right: 0;
     }

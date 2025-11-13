@@ -64,29 +64,29 @@ await Promise.all([
   width: 1468px;
   transform: rotate(-159.84deg);
 
-  @media screen and (max-width: $lg) {
+  @media screen and (max-width: 1366px) {
     width: 1417px;
   }
 
-  @media screen and (max-width: $slg) {
+  @media screen and (max-width: 1200px) {
     width: 873px;
     right: -250px;
     top: -270px;
   }
 
-  @media screen and (max-width: $md) {
+  @media screen and (max-width: 1024px) {
     width: 838px;
     right: -208px;
     top: -180px;
   }
 
-  @media screen and (max-width: $sm) {
+  @media screen and (max-width: 840px) {
     width: 530px;
     right: -141px;
     top: -70px;
   }
 
-  @media screen and (max-width: $xsm) {
+  @media screen and (max-width: 420px) {
     right: -171px;
     top: -7px;
   }
@@ -100,19 +100,19 @@ await Promise.all([
   transform: rotate(159.84deg) scale(-1, 1);
   z-index: -1;
 
-  @media screen and (max-width: $lg) {
+  @media screen and (max-width: 1366px) {
     width: 1023px;
     left: -245px;
     top: -992px;
   }
 
-  @media screen and (max-width: $slg) {
+  @media screen and (max-width: 1200px) {
     width: 740px;
     left: -185px;
     top: -620px;
   }
 
-  @media screen and (max-width: $sm) {
+  @media screen and (max-width: 840px) {
     width: 634px;
     left: -115px;
     top: -216px;
@@ -127,19 +127,19 @@ await Promise.all([
     backdrop-filter: blur(38px);
     padding: 40px;
     align-items: center;
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       display: block;
     }
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       padding: 30px;
     }
     svg {
       width: 64px;
-      @media screen and (max-width: $slg) {
+      @media screen and (max-width: 1200px) {
         width: 48px;
         margin-bottom: 24px;
       }
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         width: 32px;
       }
     }
@@ -148,7 +148,7 @@ await Promise.all([
         display: flex;
         align-items: center;
         gap: 24px;
-        @media screen and (max-width: $slg) {
+        @media screen and (max-width: 1200px) {
           display: block;
         }
       }
@@ -156,7 +156,7 @@ await Promise.all([
   }
   .cookieControl__BarButtons {
     gap: 18px;
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       flex-direction: row;
       justify-content: flex-start;
     }
@@ -167,7 +167,7 @@ await Promise.all([
       font-weight: 500;
       margin: 0;
       padding: 17px 20px;
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         font-size: 14px;
         width: auto;
         padding: 11px 15px;
@@ -188,27 +188,27 @@ await Promise.all([
     max-width: 1240px;
     margin: 0 auto;
     bottom: 100px;
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: 1366px) {
       max-width: 1120px;
       bottom: 80px;
     }
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       max-width: 980px;
       bottom: 60px;
     }
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       max-width: 800px;
       bottom: 40px;
     }
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       max-width: 100%;
       width: 100%;
       padding: 0 20px;
       bottom: 20px;
     }
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       padding: 0 12px;
       bottom: 12px;
     }
@@ -217,10 +217,10 @@ await Promise.all([
       margin: 0;
       font-size: 24px;
       font-weight: 500;
-      @media screen and (max-width: $slg) {
+      @media screen and (max-width: 1200px) {
         margin-bottom: 24px;
       }
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         font-size: 18px;
       }
     }

@@ -81,11 +81,11 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
     font-weight: 500;
     line-height: 120%;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       font-size: 2.25em;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       font-size: 1.75em;
     }
   }
@@ -105,7 +105,7 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
       height: auto;
       border-radius: 24px;
 
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         border-radius: 14px;
         position: static;
         width: 100%;
@@ -116,7 +116,7 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
   &__article-padding {
     padding: 0 30px;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       padding: 0;
     }
   }
@@ -128,7 +128,7 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
       margin-top: 22px;
       line-height: 120%;
 
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         margin: 20px 0;
         font-size: $sm_tSmd;
       }
@@ -140,7 +140,7 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
       margin-top: 22px;
       line-height: 120%;
 
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         margin: 16px 0;
         font-size: $sm_pLg;
       }
@@ -151,11 +151,11 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
       margin-bottom: 16px;
       line-height: 150%;
 
-      @media screen and (max-width: $slg) {
+      @media screen and (max-width: 1200px) {
         font-size: 1em;
       }
 
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         font-size: 0.875em;
         margin-bottom: 12px;
       }
@@ -174,14 +174,14 @@ const related = await postsStore.getPostsByCat(post.categories[0], post.id)
       margin: 22px 0;
       object-fit: cover;
 
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         margin: 18px 0;
       }
     }
   }
 
   &__news-list-item {
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       margin-bottom: 25px;
 
       &:last-child {

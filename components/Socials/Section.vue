@@ -64,14 +64,14 @@ import { TELEGRAM_LINK, TWITTER_LINK, DISCORD_LINK } from '@/configs/app.config'
 .socials {
   &__title {
     //line-height: unset;
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       line-height: 110%;
     }
   }
   &__description {
     line-height: 150%;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       br {
         display: none;
       }
@@ -81,30 +81,30 @@ import { TELEGRAM_LINK, TWITTER_LINK, DISCORD_LINK } from '@/configs/app.config'
   &__row {
     gap: 60px;
 
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: 1366px) {
       gap: 30px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       display: block;
     }
   }
 
   &__text {
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: 1366px) {
       width: 560px;
       flex-shrink: 0;
     }
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       width: 450px;
     }
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       width: 340px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 100%;
       margin-bottom: 28px;
     }
@@ -114,12 +114,12 @@ import { TELEGRAM_LINK, TWITTER_LINK, DISCORD_LINK } from '@/configs/app.config'
     display: flex;
     gap: 20px;
 
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: 1366px) {
       flex: 1;
       width: 100%;
     }
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       gap: 10px;
     }
   }
@@ -130,7 +130,7 @@ import { TELEGRAM_LINK, TWITTER_LINK, DISCORD_LINK } from '@/configs/app.config'
     display: block;
     margin-bottom: 24px;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 32px;
       height: 32px;
       margin-bottom: 8px;
@@ -148,11 +148,11 @@ import { TELEGRAM_LINK, TWITTER_LINK, DISCORD_LINK } from '@/configs/app.config'
     border-radius: 24px;
     transition: 0.3s ease;
 
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: 1366px) {
       height: 179px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       height: 150px;
       font-size: $sm_pDef;
       border-radius: 14px;

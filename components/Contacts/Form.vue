@@ -149,21 +149,21 @@ export default {
   backdrop-filter: blur(38.335px);
   border-radius: 24px;
 
-  @media screen and (max-width: $lg) {
+  @media screen and (max-width: 1366px) {
     padding: 60px;
     width: 600px;
   }
 
-  @media screen and (max-width: $slg) {
+  @media screen and (max-width: 1200px) {
     width: 540px;
   }
 
-  @media screen and (max-width: $md) {
+  @media screen and (max-width: 1024px) {
     width: 100%;
     margin-top: 48px;
   }
 
-  @media screen and (max-width: $sm) {
+  @media screen and (max-width: 840px) {
     padding: 40px;
     margin-top: 32px;
   }
@@ -179,7 +179,7 @@ export default {
     transition: 0.4s;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       margin-bottom: 76px;
     }
 
@@ -187,11 +187,11 @@ export default {
     &:nth-child(2) {
       width: 274px;
 
-      @media screen and (max-width: $lg) {
+      @media screen and (max-width: 1366px) {
         width: 224px;
       }
 
-      @media screen and (max-width: $slg) {
+      @media screen and (max-width: 1200px) {
         width: 100%;
       }
     }
@@ -199,7 +199,7 @@ export default {
     &:last-child {
       margin-bottom: 57px;
 
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         margin-bottom: 54px;
       }
     }
@@ -252,7 +252,7 @@ export default {
     transition: 0.4s;
     pointer-events: none;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       bottom: 18px;
     }
 
@@ -261,7 +261,7 @@ export default {
       font-size: 14px;
       opacity: 0.4;
 
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         bottom: calc(100% + 4px);
         font-size: 12px;
       }
@@ -277,7 +277,7 @@ export default {
     outline: none;
     color: #fff;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       padding-bottom: 18px;
     }
 
@@ -287,7 +287,7 @@ export default {
         font-size: 14px;
         opacity: 0.4;
 
-        @media screen and (max-width: $sm) {
+        @media screen and (max-width: 840px) {
           bottom: calc(100% + 4px);
           font-size: 12px;
         }
@@ -299,11 +299,11 @@ export default {
     height: 81px;
     resize: none;
 
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: 1366px) {
       height: 108px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       height: 63px;
     }
   }
@@ -332,7 +332,7 @@ export default {
     transition: 0.4s;
     opacity: 0;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -358,7 +358,7 @@ export default {
     width: 170px;
     text-align: center;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 146px;
       font-size: 12px;
     }
@@ -370,7 +370,7 @@ export default {
     background: url('@/assets/img/contacts/success-icon.svg');
     background-size: cover;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 18px;
       height: 18px;
     }
@@ -383,7 +383,7 @@ export default {
     background-size: cover;
     cursor: pointer;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 18px;
       height: 18px;
     }
@@ -401,14 +401,14 @@ export default {
     color: #ffffff;
     opacity: 0.4;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       bottom: -22px;
       font-size: 12px;
     }
   }
 
   &__button {
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 100%;
     }
   }

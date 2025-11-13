@@ -97,12 +97,12 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
   &__right {
     position: relative;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       margin-bottom: 64px;
       width: 100%;
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       margin-bottom: 49px;
     }
   }
@@ -116,12 +116,12 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
     height: 1049px;
     z-index: -1;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       width: 855px;
       height: 855px;
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       width: 644px;
       height: 644px;
     }
@@ -131,11 +131,11 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
     padding-right: 50px;
     align-items: flex-start;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       padding-right: 30px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       flex-direction: column-reverse;
       padding-right: 0;
     }
@@ -146,7 +146,7 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
       width: auto;
       height: 32px;
 
-      @media screen and (max-width: $slg) {
+      @media screen and (max-width: 1200px) {
         width: 24px;
         height: auto;
       }
@@ -158,30 +158,30 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
     width: 44px;
     height: 48px;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       margin-bottom: 24px;
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       width: 30px;
       height: 32px;
     }
   }
 
   &__column {
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: 1366px) {
       width: 560px;
     }
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       width: 480px;
     }
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       width: 413px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 100%;
     }
   }
@@ -189,16 +189,16 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
   &__polygon1 {
     width: 429px;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       width: 349px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       display: block;
       margin: 0 auto;
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       width: 263px;
     }
   }
@@ -207,12 +207,12 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
     text-align: center;
     margin-bottom: 45px;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       margin-bottom: 32px;
       font-size: $pLg;
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       font-size: $sm_pLg;
       margin-bottom: 24px;
     }
@@ -225,12 +225,12 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
     margin-bottom: 19px;
     gap: 20px;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       margin-bottom: 14px;
       gap: 15px;
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       gap: 8px;
     }
 
@@ -242,7 +242,7 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
       svg {
         height: 28px;
 
-        @media screen and (max-width: $xsm) {
+        @media screen and (max-width: 420px) {
           height: 21px;
         }
       }
@@ -250,11 +250,11 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
   }
 
   &__right-item-name {
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       font-size: $sm_pLg;
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       font-size: $md_pDef;
     }
   }
@@ -275,13 +275,13 @@ import { BASILISK_LINK, GATE_LINK, KRAKEN_LINK } from '@/configs/app.config'
   &__right-item-icon-wrp {
     width: 36px;
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       width: 24px;
     }
   }
 
   &__description {
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       br {
         display: none;
       }

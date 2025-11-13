@@ -87,7 +87,7 @@ watch(
   z-index: 10;
   transition: 0.3s ease;
 
-  @media screen and (max-width: $slg) {
+  @media screen and (max-width: 1200px) {
     padding: 21px 0;
   }
 
@@ -101,7 +101,7 @@ watch(
     display: block;
     width: 144px;
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       width: 118px;
     }
 
@@ -119,7 +119,7 @@ watch(
   }
 
   &__nav {
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       display: none;
     }
 
@@ -127,7 +127,7 @@ watch(
       font-size: 0.875em;
       margin-left: 24px;
 
-      @media screen and (max-width: $lg) {
+      @media screen and (max-width: 1366px) {
         margin-left: 18px;
       }
 

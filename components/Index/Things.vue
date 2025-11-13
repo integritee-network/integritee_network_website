@@ -35,11 +35,11 @@
     justify-content: space-between;
     gap: 50px;
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       gap: 15px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       flex-direction: column-reverse;
     }
   }
@@ -47,7 +47,7 @@
   &__image {
     width: 100%;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 90%;
     }
   }
@@ -55,12 +55,12 @@
   &__image-wrapper {
     position: relative;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       text-align: center;
       margin-bottom: 70px;
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       margin-bottom: 50px;
     }
   }
@@ -72,22 +72,22 @@
     width: 950px;
     height: 445px;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       height: 338px;
       width: 676px;
     }
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       height: 309px;
       width: 618px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       height: 330px;
       width: 660px;
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       height: 258px;
       width: 516px;
     }
@@ -96,25 +96,25 @@
   &__column {
     flex-shrink: 0;
 
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: 1366px) {
       width: 560px;
     }
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       width: 480px;
     }
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       width: 410px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 100%;
     }
   }
 
   &__title {
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       br {
         display: none;
       }

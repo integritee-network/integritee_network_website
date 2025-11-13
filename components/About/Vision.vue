@@ -25,7 +25,7 @@ import MissionIcon from "@/assets/img/about/mission-icon.svg";
 <style lang="scss">
 .vision {
   &__row {
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       display: block;
     }
   }
@@ -39,17 +39,17 @@ import MissionIcon from "@/assets/img/about/mission-icon.svg";
     gap: 24px;
     width: 488px;
     border-radius: 24px;
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: 1366px) {
       width: 405px;
     }
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       width: 360px;
       gap: 16px;
     }
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       width: 311px;
     }
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 100%;
       padding: 40px;
       gap: 8px;
@@ -60,16 +60,16 @@ import MissionIcon from "@/assets/img/about/mission-icon.svg";
       background: rgba(62, 62, 62, 0.01);
       box-shadow: 0px 4px 250px rgba(153, 40, 254, 0.6);
       backdrop-filter: blur(35px);
-      @media screen and (max-width: $lg) {
+      @media screen and (max-width: 1366px) {
         width: 695px;
       }
-      @media screen and (max-width: $slg) {
+      @media screen and (max-width: 1200px) {
         width: 580px;
       }
-      @media screen and (max-width: $md) {
+      @media screen and (max-width: 1024px) {
         width: 469px;
       }
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         width: 100%;
         margin-bottom: 20px;
       }

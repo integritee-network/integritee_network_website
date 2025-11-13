@@ -59,13 +59,13 @@ import {
     margin: 0 auto;
     margin-bottom: 48px;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       width: 48px;
       height: 48px;
       margin-bottom: 32px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 32px;
       height: 32px;
       margin-bottom: 24px;
@@ -85,16 +85,16 @@ import {
     margin: 0 auto;
     margin-bottom: 24px;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       margin-bottom: 16px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 540px;
       margin-bottom: 8px;
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       width: 350px;
     }
   }
@@ -104,7 +104,7 @@ import {
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       flex-wrap: wrap;
     }
   }
@@ -112,7 +112,7 @@ import {
   &__row-text {
     width: fit-content;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 100%;
       margin-bottom: 16px;
     }
@@ -123,7 +123,7 @@ import {
       width: auto;
       height: 32px;
 
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         height: 18px;
       }
     }
@@ -136,7 +136,7 @@ import {
     gap: 18px;
     margin-left: 24px;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       gap: 8px;
       margin-left: 0;
     }

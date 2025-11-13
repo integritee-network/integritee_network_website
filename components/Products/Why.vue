@@ -75,12 +75,12 @@ import Money from '@/assets/img/products/money.svg'
     width: 64px;
     height: 64px;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       width: 48px;
       height: 48px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 32px;
       height: 32px;
     }
@@ -93,19 +93,19 @@ import Money from '@/assets/img/products/money.svg'
     grid-column-gap: 60px;
     grid-row-gap: 40px;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
       grid-column-gap: 40px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       display: block;
     }
   }
 
   &__item {
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       margin-bottom: 32px;
 
       &:last-child {

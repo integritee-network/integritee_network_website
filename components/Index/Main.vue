@@ -64,7 +64,7 @@
     }
   }
 
-  @media screen and (max-width: $sm) {
+  @media screen and (max-width: 840px) {
     &__content {
       padding: 0 40px;
     }
@@ -80,12 +80,12 @@
 .main {
   padding-top: 90px;
 
-  @media screen and (max-width: $xsm) {
+  @media screen and (max-width: 420px) {
     padding-top: 70px;
   }
 
   .container {
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       display: flex;
       flex-direction: column-reverse;
     }
@@ -102,7 +102,7 @@
   }
 
   &__description {
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       br {
         display: none;
       }
@@ -131,18 +131,18 @@
     top: -71px;
     width: 831px;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       right: -380px;
       top: -81px;
       width: 741px
     }
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       right: -411px;
       top: -50px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       position: relative;
       left: 196px;
       top: -50px;
@@ -150,7 +150,7 @@
     }
 
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       width: 550px;
       left: 150px;
     }
@@ -162,37 +162,37 @@
     left: -320px;
     top: -30px;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       width: 407px;
       height: 407px;
       left: -400px;
       top: -70px;
     }
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       left: -370px;
       top: -40px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       left: 20px;
     }
   }
 
   &__column {
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: 1366px) {
       width: 730px;
     }
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       width: 600px;
     }
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       width: 440px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 100%;
     }
   }
@@ -200,7 +200,7 @@
   &__img-wrapper {
     position: relative;
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       height: 430px;
       display: flex;
       justify-content: center;
@@ -208,7 +208,7 @@
       margin-bottom: 11px;
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       height: 320px;
     }
   }

@@ -270,20 +270,20 @@ import {
     height: 40px;
     margin-bottom: 19px;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       width: 117px;
       height: 24px;
       margin-bottom: 26px;
     }
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       margin-bottom: 0;
       width: 144px;
       height: 30px;
       flex-shrink: 0;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       margin-bottom: 24px;
       width: 117px;
       height: 24px;
@@ -299,7 +299,7 @@ import {
     display: flex;
     gap: 48px;
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       display: block;
     }
   }
@@ -328,7 +328,7 @@ import {
       }
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       &:first-child {
         width: 100% !important;
 
@@ -349,11 +349,11 @@ import {
       max-width: 255px;
       font-size: 1.125em;
 
-      @media screen and (max-width: $slg) {
+      @media screen and (max-width: 1200px) {
         font-size: 0.875em;
       }
 
-      @media screen and (max-width: $md) {
+      @media screen and (max-width: 1024px) {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -364,7 +364,7 @@ import {
         font-size: 0.75em;
       }
 
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         display: block;
         margin-bottom: 24px !important;
         font-size: 0.875em;
@@ -386,11 +386,11 @@ import {
     margin-bottom: 14px;
     font-size: 14px;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       font-size: 14px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       font-size: 14px;
     }
 
@@ -403,15 +403,15 @@ import {
     display: flex;
     gap: 82px;
 
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: 1366px) {
       gap: 52px;
     }
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       gap: 32px;
     }
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       justify-content: space-between;
     }
 
@@ -426,19 +426,19 @@ import {
     margin-bottom: 19px;
     font-size: 14px;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       margin-bottom: 26px;
       font-size: 14px;
     }
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       margin-bottom: 0;
       max-width: 415px;
       margin-right: auto;
       font-size: 14px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       margin-bottom: 24px;
       font-size: 14px;
       max-width: 100%;
@@ -452,15 +452,15 @@ import {
     font-size: 14px;
     font-weight: 500;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       margin-bottom: 24px;
     }
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       margin-bottom: 16px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       font-size: 0.875em;
     }
   }
@@ -472,7 +472,7 @@ import {
     margin-top: 36px;
     border-top: 2px solid $alphaGray;
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       padding: 24px 0;
       margin-top: 24px;
     }

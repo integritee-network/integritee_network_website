@@ -41,32 +41,32 @@ $sm: 840px;
 $xsm: 420px;
 
 @mixin lg {
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: 1366px) {
         @content;
     }
 }
 
 @mixin slg {
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
         @content;
     }
 }
 
 @mixin md {
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
         @content;
     }
 }
 
 
 @mixin sm {
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
         @content;
     }
 }
 
 @mixin xsm {
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
         @content;
     }
 }

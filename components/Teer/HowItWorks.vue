@@ -28,7 +28,7 @@ defineProps<{
   &__item {
     img {
       max-height: 380px !important;
-      @media screen and (max-width: $slg) {
+      @media screen and (max-width: 1200px) {
         max-height: 300px !important;
       }
     }

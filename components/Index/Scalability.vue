@@ -55,28 +55,28 @@ import Speed from '@/assets/img/index/scalability/speed.svg'
 .scalability {
   margin-bottom: 200px;
 
-  @media screen and (max-width: $lg) {
+  @media screen and (max-width: 1366px) {
     margin-bottom: 170px;
   }
 
-  @media screen and (max-width: $slg) {
+  @media screen and (max-width: 1200px) {
     margin-bottom: 140px;
   }
 
-  @media screen and (max-width: $md) {
+  @media screen and (max-width: 1024px) {
     margin-bottom: 100px;
   }
 
   &__item {
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       margin-bottom: 48px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       margin-bottom: 32px;
     }
 
-    @media screen and (max-width: $xsm) {
+    @media screen and (max-width: 420px) {
       margin-bottom: 24px;
     }
   }
@@ -85,14 +85,14 @@ import Speed from '@/assets/img/index/scalability/speed.svg'
     width: 64px;
     height: 64px;
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       width: 48px;
       height: 48px;
     }
   }
 
   &__item-title {
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       font-size: $pLg;
     }
   }
@@ -100,37 +100,37 @@ import Speed from '@/assets/img/index/scalability/speed.svg'
   &__row {
     gap: 135px;
 
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: 1366px) {
       gap: 55px;
     }
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       gap: 100px;
     }
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       gap: 52px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       display: block;
     }
   }
 
   &__column_left {
-    @media screen and (max-width: $lg) {
+    @media screen and (max-width: 1366px) {
       width: 560px;
     }
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       width: 480px;
     }
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       width: 420px;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       width: 100%;
       margin-bottom: 42px;
     }

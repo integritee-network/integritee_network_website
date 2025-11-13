@@ -51,12 +51,12 @@ import {
     grid-column-gap: 20px;
     grid-row-gap: 48px;
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       display: block;
     }
 
     a {
-      @media screen and (max-width: $md) {
+      @media screen and (max-width: 1024px) {
         margin-bottom: 32px;
 
         &:last-child {
@@ -64,7 +64,7 @@ import {
         }
       }
 
-      @media screen and (max-width: $sm) {
+      @media screen and (max-width: 840px) {
         margin-bottom: 24px;
       }
     }

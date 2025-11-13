@@ -58,7 +58,7 @@ onUnmounted(() => {
 </script>
 <style lang="scss">
 .nav {
-  @media screen and (max-width: $slg) {
+  @media screen and (max-width: 1200px) {
     display: flex;
     gap: 12px;
     margin-bottom: 32px;
@@ -68,7 +68,7 @@ onUnmounted(() => {
       height: 0;
     }
 
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: 840px) {
       gap: 8px;
     }
   }
@@ -89,7 +89,7 @@ onUnmounted(() => {
     transition: 0.3s ease;
     cursor: pointer;
 
-    @media screen and (max-width: $slg) {
+    @media screen and (max-width: 1200px) {
       padding: 16px 24px;
       margin-bottom: 0;
       flex-shrink: 1;
@@ -97,7 +97,7 @@ onUnmounted(() => {
       flex-shrink: 0;
     }
 
-    @media screen and (max-width: $md) {
+    @media screen and (max-width: 1024px) {
       padding: 12px 18px;
     }
 
