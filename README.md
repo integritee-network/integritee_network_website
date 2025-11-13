@@ -37,11 +37,11 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ## deploy to portainer
 
 ```bash
-docker buildx build -t integritee/website:1.20 .
+docker buildx build -t integritee/website:1.21 .
 # test the image locally
-docker run -p 3000:3000 integritee/website:1.20
+docker run -p 3000:3000 integritee/website:1.21
 docker login
-docker push integritee/website:1.20
+docker push integritee/website:1.21
 ```
 
 change portainer config:
