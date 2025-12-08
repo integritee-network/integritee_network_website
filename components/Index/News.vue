@@ -33,17 +33,17 @@ const { data, error } = await wpApi.getPosts({
   &__list {
     gap: 20px;
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       gap: 10px;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       display: block;
     }
   }
 
   &__item {
-    @include sm {
+    @media screen and (max-width: 840px) {
       margin-bottom: 18px;
 
       &:last-child {

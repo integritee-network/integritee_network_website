@@ -24,7 +24,7 @@ import Desc from "@/components/Desc";
 <style lang="scss" scoped>
 .title {
   br {
-    @include slg {
+    @media screen and (max-width: 1200px) {
       display: none;
     }
   }

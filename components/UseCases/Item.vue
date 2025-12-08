@@ -79,23 +79,23 @@ const tag = computed(() => {
   gap: 60px;
   margin-bottom: 83px;
 
-  @include lg {
+  @media screen and (max-width: 1366px) {
     margin-bottom: 115px;
   }
 
-  @include slg {
+  @media screen and (max-width: 1200px) {
     margin-bottom: 40px;
   }
 
-  @include slg {
+  @media screen and (max-width: 1200px) {
     gap: 30px;
   }
 
-  @include md {
+  @media screen and (max-width: 1024px) {
     flex-direction: column-reverse;
   }
 
-  @include sm {
+  @media screen and (max-width: 840px) {
     gap: 18px;
   }
 
@@ -107,34 +107,34 @@ const tag = computed(() => {
     width: 600px;
     flex-shrink: 0;
 
-    @include lg {
+    @media screen and (max-width: 1366px) {
       width: 480px;
     }
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       width: 475px;
     }
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       width: 100%;
     }
   }
 
   &__image {
     width: 590px;
-    @include lg {
+    @media screen and (max-width: 1366px) {
       width: 580px;
     }
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       width: 475px;
     }
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       width: 460px;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       width: 360px;
     }
 
@@ -145,20 +145,20 @@ const tag = computed(() => {
       border-radius: 24px;
       object-fit: cover;
 
-      @include slg {
+      @media screen and (max-width: 1200px) {
         height: 500px;
       }
 
-      @include md {
+      @media screen and (max-width: 1024px) {
         height: 539px;
       }
 
-      @include sm {
+      @media screen and (max-width: 840px) {
         border-radius: 18px;
         height: 420px;
       }
 
-      @include xsm {
+      @media screen and (max-width: 420px) {
         height: 369px;
       }
     }
@@ -176,25 +176,25 @@ const tag = computed(() => {
     gap: 50px;
     align-self: self-start;
 
-    @include lg {
+    @media screen and (max-width: 1366px) {
       width: 580px;
     }
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       width: 475px;
     }
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       width: 460px;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       width: 360px;
       padding: 40px;
       border-radius: 18px;
     }
 
-    @include xsm {
+    @media screen and (max-width: 420px) {
       width: 100%;
       gap: 30px;
     }
@@ -215,11 +215,11 @@ const tag = computed(() => {
     line-height: 120%;
     font-weight: 500;
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       font-size: 1.625em;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       font-size: 1.25em;
     }
   }
@@ -231,22 +231,22 @@ const tag = computed(() => {
     border-radius: 8px;
     padding: 9px 12px;
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       margin-bottom: 24px;
     }
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       margin-bottom: 18px;
     }
   }
 
   &__text-title {
-    font-size: $tDef;
+    font-size: 3em;
     font-weight: 500;
     font-family: 'WhyteInktrap';
     line-height: 120%;
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       font-size: 2.25em;
     }
   }

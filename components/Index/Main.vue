@@ -4,7 +4,7 @@
       <div class="container">
         <div class="shutdown-banner__content">
           <span class="shutdown-banner__text">
-            ⚠️ Important Network Update: The Integritee Network will be shutting down on November 11, 2025. 
+            ⚠️ Important Network Update: The Integritee Network will be shutting down on November 11, 2025.
             <a href="blog/this-is-the-end" class="shutdown-banner__link">Read the full announcement</a>
           </span>
         </div>
@@ -41,7 +41,7 @@
   font-size: 15px;
   line-height: 1.4;
   width: 100%;
-  
+
   &__content {
     max-width: 1200px;
     margin: 0 auto;
@@ -64,11 +64,11 @@
     }
   }
 
-  @include sm {
+  @media screen and (max-width: 840px) {
     &__content {
       padding: 0 40px;
     }
-    
+
     &__link {
       display: inline;
       margin-left: 8px;
@@ -80,12 +80,12 @@
 .main {
   padding-top: 90px;
 
-  @include xsm {
+  @media screen and (max-width: 420px) {
     padding-top: 70px;
   }
 
   .container {
-    @include sm {
+    @media screen and (max-width: 840px) {
       display: flex;
       flex-direction: column-reverse;
     }
@@ -102,7 +102,7 @@
   }
 
   &__description {
-    @include md {
+    @media screen and (max-width: 1024px) {
       br {
         display: none;
       }
@@ -131,18 +131,18 @@
     top: -71px;
     width: 831px;
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       right: -380px;
       top: -81px;
       width: 741px
     }
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       right: -411px;
       top: -50px;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       position: relative;
       left: 196px;
       top: -50px;
@@ -150,7 +150,7 @@
     }
 
 
-    @include xsm {
+    @media screen and (max-width: 420px) {
       width: 550px;
       left: 150px;
     }
@@ -162,37 +162,37 @@
     left: -320px;
     top: -30px;
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       width: 407px;
       height: 407px;
       left: -400px;
       top: -70px;
     }
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       left: -370px;
       top: -40px;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       left: 20px;
     }
   }
 
   &__column {
-    @include lg {
+    @media screen and (max-width: 1366px) {
       width: 730px;
     }
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       width: 600px;
     }
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       width: 440px;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       width: 100%;
     }
   }
@@ -200,7 +200,7 @@
   &__img-wrapper {
     position: relative;
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       height: 430px;
       display: flex;
       justify-content: center;
@@ -208,7 +208,7 @@
       margin-bottom: 11px;
     }
 
-    @include xsm {
+    @media screen and (max-width: 420px) {
       height: 320px;
     }
   }

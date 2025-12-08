@@ -185,15 +185,15 @@ const items = [
     width: 600px;
     flex-shrink: 0;
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       width: 500px;
     }
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       width: 431px;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       width: 100%;
     }
   }
@@ -206,18 +206,18 @@ const items = [
   &__item-title {
     font-family: 'WhyteInktrap';
     font-weight: 500;
-    font-size: $md_tMd;
+    font-size: 3em;
     line-height: 120%;
     background: linear-gradient(90deg, #B000FD 0.01%, #B000FD 0.02%, #30DAFF 97.96%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 8px;
 
-    @include slg {
-      font-size: $sm_tMd;
+    @media screen and (max-width: 1200px) {
+      font-size: 2.25em;
     }
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       font-size: 1.688em;
     }
   }
@@ -227,23 +227,23 @@ const items = [
     width: 504px;
     height: 504px;
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       width: 448px;
       height: 448px;
     }
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       width: 340px;
       height: 340px;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       width: 80px;
       height: 90px;
       margin-right: 24px;
     }
 
-    @include xsm {
+    @media screen and (max-width: 420px) {
       width: 85px;
       height: 93px;
     }
@@ -257,19 +257,19 @@ const items = [
     justify-content: space-between;
     margin-bottom: 95px;
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       margin-bottom: 116px;
     }
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       margin-bottom: 60px;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       margin-bottom: 40px;
     }
 
-    @include xsm {
+    @media screen and (max-width: 420px) {
       margin-bottom: 60px;
     }
 
@@ -306,11 +306,11 @@ const items = [
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 32px;
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       margin-bottom: 24px;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       margin-bottom: 0;
     }
   }
@@ -318,11 +318,11 @@ const items = [
   &__item-text {
     margin-bottom: 32px;
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       margin-bottom: 24px;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       margin-bottom: 16px;
     }
   }
@@ -334,11 +334,11 @@ const items = [
     &:last-child {
       margin-bottom: 48px;
 
-      @include slg {
+      @media screen and (max-width: 1200px) {
         margin-bottom: 32px;
       }
 
-      @include sm {
+      @media screen and (max-width: 840px) {
         margin-bottom: 24px;
       }
     }

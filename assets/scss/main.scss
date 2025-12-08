@@ -44,7 +44,7 @@ a {
     }
 
     &.blue {
-        color: $ltBlue;
+        color: #5B92FF;
     }
 }
 
@@ -52,25 +52,25 @@ a {
     max-width: 1240px;
     margin: 0 auto;
 
-    @include lg {
+    @media screen and (max-width: 1366px) {
         max-width: 1120px;
     }
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
         max-width: 980px;
     }
 
-    @include md {
+    @media screen and (max-width: 1024px) {
         max-width: 800px;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
         max-width: 100%;
         width: 100%;
         padding: 0 20px;
     }
 
-    @include xsm {
+    @media screen and (max-width: 420px) {
         padding: 0 12px;
     }
 }
@@ -78,7 +78,7 @@ a {
 .btn {
     position: relative;
     display: inline-block;
-    font-size: $pDef;
+    font-size: 1.125em;
     padding: 14px 22px;
     font-weight: 500;
     border-radius: 12px;
@@ -87,8 +87,8 @@ a {
     cursor: pointer;
     backdrop-filter: blur(30px);
 
-    @include sm {
-        font-size: $sm_pDef;
+    @media screen and (max-width: 840px) {
+        font-size: .875em;
         padding: 12px 18px;
         border-radius: 10px;
     }
@@ -106,7 +106,7 @@ a {
             border-radius: 12px;
             z-index: -1;
 
-            @include sm {
+            @media screen and (max-width: 840px) {
                 border-radius: 10px;
             }
         }
@@ -135,39 +135,39 @@ a {
 
     &_h2 {
         line-height: 110%;
-        font-size: $tMd;
+        font-size: 4em;
         font-weight: 500;
         margin-bottom: 24px;
 
-        @include slg {
-            font-size: $md_tMd;
+        @media screen and (max-width: 1200px) {
+            font-size: 3em;
             margin-bottom: 16px;
         }
 
-        @include sm {
-            font-size: $sm_tMd;
+        @media screen and (max-width: 840px) {
+            font-size: 2.25em;
         }
     }
 
     &_sub {
-        font-size: $tSmd;
+        font-size: 2em;
         font-weight: 500;
 
-        @include sm {
-            font-size: $sm_tSmd;
+        @media screen and (max-width: 840px) {
+            font-size: 1.5em;
         }
     }
 
     &_hero {
-        font-size: $tLg;
+        font-size: 4.5em;
         font-weight: 500;
 
-        @include slg {
-            font-size: $md_tLg;
+        @media screen and (max-width: 1200px) {
+            font-size: 3.375em;
         }
 
-        @include sm {
-            font-size: $sm_tLg;
+        @media screen and (max-width: 840px) {
+            font-size: 2.5em;
         }
     }
 
@@ -177,31 +177,31 @@ a {
     line-height: 150%;
 
     &_medium {
-        font-size: $pDef;
+        font-size: 1.125em;
 
-        @include slg {
-            font-size: $md_pDef;
+        @media screen and (max-width: 1200px) {
+            font-size: 1em;
         }
 
-        @include sm {
-            font-size: $sm_pDef;
+        @media screen and (max-width: 840px) {
+            font-size: .875em;
         }
     }
 
     &_large {
         font-weight: 500;
-        font-size: $pLg;
+        font-size: 1.5em;
 
-        @include sm {
-            font-size: $sm_pLg;
+        @media screen and (max-width: 840px) {
+            font-size: 1.125em;
         }
     }
 
     &_small {
-        font-size: $pSm;
+        font-size: 0.875em;
 
-        @include sm {
-            font-size: $sm_pSm;
+        @media screen and (max-width: 840px) {
+            font-size: 0.875em;
         }
     }
 }
@@ -219,11 +219,11 @@ a {
         width: 800px;
         flex-shrink: 0;
 
-        @include md {
+        @media screen and (max-width: 1024px) {
             width: 600px;
         }
 
-        @include sm {
+        @media screen and (max-width: 840px) {
             width: 100%;
         }
     }
@@ -236,18 +236,18 @@ a {
 
 .color {
     &_blue {
-        color: $ltBlue;
+        color: #5B92FF;
     }
 }
 
 .block {
     margin-bottom: 180px;
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
         margin-bottom: 140px;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
         margin-bottom: 100px;
     }
 }
@@ -256,11 +256,11 @@ a {
     &_large {
         margin-bottom: 48px;
 
-        @include slg {
+        @media screen and (max-width: 1200px) {
             margin-bottom: 32px;
         }
 
-        @include sm {
+        @media screen and (max-width: 840px) {
             margin-bottom: 24px;
         }
     }
@@ -268,11 +268,11 @@ a {
     &_medium {
         margin-bottom: 24px;
 
-        @include slg {
+        @media screen and (max-width: 1200px) {
             margin-bottom: 16px;
         }
 
-        @include sm {
+        @media screen and (max-width: 840px) {
             margin-bottom: 8px;
         }
     }
@@ -298,7 +298,7 @@ a {
 
 
 .tag {
-    font-size: $pSm;
+    font-size: 0.875em;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid #34343a;
     backdrop-filter: blur(30px);
@@ -349,17 +349,17 @@ a {
         transform: rotate(-20deg) translateX(-50%);
         z-index: -1;
 
-        @include lg {
+        @media screen and (max-width: 1366px) {
             width: 818px;
             height: 818px;
         }
 
-        @include slg {
+        @media screen and (max-width: 1200px) {
             width: 806px;
             height: 806px;
         }
 
-        @include sm {
+        @media screen and (max-width: 840px) {
             width: 732px;
             height: 732px;
             right: unset;

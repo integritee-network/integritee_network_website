@@ -43,19 +43,19 @@ const catName = computed(() => catsStore.getCatById(post.categories[0])?.name)
     border-radius: 24px;
     margin-bottom: 32px;
 
-    @include lg {
+    @media screen and (max-width: 1366px) {
       height: 202px;
     }
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       height: 176px;
     }
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       height: 146px;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       height: auto;
     }
   }
@@ -69,7 +69,7 @@ const catName = computed(() => catsStore.getCatById(post.categories[0])?.name)
     gap: 12px;
     margin-bottom: 18px;
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       margin-bottom: 8px;
     }
   }

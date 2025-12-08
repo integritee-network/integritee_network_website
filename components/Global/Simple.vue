@@ -33,11 +33,11 @@ defineProps<{
   justify-content: space-between;
   gap: 75px;
 
-  @include lg {
+  @media screen and (max-width: 1366px) {
     gap: 50px;
   }
 
-  @include sm {
+  @media screen and (max-width: 840px) {
     flex-direction: column-reverse;
     gap: 0;
   }
@@ -46,19 +46,19 @@ defineProps<{
     width: 600px;
     flex-shrink: 0;
 
-    @include lg {
+    @media screen and (max-width: 1366px) {
       width: 560px;
     }
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       width: 480px;
     }
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       width: 350px;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       width: 100%;
     }
   }
@@ -68,15 +68,15 @@ defineProps<{
     z-index: 2;
     font-family: 'WhyteInktrap';
     font-weight: 500;
-    font-size: $tDef;
+    font-size: 3em;
     line-height: 110%;
     color: #ffffff;
 
-    @include slg {
-      font-size: $sm_tMd;
+    @media screen and (max-width: 1200px) {
+      font-size: 2.25em;
     }
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       font-size: 1.688em;
     }
   }
@@ -100,7 +100,7 @@ defineProps<{
     align-items: center;
     justify-content: center;
 
-    @include sm {
+    @media screen and (max-width: 840px) {
       position: relative;
       text-align: center;
       margin-bottom: 40px;
@@ -112,19 +112,19 @@ defineProps<{
       z-index: 2;
       object-fit: contain;
 
-      @include lg {
+      @media screen and (max-width: 1366px) {
         max-height: 390px;
       }
 
-      @include slg {
+      @media screen and (max-width: 1200px) {
         max-height: 350px;
       }
 
-      @include md {
+      @media screen and (max-width: 1024px) {
         max-height: 310px;
       }
 
-      @include sm {
+      @media screen and (max-width: 840px) {
         position: relative;
         height: 100%;
         max-width: 80%;
@@ -141,17 +141,17 @@ defineProps<{
     width: 900px;
     height: 900px;
 
-    @include lg {
+    @media screen and (max-width: 1366px) {
       width: 850px;
       height: 850px;
     }
 
-    @include slg {
+    @media screen and (max-width: 1200px) {
       width: 800px;
       height: 800px;
     }
 
-    @include md {
+    @media screen and (max-width: 1024px) {
       width: 600px;
       height: 600px;
     }
