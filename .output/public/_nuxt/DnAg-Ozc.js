@@ -1,0 +1,1 @@
+import{f as n,c as r,a as o,d as i,o as l}from"#entry";const t="https://medium.com/@integritee",s=n({__name:"index",setup(a){return window.location.href=t,(d,e)=>(l(),r("div",null,[o("p",null,[e[0]||(e[0]=i(" Redirecting to our Medium blog... ",-1)),e[1]||(e[1]=o("br",null,null,-1)),o("a",{href:t},"Go to Medium")])]))}});export{s as default};

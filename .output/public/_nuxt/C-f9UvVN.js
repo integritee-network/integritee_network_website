@@ -1,0 +1,1 @@
+import{f as c,_ as t,M as a,o as n}from"#entry";const s=c({__name:"index",setup(e){return(_,o)=>null}}),r=t(s,[["__scopeId","data-v-ca7425c8"]]),u=c({__name:"privacy-policy",setup(e){return(_,o)=>(n(),a(r))}});export{u as default};

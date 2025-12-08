@@ -1,0 +1,4 @@
+const Community_vue_vue_type_style_index_0_lang = "@media screen and (max-width:1200px){.community__title br{display:none}.community__column{width:480px}}@media screen and (max-width:1024px){.community__column{width:420px}}@media screen and (max-width:840px){.community__column{order:2;width:100%}.community__row{flex-wrap:wrap}}.community__image{border:1px dashed #000;border-radius:24px;display:block;height:530px;-o-object-fit:cover;object-fit:cover;width:580px}@media screen and (max-width:1366px){.community__image{height:462px;width:505px}}@media screen and (max-width:1200px){.community__image{height:394px;width:433px}}@media screen and (max-width:1024px){.community__image{height:310px;width:339px}}@media screen and (max-width:840px){.community__image{height:auto;margin-bottom:24px;max-width:540px;order:1;width:100%}}";
+
+export { Community_vue_vue_type_style_index_0_lang as C };
+//# sourceMappingURL=Community-styles-1.mjs-gSpA24YQ.mjs.map

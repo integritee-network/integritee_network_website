@@ -1,0 +1,4 @@
+const Building_vue_vue_type_style_index_0_scoped_9f859f10_lang = ".building[data-v-9f859f10]{margin-top:235px;position:relative;text-align:center}@media screen and (max-width:1366px){.building[data-v-9f859f10]{margin-top:265px}}@media screen and (max-width:1200px){.building[data-v-9f859f10]{margin-top:165px}}@media screen and (max-width:840px){.building[data-v-9f859f10]{margin-top:100px}}.building__icon[data-v-9f859f10]{height:64px;margin:0 auto 48px;position:relative;width:64px}@media screen and (max-width:1200px){.building__icon[data-v-9f859f10]{height:48px;margin-bottom:32px;width:48px}}@media screen and (max-width:840px){.building__icon[data-v-9f859f10]{height:32px;margin-bottom:24px;width:32px}}.building__icon svg[data-v-9f859f10]{width:100%}.building__title[data-v-9f859f10]{font-family:WhyteInktrap}";
+
+export { Building_vue_vue_type_style_index_0_scoped_9f859f10_lang as B };
+//# sourceMappingURL=Building-styles-1.mjs-CGXuxRhu.mjs.map
