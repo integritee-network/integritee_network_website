@@ -1,18 +1,5 @@
 <script setup lang="ts">
-import { useAsyncData } from '#imports'
 import Footer from '@/components/Footer'
-import { useCategoriesStore } from '@/store/categories'
-import { defineAsyncComponent } from 'vue'
-
-const Header = defineAsyncComponent(() => import('@/components/Header'))
-
-const catsStore = useCategoriesStore()
-const { initCategories, initUseCasesTags } = catsStore
-
-await Promise.all([
-  useAsyncData('init', initCategories),
-  useAsyncData('initTags', initUseCasesTags),
-])
 </script>
 
 <template>

@@ -13,14 +13,6 @@
   </section>
 </template>
 <script setup lang="ts">
-import { useWpApi } from '@/api/wordpress'
-import New from '@/components/Blog/New.vue'
-
-const wpApi = useWpApi()
-
-const { data, error } = await wpApi.getPosts({
-  limit: 3,
-})
 </script>
 <style lang="scss">
 .news {
