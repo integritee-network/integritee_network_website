@@ -5,7 +5,7 @@
         <div class="shutdown-banner__content">
           <span class="shutdown-banner__text">
             ⚠️ Important Network Update: The Integritee Network will be shutting down on November 11, 2025.
-            <a href="blog/this-is-the-end" class="shutdown-banner__link">Read the full announcement</a>
+            <a href="https://medium.com/integritee/this-is-the-end-8fb08e9f6d94" class="shutdown-banner__link">Read the full announcement</a>
           </span>
         </div>
       </div>
